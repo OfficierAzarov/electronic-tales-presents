@@ -1,0 +1,95 @@
+#tracks {
+    display: flex;
+    flex-direction: column;
+}
+
+#tracks h3 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 4%;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+#tracks #worlds-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    text-align: center;
+    padding: 0 3%;
+}
+
+#tracks .world {
+    background-color: #1a1919;
+    border-radius: 2%;
+    padding: 4% 2%;
+    display: grid;
+    grid-template-rows: repeat(4, auto); 
+}
+
+#tracks .world img {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 4%;
+}
+
+#tracks p {
+    width: 95%;
+    margin: 6% auto 0;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+#tracks #tracks-button-wrap {
+    margin: 3% 0 0;
+    text-align: center;
+}
+
+#tracks #tracks-button {
+    display: inline-block;
+    padding: 1%;
+    animation-delay: 4s;
+}
+
+#modern-world {
+    animation-delay: 1s;
+}
+
+#ancient-world {
+    animation-delay: 2s;
+}
+
+#imaginarium {
+    animation-delay: 3s;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #tracks h3 {
+        margin: 1% auto 3%;
+    }
+
+    #tracks #tracks-button-wrap {
+        margin: 1.5% 0 1%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+    #tracks h3 {
+        font-size: 2em;
+    }
+
+    #tracks .world img {
+        width: 80%;
+    }
+
+    #tracks p {
+        font-size: 1em;
+    }
+
+    #tracks #tracks-button-wrap {
+        margin: 1% 0 1%;
+    }
+}

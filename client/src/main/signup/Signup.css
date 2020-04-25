@@ -1,0 +1,202 @@
+#signup h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10%;
+}
+
+ #signup h4 {
+    font-size: 1em;
+}
+
+#steps-container {
+    display: flex; 
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+.regular-colums {
+    width: 50%;
+    margin: 0 2%;
+}
+
+#steps-container div h4 {
+    text-align: center;
+}
+
+#steps-container div p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#step-1 {
+    margin-right: 2%;
+    width: 60%;
+    display: grid;
+    grid-template-rows:  0.3fr 2.4fr 0.5fr auto;
+}
+
+#text-and-arrow-container {
+    grid-row: 2;
+    margin: 2% auto 0;
+    animation-name: stim;
+    animation-duration: 1.2s;
+    animation-iteration-count:infinite;
+}
+
+#arrow-container {
+    grid-row: 3;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#arrow {
+    border-right: dashed 2px #c0c0c0;
+}
+
+#arrow-down-container {
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#signup i {
+    grid-column: 2;
+    border: solid #c0c0c0;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    width:3%;
+    margin: 0 auto;
+}
+
+#mail-input-container {
+    margin-top: 2%;
+    grid-row: 3;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.notification {
+    animation-name: fadeInNotification;
+    animation-duration: 5s;
+    border-radius: 2%;
+    display: flex;
+    padding: 5%;
+    color: #ffffff;
+}
+
+.notification p {
+    align-self: center;
+}
+
+@keyframes fadeInNotification {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.8;
+    }
+}
+
+.success {
+    margin-top: 10%;
+    background-color: #ea1e78;
+}
+
+.failure {
+    background-color: #999999;
+}
+
+
+/* #mail-input-container:first-child {
+    color: pink !important;
+} */
+
+/* input[type=email] {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3%;
+    border: 0;
+}
+
+input::placeholder {
+    font-size: 0.8em;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#mail-input-container button {
+    display: block;
+    padding: 3% 5%;
+    margin: 2%  auto;
+    font-size: 0.8em;
+    background-color: #ea1e78;
+    border: 0;
+    color: #ffffff;
+    border-radius: 3%;
+} */
+
+@keyframes stim {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#step-4 {
+    width: 70%;
+}
+
+#signup img {
+    display: block;
+    margin: 12% auto;
+    width: 65%;
+
+}
+
+@media only screen and (min-width: 768px) {
+    #steps-container div p {
+        font-size: 0.9em;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #signup h3 {
+        font-size: 1.2em;
+        margin-bottom: 5%;
+    }
+
+    #steps-container div p {
+        font-size: 1em;
+    }
+
+    input::placeholder {
+        font-size: 1em;
+    }
+    
+    input[type=submit] {
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    #signup h3 {
+        font-size: 1.4em;
+        margin-bottom: 5%;
+    }
+
+    #steps-container div p {
+        font-size: 1.1em;
+    }
+}

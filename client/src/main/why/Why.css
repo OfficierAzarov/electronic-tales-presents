@@ -1,0 +1,72 @@
+#why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0;
+}
+
+#why h3 {
+    margin-bottom: 2%;
+}
+
+#why p {
+    width: 65%;
+    text-align: center;
+    font-size: 0.88em;
+}
+
+.break-text {
+    display: block;
+    margin: 2% auto 1.5%;
+}
+
+#why img {
+    width:5%;
+}
+
+#why video {
+    border-radius: 5%;
+}
+
+#why-button-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+#why-button {
+    padding: 1%;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+    #why p {
+      font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #why p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #why h3 {
+        margin-bottom: 0.8%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    #why h3 {
+        margin-bottom: 1%;
+        font-size: 2.1em;
+    }
+    
+    #why p {
+        font-size: 2em;
+      }
+
+    #why-button {
+        font-size: 1.6em;
+    }
+}

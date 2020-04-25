@@ -1,0 +1,11 @@
+.notification {
+
+}
+
+.notification.success {
+    background-color: green;
+}
+
+.notification.fail {
+    background-color: red;
+}

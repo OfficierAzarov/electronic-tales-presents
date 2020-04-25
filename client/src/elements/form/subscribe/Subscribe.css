@@ -1,0 +1,25 @@
+input[type=email] {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3%;
+    border: 0;
+}
+
+input::placeholder {
+    font-size: 1em;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#subscribe-button {
+    display: block;
+    padding: 3% 5%;
+    margin: 5% auto;
+    font-size: 1em;
+    background-color: #ea1e78;
+    border: 0;
+    color: #ffffff;
+    border-radius: 3%;
+}
