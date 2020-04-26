@@ -27,10 +27,10 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <Nav currentPath={this.state.currentPath} />
         <div id="page-container">
-          <Nav currentPath={this.state.currentPath} />
           <div id="eltaskyline">
-            <img src={elta} />
+            <img src={elta} alt="electronic tales skyline"/>
           </div>
           <div id="main">
             <Switch>

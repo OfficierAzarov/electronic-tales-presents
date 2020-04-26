@@ -25,9 +25,7 @@ class Subscribe extends React.Component {
                     this.props.handleError(
                         {
                             status: 'generic',
-                            msg: "Oops... Quelque chose s\'est \
-                            mal passé côté serveur. \
-                            Réessaie ou contacte-nous."});
+                            msg: "Oops... Quelque chose s\'est mal passé côté serveur. Réessaie ou contacte-nous."});
                         }
                 )
         }

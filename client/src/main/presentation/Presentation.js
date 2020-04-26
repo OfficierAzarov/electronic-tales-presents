@@ -7,12 +7,10 @@ import './Presentation.css';
 
 class Presentation extends React.Component {
 
-    componentWillMount() {
+    componentDidMount() {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
     }
-
-    // --- End ---
 
     render() {
 
@@ -43,7 +41,5 @@ class Presentation extends React.Component {
     }
 
 }
-
-
 
 export default Presentation;

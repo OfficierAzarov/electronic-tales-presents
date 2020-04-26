@@ -11,7 +11,7 @@ footer {
 
 footer a {
     color: #ffffffdc;
-    margin: 0 auto;
+    margin: 0 4%;
 }
 
 footer a:hover {
@@ -34,7 +34,6 @@ footer p, footer a {
 .instagram.icon,
 .facebook.icon {
   font-size: 1.3em;
-  margin-right: 2%;
 }
 
 
