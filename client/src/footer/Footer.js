@@ -8,8 +8,8 @@ const Footer = () => {
             <p>Made with &#10084; by Electronic Tales Team</p>
             <div>
                 <a href="https://www.linkedin.com/company/34911130"><i className="fab fa-linkedin"></i></a>
-                <a href="#"><i className="fab fa-facebook-square"></i></a>
-                <a href="#"><i className="fab fa-instagram-square"></i></a>
+                <a href="#"><i className="fab fa-facebook"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
             </div>
         </footer >
     );
