@@ -1,13 +1,14 @@
 #main {
+    padding-top: 1%;
     background: #1c1e21;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1%;
 }
 
 #eltaskyline {
     background-color: #176072;
+    margin-bottom: -1px;
 }
 
 #page-container {

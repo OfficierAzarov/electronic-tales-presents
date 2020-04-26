@@ -19,13 +19,16 @@ class Concept extends React.Component {
     componentDidMount() {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
+
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
     render() {
         return (
             <div id="concept" className="animated">
-                <h2>&Agrave; Electronic Tales, on veut rendre la computer culture <i>human readable</i>, <br/>c'est-à-dire accessible &agrave; tous&middot;tes.</h2>
-                <h3>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel,</span> on a r&eacute;flechi, on a d&eacute;fini des axes et ourdi des concepts.</h3>
+                <h2>&Agrave; Electronic Tales, on veut rendre la computer culture <i>human readable</i>.</h2>
+                <h3>C'est-à-dire accessible &agrave; tous&middot;tes.</h3>
+                <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel, </span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>
                 <div id="how-items-container">
                     <div id="principles">
                         <ul>
