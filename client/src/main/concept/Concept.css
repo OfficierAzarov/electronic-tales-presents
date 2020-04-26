@@ -6,8 +6,6 @@
 
 #concept h3 {
     text-align: center;
-    font-size: 2em;
-    font-weight: 300;
     width: 60%;
     margin: 5% auto 5%;
 }
@@ -26,7 +24,6 @@
 #concept p {
     width: 90%;
     text-align: center;
-    font-size: 0.9em;
 }
 
 #concept img {
@@ -63,7 +60,7 @@
     padding: 1.2%;
 }
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     #concept h3 {
         font-size: 2em;
     }
@@ -89,4 +86,4 @@
     #concept p {
         font-size: 1.1em;
     }
-}
+} */
