@@ -16,7 +16,7 @@ class Signup extends React.Component {
         subscriptionError: ""
     }
 
-    componentWillMount() {
+    componentDidMount() {
         // passes the location from the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
     }
@@ -51,13 +51,13 @@ class Signup extends React.Component {
                                 <i></i>
                             </div>
                         </div>
-                        {(this.state.isEmailSubmitted && this.state.status != '200')?
+                        {(this.state.isEmailSubmitted && this.state.status !== '200')?
                             <div className="notification failure">
                                 <p>{this.state.message}</p>
                             </div>
                             : <div></div>
                         }
-                        {(this.state.isEmailSubmitted && this.state.status=='200') ?
+                        {(this.state.isEmailSubmitted && this.state.status==='200') ?
                             <div className="notification success">
                                 <p>{this.state.message}</p>
                             </div>  
@@ -78,7 +78,7 @@ class Signup extends React.Component {
                     <div className="regular-colums">
                         <h4>3</h4>
                         <p>N'aies pas peur&nbsp;! En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeurs sur le z-index en css
-                            ou de recoder <a href="https://www.impots.gouv.fr/portail/" target="_blank">impots.gouv</a> en dark theme. <br /><br />
+                            ou de recoder <a href="https://www.impots.gouv.fr/portail/" target="_blank" rel="noopener noreferrer">impots.gouv</a> en dark theme. <br /><br />
                             Tu vas voir, c'est tout simple&nbsp;!
                         </p>
                     </div>

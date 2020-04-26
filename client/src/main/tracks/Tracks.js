@@ -10,7 +10,7 @@ import imaginarium from '../../resources/img/imaginarium-animation.gif';
 
 class Tracks extends React.Component {
 
-    componentWillMount() {
+    componentDidMount() {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
     }
@@ -19,10 +19,10 @@ class Tracks extends React.Component {
 
         return (
             <div id="tracks">
-                <h3 class="animated">Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors. <br />
+                <h3 className="animated">Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors. <br />
                     Elle sera construite autour de trois tracks d'apprentissage&nbsp;:</h3>
                 <div id="worlds-container">
-                    <div id="modern-world" class="world animated">
+                    <div id="modern-world" className="world animated">
                         <h4>Modern World</h4>
                         <img src={modernWorld}
                             alt="" />
@@ -31,7 +31,7 @@ class Tracks extends React.Component {
                             Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.</p>
                         <p>Apprends à programmer entre les lignes.</p>
                     </div>
-                    <div id="ancient-world" class="world animated">
+                    <div id="ancient-world" className="world animated">
                         <h4>Ancient World</h4>
                         <img src={ancientWorld}
                             alt="" />
@@ -39,7 +39,7 @@ class Tracks extends React.Component {
                         Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).</p>
                         <p>Plonge dans le monde englouti de la <i>computer science</i>.</p>
                     </div>
-                    <div id="imaginarium" class="world animated">
+                    <div id="imaginarium" className="world animated">
                         <h4>Imaginarium</h4>
                         <img src={imaginarium}
                             alt="" />

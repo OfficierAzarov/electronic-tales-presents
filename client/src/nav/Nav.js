@@ -37,7 +37,7 @@ class Nav extends React.Component {
     }
 
     isActive(elementName) {
-        if (this.props.currentPath != null) {
+        if (this.props.currentPath !== null) {
             return this.props.currentPath === elementName ? 'active' : null;
         }
     }

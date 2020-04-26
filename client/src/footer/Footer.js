@@ -6,10 +6,10 @@ const Footer = () => {
         <footer>
             <a href="#">contact@electronictales.com</a>
             <p>Made with &#10084; by Electronic Tales Team</p>
-            <div id="social-links-container">
-                <a href="https://www.linkedin.com/company/34911130"><i className="linkedin icon"></i></a>
-                <a href="#"><i className="instagram icon"></i></a>
-                <a href="#"><i className="facebook icon"></i></a>
+            <div>
+                <a href="https://www.linkedin.com/company/34911130"><i className="fab fa-linkedin"></i></a>
+                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                <a href="#"><i className="fab fa-instagram-square"></i></a>
             </div>
         </footer >
     );

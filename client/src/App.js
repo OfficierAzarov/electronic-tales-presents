@@ -30,7 +30,7 @@ class App extends React.Component {
         <Nav currentPath={this.state.currentPath} />
         <div id="page-container">
           <div id="eltaskyline">
-            <img src={elta} />
+            <img src={elta} alt="electronic tales skyline"/>
           </div>
           <div id="main">
             <Switch>
