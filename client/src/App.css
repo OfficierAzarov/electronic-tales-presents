@@ -1,7 +1,4 @@
 #main {
-    /* background: url('../src/resources/img/elta2020.svg') no-repeat;
-    background-size: cover;
-    background-position: 0px -33px; */
     background: #1c1e21;
     display: flex;
     align-items: center;
@@ -18,21 +15,3 @@
     grid-template-rows: auto auto 1fr auto;
     height: 100vh;
 }
-
-/* @media only screen and (min-width: 1024px) {
-    #main {
-        background-position: 0px -40px;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    #main {
-        background-position: 0px -65px;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    #main {
-        background-position: 0px -65px;
-    }
-} */
