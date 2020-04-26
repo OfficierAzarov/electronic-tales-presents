@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Nav.css';
-import logo from '../resources/img/logo-transparent-smol-group.svg';
+import logo from '../resources/img/logo-transparent-smol-group.png';
 
 class Nav extends React.Component {
 
