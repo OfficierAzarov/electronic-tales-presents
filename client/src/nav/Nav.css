@@ -8,6 +8,7 @@ nav {
     grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr;
     flex-wrap: nowrap;
     border-bottom: solid 1px #4c5057;
+    font-size: 0.9em;
 }
 
 #logo {
@@ -22,7 +23,6 @@ nav {
 #nav-links {
   grid-column: 3;
   display: flex;
-  /* font-size: 0.9em; */
 }
 
 #nav-links a {
@@ -33,7 +33,7 @@ nav {
 
 #nav-button {
   grid-column: 4;
-  padding: 5% 6%;
+  padding: 0.5em 1.5em;
 }
 
 .active {
@@ -42,11 +42,10 @@ nav {
 }
 
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   #nav-links {
     font-size: 0.9em;
   }
-  
   #nav-button {
     font-size: 0.9em;
   }  
@@ -66,7 +65,7 @@ nav {
   #nav-button {
     font-size: 0.9em;
   }  
-}
+} */
 
 
 

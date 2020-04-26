@@ -36,7 +36,7 @@ class Subscribe extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <input type="email" className="form-control" placeholder="Mon e-mail..." onChange={this.handleChange} />
+                <input type="email" className="form-control" placeholder="yeah.sure@mytrashbox.io" onChange={this.handleChange} />
                 <button id="subscribe-button" className="button-design" type="submit">Participer &nbsp;!</button>
             </form>
         );

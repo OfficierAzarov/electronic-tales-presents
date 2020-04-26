@@ -44,7 +44,7 @@ class Why extends React.Component {
                 </p>
                 <div id="why-button-wrap" to="/concept">
                     <button id="why-button" className="button-design">
-                        <Link id="why-button-wrap" to="/concept">
+                        <Link to="/concept">
                             Youpi, dites-m'en plus&nbsp;!
                         </Link>
                     </button>

@@ -56,11 +56,14 @@ a:hover {
 }
 
 .button-design {
-  border-radius: 3px;
+  border-radius: 3em;
   background-color: #ea1e78;
   border: none;
   color: #fff;
-  /* background-image: linear-gradient(315deg, #ea1e78 0%, #f67062 95%); */
+  padding: 1% 5%;
+  margin: 3% auto;
+  display: inline-block;
+  font-size: 0.9em;
 }
 
 .button-design a {

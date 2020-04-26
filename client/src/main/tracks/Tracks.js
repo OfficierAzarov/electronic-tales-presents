@@ -50,9 +50,9 @@ class Tracks extends React.Component {
 
                     </div>
                 </div >
-                <div id="tracks-button-wrap" to="/signup">
-                    <button id="tracks-button" className="button-design animated">
-                        <Link id="tracks-button-wrap" to="/signup">
+                <div id="tracks-button-wrap">
+                    <button id="tracks-button" className="button-design">
+                        <Link to="/signup">
                             Je veux vous aider, je participe&nbsp;!
                         </Link>
                     </button>

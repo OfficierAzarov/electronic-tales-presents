@@ -40,7 +40,7 @@ class Concept extends React.Component {
                 </div>
                 <div id="concept-button-wrap" to="/tracks">
                     <button id="concept-button" className="button-design">
-                        <Link id="concept-button-wrap" to="/tracks">
+                        <Link to="/tracks">
                             Super&nbsp;! Et concrètement&nbsp;?
                         </Link>
                     </button>

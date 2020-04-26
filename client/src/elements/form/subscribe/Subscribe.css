@@ -1,12 +1,12 @@
 input[type=email] {
     display: inline-block;
     height: 100%;
-    border-radius: 3%;
+    border-radius: 3em;
     border: 0;
 }
 
 input::placeholder {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 input:focus::placeholder {
@@ -14,12 +14,13 @@ input:focus::placeholder {
 }
 
 #subscribe-button {
-    display: block;
-    padding: 3% 5%;
+    padding: 0.5em 1.5em;
+    font-size: 0.8em;
+    /* padding: 3% 8%;
     margin: 5% auto;
-    font-size: 1em;
+    font-size: 0.9em;
     background-color: #ea1e78;
     border: 0;
     color: #ffffff;
-    border-radius: 3%;
+    border-radius: 3%; */
 }

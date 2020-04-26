@@ -45,8 +45,7 @@
 }
 
 #presentation-button {
-  margin: 3% auto 0;
-  padding: 2%;
+  padding: 1% 5%;
   opacity: 0;
   animation-name: fadeIn, shake;
   animation-duration: 0.5s, 0.5s;
