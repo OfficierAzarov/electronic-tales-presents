@@ -10,7 +10,7 @@ import geek from '../../resources/img/icons/geek.svg';
 import stairs from '../../resources/img/icons/stairs.svg';
 
 import tea from '../../resources/img/icons/tea.png';
-import chat from '../../resources/img/icons/chat.png';
+import chat from '../../resources/img/icons/chatcolor.png';
 import learning from '../../resources/img/icons/learning.png';
 import gameboy from '../../resources/img/icons/gameboy.png';
 
