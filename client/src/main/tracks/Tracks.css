@@ -7,8 +7,6 @@
     text-align: center;
     width: 50%;
     margin: 0 auto 4%;
-    font-size: 2em;
-    font-weight: 300;
 }
 
 #tracks #worlds-container {
@@ -24,8 +22,11 @@
     border-radius: 2%;
     padding: 4% 2%;
     display: grid;
-    grid-template-rows: repeat(4, auto); 
+    grid-template-rows: 0.3fr repeat(3, auto);
+    grid-row-gap: 2%;
+    align-items: start;
 }
+
 
 #tracks .world img {
     margin: 0 auto;
@@ -37,7 +38,6 @@
     width: 95%;
     margin: 6% auto 0;
     text-align: center;
-    font-size: 0.95em;
 }
 
 #tracks #tracks-button-wrap {
@@ -63,8 +63,20 @@
     animation-delay: 3s;
 }
 
+#tracks h4 {    
+    text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
 
-@media only screen and (min-width: 1024px) {
+
+/* @media only screen and (min-width: 1024px) {
     #tracks h3 {
         margin: 1% auto 3%;
     }
@@ -92,4 +104,4 @@
     #tracks #tracks-button-wrap {
         margin: 1% 0 1%;
     }
-}
+} */

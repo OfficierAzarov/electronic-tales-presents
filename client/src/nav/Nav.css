@@ -22,7 +22,7 @@ nav {
 #nav-links {
   grid-column: 3;
   display: flex;
-  font-size: 0.6em;
+  /* font-size: 0.9em; */
 }
 
 #nav-links a {
@@ -34,7 +34,6 @@ nav {
 #nav-button {
   grid-column: 4;
   padding: 5% 6%;
-  font-size: 0.6em;
 }
 
 .active {
@@ -45,27 +44,27 @@ nav {
 
 @media only screen and (min-width: 768px) {
   #nav-links {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
   
   #nav-button {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }  
 }
 
 @media only screen and (min-width: 1024px) {
   #nav-links {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   
   #nav-button {
-    font-size: 1em;
+    font-size:0.9em;
   }  
 }
 
 @media only screen and (min-width: 1440px) {
   #nav-button {
-    font-size: 1em;
+    font-size: 0.9em;
   }  
 }
 
