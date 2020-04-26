@@ -12,8 +12,6 @@ class Presentation extends React.Component {
         emitCurrentPath(this.props);
     }
 
-    // --- End ---
-
     render() {
 
         return (
@@ -43,7 +41,5 @@ class Presentation extends React.Component {
     }
 
 }
-
-
 
 export default Presentation;

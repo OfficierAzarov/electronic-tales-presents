@@ -33,15 +33,15 @@
 }
 
 #presentation li:nth-child(n+2) {
-  animation-delay: 2.5s;
+  animation-delay: 1.8s;
 }
 
 #presentation li:nth-child(n+3) {
-  animation-delay: 4.0s;
+  animation-delay: 2.6s;
 }
 
 #presentation li:nth-child(n+4) {
-  animation-delay: 5.5s;
+  animation-delay: 3.4s;
 }
 
 #presentation-button {
@@ -50,7 +50,7 @@
   opacity: 0;
   animation-name: fadeIn, shake;
   animation-duration: 0.5s, 0.5s;
-  animation-delay: 7.0s, 7.5s;
+  animation-delay: 4.2s, 4.7s;
   animation-fill-mode: forwards;
 }
 

@@ -27,8 +27,8 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <Nav currentPath={this.state.currentPath} />
         <div id="page-container">
-          <Nav currentPath={this.state.currentPath} />
           <div id="eltaskyline">
             <img src={elta} />
           </div>

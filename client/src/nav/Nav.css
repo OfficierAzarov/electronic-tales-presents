@@ -2,6 +2,9 @@
 
 nav {
     padding: 0.5% 1%;
+    position: sticky;
+    z-index: 2;
+    top: 0;
     align-items: center;
     background-color: #303237;
     display: grid;
