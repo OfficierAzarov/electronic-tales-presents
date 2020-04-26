@@ -20,9 +20,9 @@ class Why extends React.Component {
         return (
             <div id="why" class="animated">
                 {/* <h3>Pourquoi ce projet&nbsp;?</h3> */}
-                {/* <video width="600" height="500" controls autoPlay >
+                <video width="600" height="500" controls autoPlay >
                     <source src={trailer} type="video/mp4" />
-                </video> */}
+                </video>
                 <p>
                     Grâce à la popularisation des bootcamps, les profils
                     qui ne sont pas «&nbsp;nés pour être dev&nbsp;» sont de
