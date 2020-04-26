@@ -72,21 +72,23 @@
 
 #implementations p {
     text-align: left;
-    color: #595b63;
     font-size: 0.8em;
 }
 
 #implementations img {
-    filter: grayscale(100%);
     width: 2em;
     height: 2em;
     margin: 0 10% 6% 0;
 }
 
-#implementations li p {
-    text-align: left;
+li.off img {
+    filter: grayscale(100%) brightness(50%);
+}
+
+li.off p {
     color: #595b63;
 }
+
 
 #concept h3 {
     width: 60%;
