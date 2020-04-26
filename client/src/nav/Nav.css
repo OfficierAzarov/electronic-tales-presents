@@ -10,7 +10,6 @@ nav {
     display: grid;
     grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr;
     flex-wrap: nowrap;
-    border-bottom: solid 1px #4c5057;
     font-size: 0.9em;
 }
 

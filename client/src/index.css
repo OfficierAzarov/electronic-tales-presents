@@ -23,12 +23,16 @@ h1 {
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 h2, h3 {
   font-weight: 300;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h4 {
