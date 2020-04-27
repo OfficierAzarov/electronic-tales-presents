@@ -1,21 +1,47 @@
+#concept #h-container {
+    margin-top: 8%;
+}
+
 #concept h2, #concept h3, #concept h4 {
     text-align: center;
 }
 
 #concept h2 {
     width: 50%;
-    margin: 2% auto;
+    margin: 3% auto;
 }
 
 #concept h3 {
     width: 60%;
-    margin: 2% auto;
+    margin: 3% auto;
 }
 
 #concept h4 {
     width: 40%;
-    margin: 0 auto;
+    margin: 3% auto;
 }
+
+#concept i {
+    display: block;
+    text-align: center;
+    animation-name: stim;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    transition: opacity 3s ease-in-out;
+}
+
+@keyframes stim {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 #concept li {
     list-style: none;
@@ -26,6 +52,7 @@
     width: 70%;
     grid-template-columns: 1.3fr 0.7fr;
     margin: 5% auto 0;
+    transition: opacity 1.5s ease-in-out;
 }
 
 #principles {
