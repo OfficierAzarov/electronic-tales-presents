@@ -4,7 +4,7 @@ import { emitCurrentPath } from '../../utils/Utils';
 
 
 import './Why.css';
-import trailer from '../../resources/video/el-trailer.mp4';
+import trailer from '../../resources/video/trailer-wip.mp4';
 
 class Why extends React.Component {
 
@@ -28,7 +28,7 @@ class Why extends React.Component {
                         </ul>
                     </div>
                     <div id="video-container">
-                        <video controls>
+                        <video loop autoPlay controls>
                             <source src={trailer} type="video/mp4" />
                         </video>
                     </div>
