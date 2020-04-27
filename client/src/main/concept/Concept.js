@@ -18,7 +18,7 @@ import gameboy from '../../resources/img/icons/gameboy.png';
 class Concept extends React.Component {
 
     state = {
-        scroll: true,
+        scroll: false,
         isHidden: true,
         isTranslated: false,
         isRevealed: false,
@@ -32,15 +32,25 @@ class Concept extends React.Component {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
 
+        this.goUp(this.shouldIReveal);
+
+    }
+
+    goUp = (callback) => {
         window.scrollTo({top: 0, behavior: 'smooth'});
-        
-        // enables fadeInUp effect for low- and medium-height screens
+        console.log(document.body.scrollTop);
+        if (document.body.scrollTop === 0) {
+            this.setState({scroll: true});
+            callback();
+        }
+    }
+
+    shouldIReveal = () => {
         if (window.innerHeight < 800) {
             window.addEventListener('scroll', this.reveal);
         } else {
             this.setState({isHidden: false});
         }
-
     }
 
     reveal = () => {
@@ -147,7 +157,7 @@ class Concept extends React.Component {
                     </ul>
                 </div>
             </div>
-            <div id="concept-button-wrap" to="/tracks">
+            <div className= "button-wrap" to="/tracks">
                 <button id="concept-button" className="button-design">
                     <Link to="/tracks">
                         Super&nbsp;! Et concrètement&nbsp;?

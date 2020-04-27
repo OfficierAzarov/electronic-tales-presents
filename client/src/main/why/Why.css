@@ -13,24 +13,29 @@
     margin-top: 5%;
 }
 
+#text-container {
+    padding-bottom: 5%;
+}
+
 #text-container ul {
-    width: 90%;
-    padding: 5%;
+    padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 #text-container li {
-    margin-top: 8%;
+    list-style: none;
+    border-radius: 1em;
+    margin-top: 2%;
+}
+
+#text-container li img {
+    width: 3em;
+    margin-right: 3%;
 }
 
 #why h3 {
-    width: 90%;
-    text-align: left;
-    margin: 0;
-}
-
-#video-container {
-
+    margin-bottom: 8%;
 }
 
 #why video {
@@ -38,6 +43,7 @@
     border-radius: 3em;
     margin: 0 auto;
     display: block;
+    outline: none;
 }
 
 #why-button-wrap {
@@ -47,6 +53,7 @@
 
 #why-button {
     display: inline-block;
+    outline: none;
 }
 
 /* @media only screen and (min-width: 768px) {

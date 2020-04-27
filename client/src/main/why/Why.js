@@ -4,9 +4,6 @@ import { emitCurrentPath } from '../../utils/Utils';
 
 
 import './Why.css';
-import confused from '../../resources/img/confused.gif';
-import confused2 from '../../resources/img/confused2.gif';
-import confused3 from '../../resources/img/confused3.gif';
 import trailer from '../../resources/video/el-trailer.mp4';
 
 class Why extends React.Component {
@@ -25,9 +22,9 @@ class Why extends React.Component {
                     <div id="text-container">
                         <h3>Dégommons le syndrome de l'imposteur ensemble&nbsp;!</h3>
                         <ul>
-                            <li>Plateforme open-source et 100 % gratuite</li>
-                            <li>Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s</li>
-                            <li>Sortie prévue pour la rentrée 2020</li>
+                            <li>🍰 Plateforme open-source et 100 % gratuite&nbsp;</li>
+                            <li>🌈 Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s</li>
+                            <li>📆 Sortie prévue pour la rentrée 2020&nbsp;</li>
                         </ul>
                     </div>
                     <div id="video-container">

@@ -54,7 +54,7 @@ class Tracks extends React.Component {
 
                     </div>
                 </div >
-                <div id="tracks-button-wrap">
+                <div className= "button-wrap">
                     <button id="tracks-button" className="button-design">
                         <Link to="/signup">
                             Je veux vous aider, je participe&nbsp;!
