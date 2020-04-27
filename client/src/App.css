@@ -7,7 +7,9 @@
 }
 
 #eltaskyline {
-    background-color: #176072;
+    /* background-color: #176072; */
+    background: rgb(90,140,153);
+    background: linear-gradient(0deg, rgba(90,140,153,1) 0%, rgba(53,98,110,1) 36%, rgba(36,69,69,1) 83%);
 }
 
 #page-container {
