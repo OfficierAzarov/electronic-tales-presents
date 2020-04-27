@@ -27,7 +27,7 @@
     animation-name: stim;
     animation-duration: 3s;
     animation-iteration-count:infinite;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 2s ease-in-out;
 }
 
 @keyframes stim {
@@ -52,7 +52,8 @@
     width: 70%;
     grid-template-columns: 1.3fr 0.7fr;
     margin: 5% auto 0;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 3s ease-in-out;
+    transition-delay: 0.2s;
 }
 
 #principles {
