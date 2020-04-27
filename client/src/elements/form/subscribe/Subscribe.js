@@ -18,7 +18,6 @@ class Subscribe extends React.Component {
             fetch(`api/memberAdd?email=${this.state.email}`)
                 .then(res => res.json())
                 .then(res => {
-                    console.log(res);
                     this.props.configureNotification(res, this.state.email);
                 })
                 .catch(err => {

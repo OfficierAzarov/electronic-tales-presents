@@ -54,7 +54,6 @@ class Concept extends React.Component {
 
     reveal = () => {
         if (this.state.scroll) {
-            console.log("boum");
             this.setState({isHidden: false, isTranslated: true});
             this.setState({scroll: false});
         }
