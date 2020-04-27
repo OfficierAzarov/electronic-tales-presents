@@ -27,7 +27,7 @@ class Nav extends React.Component {
                     <Link to="/concept" className={this.isActive('/concept')}>Comment&nbsp;?</Link>
                     <Link to="/tracks" className={this.isActive('/tracks')}>Nos tracks</Link>
                     <Link to="/signup" className={this.isActive('/signup')}>Nous rejoindre</Link>
-                    <a href="">La team</a>
+                    {/* <a href="">La team</a> */}
                 </div>
                 <button id="nav-button" className="button-design desktop-visible">
                     Je participe&nbsp;!

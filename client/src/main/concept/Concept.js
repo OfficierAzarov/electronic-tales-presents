@@ -18,8 +18,8 @@ import gameboy from '../../resources/img/icons/gameboy.png';
 class Concept extends React.Component {
 
     state = {
-        scroll: true,
-        isShown: true,
+        scroll: false,
+        isHidden: true,
         isTranslated: false,
         isRevealed: false,
         isNightSchoolOn: false,
@@ -32,19 +32,30 @@ class Concept extends React.Component {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
 
-        window.scrollTo({top: 0, behavior: 'smooth'});
-        
-        // enables fadeInUp effect for low- and medium-height screens
-        if (window.innerHeight < 800) {
-            this.setState({isShown: false});
-            window.addEventListener('scroll', this.reveal);
-        }
+        this.goUp(this.shouldIReveal);
 
+    }
+
+    goUp = (callback) => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        if (document.body.scrollTop === 0) {
+            this.setState({scroll: true});
+            setTimeout(callback, 500);
+        }
+    }
+
+    shouldIReveal = () => {
+        if (window.innerHeight < 800) {
+            window.addEventListener('scroll', this.reveal);
+        } else {
+            this.setState({isHidden: false});
+        }
     }
 
     reveal = () => {
         if (this.state.scroll) {
-            this.setState({isShown: true, isTranslated: true});
+            console.log("boum");
+            this.setState({isHidden: false, isTranslated: true});
             this.setState({scroll: false});
         }
     }
@@ -68,10 +79,8 @@ class Concept extends React.Component {
                         isLearningOn: true,
                         isCoolContentOn: true
                     }
-                );    
-                break;
+                );
         }
-
     }
 
     hoverEffectOff = (e) => {
@@ -83,6 +92,13 @@ class Concept extends React.Component {
         });
     }
 
+    scrollDown = () => {
+        window.scrollBy({
+            top: 300,
+            behavior: 'smooth'
+        })
+    }
+
     render() {
         return (
             <div id="concept" className="animated">
@@ -90,11 +106,13 @@ class Concept extends React.Component {
                     <h2>&Agrave; Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.</h2>
                     <h3>C'est-à-dire accessible &agrave; tous&middot;tes.</h3>
                     <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel, </span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>
-                    <i className="fas fa-chevron-down" style={{opacity: !this.state.isShown ? 1 : 0}}></i>
+                    <i className="fas fa-chevron-down" 
+                    style={{opacity: !this.state.isHidden ? 0 : 1}}
+                    onClick={this.scrollDown}></i>
                 </div>
                 <div id="how-items-container" 
                     style={{ 
-                    opacity: this.state.isShown ? 1 : 0,
+                    opacity: this.state.isHidden ? 0 : 1,
                     transform: this.state.isTranslated ? 'translateY(-8%)' : 'translateY(0)'}}>
                     <div id="principles">
                         <ul>
