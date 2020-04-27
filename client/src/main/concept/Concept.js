@@ -38,10 +38,9 @@ class Concept extends React.Component {
 
     goUp = (callback) => {
         window.scrollTo({top: 0, behavior: 'smooth'});
-        console.log(document.body.scrollTop);
         if (document.body.scrollTop === 0) {
             this.setState({scroll: true});
-            callback();
+            setTimeout(callback, 500);
         }
     }
 
@@ -55,6 +54,7 @@ class Concept extends React.Component {
 
     reveal = () => {
         if (this.state.scroll) {
+            console.log("boum");
             this.setState({isHidden: false, isTranslated: true});
             this.setState({scroll: false});
         }
@@ -79,10 +79,8 @@ class Concept extends React.Component {
                         isLearningOn: true,
                         isCoolContentOn: true
                     }
-                );    
-                break;
+                );
         }
-
     }
 
     hoverEffectOff = (e) => {
@@ -94,6 +92,13 @@ class Concept extends React.Component {
         });
     }
 
+    scrollDown = () => {
+        window.scrollBy({
+            top: 300,
+            behavior: 'smooth'
+        })
+    }
+
     render() {
         return (
             <div id="concept" className="animated">
@@ -101,7 +106,9 @@ class Concept extends React.Component {
                     <h2>&Agrave; Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.</h2>
                     <h3>C'est-à-dire accessible &agrave; tous&middot;tes.</h3>
                     <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel, </span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>
-                    <i className="fas fa-chevron-down" style={{opacity: !this.state.isHidden ? 0 : 1}}></i>
+                    <i className="fas fa-chevron-down" 
+                    style={{opacity: !this.state.isHidden ? 0 : 1}}
+                    onClick={this.scrollDown}></i>
                 </div>
                 <div id="how-items-container" 
                     style={{ 
