@@ -4,7 +4,7 @@
 
 #steps-container {
     display: flex; 
-    margin: 0 auto;
+    margin: 0 auto 5%;
     padding: 0 6%;
 }
 
@@ -79,6 +79,7 @@
     display: flex;
     padding: 5%;
     color: #ffffff;
+    margin-top: 3%;
 }
 
 .notification p {
@@ -103,37 +104,6 @@
     background-color: #999999;
 }
 
-
-/* #mail-input-container:first-child {
-    color: pink !important;
-} */
-
-/* input[type=email] {
-    display: inline-block;
-    height: 100%;
-    border-radius: 3%;
-    border: 0;
-}
-
-input::placeholder {
-    font-size: 0.9em;
-}
-
-input:focus::placeholder {
-    color: transparent;
-}
-
-#mail-input-container button {
-    display: block;
-    padding: 3% 5%;
-    margin: 2%  auto;
-    font-size: 0.8em;
-    background-color: #ea1e78;
-    border: 0;
-    color: #ffffff;
-    border-radius: 3%;
-} */
-
 @keyframes stim {
     0% {
         transform: translateY(0);
@@ -156,41 +126,3 @@ input:focus::placeholder {
     width: 65%;
 
 }
-
-/* @media only screen and (min-width: 768px) {
-    #steps-container div p {
-        font-size: 0.9em;
-    }
-}
-
-
-@media only screen and (min-width: 1024px) {
-    #signup h3 {
-        font-size: 1.2em;
-        margin-bottom: 5%;
-    }
-
-    #steps-container div p {
-        font-size: 1em;
-    }
-
-    input::placeholder {
-        font-size: 1em;
-    }
-    
-    input[type=submit] {
-        font-size: 1em;
-    }
-}
-
-
-@media only screen and (min-width: 1440px) {
-    #signup h3 {
-        font-size: 1.4em;
-        margin-bottom: 5%;
-    }
-
-    #steps-container div p {
-        font-size: 1.1em;
-    }
-} */

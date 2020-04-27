@@ -24,15 +24,11 @@ class Signup extends React.Component {
     }
 
     configureNotification = ({status, msg}) => {
-        console.log(status);
-        console.log(msg);
         this.setState({status: status, message: msg});
         this.setState({isEmailSubmitted: true});
     }
 
     handleError = ({status, msg}) => {
-        console.log(status);
-        console.log(msg);
         this.setState({status: status, message: msg});
         this.setState({isEmailSubmitted: true});
     }
@@ -41,7 +37,7 @@ class Signup extends React.Component {
         return (
             <div id="signup" className="animated">
                 <div className="h-container">
-                    <h3>Comment nous aider&nbsp;?</h3>
+                    <h2>Comment nous aider&nbsp;?</h2>
                 </div>
                 <div id="steps-container">
                     <div id="step-1">
@@ -71,8 +67,6 @@ class Signup extends React.Component {
                                     handleError={this.handleError}/>
                             </div>
                         }
-
-                        
 
                     </div>
                     <div className="regular-colums">

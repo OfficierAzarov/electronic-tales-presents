@@ -3,10 +3,11 @@ input[type=email] {
     height: 100%;
     border-radius: 3em;
     border: 0;
+    margin-bottom: 3%;
 }
 
 input::placeholder {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 input:focus::placeholder {
@@ -16,11 +17,5 @@ input:focus::placeholder {
 #subscribe-button {
     padding: 0.5em 1.5em;
     font-size: 0.8em;
-    /* padding: 3% 8%;
-    margin: 5% auto;
-    font-size: 0.9em;
-    background-color: #ea1e78;
-    border: 0;
-    color: #ffffff;
-    border-radius: 3%; */
+    outline: none;
 }

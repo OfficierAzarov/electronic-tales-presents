@@ -36,6 +36,7 @@ nav {
 #nav-button {
   grid-column: 4;
   padding: 0.5em 1.5em;
+  outline: none;
 }
 
 .active {

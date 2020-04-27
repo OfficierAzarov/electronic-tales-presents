@@ -21,8 +21,8 @@ class Tracks extends React.Component {
 
             return (
                 <div id="tracks">
-                        <div className="h-container">
-                            <h2 className="animated">Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors.</h2>
+                        <div className="h-container animated">
+                            <h2>Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors.</h2>
                             <h3>Elle sera construite autour de trois tracks d'apprentissage&nbsp;:</h3>
                         </div>
                 <div id="worlds-container">
@@ -41,18 +41,17 @@ class Tracks extends React.Component {
                             alt="" />
                         <div className="world-text">
                         <h4 id="ancient-world-header">Ancient World</h4>
-                        <p> Découvre comment fonctionne un ordinateur. Construis ta machine.
-                        Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).</p>
-                        <p>Plonge dans le monde englouti de la <i>computer science</i>.</p>
+                            <p> Découvre comment fonctionne un ordinateur. Construis ta machine.
+                            Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).</p>
+                            <p>Plonge dans le monde englouti de la <i>computer science</i>.</p>
                         </div>
                     </div>
                     <div id="imaginarium" className="world animated">                        
                         <div className="world-text">
-                        <h4 id="imaginarium-header">Imaginarium</h4>
+                            <h4 id="imaginarium-header">Imaginarium</h4>
                             <p>42. Ada Lovelace. St-Isidore. Klingon. Easter eggs. Backdoors. Star + gate/trek/wars. 127.0.0.1.
-                        Marre de ne pas avoir la r&eacute;f &agrave; la machine &agrave; caf&eacute;&nbsp;?
-                        </p>
-                        <p> Imprègne-toi des mythes et légendes de la <i>bits</i> generation.</p>
+                        Marre de ne pas avoir la r&eacute;f &agrave; la machine &agrave; caf&eacute;&nbsp;?</p>
+                            <p> Imprègne-toi des mythes et légendes de la <i>bits</i> generation.</p>
                         </div>
                         <img src={imaginarium}
                             alt="" />

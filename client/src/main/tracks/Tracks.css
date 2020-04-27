@@ -10,16 +10,20 @@
     margin: 3% auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #tracks .world img {
     margin: 0;
     width: 40%;
-    padding: 0 4%;
+    height: 100%;
+    border-radius: 1em;
+    box-shadow: 6px 6px 10px 5px rgba(0,0,0,0.41);
 }
 
 #tracks .world-text {
     width: 45%;
+    margin: 5%;
 }
 
 #tracks p {
@@ -62,33 +66,3 @@
     0 0 0.8em rgb(0, 225, 255), 
     0 0 1.6em rgb(0, 255, 255); 
 }
-
-/* @media only screen and (min-width: 1024px) {
-    #tracks h3 {
-        margin: 1% auto 3%;
-    }
-
-    #tracks #tracks-button-wrap {
-        margin: 1.5% 0 1%;
-    }
-
-}
-
-
-@media only screen and (min-width: 1440px) {
-    #tracks h3 {
-        font-size: 2em;
-    }
-
-    #tracks .world img {
-        width: 80%;
-    }
-
-    #tracks p {
-        font-size: 1em;
-    }
-
-    #tracks #tracks-button-wrap {
-        margin: 1% 0 1%;
-    }
-} */

@@ -99,32 +99,5 @@ li.off p {
 
 #concept-button {
     display: inline-block;
+    outline: none;
 }
-
-/* @media only screen and (min-width: 1024px) {
-    #concept h3 {
-        font-size: 2em;
-    }
-
-    #concept p {
-        font-size: 1.1em;
-    }
-
-    #concept img {
-        width: 40%;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    #concept h3 {
-        font-size: 2em;
-    }
-
-    #concept img {
-        width: 30%;
-    }
-
-    #concept p {
-        font-size: 1.1em;
-    }
-} */

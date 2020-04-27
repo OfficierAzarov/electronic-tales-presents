@@ -32,7 +32,7 @@ class App extends React.Component {
       <MediaQuery maxDeviceWidth={768}>
         <div id="little-screens">
           <img src={logo} alt="electronic tales logo"/>
-          <p>Notre équipe de petits lutins du dev
+          <p>Notre équipe de lutins du dev
             travaille actuellement d'arrache-clavier à la version mobile de ce site. <br/><br/>
             Translate-toi jusqu'à un desktop ou reviens un peu plus tard.
           </p>
