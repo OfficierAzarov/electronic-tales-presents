@@ -146,7 +146,7 @@ class Concept extends React.Component {
                     </ul>
                 </div>
             </div>
-            <div id="concept-button-wrap" to="/tracks">
+            <div className= "button-wrap" to="/tracks">
                 <button id="concept-button" className="button-design">
                     <Link to="/tracks">
                         Super&nbsp;! Et concrètement&nbsp;?

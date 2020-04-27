@@ -33,11 +33,13 @@ class Presentation extends React.Component {
                         comp&eacute;tences&nbsp;?
               </li>
                 </ul>
-                <Link to="/why">
+                <div className= "button-wrap">                
                     <button id="presentation-button" className="button-design">
+                        <Link to="/why">
                         Grumpf, oui&nbsp;!
+                        </Link>
                     </button>
-                </Link>
+                </div>
             </div>
         );
     }

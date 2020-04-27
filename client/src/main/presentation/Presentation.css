@@ -1,7 +1,7 @@
-#presentation {
+/* #presentation {
   width: 70%;
   text-align: center;
-}
+} */
 
 
 #presentation h2 {
@@ -13,6 +13,7 @@
 #presentation ul {
   list-style: none;
   padding: 0;
+  text-align:center;
 }
 
 #presentation li:first-child {
