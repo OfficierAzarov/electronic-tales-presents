@@ -32,6 +32,10 @@ class Concept extends React.Component {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
 
+        if (window.innerHeight > 700) {
+            this.setState({isHidden: false});
+        }
+
         window.scrollTo({top: 0, behavior: 'smooth'});
 
         window.addEventListener('scroll', this.reveal);
@@ -39,7 +43,8 @@ class Concept extends React.Component {
     }
 
     reveal = () => {
-        if (this.state.scroll) {
+        if (window.innerHeight < 700 && this.state.scroll) {
+            console.log(window.innerHeight);
             this.setState({isHidden: false, isTranslated: true});
             this.setState({scroll: false});
         }
@@ -91,10 +96,7 @@ class Concept extends React.Component {
                 <div id="how-items-container" 
                     style={{ 
                     opacity: this.state.isHidden? 0 : 1,
-                    transform: this.state.isTranslated? 'translateY(-10%)' : 'translateY(0)'}}>
-                {/* <div id="how-items-container" 
-                    style={{opacity: this.state.isHidden? 0 : 1, 
-                    transform: this.state.isTranslated? 'translateY(100px)' : 'translateY(0)'}}> */}
+                    transform: this.state.isTranslated? 'translateY(-8%)' : 'translateY(0)'}}>
                     <div id="principles">
                         <ul>
                             <li id="safe-space" 
