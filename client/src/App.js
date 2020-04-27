@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import MediaQuery from 'react-responsive'
 
 import Nav from './nav/Nav.js';
 import Footer from './footer/Footer.js';
@@ -11,13 +12,14 @@ import Signup from './main/signup/Signup.js';
 
 import './App.css';
 import elta from '../src/resources/img/eltaskyline.svg';
+import logo from '../src/resources/img/logo-transparent-smol-group.png';
+
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = { currentPath: null };
-    this.getCurrentPath = this.getCurrentPath.bind(this);
   }
 
   getCurrentPath = (currentPathFromChild) => {
@@ -26,36 +28,47 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
-        <Nav currentPath={this.state.currentPath} />
-        <div id="page-container">
-          <div id="eltaskyline">
-            <img src={elta} alt="electronic tales skyline"/>
-          </div>
-          <div id="main">
-            <Switch>
-              {/* Why use this? Check at https://tylermcginnis.com/react-router-pass-props-to-components/ */}
-              <Route
-                exact path='/'
-                render={(props) => <Presentation {...props} passCurrentPath={this.getCurrentPath} />} />
-              <Route
-                exact path='/why'
-                render={(props) => <Why {...props} passCurrentPath={this.getCurrentPath} />} />
-              <Route
-                exact path='/concept'
-                render={(props) => <Concept {...props} passCurrentPath={this.getCurrentPath} />} />
-              <Route
-                exact path='/tracks'
-                render={(props) => <Tracks {...props} passCurrentPath={this.getCurrentPath} />} />
-              <Route
-                exact path='/signup'
-                render={(props) => <Signup {...props} passCurrentPath={this.getCurrentPath} />} />
-            </Switch>
-          </div>
-          <Footer />
+      <div>
+      <MediaQuery maxDeviceWidth={768}>
+        <div id="little-screens">
+          <img src={logo} alt="electronic tales logo"/>
+          <p>Notre équipe de petits lutins du dev
+            travaille actuellement d'arrache-clavier à la version mobile de ce site. <br/><br/>
+            Translate-toi jusqu'à un desktop ou reviens un peu plus tard.
+          </p>
         </div>
-      </Router>
-
+      </MediaQuery>
+      <MediaQuery minDeviceWidth={769}>
+        <Router>
+          <Nav currentPath={this.state.currentPath} />
+          <div id="page-container">
+            <div id="eltaskyline">
+              <img src={elta} alt="electronic tales skyline"/>
+            </div>
+            <div id="main">
+              <Switch>
+                <Route
+                  exact path='/'
+                  render={(props) => <Presentation {...props} passCurrentPath={this.getCurrentPath} />} />
+                <Route
+                  exact path='/why'
+                  render={(props) => <Why {...props} passCurrentPath={this.getCurrentPath} />} />
+                <Route
+                  exact path='/concept'
+                  render={(props) => <Concept {...props} passCurrentPath={this.getCurrentPath} />} />
+                <Route
+                  exact path='/tracks'
+                  render={(props) => <Tracks {...props} passCurrentPath={this.getCurrentPath} />} />
+                <Route
+                  exact path='/signup'
+                  render={(props) => <Signup {...props} passCurrentPath={this.getCurrentPath} />} />
+              </Switch>
+            </div>
+            <Footer />
+          </div>
+        </Router>
+      </MediaQuery>
+      </div>
     );
   }
 }
