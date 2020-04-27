@@ -30,7 +30,9 @@ class Nav extends React.Component {
                     {/* <a href="">La team</a> */}
                 </div>
                 <button id="nav-button" className="button-design desktop-visible">
-                    Je participe&nbsp;!
+                    <Link to="/signup">
+                        Je participe&nbsp;!
+                    </Link>
                 </button>
             </nav>
         );
