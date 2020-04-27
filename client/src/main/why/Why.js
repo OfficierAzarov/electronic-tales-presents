@@ -21,29 +21,21 @@ class Why extends React.Component {
     render() {
         return (
             <div id="why" className="animated">
-                {/* <h3>Pourquoi ce projet&nbsp;?</h3> */}
-                <video width="600" height="500" controls autoPlay >
-                    <source src={trailer} type="video/mp4" />
-                </video>
-                <p>
-                    Grâce à la popularisation des bootcamps, les profils
-                    qui ne sont pas «&nbsp;nés pour être dev&nbsp;» sont de
-                    plus en plus nombreux à intégrer le monde de la
-                    programmation. Et c'est tant mieux 👏
-                    <span className="break-text">Mais
-                    une fois en entreprise, ces personnes se confrontent
-                    souvent à un «&nbsp;mur de verre&nbsp;» de
-                    la part de leurs collègues issu·e·s de formations
-                    plus traditionnelles, bâti sur des références
-                    culturelles ou techniques qu'ils n'ont&nbsp;pas.
-                    Les cons&eacute;quences&nbsp;? Mal-être au travail, abandon de carri&egrave;re... et syndrome de l'imposteur, probl&egrave;me r&eacute;pandu dans le milieu de la tech.</span>
-                    <span className="break-text"><img src={confused} alt="" /><img src={confused2} alt="" /><img src={confused3} alt="" /></span>
-                    <span className="break-text">D&eacute;gommons le syndrome de l'imposteur ensemble&nbsp;!</span>
-                    <span className="break-text">Electronic Tales entend être un safe-space d'apprentissage pour et par les
-                    dévs juniors, ax&eacute; sur la
-                    bienveillance et l'inclusion. Il vise &agrave; r&eacute;duire le gap entre les bootcampeurs&middot;euses/autodidactes et les ing&eacute;nieur&middot;e&middot;s en parlant de tout ce que les formations courtes n'enseignent pas 💾 🔋 🕹️
-                    <span className="break-text">D&eacute;marr&eacute; en d&eacute;cembre 2019, notre projet est actuellement en cours de création. Il sera totalement gratuit et open-source. Le premier release est prévu pour la rentrée 2020. D'ici l&agrave;, nous avons besoin de toi&nbsp;!</span></span>
-                </p>
+                <div id="content-container"> 
+                    <div id="text-container">
+                        <h3>Dégommons le syndrome de l'imposteur ensemble&nbsp;!</h3>
+                        <ul>
+                            <li>Plateforme open-source et 100 % gratuite</li>
+                            <li>Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s</li>
+                            <li>Sortie prévue pour la rentrée 2020</li>
+                        </ul>
+                    </div>
+                    <div id="video-container">
+                        <video controls>
+                            <source src={trailer} type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
                 <div id="why-button-wrap" to="/concept">
                     <button id="why-button" className="button-design">
                         <Link to="/concept">
