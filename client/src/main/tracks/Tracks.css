@@ -3,12 +3,6 @@
     flex-direction: column;
 }
 
-#tracks h3 {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto 4%;
-}
-
 #tracks #worlds-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,7 +31,6 @@
 #tracks p {
     width: 95%;
     margin: 6% auto 0;
-    text-align: center;
 }
 
 #tracks #tracks-button-wrap {

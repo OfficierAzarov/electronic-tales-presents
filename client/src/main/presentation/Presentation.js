@@ -16,10 +16,12 @@ class Presentation extends React.Component {
 
         return (
             <div id="presentation">
-                <h2>
-                    Développeur·euse junior, il t'est déjà arrivé d'avoir des
-                    difficultés pour...
-            </h2>
+                <div className="h-container">
+                    <h2>
+                        Développeur·euse junior, il t'est déjà arrivé d'avoir des
+                        difficultés pour...
+                    </h2>
+                </div>
                 <ul>
                     <li>
                         Te sentir légitime dans le monde de la tech&nbsp;?

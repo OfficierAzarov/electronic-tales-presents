@@ -40,7 +40,9 @@ class Signup extends React.Component {
     render() {
         return (
             <div id="signup" className="animated">
-                <h3>Comment nous aider&nbsp;?</h3>
+                <div className="h-container">
+                    <h3>Comment nous aider&nbsp;?</h3>
+                </div>
                 <div id="steps-container">
                     <div id="step-1">
                         <h4>1</h4>

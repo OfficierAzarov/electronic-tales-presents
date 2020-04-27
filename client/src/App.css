@@ -7,14 +7,9 @@
 }
 
 #eltaskyline {
-<<<<<<< HEAD
-    /* background-color: #176072; */
-    background: rgb(90,140,153);
-    background: linear-gradient(0deg, rgba(90,140,153,1) 0%, rgba(53,98,110,1) 36%, rgba(36,69,69,1) 83%);
-=======
-    background-color: #176072;
+    background: rgb(91,145,158);
+    background: linear-gradient(0deg, rgba(91,145,158,1) 0%, rgba(14,70,84,1) 84%);
     margin-bottom: -1px;
->>>>>>> 4a10d2f85988a7cec35290627fd821659fd3fea1
 }
 
 #page-container {

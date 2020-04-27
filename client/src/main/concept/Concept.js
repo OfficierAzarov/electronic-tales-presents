@@ -87,7 +87,7 @@ class Concept extends React.Component {
     render() {
         return (
             <div id="concept" className="animated">
-                <div id="h-container">
+                <div className="h-container">
                     <h2>&Agrave; Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.</h2>
                     <h3>C'est-à-dire accessible &agrave; tous&middot;tes.</h3>
                     <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel, </span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>

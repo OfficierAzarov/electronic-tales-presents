@@ -1,26 +1,3 @@
-#concept #h-container {
-    margin-top: 8%;
-}
-
-#concept h2, #concept h3, #concept h4 {
-    text-align: center;
-}
-
-#concept h2 {
-    width: 50%;
-    margin: 3% auto;
-}
-
-#concept h3 {
-    width: 60%;
-    margin: 3% auto;
-}
-
-#concept h4 {
-    width: 40%;
-    margin: 3% auto;
-}
-
 #concept i {
     display: block;
     text-align: center;
@@ -119,10 +96,6 @@ li.off p {
     color: #595b63;
 }
 
-
-#concept h3 {
-    width: 60%;
-}
 
 #concept-button-wrap {
     margin: 5% 0 3%;

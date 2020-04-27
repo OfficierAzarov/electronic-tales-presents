@@ -17,31 +17,37 @@ body {
   height: 100%;
 }
 
-h1 {
-  text-transform: uppercase;
-  width: 90%;
-  margin: 0 auto;
+.h-container {
+  margin-top: 8%;
 }
 
 h2 {
   font-size: 2em;
+  width: 50%;
+  margin: 3% auto;
 }
 
-h2, h3 {
+h2, h3, h4 {
   font-weight: 300;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.5em;
+  width: 60%;
+  margin: 3% auto;
 }
 
 h4 {
   font-size: 1.1em;
+  width: 40%;
+  margin: 3% auto;
 }
 
 p {
   font-weight: 500;
   font-size: 0.9em;
+  text-align: center;
 }
 
 a,

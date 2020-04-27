@@ -19,13 +19,15 @@ class Tracks extends React.Component {
 
     render() {
 
-        return (
-            <div id="tracks">
-                <h3 className="animated">Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors. <br />
-                    Elle sera construite autour de trois tracks d'apprentissage&nbsp;:</h3>
+            return (
+                <div id="tracks">
+                        <div className="h-container">
+                            <h3 className="animated">Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors. <br />
+                            Elle sera construite autour de trois tracks d'apprentissage&nbsp;:</h3>
+                        </div>
                 <div id="worlds-container">
                     <div id="modern-world" className="world animated">
-                        <h4>Modern World</h4>
+                        <h4 id="modern-world-header">Modern World</h4>
                         <img src={modernWorld}
                             alt="" />
                         <p>
@@ -34,7 +36,7 @@ class Tracks extends React.Component {
                         <p>Apprends à programmer entre les lignes.</p>
                     </div>
                     <div id="ancient-world" className="world animated">
-                        <h4>Ancient World</h4>
+                        <h4 id="ancient-world-header">Ancient World</h4>
                         <img src={ancientWorld}
                             alt="" />
                         <p> Découvre comment fonctionne un ordinateur. Construis ta machine.
@@ -42,7 +44,7 @@ class Tracks extends React.Component {
                         <p>Plonge dans le monde englouti de la <i>computer science</i>.</p>
                     </div>
                     <div id="imaginarium" className="world animated">
-                        <h4>Imaginarium</h4>
+                        <h4 id="imaginarium-header">Imaginarium</h4>
                         <img src={imaginarium}
                             alt="" />
                         <p>42. Ada Lovelace. St-Isidore. Klingon. Easter eggs. Backdoors. Star + gate/trek/wars. 127.0.0.1.
