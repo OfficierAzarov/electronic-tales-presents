@@ -51,7 +51,7 @@
     display: grid;
     width: 70%;
     grid-template-columns: 1.3fr 0.7fr;
-    margin: 6% auto 0;
+    margin: 8% auto 0;
     transition: opacity 1s ease-in-out,
                 transform 1s;
     transition-delay: 0.2s;

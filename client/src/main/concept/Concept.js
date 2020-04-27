@@ -35,7 +35,7 @@ class Concept extends React.Component {
         window.scrollTo({top: 0, behavior: 'smooth'});
         
         // enables fadeInUp effect for low- and medium-height screens
-        if (window.innerHeight < 700) {
+        if (window.innerHeight < 800) {
             this.setState({isShown: false});
             window.addEventListener('scroll', this.reveal);
         }
@@ -44,8 +44,6 @@ class Concept extends React.Component {
 
     reveal = () => {
         if (this.state.scroll) {
-            console.log("oy");
-            console.log(window.innerHeight);
             this.setState({isShown: true, isTranslated: true});
             this.setState({scroll: false});
         }
@@ -92,12 +90,12 @@ class Concept extends React.Component {
                     <h2>&Agrave; Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.</h2>
                     <h3>C'est-à-dire accessible &agrave; tous&middot;tes.</h3>
                     <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel, </span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>
-                    <i className="fas fa-chevron-down" style={{opacity: this.state.iShown ? 0 : 1}}></i>
+                    <i className="fas fa-chevron-down" style={{opacity: !this.state.isShown ? 1 : 0}}></i>
                 </div>
                 <div id="how-items-container" 
                     style={{ 
                     opacity: this.state.isShown ? 1 : 0,
-                    transform: this.state.isTranslated? 'translateY(-8%)' : 'translateY(0)'}}>
+                    transform: this.state.isTranslated ? 'translateY(-8%)' : 'translateY(0)'}}>
                     <div id="principles">
                         <ul>
                             <li id="safe-space" 
