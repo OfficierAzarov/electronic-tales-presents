@@ -20,6 +20,7 @@ class Concept extends React.Component {
     state = {
         scroll: true,
         isHidden: true,
+        isTranslated: false,
         isRevealed: false,
         isNightSchoolOn: false,
         isSocialOn: false,
@@ -39,7 +40,7 @@ class Concept extends React.Component {
 
     reveal = () => {
         if (this.state.scroll) {
-            this.setState({isHidden: false});
+            this.setState({isHidden: false, isTranslated: true});
             this.setState({scroll: false});
         }
     }
@@ -82,12 +83,18 @@ class Concept extends React.Component {
         return (
             <div id="concept" className="animated">
                 <div id="h-container">
-                    <h2>&Agrave; Electronic Tales, on veut rendre la computer culture <em>human readable</em>.</h2>
+                    <h2>&Agrave; Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.</h2>
                     <h3>C'est-à-dire accessible &agrave; tous&middot;tes.</h3>
                     <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel, </span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>
                     <i className="fas fa-chevron-down" style={{opacity: this.state.isHidden? 1 : 0}}></i>
                 </div>
-                <div id="how-items-container" style={{opacity: this.state.isHidden? 0 : 1}}>
+                <div id="how-items-container" 
+                    style={{ 
+                    opacity: this.state.isHidden? 0 : 1,
+                    transform: this.state.isTranslated? 'translateY(-10%)' : 'translateY(0)'}}>
+                {/* <div id="how-items-container" 
+                    style={{opacity: this.state.isHidden? 0 : 1, 
+                    transform: this.state.isTranslated? 'translateY(100px)' : 'translateY(0)'}}> */}
                     <div id="principles">
                         <ul>
                             <li id="safe-space" 
