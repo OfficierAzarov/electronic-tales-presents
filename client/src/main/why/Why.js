@@ -14,6 +14,8 @@ class Why extends React.Component {
     componentDidMount() {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
+
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
     render() {

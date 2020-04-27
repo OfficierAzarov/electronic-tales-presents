@@ -1,28 +1,87 @@
+#concept #h-container {
+    margin-top: 8%;
+}
+
+#concept h2, #concept h3, #concept h4 {
+    text-align: center;
+}
+
+#concept h2 {
+    width: 50%;
+    margin: 3% auto;
+}
+
+#concept h3 {
+    width: 60%;
+    margin: 3% auto;
+}
+
+#concept h4 {
+    width: 40%;
+    margin: 3% auto;
+}
+
+#concept i {
+    display: block;
+    text-align: center;
+    animation-name: stim;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    transition: opacity 2s ease-in-out;
+}
+
+@keyframes stim {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 #concept li {
     list-style: none;
 }
   
 #how-items-container {
     display: grid;
-    width: 80%;
+    width: 70%;
     grid-template-columns: 1.3fr 0.7fr;
-    margin: 5% auto;
+    margin: 6% auto 0;
+    transition: opacity 1s ease-in-out,
+                transform 1s;
+    transition-delay: 0.2s;
+
+}
+
+#principles {
+    border-right: solid 1px #303237;
 }
 
 #principles ul {
     padding: 0;
-    border-right: solid 1px #303237;
+    margin-right: 2%;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
-    row-gap: 8%;
     height: 100%;
+    row-gap: 2%;
 }
 
 #principles li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    padding: 3% 0;
+}
+
+#principles li:hover {
+    background-color: #303237;
 }
 
 #principles img {
@@ -41,22 +100,25 @@
     align-items: center;
 }
 
-#implementations li p {
+#implementations p {
     text-align: left;
-    color: #595b63;
+    font-size: 0.8em;
 }
 
 #implementations img {
-    filter: grayscale(100%);
     width: 2em;
     height: 2em;
     margin: 0 10% 6% 0;
 }
 
-#implementations li p {
-    text-align: left;
+li.off img {
+    filter: grayscale(100%) brightness(50%);
+}
+
+li.off p {
     color: #595b63;
 }
+
 
 #concept h3 {
     width: 60%;
