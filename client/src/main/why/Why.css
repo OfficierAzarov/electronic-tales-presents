@@ -45,6 +45,7 @@
     margin: 0 auto;
     display: block;
     outline: none;
+    box-shadow: 6px 6px 10px 5px rgba(0,0,0,0.41);
 }
 
 #why-button-wrap {
