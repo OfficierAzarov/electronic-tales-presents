@@ -22,36 +22,40 @@ class Tracks extends React.Component {
             return (
                 <div id="tracks">
                         <div className="h-container">
-                            <h3 className="animated">Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors. <br />
-                            Elle sera construite autour de trois tracks d'apprentissage&nbsp;:</h3>
+                            <h2 className="animated">Notre &eacute;quipe est actuellement en train de concocter une coquette petite plateforme, tout confort et vue sur mer, pour accueillir les devs juniors.</h2>
+                            <h3>Elle sera construite autour de trois tracks d'apprentissage&nbsp;:</h3>
                         </div>
                 <div id="worlds-container">
-                    <div id="modern-world" className="world animated">
-                        <h4 id="modern-world-header">Modern World</h4>
+                    <div id="modern-world" className="world animated">                        
+                        <div className="world-text">
+                            <h4 id="modern-world-header">Modern World</h4>
+                            <p>Débugue. Apprends &agrave; lire le code des autres. Automatise. Survis aux entretiens.
+                            Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.</p>
+                            <p>Apprends à programmer entre les lignes.</p>
+                        </div>
                         <img src={modernWorld}
                             alt="" />
-                        <p>
-                            Débugue. Apprends &agrave; lire le code des autres. Automatise. Survis aux entretiens.
-                            Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.</p>
-                        <p>Apprends à programmer entre les lignes.</p>
                     </div>
                     <div id="ancient-world" className="world animated">
-                        <h4 id="ancient-world-header">Ancient World</h4>
                         <img src={ancientWorld}
                             alt="" />
+                        <div className="world-text">
+                        <h4 id="ancient-world-header">Ancient World</h4>
                         <p> Découvre comment fonctionne un ordinateur. Construis ta machine.
                         Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).</p>
                         <p>Plonge dans le monde englouti de la <i>computer science</i>.</p>
+                        </div>
                     </div>
-                    <div id="imaginarium" className="world animated">
+                    <div id="imaginarium" className="world animated">                        
+                        <div className="world-text">
                         <h4 id="imaginarium-header">Imaginarium</h4>
-                        <img src={imaginarium}
-                            alt="" />
-                        <p>42. Ada Lovelace. St-Isidore. Klingon. Easter eggs. Backdoors. Star + gate/trek/wars. 127.0.0.1.
+                            <p>42. Ada Lovelace. St-Isidore. Klingon. Easter eggs. Backdoors. Star + gate/trek/wars. 127.0.0.1.
                         Marre de ne pas avoir la r&eacute;f &agrave; la machine &agrave; caf&eacute;&nbsp;?
                         </p>
                         <p> Imprègne-toi des mythes et légendes de la <i>bits</i> generation.</p>
-
+                        </div>
+                        <img src={imaginarium}
+                            alt="" />
                     </div>
                 </div >
                 <div className= "button-wrap">
