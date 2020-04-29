@@ -1,5 +1,7 @@
 # Bienvenue chez Electronic Tales !
 
+https://electronic-tales-presents.herokuapp.com
+
 Grâce à la popularisation des bootcamps, les profils qui ne sont pas « nés pour être dev » sont de plus en plus nombreux à intégrer le monde de la programmation. Et c'est tant mieux 👏
 
 Mais une fois en entreprise, ces personnes se confrontent souvent à un « mur de verre » de la part de leurs collègues issu·e·s de formations plus traditionnelles, bâti sur des références culturelles ou techniques qu'ils n'ont pas. Les conséquences ? Mal-être au travail, abandon de carrière... et syndrome de l'imposteur, problème répandu dans le milieu de la tech.
