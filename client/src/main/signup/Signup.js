@@ -75,7 +75,7 @@ class Signup extends React.Component {
                     </div>
                     <div className="regular-colums">
                         <h4>3</h4>
-                        <p>N'aies pas peur&nbsp;! En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeurs sur le z-index en css
+                        <p>N'aie pas peur&nbsp;! En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeurs sur le z-index en css
                             ou de recoder <a href="https://www.impots.gouv.fr/portail/" target="_blank" rel="noopener noreferrer">impots.gouv</a> en dark theme. <br /><br />
                             Tu vas voir, c'est tout simple&nbsp;!
                         </p>
