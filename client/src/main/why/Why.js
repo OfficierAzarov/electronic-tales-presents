@@ -24,7 +24,6 @@ class Why extends React.Component {
                         <h3>Dégommons le syndrome de l'imposteur ensemble&nbsp;!</h3>
                         <ul>
                             <li><Emoji symbol="🍰" label="shortcake" size="2em"/>Plateforme open-source et 100 % gratuite&nbsp;</li>
-                            {/* <li>🍰 Plateforme open-source et 100 % gratuite&nbsp;</li> */}
                             <li>🌈 Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s</li>
                             <li>📆 Sortie prévue pour la rentrée 2020&nbsp;</li>
                         </ul>
