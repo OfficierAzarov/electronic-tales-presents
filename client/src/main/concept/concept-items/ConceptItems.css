@@ -8,18 +8,6 @@
     transition-delay: 0.2s;
 }
 
-@keyframes stim {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 #how-items-container li {
     list-style: none;
 }
@@ -48,6 +36,7 @@
 
 #principles li:hover {
     background-color: #303237;
+
 }
 
 #principles img {
