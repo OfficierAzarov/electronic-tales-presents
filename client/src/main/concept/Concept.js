@@ -24,12 +24,22 @@ class Concept extends React.Component {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
 
+        this.goUp(this.adaptDisplay);
+    }
+      
+    goUp = (callback) => {
         window.scrollTo({top: 0, behavior: 'smooth'});
+        setTimeout(callback, 500);
+    }
+    
+
+    adaptDisplay = () => {
         if (document.body.scrollTop === 0) {
             if (window.innerHeight < 800) {
                 window.addEventListener('scroll', this.pop);
-            } else {
-                this.setState({isShown: true});
+            }
+            else {
+                this.setState({ isShown: true });
             }
         }
     }
