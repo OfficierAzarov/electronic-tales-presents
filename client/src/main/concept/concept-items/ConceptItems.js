@@ -100,7 +100,8 @@ class ConceptItems extends React.Component {
                 <div id="principles">
                     <ul>
                         {this.principles.map(item => (
-                            <li id={item.id} 
+                            <li id={item.id}
+                                key={item.id}
                                 onMouseEnter={() => this.hoverEffectOn(item)}
                                 onMouseLeave={() => this.hoverEffectOff()}>
                                     <img src={item.img} />
@@ -111,7 +112,9 @@ class ConceptItems extends React.Component {
                 <div id="implementations">
                     <ul>
                         {this.implementations.map(item => (
-                            <li id={item.id} className={this.shouldIShow(item) ? "":"off"}>
+                            <li id={item.id} 
+                                key={item.id} 
+                                className={this.shouldIShow(item) ? "":"off"}>
                                 <img src={item.img}/>
                                 <p>{item.text}</p>
                             </li>

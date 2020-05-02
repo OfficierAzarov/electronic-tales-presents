@@ -36,14 +36,12 @@ class Concept extends React.Component {
 
     pop = () => {
         if (this.state.scroll) {
-            console.log("bip");
             this.setState({isShown: true, isTranslated: true}, 
                             this.setState({scroll: false}));
         }
     }
 
     scrollDown = () => {
-        console.log(this.ref.current);
         this.ref.current.scrollIntoView({behavior: "smooth", block: "center"});
     }
 
