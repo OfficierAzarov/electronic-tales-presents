@@ -15,14 +15,18 @@ import gameboy from '../../../resources/img/icons/gameboy.png';
 class ConceptItems extends React.Component {
 
     state = {
-        isPopping: false,
+        isShown: false,
+        isTranslated: false,
         shown: []
     }
 
     componentDidUpdate(prevProps) {
-        if (this.props.isPopping !== prevProps.isPopping) {
-            this.setState({isPopping: this.props.isPopping});
-        }
+        if (this.props.isShown !== prevProps.isShown) {
+            this.setState({isShown: this.props.isShown});
+        };
+        if (this.props.isTranslated !== prevProps.isTranslated) {
+            this.setState({isTranslated: this.props.isTranslated});
+        };
     }
 
     principles = [
@@ -91,8 +95,8 @@ class ConceptItems extends React.Component {
     render() {
         return (
             <div id="how-items-container"
-                style={{opacity: this.state.isPopping ? 1 : 0,
-                        transform: this.state.isPopping ? 'translateY(-8%)' : 'translateY(0)'}}>
+                style={{opacity: this.state.isShown ? 1 : 0,
+                        transform: this.state.isTranslated ? "translateY(-8%)":""}}>
                 <div id="principles">
                     <ul>
                         {this.principles.map(item => (
