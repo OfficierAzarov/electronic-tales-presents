@@ -9,6 +9,11 @@ import './Concept.css';
 
 class Concept extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.ref = React.createRef();
+    }
+
     state = {
         isShown: false,
         isTranslated: false,
@@ -37,12 +42,10 @@ class Concept extends React.Component {
         }
     }
 
-    // scrollDown = () => {
-    //     window.scrollBy({
-    //         top: 300,
-    //         behavior: 'smooth'
-    //     })
-    // }
+    scrollDown = () => {
+        console.log(this.ref.current);
+        this.ref.current.scrollIntoView({behavior: "smooth", block: "center"});
+    }
 
     render() {
         return (
@@ -55,8 +58,10 @@ class Concept extends React.Component {
                     style={{opacity: this.state.isShown || window.innerHeight > 800 ? 0 : 1}}
                     onClick={this.scrollDown}></i>
                 </div>
-                <ConceptItems isShown={this.state.isShown}
-                    isTranslated={this.state.isTranslated}/>
+                <div ref={this.ref}>
+                    <ConceptItems isShown={this.state.isShown}
+                    isTranslated={this.state.isTranslated} />
+                </div>
                 <div className= "button-wrap" to="/tracks">
                     <button id="concept-button" className="button-design">
                         <Link to="/tracks">
