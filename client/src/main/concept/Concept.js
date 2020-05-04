@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import { emitCurrentPath } from '../../utils/Utils';
-
+import Button from '../../elements/buttons/Button';
 import ConceptItems from './concept-items/ConceptItems';
+import { emitCurrentPath } from '../../utils/Utils';
 
 import './Concept.css';
 
@@ -70,14 +69,10 @@ class Concept extends React.Component {
                     <ConceptItems isShown={this.state.isShown}
                     isTranslated={this.state.isTranslated} />
                 </div>
-                <div className= "button-wrap" to="/tracks">
-                    <button id="concept-button" className="button-design">
-                        <Link to="/tracks">
-                            Super&nbsp;! Et concrètement&nbsp;?
-                        </Link>
-                    </button>
-                </div>
-        </div>
+                <Button 
+                    text="Super&nbsp;! Et concr&egrave;tement&nbsp;?"
+                    goto="/tracks" />
+            </div>
         )
     }
 }

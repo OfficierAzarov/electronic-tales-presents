@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { emitCurrentPath } from '../../utils/Utils';
 
+import Button from '../../elements/buttons/Button';
+import { emitCurrentPath } from '../../utils/Utils';
 
 import './Presentation.css';
 
@@ -33,13 +33,9 @@ class Presentation extends React.Component {
                         comp&eacute;tences&nbsp;?
               </li>
                 </ul>
-                <div className= "button-wrap">                
-                    <button id="presentation-button" className="button-design">
-                        <Link to="/why">
-                        Grumpf, oui&nbsp;!
-                        </Link>
-                    </button>
-                </div>
+                <Button 
+                    text="Grumpf, oui&nbsp;!"
+                    goto="/why" />
             </div>
         );
     }

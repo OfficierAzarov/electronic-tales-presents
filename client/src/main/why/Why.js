@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import Button from '../../elements/buttons/Button';
 import Emoji from '../../elements/Emoji';
+
 import { emitCurrentPath } from '../../utils/Utils';
 
-
 import './Why.css';
+
 import trailer from '../../resources/video/trailer-wip.mp4';
 
 class Why extends React.Component {
@@ -34,13 +36,9 @@ class Why extends React.Component {
                         </video>
                     </div>
                 </div>
-                <div id="why-button-wrap" to="/concept">
-                    <button id="why-button" className="button-design">
-                        <Link to="/concept">
-                            Youpi, dites-m'en plus&nbsp;!
-                        </Link>
-                    </button>
-                </div>
+                <Button 
+                    text="Youpi, dites-m'en plus&nbsp;!"
+                    goto="/concept" />
             </div>
         );
     }
