@@ -32,22 +32,13 @@
     align-items: center;
     cursor: pointer;
     padding: 3% 0;
+    transition: border-radius 1s ease-out;
+    border-radius: 0.5em;
 }
 
 #principles li:hover {
     background-color: #303237;
-    border-radius: 1em;
-    animation-name: roundUp;
-    animation-duration: 2s;
-}
-
-@keyframes roundUp {
-    50% {
-        border-radius: 2em;
-    }
-    100% {
-        border-radius: 3em;
-    }
+    border-radius: 2em;
 }
 
 #principles img {
