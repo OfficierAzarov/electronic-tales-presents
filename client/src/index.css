@@ -35,6 +35,10 @@ button:focus {
   color: #fff;
 }
 
+.button-design:hover {
+  background-color: #ea1e76cb;
+}
+
 .h-container {
   margin-top: 8%;
 }
