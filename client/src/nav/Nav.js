@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Nav.css';
+
 import logo from '../resources/img/logo-transparent-smol-group.png';
 
 class Nav extends React.Component {
@@ -29,7 +30,7 @@ class Nav extends React.Component {
                     <Link to="/signup" className={this.isActive('/signup')}>Nous rejoindre</Link>
                     {/* <a href="">La team</a> */}
                 </div>
-                <button id="nav-button" className="button-design desktop-visible">
+                <button id="nav-button" className="button-design">
                     <Link to="/signup">
                         Je participe&nbsp;!
                     </Link>

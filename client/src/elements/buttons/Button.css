@@ -2,17 +2,3 @@
     margin: 5% 0 3%;
     text-align: center;
 }
-  
-.button-design {
-    border-radius: 3em;
-    background-color: #ea1e78;
-    border: none;
-    color: #fff;
-    white-space: nowrap;
-    font-size: 1em;
-    padding: 1% 2%;
-}
-  
-.button-design a {
-    color: #fff;
-}
