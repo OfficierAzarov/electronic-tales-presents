@@ -32,7 +32,7 @@
     align-items: center;
     cursor: pointer;
     padding: 3% 0;
-    transition: border-radius 1s ease-out;
+    transition: border-radius 0.8s ease-out;
     border-radius: 0.5em;
 }
 

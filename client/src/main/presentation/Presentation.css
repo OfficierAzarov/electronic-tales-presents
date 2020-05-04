@@ -44,7 +44,7 @@
   animation-delay: 3.4s;
 }
 
-#presentation-button {
+#animation-wrapper {
   padding: 1% 5%;
   opacity: 0;
   animation-name: fadeIn, shake;
@@ -55,10 +55,10 @@
 
 @keyframes fadeIn {
   0% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
 

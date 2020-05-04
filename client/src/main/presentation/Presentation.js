@@ -7,9 +7,17 @@ import './Presentation.css';
 
 class Presentation extends React.Component {
 
+    sentences = ['Te sentir légitime dans le monde de la tech ?',
+                'Évaluer ton niveau réel?',
+                'Exprimer tes insécurités au travail ?',
+                'Te motiver pour continuer à monter en compétences ?']
+
     componentDidMount() {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
+
+        console.log(window.innerHeight);
+
     }
 
     render() {
@@ -23,19 +31,17 @@ class Presentation extends React.Component {
                     </h2>
                 </div>
                 <ul>
-                    <li>
-                        Te sentir légitime dans le monde de la tech&nbsp;?
-              </li>
-                    <li>&Eacute;valuer ton niveau r&eacute;el&nbsp;?</li>
-                    <li>Exprimer tes insécurités au travail&nbsp;?</li>
-                    <li>
-                        Te motiver pour continuer à monter en
-                        comp&eacute;tences&nbsp;?
-              </li>
+                    {this.sentences.map((sentence, i) => 
+                        <li key={i}>{sentence}</li>)
+
+                    }
                 </ul>
-                <Button 
-                    text="Grumpf, oui&nbsp;!"
-                    goto="/why" />
+                <div id="animation-wrapper">
+                    <Button 
+                        text="Grumpf, oui&nbsp;!"
+                        goto="/why" />
+                </div>
+                
             </div>
         );
     }
