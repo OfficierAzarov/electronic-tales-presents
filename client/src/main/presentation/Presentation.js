@@ -7,6 +7,10 @@ import './Presentation.css';
 
 class Presentation extends React.Component {
 
+    state = {
+        largeText: false
+    }
+
     sentences = ['Te sentir légitime dans le monde de la tech ?',
                 'Évaluer ton niveau réel?',
                 'Exprimer tes insécurités au travail ?',
@@ -16,7 +20,9 @@ class Presentation extends React.Component {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
 
-        console.log(window.innerHeight);
+        if (window.innerHeight < 700) {
+            this.setState({largeText: true});
+        }
 
     }
 
@@ -24,8 +30,9 @@ class Presentation extends React.Component {
 
         return (
             <div id="presentation">
-                <div className="h-container">
-                    <h2>
+                <div className="h-container" 
+                style={{marginTop: this.state.largeText ? "3%" : ""}}>
+                    <h2 style={{width: this.state.largeText ? "90%" : ""}}>
                         Développeur·euse junior, il t'est déjà arrivé d'avoir des
                         difficultés pour...
                     </h2>
@@ -41,7 +48,6 @@ class Presentation extends React.Component {
                         text="Grumpf, oui&nbsp;!"
                         goto="/why" />
                 </div>
-                
             </div>
         );
     }

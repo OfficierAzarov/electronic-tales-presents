@@ -45,7 +45,6 @@
 }
 
 #animation-wrapper {
-  padding: 1% 5%;
   opacity: 0;
   animation-name: fadeIn, shake;
   animation-duration: 0.5s, 0.5s;
