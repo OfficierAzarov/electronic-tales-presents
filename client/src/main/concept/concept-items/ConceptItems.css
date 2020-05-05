@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
     padding: 3% 0;
     transition: border-radius 0.8s ease-out;
     border-radius: 0.5em;
