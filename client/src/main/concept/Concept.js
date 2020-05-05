@@ -1,101 +1,57 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+import Button from '../../elements/buttons/Button';
+import ConceptItems from './concept-items/ConceptItems';
 import { emitCurrentPath } from '../../utils/Utils';
 
-
 import './Concept.css';
-import community from '../../resources/img/icons/community.svg';
-import weight from '../../resources/img/icons/weight.svg';
-import geek from '../../resources/img/icons/geek.svg';
-import stairs from '../../resources/img/icons/stairs.svg';
-
-import tea from '../../resources/img/icons/tea.png';
-import chat from '../../resources/img/icons/chatcolor.png';
-import learning from '../../resources/img/icons/learning.png';
-import gameboy from '../../resources/img/icons/gameboy.png';
 
 class Concept extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.ref = React.createRef();
+    }
+
     state = {
-        scroll: false,
-        isHidden: true,
+        isShown: false,
         isTranslated: false,
-        isRevealed: false,
-        isNightSchoolOn: false,
-        isSocialOn: false,
-        isLearningOn: false,
-        isCoolContentOn: false
+        scroll: true
     }
 
     componentDidMount() {
         // passes the location fo the app (current path) to the parent (App.js)
         emitCurrentPath(this.props);
 
-        this.goUp(this.shouldIReveal);
-
+        this.goUp(this.adaptDisplay);
     }
-
+      
     goUp = (callback) => {
         window.scrollTo({top: 0, behavior: 'smooth'});
+        setTimeout(callback, 500);
+    }
+    
+
+    adaptDisplay = () => {
         if (document.body.scrollTop === 0) {
-            this.setState({scroll: true});
-            setTimeout(callback, 500);
+            if (window.innerHeight < 800) {
+                window.addEventListener('scroll', this.pop);
+            }
+            else {
+                this.setState({ isShown: true });
+            }
         }
     }
 
-    shouldIReveal = () => {
-        if (window.innerHeight < 800) {
-            window.addEventListener('scroll', this.reveal);
-        } else {
-            this.setState({isHidden: false});
-        }
-    }
-
-    reveal = () => {
+    pop = () => {
         if (this.state.scroll) {
-            this.setState({isHidden: false, isTranslated: true});
-            this.setState({scroll: false});
+            this.setState({isShown: true, isTranslated: true}, 
+                            this.setState({scroll: false}));
         }
-    }
-
-    hoverEffectOn = (e) => {
-        switch (e.target.getAttribute('id')) {
-            case 'safe-space':
-                this.setState({isSocialOn: true});
-                break;
-            case 'muscle':
-                this.setState({isNightSchoolOn: true, isLearningOn: true});
-                break;  
-            case 'culture':
-                this.setState({isCoolContentOn: true});
-                break;    
-            case 'level-up':
-                this.setState(        
-                    {
-                        isNightSchoolOn: true,
-                        isSocialOn: true,
-                        isLearningOn: true,
-                        isCoolContentOn: true
-                    }
-                );
-        }
-    }
-
-    hoverEffectOff = (e) => {
-        this.setState({
-            isNightSchoolOn: false,
-            isSocialOn: false,
-            isLearningOn: false,
-            isCoolContentOn: false
-        });
     }
 
     scrollDown = () => {
-        window.scrollBy({
-            top: 300,
-            behavior: 'smooth'
-        })
+        this.ref.current.scrollIntoView({behavior: "smooth", block: "center"});
     }
 
     render() {
@@ -104,73 +60,19 @@ class Concept extends React.Component {
                 <div className="h-container">
                     <h2>&Agrave; Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.</h2>
                     <h3>C'est-à-dire accessible &agrave; tous&middot;tes.</h3>
-                    <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel, </span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>
-                    <i className="fas fa-chevron-down" 
-                    style={{opacity: !this.state.isHidden ? 0 : 1}}
+                    <h4>Pour cela, on s'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel,</span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).</h4>
+                    <i className="fas fa-chevron-down"
+                    style={{opacity: this.state.isShown || window.innerHeight > 800 ? 0 : 1}}
                     onClick={this.scrollDown}></i>
                 </div>
-                <div id="how-items-container" 
-                    style={{ 
-                    opacity: this.state.isHidden ? 0 : 1,
-                    transform: this.state.isTranslated ? 'translateY(-8%)' : 'translateY(0)'}}>
-                    <div id="principles">
-                        <ul>
-                            <li id="safe-space" 
-                                onMouseEnter={this.hoverEffectOn}
-                                onMouseLeave={this.hoverEffectOff}>
-                                <img src={community} alt="" />
-                                <p>Fabriquer un safe-space d'entraide et de bienveillance entre devs juniors</p>
-                            </li>
-                            <li id="muscle"
-                                onMouseEnter={this.hoverEffectOn}
-                                onMouseLeave={this.hoverEffectOff}>
-                                <img src={weight} alt="" />
-                                <p>Aider les devs juniors à muscler leurs savoirs en software et&nbsp;hardware</p>
-                            </li>
-                            <li id="culture"
-                                onMouseEnter={this.hoverEffectOn}
-                                onMouseLeave={this.hoverEffectOff}>
-                                <img src={geek} alt="" />
-                                <p>Analyser et décrypter les codes de la culture geek</p>
-                            </li>
-                            <li id="level-up"
-                                onMouseEnter={this.hoverEffectOn}
-                                onMouseLeave={this.hoverEffectOff}>
-                                <img src={stairs} alt="" />
-                                <p>Motiver les devs juniors à continuer à apprendre en parallèle de leur
-                        job</p>
-                            </li>
-                        </ul>
-                    </div>
-                <div id="implementations">
-                    <ul>
-                        <li className={this.state.isNightSchoolOn? '':'off'}>
-                            <img src={tea} alt="" />
-                            <p>Cours du soir et workshops, en ligne et en vrai.</p>
-                        </li>
-                        <li className={this.state.isSocialOn? '':'off'}>
-                            <img src={chat} alt="" />
-                            <p>Wall social/Discord/autre moyen de communiquer entre juniors de façon anonyme (you name it.)</p>
-                        </li>
-                        <li className={this.state.isLearningOn? '':'off'}>
-                            <img src={learning} alt="" />
-                            <p>Micro-learning, exercices interactifs, sandbox - pour apprendre partout sans ZzzZ.</p>
-                        </li>
-                        <li className={this.state.isCoolContentOn? '':'off'}>
-                            <img src={gameboy} alt="" />
-                            <p>Des contenus cool dans ta boîte mail, ton Insta ou ton Facebook (mais il paraît que c'est pour les vieux).</p>
-                        </li>
-                    </ul>
+                <div ref={this.ref}>
+                    <ConceptItems isShown={this.state.isShown}
+                    isTranslated={this.state.isTranslated} />
                 </div>
+                <Button 
+                    text="Super&nbsp;! Et concr&egrave;tement&nbsp;?"
+                    goto="/tracks" />
             </div>
-            <div className= "button-wrap" to="/tracks">
-                <button id="concept-button" className="button-design">
-                    <Link to="/tracks">
-                        Super&nbsp;! Et concrètement&nbsp;?
-                    </Link>
-                </button>
-            </div>
-        </div>
         )
     }
 }

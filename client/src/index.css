@@ -17,6 +17,28 @@ body {
   height: 100%;
 }
 
+button:focus {
+  outline: none
+}
+
+.button-design {
+  border-radius: 3em;
+  background-color: #ea1e78;
+  border: none;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 1em;
+  padding: 1% 2%;
+}
+
+.button-design a {
+  color: #fff;
+}
+
+.button-design:hover {
+  background-color: #ea1e76cb;
+}
+
 .h-container {
   margin-top: 8%;
 }
@@ -63,26 +85,6 @@ a {
 
 a:hover {
   color: #ffffff;
-}
-
-.button-wrap {
-  margin: 5% 0 3%;
-  text-align: center;
-}
-
-.button-design {
-  border-radius: 3em;
-  background-color: #ea1e78;
-  border: none;
-  color: #fff;
-  padding: 1% 5%;
-  margin: 3% auto;
-  display: inline-block;
-  font-size: 0.9em;
-}
-
-.button-design a {
-  color: #fff;
 }
 
 .strike {

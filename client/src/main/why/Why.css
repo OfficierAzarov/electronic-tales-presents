@@ -1,16 +1,10 @@
-#why {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #content-container {
     width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
     align-items: center;
-    margin-top: 5%;
+    margin: 5% auto 0;
 }
 
 #text-container {

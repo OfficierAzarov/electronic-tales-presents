@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import Button from '../../elements/buttons/Button';
+
 import { emitCurrentPath } from '../../utils/Utils';
 
-
 import './Tracks.css';
+
 import modernWorld from '../../resources/img/modern-world-animation-pretty-ok.gif';
 import ancientWorld from '../../resources/img/ancient-world-animation-pretty-ok.gif';
 import imaginarium from '../../resources/img/imaginarium-animation.gif';
@@ -57,13 +59,9 @@ class Tracks extends React.Component {
                             alt="" />
                     </div>
                 </div >
-                <div className= "button-wrap">
-                    <button id="tracks-button" className="button-design">
-                        <Link to="/signup">
-                            Je veux vous aider, je participe&nbsp;!
-                        </Link>
-                    </button>
-                </div>
+                <Button 
+                    text="Ok, I'm in&nbsp;!"
+                    goto="/signup" />
             </div>
         );
     }
