@@ -8,18 +8,19 @@ import Presentation from './main/presentation/Presentation.js';
 import Why from './main/why/Why.js';
 import Concept from './main/concept/Concept.js';
 import Tracks from './main/tracks/Tracks.js';
+import Progress from './main/progress/Progress';
 import Signup from './main/signup/Signup.js';
 
 import './App.css';
+
 import elta from '../src/resources/img/eltaskyline.svg';
 import logo from '../src/resources/img/logo-transparent-smol-group.png';
 
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = { currentPath: null };
+  state = {
+    currentPath: null
   }
 
   getCurrentPath = (currentPathFromChild) => {
@@ -59,6 +60,9 @@ class App extends React.Component {
                 <Route
                   exact path='/tracks'
                   render={(props) => <Tracks {...props} passCurrentPath={this.getCurrentPath} />} />
+                <Route
+                  exact path='/progress'
+                  render={(props) => <Progress {...props} passCurrentPath={this.getCurrentPath} />} />
                 <Route
                   exact path='/signup'
                   render={(props) => <Signup {...props} passCurrentPath={this.getCurrentPath} />} />

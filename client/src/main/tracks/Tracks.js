@@ -60,7 +60,7 @@ class Tracks extends React.Component {
                     </div>
                 </div >
                 <Button 
-                    text="Ok, I'm in&nbsp;!"
+                    text="Et du coup, ça avance bien&nbsp;?"
                     goto="/signup" />
             </div>
         );

@@ -1,0 +1,68 @@
+#progress-container {
+    display: flex;
+    background-color: #303237;
+    padding: 3% 6%;
+    border-radius: 3em;
+}
+
+#progress-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#stations {
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+
+#station-names {
+    padding-left: 4em;
+}
+
+#station-names li {
+    padding-left: 3em;
+    transform: rotate(12deg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.2em;
+}
+
+#station-names p {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#stations li {
+    margin-bottom: 2em;
+    width: 3em;
+    height: 3em;
+    z-index: 1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.station-full {
+    background-color: #ffffff;
+}
+
+.station-empty {
+    border: 5px solid #ffffff;
+    background-color: #121212;
+}
+
+.comment {
+    color: #ffffff7a;
+}
+
+#progress-bar {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 44%;
+    background-color: #ffffff;
+    height: 100%;
+    width: 0.5em;
+    border-radius: 0.5em;
+}
