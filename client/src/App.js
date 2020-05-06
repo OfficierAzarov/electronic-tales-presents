@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      <MediaQuery maxDeviceWidth={768}>
+      {/* <MediaQuery maxDeviceWidth={768}>
         <div id="little-screens">
           <img src={logo} alt="electronic tales logo"/>
           <p>Notre équipe de lutins du dev
@@ -38,8 +38,8 @@ class App extends React.Component {
             Translate-toi jusqu'à un desktop ou reviens un peu plus tard.
           </p>
         </div>
-      </MediaQuery>
-      <MediaQuery minDeviceWidth={769}>
+      </MediaQuery> */}
+      {/* <MediaQuery minDeviceWidth={769}> */}
         <Router>
           <Nav currentPath={this.state.currentPath} />
           <div id="page-container">
@@ -71,7 +71,7 @@ class App extends React.Component {
             <Footer />
           </div>
         </Router>
-      </MediaQuery>
+      {/* </MediaQuery> */}
       </div>
     );
   }
