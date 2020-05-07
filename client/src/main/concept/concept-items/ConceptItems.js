@@ -71,7 +71,7 @@ class ConceptItems extends React.Component {
         {   
             id: "microlearning",
             img: learning,
-            text: "Micro-learning, exercices interactifs, sandbox - pour apprendre partout sans ZzzZ."
+            text: "Micro-learning, storytelling, sandbox - pour apprendre partout sans ZzzZ."
         },
         {   
             id: "coolcontent",
