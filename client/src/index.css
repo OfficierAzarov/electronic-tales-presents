@@ -9,7 +9,7 @@ body {
   /* MORNING background: linear-gradient(to right, #FFC371, #FF5F6D); */
   /* overflow: hidden; */
   /* height: 100%; */
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #e9e9e9;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 button:focus {
-  outline: none
+  outline: none;
 }
 
 .button-design {
@@ -49,7 +49,9 @@ h2 {
   margin: 3% auto;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 300;
   text-align: center;
 }
@@ -92,7 +94,7 @@ a:hover {
 }
 
 .animated {
-  opacity:0;
+  opacity: 0;
   animation: fadeIn 2s;
   animation-fill-mode: forwards;
 }

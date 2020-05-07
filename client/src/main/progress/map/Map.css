@@ -1,0 +1,119 @@
+#map {
+    background-color: #303237;
+    border-radius: 3em;
+    padding: 5% 6%;
+    margin: 10% 5%;
+}
+
+#progress-container {
+    position: relative;
+}
+
+.station-container {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr;
+    position: relative;
+}
+
+.names-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: rotate(6deg);
+    margin-top: 1em;
+}
+
+.names-container p {
+    margin: 0 0 1%;
+    text-align: left;
+    transition: opacity 0.3s;
+}
+
+.station {
+    margin: 0 2em 0 3em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #303237;
+    border: 5px solid #ffffff;
+}
+
+.station:hover {
+    background-color: #ea1e78;
+}
+
+.done {
+    background-color: #a11552;
+}
+
+.comment {
+    color: #ffffff7a;
+    width: 90%;
+}
+
+#progress-bar {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    transform: translate(3.8em, 0%);
+    background-color: #ffffff;
+    height: 85%;
+    width: 0.5em;
+    border-radius: 0.5em;
+}
+
+#here-station-container {
+    display: flex;
+}
+
+#here-station-container i {
+    font-size: 2em;
+    animation: blueGlow 1.8s, move 1.8s;
+    padding-bottom: 0.5em;
+    animation-iteration-count:infinite;
+}
+
+@keyframes move {
+    0% {
+        transform:  translate(-0.2em, 0);
+    }
+    50% {
+        transform:  translate(0em, 0);
+    }
+    100% {
+        transform:  translate(-0.2em, 0);
+    }
+}
+
+#here-station {
+    background-color: #ea1e78;
+    margin: 0 0 0 1.3em;
+}
+
+#here-station:hover {
+    background-color: #e470a2;
+}
+
+#here-station-name {
+    animation-name: blueGlow;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blueGlow {
+    0% {
+        text-shadow:
+        none 
+    }
+    50% {
+        text-shadow:
+        0 0 0.4em rgb(0, 225, 255),
+        0 0 0.8em rgb(0, 225, 255), 
+        0 0 1.6em rgb(0, 255, 255); 
+    }
+    100% {
+        text-shadow:
+       none 
+    }
+}
