@@ -1,37 +1,52 @@
-import React from 'react';
+import React from "react";
 
-import Map from './map/Map';
-import { emitCurrentPath } from '../../utils/Utils';
+import withDisplay from "../../elements/with-display/withDisplay";
+import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
+import Map from "./map/Map";
+import Button from "../../elements/buttons/Button";
+import * as Utils from "../../utils/Utils";
 
-import './Progress.css';
+import "./Progress.css";
 
 class Progress extends React.Component {
+  constructor(props) {
+    super(props);
+    this.ref = React.createRef();
+  }
 
-    componentDidMount() {
-        // passes the location fo the app (current path) to the parent (App.js)
-        emitCurrentPath(this.props);
+  headerTexts = {
+    big: "Roadmap",
+    middle: "Enfin, où on en est, quoi.",
+    little: "Mais ça sonne mieux, «&nbsp;roadmap&nbsp;», non&nbsp;?",
+  };
 
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
+  scrollDown = () => {
+    this.ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
-    render() {
-        return(
-            <div>
-                <div className="h-container">
-                    <h2>Roadmap</h2>
-                    <h3>Enfin, où on en est, quoi.</h3>
-                    <h4>(Mais ça sonne mieux, «&nbsp;roadmap&nbsp;», non&nbsp;?)</h4>
-                    <i className="fas fa-chevron-down"></i>
-                    {/* <i className="fas fa-chevron-down"
-                    style={{opacity: this.state.isShown || window.innerHeight > 800 ? 0 : 1}}
-                    onClick={this.scrollDown}></i> */}
-                </div>
-            <Map />
-
-            </div>
-        )
-    }
-
+  render() {
+    return (
+      <div>
+        <InteractiveHeader
+          bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
+          middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
+          littleText={Utils.convertToCleanHtml(this.headerTexts.little)}
+          isShown={this.props.isShown}
+          scrollDown={this.scrollDown}
+        />
+        <div ref={this.ref}>
+          <Map
+            isShown={this.props.isShown}
+            isTranslated={this.props.isTranslated}
+          />
+        </div>
+        <Button
+          text="Super&nbsp;! Et concr&egrave;tement&nbsp;?"
+          goto="/tracks"
+        />
+      </div>
+    );
+  }
 }
 
-export default Progress;
+export default withDisplay(Progress);
