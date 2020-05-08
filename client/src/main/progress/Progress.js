@@ -32,18 +32,16 @@ class Progress extends React.Component {
           middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
           littleText={Utils.convertToCleanHtml(this.headerTexts.little)}
           isShown={this.props.isShown}
+          isClickable={!this.props.isShown}
           scrollDown={this.scrollDown}
         />
-        <div ref={this.ref}>
+        <div ref={this.ref} className="ref-wrapper">
           <Map
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
           />
         </div>
-        <Button
-          text="Super&nbsp;! Et concr&egrave;tement&nbsp;?"
-          goto="/tracks"
-        />
+        <Button text="Je participe&nbsp;!" goto="/signup" />
       </div>
     );
   }

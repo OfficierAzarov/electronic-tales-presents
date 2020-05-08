@@ -2,8 +2,9 @@
   background-color: #303237;
   border-radius: 3em;
   padding: 5% 6%;
-  margin: 25% 5%;
+  margin: 15% auto 0;
   transition: opacity 1s ease-in-out, transform 1s;
+  transition-delay: 0.2s;
 }
 
 #progress-container {
@@ -59,7 +60,7 @@
   top: 0;
   transform: translate(3.8em, 0%);
   background-color: #ffffff;
-  height: 85%;
+  height: 90%;
   width: 0.5em;
   border-radius: 0.5em;
 }

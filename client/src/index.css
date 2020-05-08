@@ -99,6 +99,11 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
+.ref-wrapper {
+  overflow: "overlay";
+  padding-top: 5%;
+}
+
 /* ---- Reponsive rules ---- */
 
 /* ---- Mobile (default) ---- */

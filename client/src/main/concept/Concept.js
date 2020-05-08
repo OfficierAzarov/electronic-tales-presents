@@ -19,7 +19,7 @@ class Concept extends React.Component {
       "À Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.",
     middle: "C'est-à-dire accessible &agrave; tous&middot;tes.",
     little:
-      'Pour cela, on s\'est assis&middot;e&middot;s, <span className="strike">on a mang&eacute; des tartines au beurre demi-sel,</span> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).',
+      "Pour cela, on s'est assis&middot;e&middot;s, <strike>on a mang&eacute; des tartines au beurre demi-sel,</strike> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).",
   };
 
   scrollDown = () => {
@@ -34,9 +34,10 @@ class Concept extends React.Component {
           middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
           littleText={Utils.convertToCleanHtml(this.headerTexts.little)}
           isShown={this.props.isShown}
+          isClickable={!this.props.isShown}
           scrollDown={this.scrollDown}
         />
-        <div ref={this.ref}>
+        <div ref={this.ref} className="ref-wrapper">
           <ConceptItems
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
