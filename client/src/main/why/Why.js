@@ -25,7 +25,6 @@ class Why extends React.Component {
                     <div id="text-container">
                         <h3>Dégommons le syndrome de l'imposteur ensemble&nbsp;!</h3>
                         <ul>
-<<<<<<< HEAD
                             <li>
                                 <Emoji symbol="🍰" label="shortcake" size="1.2em"/>
                                 &nbsp;Plateforme open-source et 100 % gratuite&nbsp;
@@ -38,11 +37,6 @@ class Why extends React.Component {
                                 <Emoji symbol="📆" label="tear-off calendar" size="1.2em"/>
                                 &nbsp;Sortie prévue pour la rentrée 2020&nbsp;
                             </li>
-=======
-                            <li><Emoji symbol="🍰" label="shortcake" size="2em"/>Plateforme open-source et 100 % gratuite&nbsp;</li>
-                            <li>🌈 Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s</li>
-                            <li>📆 Sortie prévue pour la rentrée 2020&nbsp;</li>
->>>>>>> 92c8212d59617c6ff6ba926a331bdfa76a302b66
                         </ul>
                     </div>
                     <div id="video-container">
