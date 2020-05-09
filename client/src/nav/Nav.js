@@ -35,7 +35,7 @@ class Nav extends React.Component {
           <Link to="/signup" className={this.isActive("/signup")}>
             Nous rejoindre
           </Link>
-          <Link to="/team" className={this.isActive("/signup")}>
+          <Link to="/team" className={this.isActive("/team")}>
             la team
           </Link>
         </div>

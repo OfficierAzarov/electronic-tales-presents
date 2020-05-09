@@ -1,6 +1,8 @@
-.h-container i {
-  display: block;
+#icon-container {
   text-align: center;
+}
+
+#icon-container i {
   animation-name: stim;
   animation-duration: 3s;
   animation-iteration-count: infinite;

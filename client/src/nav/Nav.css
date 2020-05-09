@@ -1,16 +1,14 @@
-/* -------- General -------- */
-
 nav {
-    padding: 0.5% 1%;
-    position: sticky;
-    z-index: 2;
-    top: 0;
-    align-items: center;
-    background-color: #303237;
-    display: grid;
-    grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr;
-    flex-wrap: nowrap;
-    font-size: 0.9em;
+  padding: 0.5% 1%;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  align-items: center;
+  background-color: #303237;
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr;
+  flex-wrap: nowrap;
+  font-size: 0.9em;
 }
 
 #logo {
@@ -40,6 +38,6 @@ nav {
 }
 
 .active {
-  color:#ffffff !important;
-  border-bottom: 1px solid #fff;
+  color: #ffffff !important;
+  /* border-bottom: 1px solid #fff; */
 }
