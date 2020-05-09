@@ -25,13 +25,19 @@ class Why extends React.Component {
             <h3>Dégommons le syndrome de l'imposteur ensemble&nbsp;!</h3>
             <ul>
               <li>
-                <Emoji symbol="🍰" label="shortcake" size="1.2em" />
-                &nbsp;Plateforme open-source et 100 % gratuite&nbsp;
+                <Emoji symbol="☁️" label="cookie" size="1.5em" />
+                &nbsp;Pour les développeurs·euses juniors qui n'ont pas suivi un
+                cursus d'ingénieur, ne démontent pas des ordinateurs tous les
+                week-ends <br /> et n'ont pas commencé à coder à 5 ans.&nbsp;
               </li>
               <li>
                 <Emoji symbol="🌈" label="rainbow" size="1.5em" />
                 &nbsp;Fabriquée avec amour par des devs féministes, queers,
                 inclusifs·ves et autres personnes fucking bienveillant·e·s
+              </li>
+              <li>
+                <Emoji symbol="🍰" label="shortcake" size="1.2em" />
+                &nbsp;Plateforme open-source et 100 % gratuite&nbsp;
               </li>
               <li>
                 <Emoji symbol="📆" label="tear-off calendar" size="1.2em" />

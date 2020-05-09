@@ -95,7 +95,9 @@ class Map extends React.Component {
                 </p>
                 <p
                   className="comment"
-                  style={{ opacity: this.shouldIShow(station.id) ? 1 : 0 }}
+                  style={{
+                    color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
+                  }}
                 >
                   {station.comment}
                 </p>
@@ -133,7 +135,9 @@ class Map extends React.Component {
               </p>
               <p
                 className="comment"
-                style={{ opacity: this.shouldIShow("here-station") ? 1 : 0 }}
+                style={{
+                  color: this.shouldIShow("here-station") ? "#e9e9e9" : "",
+                }}
               >
                 Vous êtes ici&nbsp;!
               </p>
@@ -156,7 +160,9 @@ class Map extends React.Component {
                 </p>
                 <p
                   className="comment"
-                  style={{ opacity: this.shouldIShow(station.id) ? 1 : 0 }}
+                  style={{
+                    color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
+                  }}
                 >
                   {station.comment}
                 </p>

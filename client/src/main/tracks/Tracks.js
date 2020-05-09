@@ -18,10 +18,10 @@ class Tracks extends React.Component {
   }
 
   headerTexts = {
-    big: "Notre (future) plateforme.",
+    big: "",
     middle:
-      "Notre &eacute;quipe est actuellement en train de concocter une plateforme, tout confort et vue sur mer, pour accueillir les devs juniors.",
-    little: "Elle sera construite autour de trois tracks d'apprentissage.",
+      "Nos idées + vos feedbacks + un peu de code = une plateforme (pour commencer).",
+    little: "Celle-ci sera construite autour de trois tracks d'apprentissage.",
   };
 
   worlds = [
@@ -92,7 +92,10 @@ class Tracks extends React.Component {
             ))}
           </div>
         </div>
-        <Button text="Et du coup, ça avance bien&nbsp;?" goto="/progress" />
+        <Button
+          text="Et ça avance bien, cette histoire&nbsp;?"
+          goto="/progress"
+        />
       </div>
     );
   }
