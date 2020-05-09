@@ -2,33 +2,31 @@ import React from "react";
 
 import withDisplay from "../../elements/with-display/withDisplay";
 import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
-import ConceptItems from "./concept-items/ConceptItems";
+import Map from "./map/Map";
 import Button from "../../elements/buttons/Button";
 import * as Utils from "../../utils/Utils";
 
-import "./Concept.css";
+import "./Progress.css";
 
-class Concept extends React.Component {
+class Progress extends React.Component {
   constructor(props) {
     super(props);
     this.ref = React.createRef();
   }
 
   headerTexts = {
-    big:
-      "À Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.",
-    middle: "C'est-à-dire accessible &agrave; tous&middot;tes.",
-    little:
-      "Pour cela, on s'est assis&middot;e&middot;s, <strike>on a mang&eacute; des tartines au beurre demi-sel,</strike> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).",
+    big: "Roadmap",
+    middle: "Enfin, où on en est, quoi.",
+    little: "Mais ça sonne mieux, «&nbsp;roadmap&nbsp;», non&nbsp;?",
   };
 
   scrollDown = () => {
-    this.ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    this.ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   render() {
     return (
-      <div id="concept" className="animated">
+      <div>
         <InteractiveHeader
           bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
           middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
@@ -38,18 +36,15 @@ class Concept extends React.Component {
           scrollDown={this.scrollDown}
         />
         <div ref={this.ref} className="ref-wrapper">
-          <ConceptItems
+          <Map
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
           />
         </div>
-        <Button
-          text="Super&nbsp;! Et concr&egrave;tement&nbsp;?"
-          goto="/tracks"
-        />
+        <Button text="Je participe&nbsp;!" goto="/signup" />
       </div>
     );
   }
 }
 
-export default withDisplay(Concept);
+export default withDisplay(Progress);

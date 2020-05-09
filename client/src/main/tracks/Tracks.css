@@ -1,68 +1,65 @@
 #tracks #worlds-container {
-    padding: 0 3%;
+  padding: 0 3%;
+  margin: 10% auto 0;
+  transition: opacity 1s ease-in-out, transform 1s;
+  transition-delay: 0.2s;
 }
 
 #tracks .world {
-    background-color: #1a1919;
-    border-radius: 3%;
-    padding: 2%;
-    width: 75%;
-    margin: 3% auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #1a1919;
+  border-radius: 3%;
+  padding: 2%;
+  width: 75%;
+  margin: 3% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #tracks .world img {
-    margin: 0;
-    width: 40%;
-    height: 100%;
-    border-radius: 1em;
-    box-shadow: 6px 6px 10px 5px rgba(0,0,0,0.41);
+  margin: 0;
+  width: 40%;
+  height: 100%;
+  border-radius: 1em;
+  box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, 0.41);
 }
 
 #tracks .world-text {
-    width: 45%;
-    margin: 5%;
+  width: 45%;
+  margin: 5%;
 }
 
 #tracks p {
-    width: 95%;
-    margin: 6% auto 0;
+  width: 95%;
+  margin: 6% auto 0;
 }
 
 #tracks #tracks-button {
-    animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 #modern-world {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 #ancient-world {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 #imaginarium {
-    animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 #modern-world-header {
-    text-shadow: 
-    0 0 0.4em rgb(0, 225, 255),
-    0 0 0.8em rgb(0, 225, 255), 
-    0 0 1.6em rgb(0, 255, 255);   
+  text-shadow: 0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255),
+    0 0 1.6em rgb(0, 255, 255);
 }
 
 #ancient-world-header {
-    text-shadow: 
-    0 0 0.4em rgb(0, 225, 255),
-    0 0 0.8em rgb(0, 225, 255), 
-    0 0 1.6em rgb(0, 255, 255);    
+  text-shadow: 0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255),
+    0 0 1.6em rgb(0, 255, 255);
 }
 #imaginarium-header {
-    text-shadow: 
-    0 0 0.4em rgb(0, 225, 255),
-    0 0 0.8em rgb(0, 225, 255), 
-    0 0 1.6em rgb(0, 255, 255); 
+  text-shadow: 0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255),
+    0 0 1.6em rgb(0, 255, 255);
 }
