@@ -18,10 +18,10 @@ class Tracks extends React.Component {
   }
 
   headerTexts = {
-    big: "",
+    big: "Notre (future) plateforme.",
     middle:
-      "Nos idées + vos feedbacks + un peu de code = une plateforme (pour commencer).",
-    little: "Celle-ci sera construite autour de trois tracks d'apprentissage.",
+      "L'équipe est en train de concocter une plateforme de learning qui servira de fondation au projet Electronic&nbsp;Tales.",
+    little: "Elle sera construite autour de trois tracks.",
   };
 
   worlds = [
@@ -29,7 +29,7 @@ class Tracks extends React.Component {
       id: "modern-world",
       title: "Modern World",
       desc:
-        "Débugue. Apprends &agrave; lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.",
+        "Débugue. Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.",
       baseline: "Apprends à programmer entre les lignes.",
       imgSrc: modernWorld,
       imgAlt: "modern world gif",
