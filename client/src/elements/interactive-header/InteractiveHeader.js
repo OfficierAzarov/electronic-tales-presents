@@ -19,7 +19,7 @@ class InteractiveHeader extends React.Component {
 
   render() {
     return (
-      <div className="h-container">
+      <div className="h-container animated">
         <h2 dangerouslySetInnerHTML={this.props.bigText}></h2>
         <h3 dangerouslySetInnerHTML={this.props.middleText}></h3>
         <h4 dangerouslySetInnerHTML={this.props.littleText}></h4>

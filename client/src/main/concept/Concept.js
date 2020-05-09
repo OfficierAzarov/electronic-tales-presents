@@ -28,7 +28,7 @@ class Concept extends React.Component {
 
   render() {
     return (
-      <div id="concept" className="animated">
+      <div id="concept">
         <InteractiveHeader
           bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
           middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}

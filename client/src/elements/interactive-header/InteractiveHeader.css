@@ -3,6 +3,7 @@
 }
 
 #icon-container i {
+  padding: 1% 3%;
   animation-name: stim;
   animation-duration: 3s;
   animation-iteration-count: infinite;
