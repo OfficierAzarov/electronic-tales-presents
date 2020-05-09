@@ -1,83 +1,82 @@
 #outer-circle {
-    position: relative;
-    width: 30rem;
-    height: 30rem;
-    border: 1rem solid pink;
-    border-radius: 50%;
-    box-shadow: 0 0 1rem #292929, 0 0 2rem #pink inset;
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  border: 1rem solid pink;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem #292929, 0 0 2rem pink inset;
 }
 
 .smol-circle {
-    position: absolute;
-    top: 11rem;
-    left: 11rem;
-    width: 8rem;
-    height: 8rem;
-    /*when changing the smol-circle size, think of changing the top&left position: add or remove half of the circle width*/
-    border: 0.3rem solid pink;
-    border-radius: 50%;
-    background-color: #121212; 
-    box-shadow: 0 0 1rem #292929, 0 0 0.5rem #292929 inset;
+  position: absolute;
+  top: 11rem;
+  left: 11rem;
+  width: 8rem;
+  height: 8rem;
+  /*when changing the smol-circle size, think of changing the top&left position: add or remove half of the circle width*/
+  border: 0.3rem solid pink;
+  border-radius: 50%;
+  background-color: #121212;
+  box-shadow: 0 0 1rem #292929, 0 0 0.5rem #292929 inset;
 }
 
-.deg0 { 
-    transform: translate(15rem); 
+.deg0 {
+  transform: translate(15rem);
 }
-.deg72 { 
-    transform: rotate(72deg) translate(15rem) rotate(-72deg); 
+.deg72 {
+  transform: rotate(72deg) translate(15rem) rotate(-72deg);
 }
-.deg144 { 
-    transform: rotate(144deg) translate(15rem) rotate(-144deg); 
+.deg144 {
+  transform: rotate(144deg) translate(15rem) rotate(-144deg);
 }
-.deg216 { 
-    transform: rotate(216deg) translate(15rem) rotate(-216deg); 
+.deg216 {
+  transform: rotate(216deg) translate(15rem) rotate(-216deg);
 }
-.deg288 { 
-    transform: rotate(288deg) translate(15rem) rotate(-288deg); 
+.deg288 {
+  transform: rotate(288deg) translate(15rem) rotate(-288deg);
 }
 
 .team-member {
-    position: absolute;
-    top: 45%;
-    left: 25%;
-    width: 50%;
-    background-color: #303237;
-    border-radius: 0.2rem;
-    padding: 0.5rem;
-    /* border: 0.05rem solid #fff; */
-    box-shadow: 0 0 0.4rem rgb(192, 245, 252),
-                0 0 0.8rem rgb(142, 239, 252), 
-                0 0 1rem rgba(0, 255, 255, 0.37);
-                /*inset ne marche pas comme ça*/
-                /* inset 0 0 0.2rem rgb(192, 245, 252),
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 50%;
+  background-color: #303237;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  /* border: 0.05rem solid #fff; */
+  box-shadow: 0 0 0.4rem rgb(192, 245, 252), 0 0 0.8rem rgb(142, 239, 252),
+    0 0 1rem rgba(0, 255, 255, 0.37);
+  /*inset ne marche pas comme ça*/
+  /* inset 0 0 0.2rem rgb(192, 245, 252),
                 inset 0 0 0.8rem rgb(142, 239, 252), 
                 inset 0 0 0.8rem rgb(0, 255, 255);   */
 }
 
 .team-member h4 {
-    margin: 0.2em;
-    font-size: 1.1em;
-    font-weight: 400;
+  margin: 0.2em;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 .team-member p {
-    margin: 0.1em;
-    font-size: 0.9em;
-    font-weight: 400;
+  margin: 0.1em;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 #member1 {
-    transform: translate(28rem);
+  transform: translate(28rem);
 }
 #member2 {
-    transform: rotate(50deg) translate(25rem) rotate(-50deg);
+  transform: rotate(50deg) translate(25rem) rotate(-50deg);
 }
-#member3 { 
-    transform: rotate(138deg) translate(24rem) rotate(-138deg);
-    text-align: end; 
+#member3 {
+  transform: rotate(138deg) translate(24rem) rotate(-138deg);
+  text-align: end;
 }
-#member4 { 
-    transform: rotate(222deg) translate(24rem) rotate(-222deg); 
+#member4 {
+  transform: rotate(222deg) translate(24rem) rotate(-222deg);
 }
-#member5 { 
-    transform: rotate(310deg) translate(25rem) rotate(-310deg); 
+#member5 {
+  transform: rotate(310deg) translate(25rem) rotate(-310deg);
 }

@@ -20,7 +20,7 @@ class Tracks extends React.Component {
   headerTexts = {
     big: "Notre (future) plateforme.",
     middle:
-      "L'équipe est en train de concocter une plateforme de learning qui servira de fondation au projet Electronic&nbsp;Tales.",
+      "Notre team est en train de concocter une plateforme de learning qui servira de fondation au projet Electronic&nbsp;Tales.",
     little: "Elle sera construite autour de trois tracks.",
   };
 

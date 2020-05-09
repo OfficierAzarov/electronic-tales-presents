@@ -10,6 +10,7 @@ import Concept from "./main/concept/Concept.js";
 import Tracks from "./main/tracks/Tracks.js";
 import Progress from "./main/progress/Progress";
 import Signup from "./main/signup/Signup.js";
+import Team from "./main/team/Team.js";
 
 import "./App.css";
 
@@ -70,9 +71,6 @@ class App extends React.Component {
                     <Concept {...props} passCurrentPath={this.getCurrentPath} />
                   )}
                 />
-                {/* <Route
-                  exact path='/concept'
-                  render={(props) => <Concept {...props} passCurrentPath={this.getCurrentPath} />} /> */}
                 <Route
                   exact
                   path="/tracks"
@@ -95,6 +93,13 @@ class App extends React.Component {
                   path="/signup"
                   render={(props) => (
                     <Signup {...props} passCurrentPath={this.getCurrentPath} />
+                  )}
+                />
+                <Route
+                  exact
+                  path="/team"
+                  render={(props) => (
+                    <Team {...props} passCurrentPath={this.getCurrentPath} />
                   )}
                 />
               </Switch>
