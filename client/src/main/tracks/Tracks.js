@@ -17,12 +17,16 @@ class Tracks extends React.Component {
     this.ref = React.createRef();
   }
 
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   headerTexts = {
     big: "Notre (future) plateforme.",
     middle:
-      'Pour donner vie à ces idées, notre team est en train de concocter une plateforme de <span style="font-style: italic">social learning</span>.',
+      "Pour donner vie à ces idées, notre team est en train de concocter une plateforme de <i>social learning</i>.",
     little:
-      "Celle-ci sera la fondation du projet Electronic&nbsp;Tales et sera construite autour de&nbsp;trois&nbsp;tracks.",
+      "Celle-ci sera la fondation du projet Electronic&nbsp;Tales et sera construite autour de&nbsp;trois&nbsp;tracks d'apprentissage.",
   };
 
   worlds = [

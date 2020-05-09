@@ -26,7 +26,7 @@ class Progress extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="progress">
         <InteractiveHeader
           bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
           middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}

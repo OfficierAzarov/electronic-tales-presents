@@ -1,16 +1,16 @@
 /* -------- General -------- */
 
 footer {
-    background-color: #303237;
-    text-align: center;
-    padding: 0.5% 2%;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr ;
+  background-color: #303237;
+  text-align: center;
+  padding: 0.5% 2%;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
 }
 
 footer a {
-    color: #ffffffdc;
-    margin: 0 4%;
+  color: #ffffffdc;
+  margin: 0 4%;
 }
 
 footer a:hover {
@@ -25,7 +25,8 @@ footer i.icon {
   font-size: 0.7em;
 }
 
-footer p, footer a {
+footer p,
+footer a {
   font-size: 0.8em;
 }
 
@@ -34,8 +35,6 @@ footer p, footer a {
 .facebook.icon {
   font-size: 1.3em;
 }
-
-
 
 /* -------- Mobile (default) -------- */
 
@@ -51,7 +50,8 @@ footer p, footer a {
 /* -------- Desktop -------- */
 
 @media only screen and (min-width: 1024px) {
-  footer p, footer a {
+  footer p,
+  footer a {
     font-size: 0.9em;
   }
 }
