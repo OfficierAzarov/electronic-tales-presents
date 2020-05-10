@@ -16,7 +16,7 @@ class Concept extends React.Component {
 
   headerTexts = {
     big:
-      "À Electronic Tales, on veut rendre <br/>la computer culture <em>human readable</em>.",
+      "À Electronic&nbsp;Tales, on veut rendre <br/>la computer culture <em>human readable</em>.",
     middle: "C'est-à-dire accessible &agrave; tous&middot;tes.",
     little:
       "Pour cela, on s'est assis&middot;e&middot;s, <strike>on a mang&eacute; des tartines au beurre demi-sel,</strike> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).",

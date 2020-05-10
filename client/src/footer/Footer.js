@@ -11,7 +11,7 @@ const Footer = () => {
         <Link to="/team">La Team</Link>
       </div>
 
-      <p>Made with &#10084; by Electronic Tales Team</p>
+      <p>Made with &#10084; by Electronic&nbsp;Tales Team</p>
       <div>
         <a href="#">
           <i className="fab fa-instagram"></i>

@@ -31,7 +31,7 @@ class App extends React.Component {
       <div>
         {/* <MediaQuery maxDeviceWidth={768}>
         <div id="little-screens">
-          <img src={logo} alt="electronic tales logo"/>
+          <img src={logo} alt="Electronic&nbsp;Tales logo"/>
           <p>Notre équipe de lutins du dev
             travaille actuellement d'arrache-clavier à la version mobile de ce site. <br/><br/>
             Translate-toi jusqu'à un desktop ou reviens un peu plus tard.
@@ -43,7 +43,7 @@ class App extends React.Component {
           <Nav currentPath={this.state.currentPath} />
           <div id="page-container">
             <div id="eltaskyline">
-              <img src={elta} alt="electronic tales skyline" />
+              <img src={elta} alt="Electronic&nbsp;Tales skyline" />
             </div>
             <div id="main">
               <Switch>

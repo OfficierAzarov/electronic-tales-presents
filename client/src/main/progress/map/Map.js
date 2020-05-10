@@ -39,7 +39,7 @@ class Map extends React.Component {
     },
     {
       id: "station-5",
-      title: "Release de la plateforme Electronic Tales 🎉",
+      title: "Release de la plateforme Electronic&nbsp;Tales 🎉",
       comment: "On dégomme le syndrome de l'imposteur ensemble.",
     },
     {

@@ -16,7 +16,7 @@ class Nav extends React.Component {
       <nav>
         <div id="logo">
           <Link to="/">
-            <img src={logo} alt="electronic tales logo" />
+            <img src={logo} alt="Electronic&nbsp;Tales logo" />
           </Link>
         </div>
         <div id="nav-links" className="desktop-visible">

@@ -1,6 +1,7 @@
 import React from "react";
 import { emitCurrentPath } from "../../utils/Utils";
 import Subscribe from "../../elements/form/subscribe/Subscribe.js";
+import * as Utils from "../../utils/Utils";
 
 import "./Signup.css";
 
@@ -21,6 +22,14 @@ class Signup extends React.Component {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  steps = [
+    {
+      id: "1",
+      desc:
+        "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;!",
+    },
+  ];
+
   configureNotification = ({ status, msg }) => {
     this.setState({ status: status, message: msg });
     this.setState({ isEmailSubmitted: true });
@@ -37,31 +46,50 @@ class Signup extends React.Component {
         <div className="h-container">
           <h2>Comment nous aider&nbsp;?</h2>
         </div>
-        <div id="steps-container">
-          <div id="step-1">
-            <p>&Eacute;cris ton email là.</p>
-            {this.state.isEmailSubmitted && this.state.status !== "200" ? (
-              <div className="notification failure">
-                <p>{this.state.message}</p>
-              </div>
-            ) : (
-              <div></div>
-            )}
-            {this.state.isEmailSubmitted && this.state.status === "200" ? (
-              <div className="notification success">
-                <p>{this.state.message}</p>
-              </div>
-            ) : (
-              <div id="input-container">
-                <Subscribe
-                  configureNotification={this.configureNotification}
-                  handleError={this.handleError}
-                />
-              </div>
-            )}
-          </div>
+        <div id="step-1">
+          <p>&Eacute;cris ton email là.</p>
+          {this.state.isEmailSubmitted && this.state.status !== "200" ? (
+            <div className="notification failure">
+              <p>{this.state.message}</p>
+            </div>
+          ) : (
+            <div></div>
+          )}
+          {this.state.isEmailSubmitted && this.state.status === "200" ? (
+            <div className="notification success">
+              <p>{this.state.message}</p>
+            </div>
+          ) : (
+            <div id="input-container">
+              <Subscribe
+                configureNotification={this.configureNotification}
+                handleError={this.handleError}
+              />
+              <p>
+                Minute, papillon&nbsp;! Qu'est-ce qui va m'arriver si je vous
+                file mon mail&nbsp;?
+              </p>
+            </div>
+          )}
+        </div>
 
-          {/* <div id="step-1">
+        {this.steps.map((step) => (
+          <div key="{step.id}" className="regular-steps">
+            <h4>{step.id}</h4>
+            <p
+              dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
+            ></p>
+          </div>
+        ))}
+
+        {/* <h4>1</h4>
+            <p>
+              Tu deviens un&middot;e membre à part enti&egrave;re du pool de
+              co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de
+              l'&eacute;quipe, quoi&nbsp;!
+            </p>
+          </div> */}
+        {/* <div id="step-1">
                         <h4>1</h4>
                         <div id="text-and-arrow-container">
                             <p>&Eacute;cris ton email là.</p>
@@ -92,7 +120,7 @@ class Signup extends React.Component {
                     </div>
                     <div className="regular-colums">
                         <h4>2</h4>
-                        <p>Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic Tales... de l'&eacute;quipe, quoi&nbsp;!</p>
+                        <p>Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;!</p>
                     </div>
                     <div className="regular-colums">
                         <h4>3</h4>
@@ -120,7 +148,6 @@ class Signup extends React.Component {
                         <p> Alors, pr&ecirc;t&middot;e pour l'aventure&nbsp;?<br /><br />
                             Si oui, retourne &agrave; l'&eacute;tape 1 et laisse-nous ton email&nbsp;!</p>
                     </div> */}
-        </div>
       </div>
     );
   }

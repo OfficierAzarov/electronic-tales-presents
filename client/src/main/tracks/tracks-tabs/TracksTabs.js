@@ -1,5 +1,7 @@
 import React from "react";
 
+import * as Utils from "../../../utils/Utils";
+
 import modernWorld from "../../../resources/img/modern-world-animation-pretty-ok.gif";
 import ancientWorld from "../../../resources/img/ancient-world-animation-pretty-ok.gif";
 import imaginarium from "../../../resources/img/imaginarium-animation.gif";
@@ -27,7 +29,7 @@ class TracksTabs extends React.Component {
       id: "modern-world",
       title: "Modern World",
       desc:
-        "Débugue. Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.",
+        "Débugue.<br/> Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.",
       baseline: "Apprends à programmer entre les lignes.",
       imgSrc: modernWorld,
       imgAlt: "modern world gif",
@@ -102,7 +104,11 @@ class TracksTabs extends React.Component {
               >
                 <img src={world.imgSrc} alt={world.alt} />
                 <div className="text-container">
-                  <p>{world.desc}</p>
+                  <p
+                    dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                      world.desc
+                    )}
+                  ></p>
                   <p>{world.baseline}</p>
                 </div>
               </div>
