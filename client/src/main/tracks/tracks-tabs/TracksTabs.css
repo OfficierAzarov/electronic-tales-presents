@@ -28,7 +28,6 @@
 }
 
 .text-container {
-  /* width: 50%; */
   padding: 2% 5%;
 }
 
@@ -41,62 +40,3 @@
   box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, 0.41);
   margin: 5% auto;
 }
-
-/* #tracks .world {
-  background-color: #1a1919;
-  border-radius: 3%;
-  padding: 2%;
-  width: 75%;
-  margin: 3% auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#tracks .world img {
-  margin: 0;
-  width: 40%;
-  height: 100%;
-  border-radius: 1em;
-  box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, 0.41);
-}
-
-#tracks .world-text {
-  width: 45%;
-  margin: 5%;
-}
-
-#tracks p {
-  width: 95%;
-  margin: 6% auto 0;
-}
-
-#tracks #tracks-button {
-  animation-delay: 4s;
-}
-
-#modern-world {
-  animation-delay: 1s;
-}
-
-#ancient-world {
-  animation-delay: 2s;
-}
-
-#imaginarium {
-  animation-delay: 3s;
-}
-
-#modern-world-header {
-  text-shadow: 0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255),
-    0 0 1.6em rgb(0, 255, 255);
-}
-
-#ancient-world-header {
-  text-shadow: 0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255),
-    0 0 1.6em rgb(0, 255, 255);
-}
-#imaginarium-header {
-  text-shadow: 0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255),
-    0 0 1.6em rgb(0, 255, 255);
-} */
