@@ -47,7 +47,7 @@ class TracksTabs extends React.Component {
       id: "imaginarium",
       title: "Imaginarium",
       desc:
-        "42.&nbsp;🔮 Ada Lovelace.&nbsp;👩‍🔧<br/> St-Isidore.&nbsp;😇 Klingon.&nbsp;🚀<br/> Easter eggs&nbsp;🐰. Backdoors&nbsp🚪🚶.<br/> Star\u00A0+\u00A0gate/trek/wars.&nbsp;🔭❓127.0.0.1.🏡<br/> ...&nbsp;Marre de ne pas avoir la réf à la machine à café\u00A0?",
+        "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;Marre de ne pas avoir la réf à la machine à café\u00A0?",
       baseline: "Imprègne-toi des mythes et légendes de la bits generation.",
       imgSrc: imaginarium,
       imgAlt: "imaginarium gif",

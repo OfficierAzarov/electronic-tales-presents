@@ -28,7 +28,7 @@ class Why extends React.Component {
                 <Emoji symbol="☁️" label="cloud" size="1.5em" />
                 &nbsp;Pour les développeurs·euses juniors qui n'ont pas suivi un
                 cursus d'ingénieur, ne démontent pas des ordinateurs tous les
-                week-ends <br /> et n'ont pas commencé à coder à 5 ans.&nbsp;
+                week-ends <br /> et n'ont pas commencé à coder à 5 ans&nbsp;
               </li>
               <li>
                 <Emoji symbol="🌈" label="rainbow" size="1.5em" />

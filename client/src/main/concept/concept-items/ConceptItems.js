@@ -62,7 +62,7 @@ class ConceptItems extends React.Component {
     {
       id: "nightschool",
       img: tea,
-      text: "Cours du soir et workshops, en ligne et en vrai.",
+      text: "Cours du soir et workshops, en ligne et en vrai",
     },
     {
       id: "social",
@@ -74,13 +74,13 @@ class ConceptItems extends React.Component {
       id: "microlearning",
       img: learning,
       text:
-        "Micro-learning, storytelling, sandbox - pour apprendre partout sans ZzzZ.",
+        "Micro-learning, storytelling, sandbox - pour apprendre partout sans ZzzZ",
     },
     {
       id: "coolcontent",
       img: gameboy,
       text:
-        "Des contenus cool dans ta boîte mail, ton Insta ou ton Facebook (mais il paraît que c'est pour les vieux).",
+        "Des contenus cool dans ta boîte mail, ton Insta ou ton Facebook (mais il paraît que c'est pour les vieux)",
     },
   ];
 
