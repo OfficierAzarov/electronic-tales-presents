@@ -17,7 +17,8 @@
     "react-mailchimp-subscribe": "^2.1.0",
     "react-responsive": "^8.0.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "recompose": "^0.30.0"
   },
   "scripts": {
     "start": "react-scripts start",

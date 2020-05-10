@@ -16,6 +16,7 @@ class Tracks extends React.Component {
 
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log(this.props.language);
   }
 
   headerTexts = {
@@ -45,6 +46,7 @@ class Tracks extends React.Component {
           <TracksTabs
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
+            language={this.props.language}
           />
         </div>
         <Button

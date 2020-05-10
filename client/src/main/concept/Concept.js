@@ -1,4 +1,6 @@
 import React from "react";
+import { compose } from "recompose";
+import { withTranslation } from "react-i18next";
 
 import withDisplay from "../../elements/with-display/withDisplay";
 import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
@@ -27,10 +29,13 @@ class Concept extends React.Component {
   };
 
   render() {
+    const { t } = this.props;
+
     return (
       <div id="concept">
         <InteractiveHeader
-          bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
+          bigText={Utils.convertToCleanHtml(t("presentation.title"))}
+          // bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
           middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
           littleText={Utils.convertToCleanHtml(this.headerTexts.little)}
           isShown={this.props.isShown}
@@ -52,4 +57,4 @@ class Concept extends React.Component {
   }
 }
 
-export default withDisplay(Concept);
+export default compose(withDisplay, withTranslation())(Concept);

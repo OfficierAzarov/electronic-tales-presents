@@ -1,4 +1,5 @@
 import React from "react";
+import i18next from "i18next";
 
 import * as Utils from "../../../utils/Utils";
 
@@ -9,11 +10,20 @@ import imaginarium from "../../../resources/img/imaginarium-animation.gif";
 import "./TracksTabs.css";
 
 class TracksTabs extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   state = {
     isShown: false,
     isTranslated: false,
     isActive: ["modern-world"],
+    language: "",
   };
+
+  componentDidMount() {
+    this.generate();
+  }
 
   componentDidUpdate(prevProps) {
     if (this.props.isShown !== prevProps.isShown) {
@@ -22,18 +32,47 @@ class TracksTabs extends React.Component {
     if (this.props.isTranslated !== prevProps.isTranslated) {
       this.setState({ isTranslated: this.props.isTranslated });
     }
+    if (this.props.language !== prevProps.language) {
+      i18next.changeLanguage(this.props.language, (err, t) => {
+        if (err) return console.log("something went wrong loading", err);
+        this.generate();
+      });
+    }
   }
+
+  worlds = [];
+
+  generate = () => {
+    this.worlds = [
+      {
+        id: "modern-world",
+        title: "Modern World",
+        desc: i18next.t("presentation.title"),
+        baseline: "Apprends à programmer entre les lignes.",
+        imgSrc: modernWorld,
+        imgAlt: "modern world gif",
+      },
+    ];
+  };
 
   worlds = [
     {
       id: "modern-world",
       title: "Modern World",
-      desc:
-        "Débugue.<br/> Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.",
+      desc: "",
       baseline: "Apprends à programmer entre les lignes.",
       imgSrc: modernWorld,
       imgAlt: "modern world gif",
     },
+    // {
+    //   id: "modern-world",
+    //   title: "Modern World",
+    //   desc:
+    //     "Débugue.<br/> Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.",
+    //   baseline: "Apprends à programmer entre les lignes.",
+    //   imgSrc: modernWorld,
+    //   imgAlt: "modern world gif",
+    // },
     {
       id: "ancient-world",
       title: "Ancient World",
@@ -93,11 +132,10 @@ class TracksTabs extends React.Component {
           </div>
 
           {this.worlds.map((world) => (
-            <div>
+            <div key={world.id}>
               <div
                 className="content-container"
                 id={world.id}
-                key={world.id}
                 style={{
                   display: this.shouldIShow(world.id) ? "" : "none",
                 }}

@@ -50,6 +50,7 @@ const withDisplay = (WrappedComponent) => {
         <WrappedComponent
           isShown={this.state.isShown}
           isTranslated={this.state.isTranslated}
+          language={this.props.language}
         />
       );
     }

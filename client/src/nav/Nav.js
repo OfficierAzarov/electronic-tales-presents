@@ -36,6 +36,10 @@ class Nav extends React.Component {
             Nous rejoindre
           </Link>
         </div>
+        <div id="language-switch">
+          <span onClick={() => this.props.onLanguageHandle("fr")}>fr </span>|
+          <span onClick={() => this.props.onLanguageHandle("en")}> en</span>
+        </div>
         <button id="nav-button" className="button-design">
           <Link to="/signup">Je participe&nbsp;!</Link>
         </button>

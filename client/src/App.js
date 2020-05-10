@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { withTranslation, Trans } from "react-i18next";
 import MediaQuery from "react-responsive";
 
 import Nav from "./nav/Nav.js";
@@ -18,12 +19,23 @@ import elta from "../src/resources/img/eltaskyline.svg";
 import logo from "../src/resources/img/logo-transparent-smol-group.png";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   state = {
     currentPath: null,
+    language: "en",
   };
 
   getCurrentPath = (currentPathFromChild) => {
     this.setState({ currentPath: currentPathFromChild });
+  };
+
+  onLanguageHandle = (language) => {
+    console.log(language);
+    let newLang = language;
+    this.setState({ language: newLang });
+    this.props.i18n.changeLanguage(newLang);
   };
 
   render() {
@@ -42,7 +54,10 @@ class App extends React.Component {
           {/* <MediaQuery minDeviceWidth={769}> */}
 
           <Router>
-            <Nav currentPath={this.state.currentPath} />
+            <Nav
+              currentPath={this.state.currentPath}
+              onLanguageHandle={this.onLanguageHandle}
+            />
             <div id="page-container">
               <div id="eltaskyline">
                 <img src={elta} alt="Electronic&nbsp;Tales skyline" />
@@ -83,6 +98,7 @@ class App extends React.Component {
                       <Tracks
                         {...props}
                         passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
                       />
                     )}
                   />
@@ -125,4 +141,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withTranslation()(App);

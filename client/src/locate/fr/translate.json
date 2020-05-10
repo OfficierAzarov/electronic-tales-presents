@@ -1,7 +1,7 @@
 {
   "translations": {
-    "bip": {
-      "presentationTitle": "Blabla <strong>bippp</strong> bip"
+    "presentation": {
+      "title": "Débugue.<br/> Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier."
     }
   }
 }

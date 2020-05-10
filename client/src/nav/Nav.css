@@ -6,13 +6,12 @@ nav {
   align-items: center;
   background-color: #303237;
   display: grid;
-  grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr;
+  grid-template-columns: 0.2fr 1.2fr 0.1fr 0.2fr;
   flex-wrap: nowrap;
   font-size: 0.9em;
 }
 
 #logo {
-  grid-column: 1;
   padding: 0;
 }
 
@@ -21,8 +20,10 @@ nav {
 }
 
 #nav-links {
-  grid-column: 3;
   display: flex;
+  /* width: 80%;
+  margin: 0 auto; */
+  justify-content: center;
 }
 
 #nav-links a {
@@ -31,13 +32,15 @@ nav {
   font-weight: bold;
 }
 
+#language-switch {
+  padding-right: 1%;
+}
+
 #nav-button {
-  grid-column: 4;
   padding: 0.5em 1.5em;
   outline: none;
 }
 
 .active {
   color: #ffffff !important;
-  /* border-bottom: 1px solid #fff; */
 }
