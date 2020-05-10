@@ -1,0 +1,36 @@
+#steps-container {
+  transition: opacity 1s ease-in-out, transform 1s;
+  transition-delay: 0.2s;
+  margin-top: 5%;
+}
+
+.regular-steps {
+  width: 55%;
+  margin: 0 auto;
+  background-color: #303237;
+  border-radius: 3em;
+  padding: 0.1em 0 1.2em;
+  margin-bottom: 2%;
+}
+
+.regular-steps p,
+.regular-steps h4 {
+  width: 90%;
+  margin: 2% auto;
+}
+
+.regular-steps span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.shine-bright {
+  text-shadow: 0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255),
+    0 0 1.6em rgb(0, 255, 255), 0 0 3.2em rgb(0, 255, 255);
+}
+
+.regular-steps img {
+  width: 14%;
+  margin: 0 auto;
+  display: block;
+}
