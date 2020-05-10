@@ -4,7 +4,7 @@ import Button from "../../elements/buttons/Button";
 
 import "./Team.css";
 
-import handpoint from "../../resources/img/team/handpoint.png";
+import handpoint from "../../resources/img/team/handpoint3.png";
 
 class Team extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class Team extends React.Component {
         <h2>La Team</h2>
         <div id="team-container">
           <div id="team-circle">
-            <div className="member-circle deg0"><img src={handpoint} alt="Oui, toi."/></div>
+            <div className="member-circle deg0"><img className="team-pic" src={handpoint} alt="Oui, toi."/></div>
             <div className="team-member" id="member1">
               <div className="team-member-text">
                 <h4 className="memberName">Toi</h4>

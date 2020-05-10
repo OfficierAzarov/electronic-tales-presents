@@ -29,9 +29,17 @@
   /*when changing the member-circle size, think of changing the top&left position: add or remove half of the circle width*/
   border: 0.1em solid pink;
   border-radius: 50%;
-  background-color: #121212;
-  box-shadow: 0 0 1.2em #000000, 0 0 1em #000000 inset;
+  align-content: center;
+  background-color: #fff;
+  box-shadow: 0 0 1.2em #000000, 0 0 1.2em #000000 inset;
 }
+
+.team-pic {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 .deg0 {
   transform: translate(12em);
@@ -99,3 +107,4 @@
 #member5 {
   transform: rotate(315deg) translate(19rem) rotate(-315deg);
 } 
+
