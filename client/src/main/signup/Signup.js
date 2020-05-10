@@ -1,46 +1,67 @@
-import React from 'react';
-import { emitCurrentPath } from '../../utils/Utils';
-import Subscribe from '../../elements/form/subscribe/Subscribe.js';
+import React from "react";
+import { emitCurrentPath } from "../../utils/Utils";
+import Subscribe from "../../elements/form/subscribe/Subscribe.js";
 
-import './Signup.css';
+import "./Signup.css";
 
-import grateful from '../../resources/img/grateful.gif';
-
+import grateful from "../../resources/img/grateful.gif";
 
 class Signup extends React.Component {
+  state = {
+    status: "",
+    message: "",
+    isEmailSubmitted: false,
+    subscriptionError: "",
+  };
 
-    state = {
-        status: "",
-        message: "",
-        isEmailSubmitted: false,
-        subscriptionError: ""
-    }
+  componentDidMount() {
+    // passes the location from the app (current path) to the parent (App.js)
+    emitCurrentPath(this.props);
 
-    componentDidMount() {
-        // passes the location from the app (current path) to the parent (App.js)
-        emitCurrentPath(this.props);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
+  configureNotification = ({ status, msg }) => {
+    this.setState({ status: status, message: msg });
+    this.setState({ isEmailSubmitted: true });
+  };
 
-    configureNotification = ({status, msg}) => {
-        this.setState({status: status, message: msg});
-        this.setState({isEmailSubmitted: true});
-    }
+  handleError = ({ status, msg }) => {
+    this.setState({ status: status, message: msg });
+    this.setState({ isEmailSubmitted: true });
+  };
 
-    handleError = ({status, msg}) => {
-        this.setState({status: status, message: msg});
-        this.setState({isEmailSubmitted: true});
-    }
+  render() {
+    return (
+      <div id="signup" className="animated">
+        <div className="h-container">
+          <h2>Comment nous aider&nbsp;?</h2>
+        </div>
+        <div id="steps-container">
+          <div id="step-1">
+            <p>&Eacute;cris ton email là.</p>
+            {this.state.isEmailSubmitted && this.state.status !== "200" ? (
+              <div className="notification failure">
+                <p>{this.state.message}</p>
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {this.state.isEmailSubmitted && this.state.status === "200" ? (
+              <div className="notification success">
+                <p>{this.state.message}</p>
+              </div>
+            ) : (
+              <div id="input-container">
+                <Subscribe
+                  configureNotification={this.configureNotification}
+                  handleError={this.handleError}
+                />
+              </div>
+            )}
+          </div>
 
-    render() {
-        return (
-            <div id="signup" className="animated">
-                <div className="h-container">
-                    <h2>Comment nous aider&nbsp;?</h2>
-                </div>
-                <div id="steps-container">
-                    <div id="step-1">
+          {/* <div id="step-1">
                         <h4>1</h4>
                         <div id="text-and-arrow-container">
                             <p>&Eacute;cris ton email là.</p>
@@ -98,11 +119,11 @@ class Signup extends React.Component {
                         <img src={grateful}></img>
                         <p> Alors, pr&ecirc;t&middot;e pour l'aventure&nbsp;?<br /><br />
                             Si oui, retourne &agrave; l'&eacute;tape 1 et laisse-nous ton email&nbsp;!</p>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+                    </div> */}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Signup;

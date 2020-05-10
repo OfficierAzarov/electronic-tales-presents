@@ -41,7 +41,12 @@ class Progress extends React.Component {
             isTranslated={this.props.isTranslated}
           />
         </div>
-        <Button text="Je participe&nbsp;!" goto="/signup" />
+        <div id="corrective-button-wrapper">
+          <Button
+            text="Okay, comment puis-je vous aider&nbsp;?"
+            goto="/signup"
+          />
+        </div>
       </div>
     );
   }

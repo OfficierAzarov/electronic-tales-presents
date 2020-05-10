@@ -1,4 +1,14 @@
-#signup h3 {
+#step-1 {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+#input-container {
+  text-align: center;
+}
+
+/* #signup h3 {
     margin-bottom: 10%;
 }
 
@@ -125,4 +135,4 @@
     margin: 12% auto;
     width: 65%;
 
-}
+} */

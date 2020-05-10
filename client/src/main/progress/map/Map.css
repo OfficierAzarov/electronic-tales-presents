@@ -14,8 +14,9 @@
 .station-container {
   z-index: 1;
   display: grid;
-  grid-template-columns: 0.5fr 0.7fr;
+  grid-template-columns: 0.35fr 0.7fr;
   position: relative;
+  padding-bottom: 2%;
 }
 
 .names-container {
