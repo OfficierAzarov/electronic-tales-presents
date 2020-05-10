@@ -100,27 +100,5 @@ a:hover {
 }
 
 .ref-wrapper {
-  padding-top: 6%;
+  padding-top: 8%;
 }
-
-/* ---- Reponsive rules ---- */
-
-/* ---- Mobile (default) ---- */
-
-/* 
-.desktop-visible {
-  display:none;
-} */
-
-/* ---- Desktop ---- */
-
-/* @media only screen and (min-width: 600px) {
-  
-  .desktop-visible {
-    display:block;
-  }
-  
-  .desktop-invisible {
-    display:none;
-  }
-} */

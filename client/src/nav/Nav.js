@@ -30,7 +30,7 @@ class Nav extends React.Component {
             Nos tracks
           </Link>
           <Link to="/progress" className={this.isActive("/progress")}>
-            On en est où ?
+            On en est où&nbsp;?
           </Link>
           <Link to="/signup" className={this.isActive("/signup")}>
             Nous rejoindre
