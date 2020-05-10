@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans } from "react-i18next";
 
 import Button from "../../elements/buttons/Button";
 import { emitCurrentPath } from "../../utils/Utils";
@@ -27,6 +28,8 @@ class Presentation extends React.Component {
   }
 
   render() {
+    // const { t } = this.props;
+
     return (
       <div id="presentation">
         <div
@@ -34,8 +37,8 @@ class Presentation extends React.Component {
           style={{ marginTop: this.state.largeText ? "3%" : "" }}
         >
           <h2 style={{ width: this.state.largeText ? "90%" : "" }}>
-            Développeur·euse junior, il t'est déjà arrivé d'avoir des
-            difficultés pour...
+            <Trans i18nKey="bip.presentationTitle"></Trans>
+            {/* {t("presentation.title")} */}
           </h2>
         </div>
         <ul>
@@ -52,3 +55,4 @@ class Presentation extends React.Component {
 }
 
 export default Presentation;
+// export default withTranslation()(Presentation);

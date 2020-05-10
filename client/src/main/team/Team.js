@@ -1,7 +1,5 @@
 import React from "react";
 
-import Button from "../../elements/buttons/Button";
-
 import "./Team.css";
 
 class Team extends React.Component {

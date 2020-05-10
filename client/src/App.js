@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MediaQuery from "react-responsive";
 
@@ -28,8 +28,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        {/* <MediaQuery maxDeviceWidth={768}>
+      <Suspense fallback="loading">
+        <div>
+          {/* <MediaQuery maxDeviceWidth={768}>
         <div id="little-screens">
           <img src={logo} alt="Electronic&nbsp;Tales logo"/>
           <p>Notre équipe de lutins du dev
@@ -38,77 +39,88 @@ class App extends React.Component {
           </p>
         </div>
       </MediaQuery> */}
-        {/* <MediaQuery minDeviceWidth={769}> */}
-        <Router>
-          <Nav currentPath={this.state.currentPath} />
-          <div id="page-container">
-            <div id="eltaskyline">
-              <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+          {/* <MediaQuery minDeviceWidth={769}> */}
+
+          <Router>
+            <Nav currentPath={this.state.currentPath} />
+            <div id="page-container">
+              <div id="eltaskyline">
+                <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+              </div>
+              <div id="main">
+                <Switch>
+                  <Route
+                    exact
+                    path="/"
+                    render={(props) => (
+                      <Presentation
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/why"
+                    render={(props) => (
+                      <Why {...props} passCurrentPath={this.getCurrentPath} />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/concept"
+                    render={(props) => (
+                      <Concept
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/tracks"
+                    render={(props) => (
+                      <Tracks
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/progress"
+                    render={(props) => (
+                      <Progress
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/signup"
+                    render={(props) => (
+                      <Signup
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/team"
+                    render={(props) => (
+                      <Team {...props} passCurrentPath={this.getCurrentPath} />
+                    )}
+                  />
+                </Switch>
+              </div>
+              <Footer />
             </div>
-            <div id="main">
-              <Switch>
-                <Route
-                  exact
-                  path="/"
-                  render={(props) => (
-                    <Presentation
-                      {...props}
-                      passCurrentPath={this.getCurrentPath}
-                    />
-                  )}
-                />
-                <Route
-                  exact
-                  path="/why"
-                  render={(props) => (
-                    <Why {...props} passCurrentPath={this.getCurrentPath} />
-                  )}
-                />
-                <Route
-                  exact
-                  path="/concept"
-                  render={(props) => (
-                    <Concept {...props} passCurrentPath={this.getCurrentPath} />
-                  )}
-                />
-                <Route
-                  exact
-                  path="/tracks"
-                  render={(props) => (
-                    <Tracks {...props} passCurrentPath={this.getCurrentPath} />
-                  )}
-                />
-                <Route
-                  exact
-                  path="/progress"
-                  render={(props) => (
-                    <Progress
-                      {...props}
-                      passCurrentPath={this.getCurrentPath}
-                    />
-                  )}
-                />
-                <Route
-                  exact
-                  path="/signup"
-                  render={(props) => (
-                    <Signup {...props} passCurrentPath={this.getCurrentPath} />
-                  )}
-                />
-                <Route
-                  exact
-                  path="/team"
-                  render={(props) => (
-                    <Team {...props} passCurrentPath={this.getCurrentPath} />
-                  )}
-                />
-              </Switch>
-            </div>
-            <Footer />
-          </div>
-        </Router>
-        {/* </MediaQuery> */}
-      </div>
+          </Router>
+          {/* </MediaQuery> */}
+        </div>
+      </Suspense>
     );
   }
 }
