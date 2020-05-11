@@ -1,11 +1,22 @@
 {
   "translations": {
+    "nav": {
+      "links": {
+        "1": "Pourquoi ?",
+        "2": "Comment ?",
+        "3": "Nos tracks",
+        "4": "On en est où ?",
+        "5": "Nous rejoindre"
+      },
+      "button": "Je participe !"
+    },
     "presentation": {
       "title": "Développeur·euse junior, il t'est déjà arrivé d'avoir des difficultés pour...",
       "question1": "Te sentir légitime dans le monde de la tech ?",
       "question2": "Évaluer ton niveau réel ?",
       "question3": "Exprimer tes insécurités au travail ?",
-      "question4": "Te motiver pour continuer à monter en compétences ?"
+      "question4": "Te motiver pour continuer à monter en compétences ?",
+      "button": "Grumpf, oui !"
     },
     "why": {
       "bigText": "Dégommons le syndrome de l'imposteur ensemble !",
@@ -101,15 +112,15 @@
         "postHereStations": {
           "id1": {
             "title": "Recueil de vos idées",
-            "comment": "On dégomme le syndrome de l'imposteur ensemble."
+            "comment": "On mouline, on analyse, on cogito ergo sum."
           },
           "id2": {
             "title": "Release de la plateforme Electronic Tales 🎉",
-            "comment": "On continue à dégommer."
+            "comment": "On dégomme le syndrome de l'imposteur ensemble."
           },
           "id3": {
-            "title": "Community life : workshops, cours du soir..",
-            "comment": "On mouline, on analyse, on cogito ergo sum."
+            "title": "Community life : workshops, cours du soir...",
+            "comment": "On continue à dégommer."
           },
           "id4": {
             "title": "Paix sur la Terre 🌼",
@@ -143,12 +154,17 @@
           "id4": {
             "desc": "Tu as notre reconnaissance &eacute;ternelle.",
             "question": "Alors, prêt·e pour l'aventure ?",
-            "callToAction": "Si oui, <span onClick={this.props.scrollUp}> retourne &agrave; l'&eacute;tape 1</span> et laisse-nous ton email !"
+            "callToAction": {
+              "beforeLink": "Si oui, ",
+              "link": "retourne à l'étape 1",
+              "afterLink": "et laisse-nous ton email !"
+            }
           }
         }
       }
     },
     "team": {
+      "title": "La Team",
       "id1": {
         "name": "Toi",
         "desc": "Mais oui, parfaitement."

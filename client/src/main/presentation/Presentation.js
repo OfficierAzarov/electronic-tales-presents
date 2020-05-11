@@ -15,7 +15,7 @@ class Presentation extends React.Component {
 
   componentDidMount() {
     // passes the location fo the app (current path) to the parent (App.js)
-    emitCurrentPath(this.props);
+    if (this.props.passCurrentPath) emitCurrentPath(this.props);
 
     if (window.innerHeight < 700) {
       this.setState({ largeText: true });
@@ -37,26 +37,47 @@ class Presentation extends React.Component {
 
   render() {
     const { t } = this.props;
-    return (
-      <div id="presentation">
-        <div
-          className="h-container"
-          style={{ marginTop: this.state.largeText ? "3%" : "" }}
-        >
-          <h2 style={{ width: this.state.largeText ? "90%" : "" }}>
-            {i18next.t("presentation.title")}
-          </h2>
+
+    if (this.props.mobile === "y") {
+      return (
+        <div id="presentation">
+          <div className="h-container">
+            <h2>{i18next.t("presentation.title")}</h2>
+          </div>
+          <ul>
+            {this.state.sentences.map((sentence, i) => (
+              <li key={i}>{sentence}</li>
+            ))}
+          </ul>
+          <div id="animation-wrapper">
+            <button className="button-design">
+              {i18next.t("presentation.button")}
+            </button>
+          </div>
         </div>
-        <ul>
-          {this.state.sentences.map((sentence, i) => (
-            <li key={i}>{sentence}</li>
-          ))}
-        </ul>
-        <div id="animation-wrapper">
-          <Button text="Grumpf, oui&nbsp;!" goto="/why" />
+      );
+    } else {
+      return (
+        <div id="presentation">
+          <div
+            className="h-container"
+            style={{ marginTop: this.state.largeText ? "3%" : "" }}
+          >
+            <h2 style={{ width: this.state.largeText ? "90%" : "" }}>
+              {i18next.t("presentation.title")}
+            </h2>
+          </div>
+          <ul>
+            {this.state.sentences.map((sentence, i) => (
+              <li key={i}>{sentence}</li>
+            ))}
+          </ul>
+          <div id="animation-wrapper">
+            <Button text={i18next.t("presentation.button")} goto="/why" />
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 

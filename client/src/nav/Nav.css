@@ -48,3 +48,16 @@ nav {
 .active {
   color: #ffffff !important;
 }
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+  }
+
+  nav img {
+    width: 10em;
+    margin: 0 auto;
+  }
+}
