@@ -9,7 +9,7 @@
     },
     "why": {
       "bigText": "Dégommons le syndrome de l'imposteur ensemble !",
-      "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans.",
+      "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
       "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
       "bullet3": "Plateforme open-source et 100 % gratuite",
       "bullet4": "Sortie prévue pour la rentrée 2020",
@@ -56,8 +56,8 @@
     "tracks": {
       "header": {
         "bigText": "Notre (future) plateforme",
-        "middleText": "C'est-à-dire accessible &agrave; tous&middot;tes.",
-        "littleText": "Pour cela, on s'est assis&middot;e&middot;s, <strike>on a mang&eacute; des tartines au beurre demi-sel,</strike> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts)."
+        "middleText": "Pour donner vie à ces idées, notre team est en train de concocter une plateforme de learning social.",
+        "littleText": "Celle-ci servira de fondation au projet Electronic Tales et sera construite autour de trois tracks d'apprentissage."
       },
       "tracksTabs": {
         "worlds": {
@@ -132,7 +132,7 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i>, <i class='fab fa-instagram'></i> et compagnie."
+            "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i> et compagnie."
           },
           "id2": {
             "desc": "N'aie pas peur&nbsp;!<br/><br/>En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeur sur le z-index en css ou de recoder <a href='https://www.impots.gouv.fr/portail/' target='_blank' rel='noopener noreferrer'>impots.gouv</a> en dark theme. <br /><br />Tu vas voir, c'est tout simple&nbsp;!"
