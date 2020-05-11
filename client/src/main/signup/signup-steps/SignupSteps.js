@@ -30,7 +30,7 @@ class SignupSteps extends Component {
     {
       id: "2",
       desc:
-        "N'aie pas peur&nbsp;!<br/><br/>En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeurs sur le z-index en css ou de recoder <a href='https://www.impots.gouv.fr/portail/' target='_blank' rel='noopener noreferrer'>impots.gouv</a> en dark theme. <br /><br />Tu vas voir, c'est tout simple&nbsp;!",
+        "N'aie pas peur&nbsp;!<br/><br/>En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeur sur le z-index en css ou de recoder <a href='https://www.impots.gouv.fr/portail/' target='_blank' rel='noopener noreferrer'>impots.gouv</a> en dark theme. <br /><br />Tu vas voir, c'est tout simple&nbsp;!",
     },
     {
       id: "3",

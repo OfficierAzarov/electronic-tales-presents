@@ -55,43 +55,35 @@ class TracksTabs extends React.Component {
     ];
   };
 
-  worlds = [
-    {
-      id: "modern-world",
-      title: "Modern World",
-      desc: "",
-      baseline: "Apprends à programmer entre les lignes.",
-      imgSrc: modernWorld,
-      imgAlt: "modern world gif",
-    },
-    // {
-    //   id: "modern-world",
-    //   title: "Modern World",
-    //   desc:
-    //     "Débugue.<br/> Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier.",
-    //   baseline: "Apprends à programmer entre les lignes.",
-    //   imgSrc: modernWorld,
-    //   imgAlt: "modern world gif",
-    // },
-    {
-      id: "ancient-world",
-      title: "Ancient World",
-      desc:
-        "Découvre comment fonctionne un ordinateur. Construis ta machine. Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).",
-      baseline: "Plonge dans le monde englouti de la computer science.",
-      imgSrc: ancientWorld,
-      imgAlt: "ancient world gif",
-    },
-    {
-      id: "imaginarium",
-      title: "Imaginarium",
-      desc:
-        "42. Ada Lovelace. St-Isidore. Klingon. Easter eggs. Backdoors. Star\u00A0+\u00A0gate/trek/wars. 127.0.0.1. Marre de ne pas avoir la réf à la machine à café\u00A0?",
-      baseline: "Imprègne-toi des mythes et légendes de la bits generation.",
-      imgSrc: imaginarium,
-      imgAlt: "imaginarium gif",
-    },
-  ];
+  // worlds = [
+  //   {
+  //     id: "modern-world",
+  //     title: "Modern World",
+  //     desc:
+  //       "🐞&nbsp;Débugue.<br/>🔬&nbsp;Apprends à lire le code des autres.<br/>⛱️&nbsp;Automatise.<br/>👔&nbsp;Survis aux entretiens.<br/>⌨️&nbsp;Écris du code propre.<br/>✊&nbsp;Croque des chips sans mettre de miettes sur ton clavier.",
+  //     baseline: "Apprends à programmer entre les lignes.",
+  //     imgSrc: modernWorld,
+  //     imgAlt: "modern world gif",
+  //   },
+  //   {
+  //     id: "ancient-world",
+  //     title: "Ancient World",
+  //     desc:
+  //       "💡&nbsp;Découvre comment fonctionne un ordinateur.<br/>🔨&nbsp;Construis ta machine.<br/>🎇&nbsp;Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).",
+  //     baseline: "Plonge dans le monde englouti de la computer science.",
+  //     imgSrc: ancientWorld,
+  //     imgAlt: "ancient world gif",
+  //   },
+  //   {
+  //     id: "imaginarium",
+  //     title: "Imaginarium",
+  //     desc:
+  //       "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;Marre de ne pas avoir la réf à la machine à café\u00A0?",
+  //     baseline: "Imprègne-toi des mythes et légendes de la bits generation.",
+  //     imgSrc: imaginarium,
+  //     imgAlt: "imaginarium gif",
+  //   },
+  // ];
 
   show = (worldId) => {
     this.setState({ isActive: [worldId] });
@@ -147,7 +139,7 @@ class TracksTabs extends React.Component {
                       world.desc
                     )}
                   ></p>
-                  <p>{world.baseline}</p>
+                  <p class="baseline">{world.baseline}</p>
                 </div>
               </div>
             </div>

@@ -5,9 +5,9 @@
 #team-container {
   background-color: #303237;
   border-radius: 3em;
-  padding: 5%;
+  padding: 10%;
   margin: 5% auto 5%;
-  width: 75%;
+  width: 85%;
 }
 
 #team-circle {
@@ -17,7 +17,7 @@
   height: 25em;
   border: 1em solid #3e4147;
   border-radius: 50%;
-  box-shadow: 0em 0em 2em #000000, 0 0 2em #000000 inset;
+  box-shadow: 0em 0em 2em #000000, 0 0 2em #000000 inset;  
 }
 
 .member-circle {
@@ -27,11 +27,21 @@
   width: 8em;
   height: 8em;
   /*when changing the member-circle size, think of changing the top&left position: add or remove half of the circle width*/
-  border: 0.1em solid pink;
+  border: 0.1em solid rgb(109, 109, 109);
   border-radius: 50%;
-  background-color: #121212;
-  box-shadow: 0 0 1.2em #000000, 0 0 1em #000000 inset;
+  align-content: center;
+  background-color: #fff;
+  /* box-shadow: 0 0 1.2em #000000, 0 0 1.2em #000000 inset; */
+  box-shadow: 0 0 0.3em rgb(208, 247, 252), 0 0 0.6em rgb(190, 243, 250),
+  0 0 1.2em rgb(165, 250, 250); 
+  overflow: hidden;
 }
+
+.team-pic {
+  height: 100%;
+  width: 100%;
+}
+
 
 .deg0 {
   transform: translate(12em);
@@ -56,46 +66,56 @@
   right: 0;
   bottom: 0;
   left: 0;
-  width: 15em;
-  height: 4em;
+  width: 12em;
+  height: 5em;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*inset ne marche pas comme ça*/
-  /* inset 0 0 0.2rem rgb(192, 245, 252),
-                inset 0 0 0.8rem rgb(142, 239, 252), 
-                inset 0 0 0.8rem rgb(0, 255, 255);   */
 }
-
-/* .team-member-text {
-    border: 0.05em solid pink;
-} */
 .team-member h4 {
   width: 100%;
   margin: 0;
   font-size: 0.9em;
   font-weight: 500;
   margin-bottom: 0.2em;
+  text-shadow: 0 0 0.4em rgb(253, 5, 121), 0 0 0.8em rgb(255, 1, 119),
+  0 0 1.6em rgb(255, 0, 119);
+  animation-name: pinkGlow;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
 }
 .team-member p {
   margin: 0;
   font-size: 0.8em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #member1 {
-  transform: translate(22rem);
+  transform: translate(21rem);
 }
 #member2 {
   transform: rotate(45deg) translate(20rem) rotate(-45deg);
 }
 #member3 {
-  transform: rotate(155deg) translate(23rem) rotate(-155deg);
+  transform: rotate(155deg) translate(23.5rem) rotate(-155deg);
   text-align: end;
 }
 #member4 {
-  transform: rotate(205deg) translate(23rem) rotate(-205deg);
+  transform: rotate(205deg) translate(23.5rem) rotate(-205deg);
 }
 #member5 {
-  transform: rotate(315deg) translate(19rem) rotate(-315deg);
+  transform: rotate(315deg) translate(20rem) rotate(-315deg);
 } 
+
+@keyframes pinkGlow {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow:  0 0 0.4em rgb(253, 5, 121), 0 0 0.8em rgb(255, 1, 119),
+    0 0 1.6em rgb(255, 0, 119);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
