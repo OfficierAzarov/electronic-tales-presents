@@ -1,4 +1,5 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 
 import Button from "../../elements/buttons/Button";
 import Emoji from "../../elements/Emoji";
@@ -18,30 +19,48 @@ class Why extends React.Component {
   }
 
   render() {
+    const { t } = this.props;
     return (
       <div id="why" className="animated">
         <div id="content-container">
           <div id="text-container">
-            <h3>Dégommons le syndrome de l'imposteur ensemble&nbsp;!</h3>
+            <h3>{t("why.bigTitle")}</h3>
             <ul>
               <li>
-                <Emoji symbol="☁️" label="cloud" size="1.5em" />
-                &nbsp;Pour les développeurs·euses juniors qui n'ont pas suivi un
-                cursus d'ingénieur, ne démontent pas des ordinateurs tous les
-                week-ends et n'ont pas commencé à coder à 5 ans.&nbsp;
+                <Emoji
+                  symbol="☁️"
+                  label="cloud"
+                  size="1.5em"
+                  marginRight="1%"
+                />
+                {t("why.bullet1")}
               </li>
               <li>
-                <Emoji symbol="🌈" label="rainbow" size="1.5em" />
-                &nbsp;Fabriquée avec amour par des devs féministes, queers,
-                inclusifs·ves et autres personnes fucking bienveillant·e·s
+                <Emoji
+                  symbol="🌈"
+                  label="rainbow"
+                  size="1.5em"
+                  marginRight="1%"
+                />
+                {t("why.bullet2")}
               </li>
               <li>
-                <Emoji symbol="🍰" label="shortcake" size="1.2em" />
-                &nbsp;Plateforme open-source et 100 % gratuite&nbsp;
+                <Emoji
+                  symbol="🍰"
+                  label="shortcake"
+                  size="1.2em"
+                  marginRight="1%"
+                />
+                {t("why.bullet3")}
               </li>
               <li>
-                <Emoji symbol="📆" label="tear-off calendar" size="1.2em" />
-                &nbsp;Sortie prévue pour la rentrée 2020&nbsp;
+                <Emoji
+                  symbol="📆"
+                  label="tear-off calendar"
+                  size="1.2em"
+                  marginRight="1%"
+                />
+                {t("why.bullet4")}
               </li>
             </ul>
           </div>
@@ -57,4 +76,4 @@ class Why extends React.Component {
   }
 }
 
-export default Why;
+export default withTranslation()(Why);

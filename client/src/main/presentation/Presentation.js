@@ -1,6 +1,4 @@
 import React from "react";
-import { compose } from "recompose";
-import { withTranslation } from "react-i18next";
 import i18next from "i18next";
 
 import withAPITranslation from "../../elements/HOC/withAPITranslation";
@@ -62,4 +60,4 @@ class Presentation extends React.Component {
   }
 }
 
-export default compose(withTranslation(), withAPITranslation)(Presentation);
+export default withAPITranslation(Presentation);

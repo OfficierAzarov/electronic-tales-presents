@@ -6,6 +6,13 @@
       "question2": "Évaluer ton niveau réel ?",
       "question3": "Exprimer tes insécurités au travail ?",
       "question4": "Te motiver pour continuer à monter en compétences ?"
+    },
+    "why": {
+      "bigTitle": "Dégommons le syndrome de l'imposteur ensemble !",
+      "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans.",
+      "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
+      "bullet3": "Plateforme open-source et 100 % gratuite",
+      "bullet4": "Sortie prévue pour la rentrée 2020"
     }
   }
 }
