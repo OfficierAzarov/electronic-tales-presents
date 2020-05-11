@@ -147,6 +147,28 @@
           }
         }
       }
+    },
+    "team": {
+      "id1": {
+        "name": "Toi",
+        "desc": "Mais oui, parfaitement."
+      },
+      "id2": {
+        "name": "Monday Hazard",
+        "desc": "Éleveuse de code since 2020"
+      },
+      "id3": {
+        "name": "Le Crampon",
+        "desc": "Si la start-up nation avait un visage, ce serait le sien."
+      },
+      "id4": {
+        "name": "Partenko",
+        "desc": "Notre indémontable caution hardware"
+      },
+      "id5": {
+        "name": "Officier Azarov",
+        "desc": "Architecte technique et spirituel d'Electronic Tales"
+      }
     }
   }
 }

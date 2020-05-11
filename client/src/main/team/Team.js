@@ -1,4 +1,5 @@
 import React from "react";
+import { withTranslation } from "react-i18next";
 
 import "./Team.css";
 
@@ -10,6 +11,8 @@ import azarov from "../../resources/img/team/azarov.png";
 
 class Team extends React.Component {
   render() {
+    const { t } = this.props;
+
     return (
       <div id="team-page">
         <h2>La Team</h2>
@@ -20,8 +23,8 @@ class Team extends React.Component {
             </div>
             <div className="team-member" id="member1">
               <div className="team-member-text">
-                <h4 className="memberName">Toi</h4>
-                <p>Mais oui, parfaitement.</p>
+                <h4 className="memberName">{t("team.id1.name")}</h4>
+                <p>{t("team.id1.desc")}</p>
               </div>
             </div>
             <div className="member-circle deg72">
@@ -29,8 +32,8 @@ class Team extends React.Component {
             </div>
             <div className="team-member" id="member2">
               <div className="team-member-text">
-                <h4 className="memberName">Monday Hazard</h4>
-                <p>Éleveuse de code since 2020</p>
+                <h4 className="memberName">{t("team.id2.name")}</h4>
+                <p>{t("team.id2.desc")}</p>
               </div>
             </div>
             <div className="member-circle deg144">
@@ -38,8 +41,8 @@ class Team extends React.Component {
             </div>
             <div className="team-member" id="member3">
               <div className="team-member-text">
-                <h4 className="memberName">Le crampon</h4>
-                <p>Si la start-up nation avait un visage, ce serait le sien.</p>
+                <h4 className="memberName">{t("team.id3.name")}</h4>
+                <p>{t("team.id3.desc")}</p>
               </div>
             </div>
             <div className="member-circle deg216">
@@ -47,8 +50,8 @@ class Team extends React.Component {
             </div>
             <div className="team-member" id="member4">
               <div className="team-member-text">
-                <h4 className="memberName">Partenko</h4>
-                <p>Notre indémontable caution hardware</p>
+                <h4 className="memberName">{t("team.id4.name")}</h4>
+                <p>{t("team.id4.desc")}</p>
               </div>
             </div>
             <div className="member-circle deg288">
@@ -56,8 +59,8 @@ class Team extends React.Component {
             </div>
             <div className="team-member" id="member5">
               <div className="team-member-text">
-                <h4 className="memberName">Officier Azarov</h4>
-                <p>Architecte technique et spirituel d'Electronic Tales</p>
+                <h4 className="memberName">{t("team.id5.name")}</h4>
+                <p>{t("team.id5.desc")}</p>
               </div>
             </div>
           </div>
@@ -67,4 +70,4 @@ class Team extends React.Component {
   }
 }
 
-export default Team;
+export default withTranslation()(Team);
