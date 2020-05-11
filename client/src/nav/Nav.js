@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withTranslation } from "react-i18next";
 
 import "./Nav.css";
 
@@ -12,6 +13,8 @@ class Nav extends React.Component {
   }
 
   render() {
+    const { t } = this.props;
+
     return (
       <nav>
         <div id="logo">
@@ -21,19 +24,19 @@ class Nav extends React.Component {
         </div>
         <div id="nav-links" className="desktop-visible">
           <Link to="/why" className={this.isActive("/why")}>
-            Pourquoi&nbsp;?
+            {t("nav.links.1")}
           </Link>
           <Link to="/concept" className={this.isActive("/concept")}>
-            Comment&nbsp;?
+            {t("nav.links.2")}
           </Link>
           <Link to="/tracks" className={this.isActive("/tracks")}>
-            Nos tracks
+            {t("nav.links.3")}
           </Link>
           <Link to="/progress" className={this.isActive("/progress")}>
-            On en est où&nbsp;?
+            {t("nav.links.4")}
           </Link>
           <Link to="/signup" className={this.isActive("/signup")}>
-            Nous rejoindre
+            {t("nav.links.5")}
           </Link>
         </div>
         <div id="language-switch">
@@ -41,7 +44,7 @@ class Nav extends React.Component {
           <span onClick={() => this.props.onLanguageHandle("en")}> en</span>
         </div>
         <button id="nav-button" className="button-design">
-          <Link to="/signup">Je participe&nbsp;!</Link>
+          <Link to="/signup">{t("nav.button")}</Link>
         </button>
       </nav>
     );
@@ -54,4 +57,4 @@ class Nav extends React.Component {
   }
 }
 
-export default Nav;
+export default withTranslation()(Nav);

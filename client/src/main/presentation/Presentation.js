@@ -37,6 +37,7 @@ class Presentation extends React.Component {
 
   render() {
     const { t } = this.props;
+
     return (
       <div id="presentation">
         <div
@@ -53,7 +54,7 @@ class Presentation extends React.Component {
           ))}
         </ul>
         <div id="animation-wrapper">
-          <Button text="Grumpf, oui&nbsp;!" goto="/why" />
+          <Button text={i18next.t("presentation.button")} goto="/why" />
         </div>
       </div>
     );

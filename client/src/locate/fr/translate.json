@@ -1,11 +1,22 @@
 {
   "translations": {
+    "nav": {
+      "links": {
+        "1": "Pourquoi ?",
+        "2": "Comment ?",
+        "3": "Nos tracks",
+        "4": "On en est où ?",
+        "5": "Nous rejoindre"
+      },
+      "button": "Je participe !"
+    },
     "presentation": {
       "title": "Développeur·euse junior, il t'est déjà arrivé d'avoir des difficultés pour...",
       "question1": "Te sentir légitime dans le monde de la tech ?",
       "question2": "Évaluer ton niveau réel ?",
       "question3": "Exprimer tes insécurités au travail ?",
-      "question4": "Te motiver pour continuer à monter en compétences ?"
+      "question4": "Te motiver pour continuer à monter en compétences ?",
+      "button": "Grumpf, yes!"
     },
     "why": {
       "bigText": "Dégommons le syndrome de l'imposteur ensemble !",
