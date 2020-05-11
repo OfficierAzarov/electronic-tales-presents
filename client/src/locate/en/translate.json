@@ -1,5 +1,15 @@
 {
   "translations": {
+    "nav": {
+      "links": {
+        "1": "Why ?",
+        "2": "How ?",
+        "3": "Our tracks",
+        "4": "Roadmap",
+        "5": "Join us"
+      },
+      "button": "I'm in !"
+    },
     "presentation": {
       "title": "As a junior developer, have you ever found it difficult to...",
       "question1": "Feel legitimate in the tech world ?",
