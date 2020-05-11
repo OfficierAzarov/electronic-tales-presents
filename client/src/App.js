@@ -42,111 +42,118 @@ class App extends React.Component {
     return (
       <Suspense fallback="loading">
         <div>
-          {/* <MediaQuery maxDeviceWidth={768}>
-        <div id="little-screens">
-          <img src={logo} alt="Electronic&nbsp;Tales logo"/>
-          <p>Notre équipe de lutins du dev
-            travaille actuellement d'arrache-clavier à la version mobile de ce site. <br/><br/>
-            Translate-toi jusqu'à un desktop ou reviens un peu plus tard.
-          </p>
-        </div>
-      </MediaQuery> */}
-          {/* <MediaQuery minDeviceWidth={769}> */}
-
-          <Router>
-            <Nav
-              currentPath={this.state.currentPath}
-              onLanguageHandle={this.onLanguageHandle}
-            />
-            <div id="page-container">
-              <div id="eltaskyline">
-                <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+          <MediaQuery maxDeviceWidth={768}>
+            <Router>
+              <div id="mobile-page">
+                <Nav mobile="y" />
+                <div id="mobile-main">
+                  <Presentation mobile="y" />
+                  <Why mobile="y" />
+                  {/*<Concept />
+                  <Tracks />
+                  <Progress />
+                  <Signup />
+                  <Team /> */}
+                </div>
+                <Footer mobile="y" />
               </div>
-              <div id="main">
-                <Switch>
-                  <Route
-                    exact
-                    path="/"
-                    render={(props) => (
-                      <Presentation
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/why"
-                    render={(props) => (
-                      <Why
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/concept"
-                    render={(props) => (
-                      <Concept
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/tracks"
-                    render={(props) => (
-                      <Tracks
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/progress"
-                    render={(props) => (
-                      <Progress
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/signup"
-                    render={(props) => (
-                      <Signup
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/team"
-                    render={(props) => (
-                      <Team
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                </Switch>
+            </Router>
+          </MediaQuery>
+          <MediaQuery minDeviceWidth={769}>
+            <Router>
+              <Nav
+                currentPath={this.state.currentPath}
+                onLanguageHandle={this.onLanguageHandle}
+              />
+              <div id="page-container">
+                <div id="eltaskyline">
+                  <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+                </div>
+                <div id="main">
+                  <Switch>
+                    <Route
+                      exact
+                      path="/"
+                      render={(props) => (
+                        <Presentation
+                          {...props}
+                          passCurrentPath={this.getCurrentPath}
+                          language={this.state.language}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/why"
+                      render={(props) => (
+                        <Why
+                          {...props}
+                          passCurrentPath={this.getCurrentPath}
+                          language={this.state.language}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/concept"
+                      render={(props) => (
+                        <Concept
+                          {...props}
+                          passCurrentPath={this.getCurrentPath}
+                          language={this.state.language}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/tracks"
+                      render={(props) => (
+                        <Tracks
+                          {...props}
+                          passCurrentPath={this.getCurrentPath}
+                          language={this.state.language}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/progress"
+                      render={(props) => (
+                        <Progress
+                          {...props}
+                          passCurrentPath={this.getCurrentPath}
+                          language={this.state.language}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/signup"
+                      render={(props) => (
+                        <Signup
+                          {...props}
+                          passCurrentPath={this.getCurrentPath}
+                          language={this.state.language}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/team"
+                      render={(props) => (
+                        <Team
+                          {...props}
+                          passCurrentPath={this.getCurrentPath}
+                          language={this.state.language}
+                        />
+                      )}
+                    />
+                  </Switch>
+                </div>
+                <Footer />
               </div>
-              <Footer />
-            </div>
-          </Router>
-          {/* </MediaQuery> */}
+            </Router>
+          </MediaQuery>
         </div>
       </Suspense>
     );
@@ -154,3 +161,15 @@ class App extends React.Component {
 }
 
 export default withTranslation()(App);
+
+{
+  /* <div id="little-screens">
+<img src={logo} alt="Electronic&nbsp;Tales logo" />
+<p>
+  Notre équipe de lutins du dev travaille actuellement
+  d'arrache-clavier à la version mobile de ce site. <br />
+  <br />
+  Translate-toi jusqu'à un desktop ou reviens un peu plus tard.
+</p>
+</div> */
+}

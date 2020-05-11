@@ -102,3 +102,16 @@ a:hover {
 .ref-wrapper-padded {
   padding-top: 8%;
 }
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 768px) {
+  .h-container {
+    margin-bottom: 3em;
+  }
+
+  .h-container h2 {
+    width: 90%;
+    font-size: 1.5em;
+  }
+}

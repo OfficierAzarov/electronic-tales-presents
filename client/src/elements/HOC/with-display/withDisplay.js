@@ -17,7 +17,7 @@ const withDisplay = (WrappedComponent) => {
 
     componentDidMount() {
       // passes the location fo the app (current path) to the parent (App.js)
-      emitCurrentPath(this.props);
+      if (this.props.passCurrentPath) emitCurrentPath(this.props);
       this.goUp(this.adaptDisplay);
     }
 

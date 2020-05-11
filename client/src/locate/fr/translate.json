@@ -16,7 +16,7 @@
       "question2": "Évaluer ton niveau réel ?",
       "question3": "Exprimer tes insécurités au travail ?",
       "question4": "Te motiver pour continuer à monter en compétences ?",
-      "button": "Grumpf, yes!"
+      "button": "Grumpf, oui !"
     },
     "why": {
       "bigText": "Dégommons le syndrome de l'imposteur ensemble !",
@@ -154,7 +154,11 @@
           "id4": {
             "desc": "Tu as notre reconnaissance &eacute;ternelle.",
             "question": "Alors, prêt·e pour l'aventure ?",
-            "callToAction": "Si oui, <span onClick={this.props.scrollUp}> retourne &agrave; l'&eacute;tape 1</span> et laisse-nous ton email !"
+            "callToAction": {
+              "beforeLink": "Si oui, ",
+              "link": "retourne à l'étape 1",
+              "afterLink": "et laisse-nous ton email !"
+            }
           }
         }
       }

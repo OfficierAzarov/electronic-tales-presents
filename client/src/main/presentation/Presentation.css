@@ -1,11 +1,5 @@
-/* #presentation {
-  width: 70%;
-  text-align: center;
-} */
-
-
 #presentation h2 {
-  opacity:0;
+  opacity: 0;
   animation: fadeIn 1.5s;
   animation-fill-mode: forwards;
 }
@@ -13,7 +7,7 @@
 #presentation ul {
   list-style: none;
   padding: 0;
-  text-align:center;
+  text-align: center;
 }
 
 #presentation li:first-child {
@@ -23,24 +17,24 @@
 #presentation li {
   font-size: 1.2em;
   margin-top: 1.5%;
-  opacity:0;
+  opacity: 0;
   animation: fadeIn 1.5s;
   animation-fill-mode: forwards;
 }
 
-#presentation li:nth-child(n+1) {
-  animation-delay: 1.0s;
+#presentation li:nth-child(n + 1) {
+  animation-delay: 1s;
 }
 
-#presentation li:nth-child(n+2) {
+#presentation li:nth-child(n + 2) {
   animation-delay: 1.8s;
 }
 
-#presentation li:nth-child(n+3) {
+#presentation li:nth-child(n + 3) {
   animation-delay: 2.6s;
 }
 
-#presentation li:nth-child(n+4) {
+#presentation li:nth-child(n + 4) {
   animation-delay: 3.4s;
 }
 
@@ -50,6 +44,8 @@
   animation-duration: 0.5s, 0.5s;
   animation-delay: 4.2s, 4.7s;
   animation-fill-mode: forwards;
+  margin: 0 auto;
+  width: 90%;
 }
 
 @keyframes fadeIn {
@@ -62,19 +58,47 @@
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-3px, 1px, 0);
   }
-  
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate3d(3px, -1px, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-0.5px, 0.5px, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(1px, -0.5px, 0);
+  }
+}
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 768px) {
+  #presentation {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #presentation li {
+    font-size: 1em;
+  }
+
+  #animation-wrapper {
+    text-align: center;
+    margin-top: 12%;
+  }
+
+  .button-design {
+    font-size: 0.9em;
+    padding: 2% 3%;
   }
 }

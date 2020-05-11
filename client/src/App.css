@@ -1,30 +1,48 @@
+/* ==== Destop Version ==== */
+
 #little-screens img {
-    width: 50%;
-    margin: 20% auto 15% ;
-    display: block;
+  width: 50%;
+  margin: 20% auto 15%;
+  display: block;
 }
 
 #little-screens p {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
 
 #main {
-    padding-top: 1%;
-    background: #121212;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding-top: 1%;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #eltaskyline {
-    background: rgb(91,145,158);
-    background-image: linear-gradient(0deg, #5b919e 0%, #0e4654 100%);
-    margin-bottom: -1px;
+  background: rgb(91, 145, 158);
+  background-image: linear-gradient(0deg, #5b919e 0%, #0e4654 100%);
+  margin-bottom: -1px;
 }
 
 #page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 768px) {
+  #mobile-page {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
+  }
+
+  #mobile-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

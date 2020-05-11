@@ -61,7 +61,7 @@ class SignupSteps extends Component {
         }}
       >
         {this.state.steps.map((step) => (
-          <div key="{step.id}" className="regular-steps">
+          <div key={step.id} className="regular-steps">
             <h4 className="shine-bright">{step.id}</h4>
             <p
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
@@ -70,11 +70,20 @@ class SignupSteps extends Component {
               <div>
                 <img src={grateful} />
                 <p>{i18next.t("signup.signupSteps.steps.id4.question")}</p>
-                <p
-                  dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                    i18next.t("signup.signupSteps.steps.id4.callToAction")
+                <p>
+                  {i18next.t(
+                    "signup.signupSteps.steps.id4.callToAction.beforeLink"
                   )}
-                ></p>
+                  <span onClick={this.props.scrollUp}>
+                    {" "}
+                    {i18next.t(
+                      "signup.signupSteps.steps.id4.callToAction.link"
+                    )}
+                  </span>
+                  {i18next.t(
+                    "signup.signupSteps.steps.id4.callToAction.afterLink"
+                  )}
+                </p>
               </div>
             ) : null}
           </div>

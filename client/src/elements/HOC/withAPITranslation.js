@@ -20,7 +20,6 @@ const withAPITranslation = (WrappedComponent) => {
 
     implementGenerate = (implementation) => {
       this.generate = implementation;
-      console.log("fired");
     };
 
     render() {
