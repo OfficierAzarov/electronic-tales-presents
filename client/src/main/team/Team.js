@@ -9,9 +9,14 @@ import partenko from "../../resources/img/team/partenko.png";
 import azarov from "../../resources/img/team/azarov.png";
 
 class Team extends React.Component {
+
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   render() {
     return (
-      <div id="team-page">
+      <div id="team-page" className="animated">
         <h2>La Team</h2>
         <div id="team-container">
           <div id="team-circle">
@@ -32,7 +37,7 @@ class Team extends React.Component {
             <div className="member-circle deg144"><img className="team-pic" src={crampon} alt="Le Crampon"/></div>
             <div className="team-member" id="member3">
               <div className="team-member-text">
-                <h4 className="memberName">Le crampon</h4>
+                <h4 className="memberName">Le Crampon</h4>
                 <p>Si la start-up nation avait un visage, ce serait le sien.</p>
               </div>
             </div>
