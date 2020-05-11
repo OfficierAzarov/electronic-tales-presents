@@ -1,7 +1,11 @@
 {
   "translations": {
     "presentation": {
-      "title": "Débugue.<br/> Apprends à lire le code des autres. Automatise. Survis aux entretiens. Écris du code propre. Croque des chips sans mettre de miettes sur ton clavier."
+      "title": "Développeur·euse junior, il t'est déjà arrivé d'avoir des difficultés pour...",
+      "question1": "Te sentir légitime dans le monde de la tech ?",
+      "question2": "Évaluer ton niveau réel ?",
+      "question3": "Exprimer tes insécurités au travail ?",
+      "question4": "Te motiver pour continuer à monter en compétences ?"
     }
   }
 }

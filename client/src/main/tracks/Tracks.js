@@ -1,6 +1,6 @@
 import React from "react";
 
-import withDisplay from "../../elements/with-display/withDisplay";
+import withDisplay from "../../elements/HOC/with-display/withDisplay";
 import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
 import TracksTabs from "./tracks-tabs/TracksTabs";
 import Button from "../../elements/buttons/Button";
@@ -16,7 +16,6 @@ class Tracks extends React.Component {
 
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    console.log(this.props.language);
   }
 
   headerTexts = {

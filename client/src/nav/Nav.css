@@ -36,6 +36,10 @@ nav {
   padding-right: 1%;
 }
 
+#language-switch span {
+  cursor: pointer;
+}
+
 #nav-button {
   padding: 0.5em 1.5em;
   outline: none;

@@ -16,7 +16,7 @@ i18n
     },
     /* default language when load the website in browser */
     lng: "fr",
-    /* When react i18next not finding any language to as default in borwser */
+    /* When react i18next not finding any language to as default in browser */
     fallbackLng: "en",
     /* debugger For Development environment */
     debug: true,

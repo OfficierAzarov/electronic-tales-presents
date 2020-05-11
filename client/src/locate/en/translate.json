@@ -1,7 +1,11 @@
 {
   "translations": {
     "presentation": {
-      "title": "Developer..."
+      "title": "Développeur·euse junior, il t'est déjà arrivé d'avoir des difficultés pour...",
+      "question1": "Tmonde de la tech ?",
+      "question2": "Évaluau réel ?",
+      "question3": "Exprimer tes itravail ?",
+      "question4": "Te motiter en compétences ?"
     }
   }
 }

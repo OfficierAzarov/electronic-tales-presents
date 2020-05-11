@@ -1,6 +1,9 @@
 import React from "react";
+import { compose } from "recompose";
 import { withTranslation } from "react-i18next";
+import i18next from "i18next";
 
+import withAPITranslation from "../../elements/HOC/withAPITranslation";
 import Button from "../../elements/buttons/Button";
 import { emitCurrentPath } from "../../utils/Utils";
 
@@ -9,14 +12,8 @@ import "./Presentation.css";
 class Presentation extends React.Component {
   state = {
     largeText: false,
+    sentences: [],
   };
-
-  sentences = [
-    "Te sentir légitime dans le monde de la tech ?",
-    "Évaluer ton niveau réel ?",
-    "Exprimer tes insécurités au travail ?",
-    "Te motiver pour continuer à monter en compétences ?",
-  ];
 
   componentDidMount() {
     // passes the location fo the app (current path) to the parent (App.js)
@@ -25,11 +22,23 @@ class Presentation extends React.Component {
     if (window.innerHeight < 700) {
       this.setState({ largeText: true });
     }
+
+    this.props.implementGenerate(this.generate);
   }
+
+  generate = () => {
+    this.setState({
+      sentences: [
+        i18next.t("presentation.question1"),
+        i18next.t("presentation.question2"),
+        i18next.t("presentation.question3"),
+        i18next.t("presentation.question4"),
+      ],
+    });
+  };
 
   render() {
     const { t } = this.props;
-
     return (
       <div id="presentation">
         <div
@@ -37,11 +46,11 @@ class Presentation extends React.Component {
           style={{ marginTop: this.state.largeText ? "3%" : "" }}
         >
           <h2 style={{ width: this.state.largeText ? "90%" : "" }}>
-            {t("presentation.title")}
+            {i18next.t("presentation.title")}
           </h2>
         </div>
         <ul>
-          {this.sentences.map((sentence, i) => (
+          {this.state.sentences.map((sentence, i) => (
             <li key={i}>{sentence}</li>
           ))}
         </ul>
@@ -53,4 +62,4 @@ class Presentation extends React.Component {
   }
 }
 
-export default withTranslation()(Presentation);
+export default compose(withTranslation(), withAPITranslation)(Presentation);

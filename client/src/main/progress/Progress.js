@@ -1,6 +1,6 @@
 import React from "react";
 
-import withDisplay from "../../elements/with-display/withDisplay";
+import withDisplay from "../../elements/HOC/with-display/withDisplay";
 import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
 import Map from "./map/Map";
 import Button from "../../elements/buttons/Button";

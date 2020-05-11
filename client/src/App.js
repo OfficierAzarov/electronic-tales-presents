@@ -24,7 +24,7 @@ class App extends React.Component {
   }
   state = {
     currentPath: null,
-    language: "en",
+    language: "fr",
   };
 
   getCurrentPath = (currentPathFromChild) => {
@@ -71,6 +71,7 @@ class App extends React.Component {
                       <Presentation
                         {...props}
                         passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
                       />
                     )}
                   />
@@ -78,7 +79,11 @@ class App extends React.Component {
                     exact
                     path="/why"
                     render={(props) => (
-                      <Why {...props} passCurrentPath={this.getCurrentPath} />
+                      <Why
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
+                      />
                     )}
                   />
                   <Route
@@ -88,6 +93,7 @@ class App extends React.Component {
                       <Concept
                         {...props}
                         passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
                       />
                     )}
                   />
@@ -109,6 +115,7 @@ class App extends React.Component {
                       <Progress
                         {...props}
                         passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
                       />
                     )}
                   />
@@ -119,6 +126,7 @@ class App extends React.Component {
                       <Signup
                         {...props}
                         passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
                       />
                     )}
                   />
@@ -126,7 +134,11 @@ class App extends React.Component {
                     exact
                     path="/team"
                     render={(props) => (
-                      <Team {...props} passCurrentPath={this.getCurrentPath} />
+                      <Team
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
+                      />
                     )}
                   />
                 </Switch>

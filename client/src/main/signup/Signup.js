@@ -1,6 +1,6 @@
 import React from "react";
 
-import withDisplay from "../../elements/with-display/withDisplay";
+import withDisplay from "../../elements/HOC/with-display/withDisplay";
 
 import Subscribe from "../../elements/form/subscribe/Subscribe.js";
 import SignupSteps from "./signup-steps/SignupSteps";
