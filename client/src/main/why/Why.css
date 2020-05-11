@@ -56,5 +56,17 @@
 
 @media only screen and (max-width: 768px) {
   #why {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #content-container {
+    display: block;
+  }
+
+  #text-container li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
   }
 }

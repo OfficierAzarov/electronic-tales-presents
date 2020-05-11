@@ -27,13 +27,18 @@ class Why extends React.Component {
           <div id="content-container">
             <div id="text-container">
               <h3>{t("why.bigText")}</h3>
+              <div id="video-container">
+                <video loop autoPlay controls>
+                  <source src={trailer} type="video/mp4" />
+                </video>
+              </div>
               <ul>
                 <li>
                   <Emoji
                     symbol="☁️"
                     label="cloud"
                     size="1.5em"
-                    marginRight="1%"
+                    marginBottom="1%"
                   />
                   {t("why.bullet1")}
                 </li>
@@ -41,8 +46,8 @@ class Why extends React.Component {
                   <Emoji
                     symbol="🌈"
                     label="rainbow"
-                    size="1.5em"
-                    marginRight="1%"
+                    size="1.4em"
+                    marginBottom="1%"
                   />
                   {t("why.bullet2")}
                 </li>
@@ -51,7 +56,7 @@ class Why extends React.Component {
                     symbol="🍰"
                     label="shortcake"
                     size="1.2em"
-                    marginRight="1%"
+                    marginBottom="1%"
                   />
                   {t("why.bullet3")}
                 </li>
@@ -60,16 +65,11 @@ class Why extends React.Component {
                     symbol="📆"
                     label="tear-off calendar"
                     size="1.2em"
-                    marginRight="1%"
+                    marginBottom="1%"
                   />
                   {t("why.bullet4")}
                 </li>
               </ul>
-            </div>
-            <div id="video-container">
-              <video loop autoPlay controls>
-                <source src={trailer} type="video/mp4" />
-              </video>
             </div>
           </div>
         </div>
