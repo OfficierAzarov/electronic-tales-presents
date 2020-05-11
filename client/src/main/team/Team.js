@@ -15,7 +15,7 @@ class Team extends React.Component {
 
     return (
       <div id="team-page">
-        <h2>La Team</h2>
+        <h2>{t("team.title")}</h2>
         <div id="team-container">
           <div id="team-circle">
             <div className="member-circle deg0">

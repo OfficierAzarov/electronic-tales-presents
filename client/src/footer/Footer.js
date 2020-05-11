@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div>
         {/* <a href="#">contact@electronictales.com</a> */}
-        <Link to="/team">La Team</Link>
+        <Link to="/team">Team</Link>
       </div>
 
       <p>Made with &#10084; by Electronic&nbsp;Tales Team</p>

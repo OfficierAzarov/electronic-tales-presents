@@ -160,6 +160,7 @@
       }
     },
     "team": {
+      "title": "La Team",
       "id1": {
         "name": "Toi",
         "desc": "Mais oui, parfaitement."
