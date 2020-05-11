@@ -24,7 +24,7 @@ class Why extends React.Component {
       <div id="why" className="animated">
         <div id="content-container">
           <div id="text-container">
-            <h3>{t("why.bigTitle")}</h3>
+            <h3>{t("why.bigText")}</h3>
             <ul>
               <li>
                 <Emoji
@@ -70,7 +70,7 @@ class Why extends React.Component {
             </video>
           </div>
         </div>
-        <Button text="Youpi, dites-m'en plus&nbsp;!" goto="/concept" />
+        <Button text={t("why.button")} goto="/concept" />
       </div>
     );
   }

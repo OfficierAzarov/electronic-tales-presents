@@ -8,11 +8,145 @@
       "question4": "Te motiver pour continuer à monter en compétences ?"
     },
     "why": {
-      "bigTitle": "Dégommons le syndrome de l'imposteur ensemble !",
+      "bigText": "Dégommons le syndrome de l'imposteur ensemble !",
       "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans.",
       "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
       "bullet3": "Plateforme open-source et 100 % gratuite",
-      "bullet4": "Sortie prévue pour la rentrée 2020"
+      "bullet4": "Sortie prévue pour la rentrée 2020",
+      "button": "Youpi, dites-m'en plus !"
+    },
+    "concept": {
+      "header": {
+        "bigText": "À Electronic&nbsp;Tales, on veut rendre la computer culture <em>human readable</em>.",
+        "middleText": "C'est-à-dire accessible &agrave; tous&middot;tes.",
+        "littleText": "Pour cela, on s'est assis&middot;e&middot;s, <strike>on a mang&eacute; des tartines au beurre demi-sel,</strike> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts)."
+      },
+      "conceptItems": {
+        "principles": {
+          "id1": {
+            "text": "Fabriquer un safe-space d'entraide et de bienveillance entre devs juniors"
+          },
+          "id2": {
+            "text": "Aider les devs juniors à muscler leurs savoirs en software et hardware"
+          },
+          "id3": {
+            "text": "Analyser et décrypter les codes de la culture geek"
+          },
+          "id4": {
+            "text": "Motiver les devs juniors à continuer à apprendre en parallèle de leur job"
+          }
+        },
+        "implementations": {
+          "id1": {
+            "text": "Cours du soir et workshops, en ligne et en vrai"
+          },
+          "id2": {
+            "text": "Wall social/Discord/autre moyen de communiquer entre juniors de façon anonyme (you name it)"
+          },
+          "id3": {
+            "text": "Micro-learning, storytelling, sandbox - pour apprendre partout sans ZzzZ"
+          },
+          "id4": {
+            "text": "Des contenus cool dans ta boîte mail, ton Insta ou ton Facebook (mais il paraît que c'est pour les vieux)"
+          }
+        }
+      },
+      "button": "Super ! Et concrètement ?"
+    },
+    "tracks": {
+      "header": {
+        "bigText": "Notre (future) plateforme",
+        "middleText": "C'est-à-dire accessible &agrave; tous&middot;tes.",
+        "littleText": "Pour cela, on s'est assis&middot;e&middot;s, <strike>on a mang&eacute; des tartines au beurre demi-sel,</strike> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts)."
+      },
+      "tracksTabs": {
+        "worlds": {
+          "id1": {
+            "text": "🐞&nbsp;Débugue.<br/>🔬&nbsp;Apprends à lire le code des autres.<br/>⛱️&nbsp;Automatise.<br/>👔&nbsp;Survis aux entretiens.<br/>⌨️&nbsp;Écris du code propre.<br/>✊&nbsp;Croque des chips sans mettre de miettes sur ton clavier.",
+            "baseline": "Apprends à programmer entre les lignes."
+          },
+          "id2": {
+            "text": "💡&nbsp;Découvre comment fonctionne un ordinateur.<br/>🔨&nbsp;Construis ta machine.<br/>🎇&nbsp;Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).",
+            "baseline": "Plonge dans le monde englouti de la computer science."
+          },
+          "id3": {
+            "text": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;Marre de ne pas avoir la réf à la machine à café&nbsp;?",
+            "baseline": "Imprègne-toi des mythes et légendes de la bits generation."
+          }
+        }
+      },
+      "button": "Et ça avance bien, cette histoire ?"
+    },
+    "progress": {
+      "header": {
+        "bigText": "Roadmap",
+        "middleText": "Enfin, où on en est, quoi.",
+        "littleText": "Mais ça sonne mieux, «&nbsp;roadmap&nbsp;», non&nbsp;?"
+      },
+      "map": {
+        "preHereStations": {
+          "id1": {
+            "title": "Idée 🤔",
+            "comment": "Tu crois vraiment que c'est une bonne idée ?"
+          },
+          "id2": {
+            "title": "Brainstorrrrm",
+            "comment": "Il reste des Kinder Country ?"
+          }
+        },
+        "here": {
+          "title": "On parle de notre projet",
+          "comment": "Tu es ici !"
+        },
+        "postHereStations": {
+          "id1": {
+            "title": "Recueil de vos idées",
+            "comment": "On dégomme le syndrome de l'imposteur ensemble."
+          },
+          "id2": {
+            "title": "Release de la plateforme Electronic Tales 🎉",
+            "comment": "On continue à dégommer."
+          },
+          "id3": {
+            "title": "Community life : workshops, cours du soir..",
+            "comment": "On mouline, on analyse, on cogito ergo sum."
+          },
+          "id4": {
+            "title": "Paix sur la Terre 🌼",
+            "comment": "Ou juste un milieu tech plus gentil et plus inclusif, pour commencer."
+          }
+        }
+      },
+      "button": "Okay, comment puis-je vous aider ?"
+    },
+    "signup": {
+      "header": {
+        "bigText": "Comment nous aider ?"
+      },
+      "form": {
+        "action": "Écris ton email là.",
+        "error500": "Oops... Quelque chose s'est mal passé côté serveur. Réessaie ou contacte-nous.",
+        "subscribeButton": "Je participe !",
+        "waitAMinute": "Minute, papillon ! Qu'est-ce qui m'arrive si je vous file mon mail ?"
+      },
+      "signupSteps": {
+        "steps": {
+          "id1": {
+            "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i>, <i class='fab fa-instagram'></i> et compagnie."
+          },
+          "id2": {
+            "desc": "N'aie pas peur&nbsp;!<br/><br/>En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeur sur le z-index en css ou de recoder <a href='https://www.impots.gouv.fr/portail/' target='_blank' rel='noopener noreferrer'>impots.gouv</a> en dark theme. <br /><br />Tu vas voir, c'est tout simple&nbsp;!"
+          },
+          "id3": {
+            "desc": "&Agrave; intervalles r&eacute;guliers (mais pas trop rapproch&eacute;s), nous t'&eacute;crirons pour te poser des questions de la plus haute importance (ex&nbsp;: quel design tu pr&eacute;f&egrave;res, quels sujets t'int&eacute;ressent...). Y r&eacute;pondre ne te prendra jamais plus de 5&nbsp;minutes. Et si tu n'es pas inspir&eacute;&middot;e, tu as le droit de nous &eacute;crire pour dire que nos questions sont nulles (ou juste de ne pas r&eacute;pondre)."
+          },
+          "id4": {
+            "desc": "Tu as notre reconnaissance &eacute;ternelle.",
+            "question": "Alors, prêt·e pour l'aventure ?",
+            "callToAction": "Si oui, <span onClick={this.props.scrollUp}> retourne &agrave; l'&eacute;tape 1</span> et laisse-nous ton email !"
+          }
+        }
+      }
     }
   }
 }

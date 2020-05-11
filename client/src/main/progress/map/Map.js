@@ -1,4 +1,8 @@
 import React from "react";
+import i18next from "i18next";
+
+import withAPITranslation from "../../../elements/HOC/withAPITranslation";
+import * as Utils from "../../../utils/Utils";
 
 import "./Map.css";
 
@@ -7,7 +11,13 @@ class Map extends React.Component {
     isActive: [],
     isShown: false,
     isTranslated: false,
+    preHereStations: [],
+    postHereStations: [],
   };
+
+  componentDidMount() {
+    this.props.implementGenerate(this.generate);
+  }
 
   componentDidUpdate(prevProps) {
     if (this.props.isShown !== prevProps.isShown) {
@@ -18,42 +28,47 @@ class Map extends React.Component {
     }
   }
 
-  preHereStations = [
-    {
-      id: "station-1",
-      title: "Idée 🤔",
-      comment: "Tu crois vraiment que c'est une bonne idée ?",
-    },
-    {
-      id: "station-2",
-      title: "Brainstorrrrm",
-      comment: "Il reste des Kinder Country ?",
-    },
-  ];
+  generate = () => {
+    this.setState({
+      preHereStations: [
+        {
+          id: "station-1",
+          title: i18next.t("progress.map.preHereStations.id1.title"),
+          comment: i18next.t("progress.map.preHereStations.id1.comment"),
+        },
+        {
+          id: "station-2",
+          title: i18next.t("progress.map.preHereStations.id2.title"),
+          comment: i18next.t("progress.map.preHereStations.id2.comment"),
+        },
+      ],
+    });
 
-  postHereStations = [
-    {
-      id: "station-4",
-      title: "Recueil de vos idées",
-      comment: "On mouline, on analyse, on cogito ergo sum.",
-    },
-    {
-      id: "station-5",
-      title: "Release de la plateforme Electronic Tales 🎉",
-      comment: "On dégomme le syndrome de l'imposteur ensemble.",
-    },
-    {
-      id: "station-6",
-      title: "Community life : workshops, cours du soir...",
-      comment: "On continue à dégommer.",
-    },
-    {
-      id: "station-7",
-      title: "Paix sur la Terre 🌼",
-      comment:
-        "Ou juste un milieu tech plus gentil et plus inclusif, pour commencer.",
-    },
-  ];
+    this.setState({
+      postHereStations: [
+        {
+          id: "station-4",
+          title: i18next.t("progress.map.postHereStations.id1.title"),
+          comment: i18next.t("progress.map.postHereStations.id1.comment"),
+        },
+        {
+          id: "station-5",
+          title: i18next.t("progress.map.postHereStations.id2.title"),
+          comment: i18next.t("progress.map.postHereStations.id2.comment"),
+        },
+        {
+          id: "station-6",
+          title: i18next.t("progress.map.postHereStations.id3.title"),
+          comment: i18next.t("progress.map.postHereStations.id2.comment"),
+        },
+        {
+          id: "station-7",
+          title: i18next.t("progress.map.postHereStations.id4.title"),
+          comment: i18next.t("progress.map.postHereStations.id4.comment"),
+        },
+      ],
+    });
+  };
 
   hoverEffectOn = (stationId) => {
     this.setState({ isActive: [stationId] });
@@ -78,7 +93,7 @@ class Map extends React.Component {
       >
         <div id="progress-container">
           <span id="progress-bar"></span>
-          {this.preHereStations.map((station) => (
+          {this.state.preHereStations.map((station) => (
             <div key={station.id} className="station-container">
               <span
                 className="station done"
@@ -130,20 +145,22 @@ class Map extends React.Component {
                     ? "paused"
                     : "",
                 }}
-              >
-                On parle de notre projet
-              </p>
+                dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                  i18next.t("progress.map.here.title")
+                )}
+              ></p>
               <p
                 className="comment"
                 style={{
                   color: this.shouldIShow("here-station") ? "#e9e9e9" : "",
                 }}
-              >
-                Vous êtes ici&nbsp;!
-              </p>
+                dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                  i18next.t("progress.map.here.comment")
+                )}
+              ></p>
             </div>
           </div>
-          {this.postHereStations.map((station) => (
+          {this.state.postHereStations.map((station) => (
             <div key={station.id} className="station-container">
               <span
                 className="station"
@@ -175,4 +192,4 @@ class Map extends React.Component {
   }
 }
 
-export default Map;
+export default withAPITranslation(Map);

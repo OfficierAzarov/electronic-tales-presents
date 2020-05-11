@@ -5,6 +5,7 @@
   margin: 15% auto 0;
   transition: opacity 1s ease-in-out, transform 1s;
   transition-delay: 0.2s;
+  width: 85%;
 }
 
 #progress-container {
@@ -61,7 +62,7 @@
   top: 0;
   transform: translate(3.8em, 0%);
   background-color: #ffffff;
-  height: 90%;
+  height: 87%;
   width: 0.5em;
   border-radius: 0.5em;
 }

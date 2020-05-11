@@ -1,4 +1,6 @@
 import React from "react";
+import { compose } from "recompose";
+import { withTranslation } from "react-i18next";
 
 import withDisplay from "../../elements/HOC/with-display/withDisplay";
 import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
@@ -14,42 +16,36 @@ class Progress extends React.Component {
     this.ref = React.createRef();
   }
 
-  headerTexts = {
-    big: "Roadmap",
-    middle: "Enfin, où on en est, quoi.",
-    little: "Mais ça sonne mieux, «&nbsp;roadmap&nbsp;», non&nbsp;?",
-  };
-
   scrollDown = () => {
     this.ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   render() {
+    const { t } = this.props;
+
     return (
       <div id="progress">
         <InteractiveHeader
-          bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
-          middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
-          littleText={Utils.convertToCleanHtml(this.headerTexts.little)}
+          bigText={Utils.convertToCleanHtml(t("progress.header.bigText"))}
+          middleText={Utils.convertToCleanHtml(t("progress.header.middleText"))}
+          littleText={Utils.convertToCleanHtml(t("progress.header.littleText"))}
           isShown={this.props.isShown}
           isClickable={!this.props.isShown}
           scrollDown={this.scrollDown}
         />
-        <div ref={this.ref} className="ref-wrapper">
+        <div ref={this.ref} className="ref-wrapper-padded">
           <Map
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
+            language={this.props.language}
           />
         </div>
         <div id="corrective-button-wrapper">
-          <Button
-            text="Okay, comment puis-je vous aider&nbsp;?"
-            goto="/signup"
-          />
+          <Button text={t("progress.button")} goto="/signup" />
         </div>
       </div>
     );
   }
 }
 
-export default withDisplay(Progress);
+export default compose(withDisplay, withTranslation())(Progress);

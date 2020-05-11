@@ -1,6 +1,8 @@
 import React from "react";
 import i18next from "i18next";
 
+import withAPITranslation from "../../../elements/HOC/withAPITranslation";
+
 import * as Utils from "../../../utils/Utils";
 
 import modernWorld from "../../../resources/img/modern-world-animation-pretty-ok.gif";
@@ -10,19 +12,15 @@ import imaginarium from "../../../resources/img/imaginarium-animation.gif";
 import "./TracksTabs.css";
 
 class TracksTabs extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   state = {
     isShown: false,
     isTranslated: false,
     isActive: ["modern-world"],
-    language: "",
+    worlds: [],
   };
 
   componentDidMount() {
-    this.generate();
+    this.props.implementGenerate(this.generate);
   }
 
   componentDidUpdate(prevProps) {
@@ -32,58 +30,38 @@ class TracksTabs extends React.Component {
     if (this.props.isTranslated !== prevProps.isTranslated) {
       this.setState({ isTranslated: this.props.isTranslated });
     }
-    if (this.props.language !== prevProps.language) {
-      i18next.changeLanguage(this.props.language, (err, t) => {
-        if (err) return console.log("something went wrong loading", err);
-        this.generate();
-      });
-    }
   }
 
-  worlds = [];
-
   generate = () => {
-    this.worlds = [
-      {
-        id: "modern-world",
-        title: "Modern World",
-        desc: i18next.t("presentation.title"),
-        baseline: "Apprends à programmer entre les lignes.",
-        imgSrc: modernWorld,
-        imgAlt: "modern world gif",
-      },
-    ];
+    this.setState({
+      worlds: [
+        {
+          id: "modern-world",
+          title: "Modern World",
+          desc: i18next.t("tracks.tracksTabs.worlds.id1.text"),
+          baseline: i18next.t("tracks.tracksTabs.worlds.id1.baseline"),
+          imgSrc: modernWorld,
+          imgAlt: "modern world gif",
+        },
+        {
+          id: "ancient-world",
+          title: "Ancient World",
+          desc: i18next.t("tracks.tracksTabs.worlds.id2.text"),
+          baseline: i18next.t("tracks.tracksTabs.worlds.id2.baseline"),
+          imgSrc: ancientWorld,
+          imgAlt: "ancient world gif",
+        },
+        {
+          id: "imaginarium",
+          title: "Imaginarium",
+          desc: i18next.t("tracks.tracksTabs.worlds.id3.text"),
+          baseline: i18next.t("tracks.tracksTabs.worlds.id3.baseline"),
+          imgSrc: imaginarium,
+          imgAlt: "imaginarium gif",
+        },
+      ],
+    });
   };
-
-  // worlds = [
-  //   {
-  //     id: "modern-world",
-  //     title: "Modern World",
-  //     desc:
-  //       "🐞&nbsp;Débugue.<br/>🔬&nbsp;Apprends à lire le code des autres.<br/>⛱️&nbsp;Automatise.<br/>👔&nbsp;Survis aux entretiens.<br/>⌨️&nbsp;Écris du code propre.<br/>✊&nbsp;Croque des chips sans mettre de miettes sur ton clavier.",
-  //     baseline: "Apprends à programmer entre les lignes.",
-  //     imgSrc: modernWorld,
-  //     imgAlt: "modern world gif",
-  //   },
-  //   {
-  //     id: "ancient-world",
-  //     title: "Ancient World",
-  //     desc:
-  //       "💡&nbsp;Découvre comment fonctionne un ordinateur.<br/>🔨&nbsp;Construis ta machine.<br/>🎇&nbsp;Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine).",
-  //     baseline: "Plonge dans le monde englouti de la computer science.",
-  //     imgSrc: ancientWorld,
-  //     imgAlt: "ancient world gif",
-  //   },
-  //   {
-  //     id: "imaginarium",
-  //     title: "Imaginarium",
-  //     desc:
-  //       "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;Marre de ne pas avoir la réf à la machine à café\u00A0?",
-  //     baseline: "Imprègne-toi des mythes et légendes de la bits generation.",
-  //     imgSrc: imaginarium,
-  //     imgAlt: "imaginarium gif",
-  //   },
-  // ];
 
   show = (worldId) => {
     this.setState({ isActive: [worldId] });
@@ -105,7 +83,7 @@ class TracksTabs extends React.Component {
         <div id="world">
           <div>
             <div id="tabs">
-              {this.worlds.map((world) => (
+              {this.state.worlds.map((world) => (
                 <div
                   id={world.id}
                   key={world.id}
@@ -123,7 +101,7 @@ class TracksTabs extends React.Component {
             </div>
           </div>
 
-          {this.worlds.map((world) => (
+          {this.state.worlds.map((world) => (
             <div key={world.id}>
               <div
                 className="content-container"
@@ -150,4 +128,4 @@ class TracksTabs extends React.Component {
   }
 }
 
-export default TracksTabs;
+export default withAPITranslation(TracksTabs);

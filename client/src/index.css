@@ -99,6 +99,6 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
-.ref-wrapper {
+.ref-wrapper-padded {
   padding-top: 8%;
 }

@@ -16,14 +16,6 @@ class Concept extends React.Component {
     this.ref = React.createRef();
   }
 
-  headerTexts = {
-    big:
-      "À Electronic&nbsp;Tales, on veut rendre la computer culture <em>human readable</em>.",
-    middle: "C'est-à-dire accessible &agrave; tous&middot;tes.",
-    little:
-      "Pour cela, on s'est assis&middot;e&middot;s, <strike>on a mang&eacute; des tartines au beurre demi-sel,</strike> on a r&eacute;flechi, on a d&eacute;fini des axes (et ourdi des concepts).",
-  };
-
   scrollDown = () => {
     this.ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
   };
@@ -34,10 +26,9 @@ class Concept extends React.Component {
     return (
       <div id="concept">
         <InteractiveHeader
-          bigText={Utils.convertToCleanHtml(t("presentation.title"))}
-          // bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
-          middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
-          littleText={Utils.convertToCleanHtml(this.headerTexts.little)}
+          bigText={Utils.convertToCleanHtml(t("concept.header.bigText"))}
+          middleText={Utils.convertToCleanHtml(t("concept.header.middleText"))}
+          littleText={Utils.convertToCleanHtml(t("concept.header.littleText"))}
           isShown={this.props.isShown}
           isClickable={!this.props.isShown}
           scrollDown={this.scrollDown}
@@ -46,12 +37,10 @@ class Concept extends React.Component {
           <ConceptItems
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
+            language={this.props.language}
           />
         </div>
-        <Button
-          text="Super&nbsp;! Et concr&egrave;tement&nbsp;?"
-          goto="/tracks"
-        />
+        <Button text={t("concept.button")} goto="/tracks" />
       </div>
     );
   }

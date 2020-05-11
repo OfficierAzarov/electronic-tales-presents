@@ -1,6 +1,10 @@
 import React from "react";
+import { compose } from "recompose";
+import i18next from "i18next";
 
 import withDisplay from "../../elements/HOC/with-display/withDisplay";
+import withAPITranslation from "../../elements/HOC/withAPITranslation";
+import * as Utils from "../../utils/Utils";
 
 import Subscribe from "../../elements/form/subscribe/Subscribe.js";
 import SignupSteps from "./signup-steps/SignupSteps";
@@ -42,10 +46,10 @@ class Signup extends React.Component {
     return (
       <div id="signup" className="animated">
         <div className="h-container">
-          <h2>Comment nous aider&nbsp;?</h2>
+          <h2>{i18next.t("signup.header.bigText")}</h2>
         </div>
         <div>
-          <p>&Eacute;cris ton email là.</p>
+          <p>{i18next.t("signup.form.action")}</p>
           {this.state.isEmailSubmitted && this.state.status !== "200" ? (
             <div className="notification failure">
               <p>{this.state.message}</p>
@@ -62,19 +66,20 @@ class Signup extends React.Component {
               <Subscribe
                 configureNotification={this.configureNotification}
                 handleError={this.handleError}
+                language={this.props.language}
               />
               <p onClick={this.scrollDown}>
-                Minute, papillon&nbsp;! Qu'est-ce qui m'arrive si je vous file
-                mon mail&nbsp;?
+                {i18next.t("signup.form.waitAMinute")}
               </p>
             </div>
           )}
         </div>
-        <div ref={this.ref} className="ref-wrapper">
+        <div ref={this.ref} className="ref-wrapper-padded">
           <SignupSteps
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
             scrollUp={this.scrollUp}
+            language={this.props.language}
           />
         </div>
       </div>
@@ -82,4 +87,4 @@ class Signup extends React.Component {
   }
 }
 
-export default withDisplay(Signup);
+export default compose(withDisplay, withAPITranslation)(Signup);

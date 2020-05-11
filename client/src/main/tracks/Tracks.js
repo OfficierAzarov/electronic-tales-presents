@@ -1,4 +1,6 @@
 import React from "react";
+import { compose } from "recompose";
+import { withTranslation } from "react-i18next";
 
 import withDisplay from "../../elements/HOC/with-display/withDisplay";
 import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
@@ -31,30 +33,29 @@ class Tracks extends React.Component {
   };
 
   render() {
+    const { t } = this.props;
+
     return (
       <div id="tracks">
         <InteractiveHeader
-          bigText={Utils.convertToCleanHtml(this.headerTexts.big)}
-          middleText={Utils.convertToCleanHtml(this.headerTexts.middle)}
-          littleText={Utils.convertToCleanHtml(this.headerTexts.little)}
+          bigText={Utils.convertToCleanHtml(t("tracks.header.bigText"))}
+          middleText={Utils.convertToCleanHtml(t("tracks.header.middleText"))}
+          littleText={Utils.convertToCleanHtml(t("tracks.header.littleText"))}
           isShown={this.props.isShown}
           isClickable={!this.props.isShown}
           scrollDown={this.scrollDown}
         />
-        <div ref={this.ref} className="ref-wrapper">
+        <div ref={this.ref} className="ref-wrapper-padded">
           <TracksTabs
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
             language={this.props.language}
           />
         </div>
-        <Button
-          text="Et ça avance bien, cette histoire&nbsp;?"
-          goto="/progress"
-        />
+        <Button text={t("tracks.button")} goto="/progress" />
       </div>
     );
   }
 }
 
-export default withDisplay(Tracks);
+export default compose(withDisplay, withTranslation())(Tracks);
