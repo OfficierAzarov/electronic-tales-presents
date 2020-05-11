@@ -59,7 +59,7 @@ class Map extends React.Component {
         {
           id: "station-6",
           title: i18next.t("progress.map.postHereStations.id3.title"),
-          comment: i18next.t("progress.map.postHereStations.id2.comment"),
+          comment: i18next.t("progress.map.postHereStations.id3.comment"),
         },
         {
           id: "station-7",
