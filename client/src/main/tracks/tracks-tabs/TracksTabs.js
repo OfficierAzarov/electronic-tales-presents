@@ -72,59 +72,70 @@ class TracksTabs extends React.Component {
   };
 
   render() {
-    return (
-      <div
-        id="worlds-container"
-        style={{
-          opacity: this.state.isShown ? 1 : 0,
-          transform: this.state.isTranslated ? "translateY(-8%)" : "",
-        }}
-      >
-        <div id="world">
-          <div>
-            <div id="tabs">
-              {this.state.worlds.map((world) => (
-                <div
-                  id={world.id}
-                  key={world.id}
-                  className="tab-title"
-                  onClick={() => this.show(world.id)}
-                  style={{
-                    textShadow: this.shouldIShow(world.id)
-                      ? "0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255), 0 0 1.6em rgb(0, 255, 255)"
-                      : "none",
-                  }}
-                >
-                  {world.title}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {this.state.worlds.map((world) => (
-            <div key={world.id}>
-              <div
-                className="content-container"
-                id={world.id}
-                style={{
-                  display: this.shouldIShow(world.id) ? "" : "none",
-                }}
-              >
-                <img src={world.imgSrc} alt={world.alt} />
-                <div className="text-container">
-                  <p
-                    dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                      world.desc
-                    )}
-                  ></p>
-                  <p class="baseline">{world.baseline}</p>
-                </div>
+    if (this.props.mobile === "y") {
+      return (
+        <div id="worlds-container">
+          <div id="world">
+            <div>
+              <div id="tabs">
+                {this.state.worlds.map((world) => (
+                  <div id={world.id} key={world.id} className="tab-title">
+                    {world.title}
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
+            {this.state.worlds.map((world) => (
+              <div key={world.id}>
+                <div className="content-container" id={world.id}>
+                  <img src={world.imgSrc} alt={world.alt} />
+                  <div className="text-container">
+                    <p
+                      dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                        world.desc
+                      )}
+                    ></p>
+                    <p className="baseline">{world.baseline}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div id="worlds-container">
+          <div id="world">
+            <div>
+              <div id="tabs">
+                {this.state.worlds.map((world) => (
+                  <div id={world.id} key={world.id} className="tab-title">
+                    {world.title}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {this.state.worlds.map((world) => (
+              <div key={world.id}>
+                <div className="content-container" id={world.id}>
+                  <img src={world.imgSrc} alt={world.alt} />
+                  <div className="text-container">
+                    <p
+                      dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                        world.desc
+                      )}
+                    ></p>
+                    <p className="baseline">{world.baseline}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
   }
 }
 

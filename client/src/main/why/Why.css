@@ -54,7 +54,7 @@
 
 /* ==== Mobile Version ==== */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
   #why {
     display: flex;
     flex-direction: column;

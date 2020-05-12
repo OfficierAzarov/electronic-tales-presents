@@ -12,10 +12,12 @@ import trailer from "../../resources/video/trailer-wip.mp4";
 
 class Why extends React.Component {
   componentDidMount() {
-    // passes the location fo the app (current path) to the parent (App.js)
-    if (this.props.passCurrentPath) emitCurrentPath(this.props);
+    if (this.props.mobile !== "y") {
+      // passes the location fo the app (current path) to the parent (App.js)
+      if (this.props.passCurrentPath) emitCurrentPath(this.props);
 
-    window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   }
 
   render() {

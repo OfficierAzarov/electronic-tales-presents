@@ -37,8 +37,6 @@ class Concept extends React.Component {
             mobile={this.props.mobile}
           />
           <ConceptItems
-            isShown={this.props.isShown}
-            isTranslated={this.props.isTranslated}
             language={this.props.language}
             mobile={this.props.mobile}
           />

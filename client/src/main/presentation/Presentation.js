@@ -14,11 +14,15 @@ class Presentation extends React.Component {
   };
 
   componentDidMount() {
-    // passes the location fo the app (current path) to the parent (App.js)
-    if (this.props.passCurrentPath) emitCurrentPath(this.props);
+    if (this.props.mobile !== "y") {
+      // passes the location fo the app (current path) to the parent (App.js)
+      if (this.props.passCurrentPath) emitCurrentPath(this.props);
 
-    if (window.innerHeight < 700) {
-      this.setState({ largeText: true });
+      if (window.innerHeight < 700) {
+        this.setState({ largeText: true });
+      }
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     this.props.implementGenerate(this.generate);

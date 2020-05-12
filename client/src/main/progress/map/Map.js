@@ -83,112 +83,160 @@ class Map extends React.Component {
   };
 
   render() {
-    return (
-      <div
-        id="map"
-        style={{
-          opacity: this.state.isShown ? 1 : 0,
-          transform: this.state.isTranslated ? "translateY(-8%)" : "",
-        }}
-      >
-        <div id="progress-container">
-          <span id="progress-bar"></span>
-          {this.state.preHereStations.map((station) => (
-            <div key={station.id} className="station-container">
-              <span
-                className="station done"
-                onMouseEnter={() => this.hoverEffectOn(station.id)}
-                onMouseLeave={() => this.hoverEffectOff()}
-              ></span>
+    if (this.props.mobile === "y") {
+      return (
+        <div id="map">
+          <div id="progress-container">
+            <span id="progress-bar"></span>
+            {this.state.preHereStations.map((station) => (
+              <div key={station.id} className="station-container">
+                <span className="station done"></span>
+                <div className="names-container">
+                  <p>{station.title}</p>
+                  <p className="comment">{station.comment}</p>
+                </div>
+              </div>
+            ))}
+            <div className="station-container">
+              <div id="here-station-container">
+                <i className="fas fa-long-arrow-alt-right"></i>
+                <span className="station" id="here-station"></span>
+              </div>
               <div className="names-container">
                 <p
-                  style={{
-                    fontWeight: this.shouldIShow(station.id) ? 600 : "",
-                  }}
-                >
-                  {station.title}
-                </p>
+                  id="here-station-name"
+                  dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                    i18next.t("progress.map.here.title")
+                  )}
+                ></p>
                 <p
                   className="comment"
-                  style={{
-                    color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
-                  }}
-                >
-                  {station.comment}
-                </p>
+                  dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                    i18next.t("progress.map.here.comment")
+                  )}
+                ></p>
               </div>
             </div>
-          ))}
-          <div className="station-container">
-            <div id="here-station-container">
-              <i
-                className="fas fa-long-arrow-alt-right"
-                style={{
-                  animationPlayState: this.shouldIShow("here-station")
-                    ? "paused"
-                    : "",
-                }}
-              ></i>
-              <span
-                className="station"
-                id="here-station"
-                onMouseEnter={() => this.hoverEffectOn("here-station")}
-                onMouseLeave={() => this.hoverEffectOff()}
-              ></span>
-            </div>
-            <div className="names-container">
-              <p
-                id="here-station-name"
-                style={{
-                  fontWeight: this.shouldIShow("here-station") ? 600 : "",
-                  animationPlayState: this.shouldIShow("here-station")
-                    ? "paused"
-                    : "",
-                }}
-                dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                  i18next.t("progress.map.here.title")
-                )}
-              ></p>
-              <p
-                className="comment"
-                style={{
-                  color: this.shouldIShow("here-station") ? "#e9e9e9" : "",
-                }}
-                dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                  i18next.t("progress.map.here.comment")
-                )}
-              ></p>
-            </div>
+            {this.state.postHereStations.map((station) => (
+              <div key={station.id} className="station-container">
+                <span className="station"></span>
+                <div className="names-container">
+                  <p>{station.title}</p>
+                  <p className="comment">{station.comment}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          {this.state.postHereStations.map((station) => (
-            <div key={station.id} className="station-container">
-              <span
-                className="station"
-                onMouseEnter={() => this.hoverEffectOn(station.id)}
-                onMouseLeave={() => this.hoverEffectOff()}
-              ></span>
+        </div>
+      );
+    } else {
+      return (
+        <div
+          id="map"
+          style={{
+            opacity: this.state.isShown ? 1 : 0,
+            transform: this.state.isTranslated ? "translateY(-8%)" : "",
+          }}
+        >
+          <div id="progress-container">
+            <span id="progress-bar"></span>
+            {this.state.preHereStations.map((station) => (
+              <div key={station.id} className="station-container">
+                <span
+                  className="station done"
+                  onMouseEnter={() => this.hoverEffectOn(station.id)}
+                  onMouseLeave={() => this.hoverEffectOff()}
+                ></span>
+                <div className="names-container">
+                  <p
+                    style={{
+                      fontWeight: this.shouldIShow(station.id) ? 600 : "",
+                    }}
+                  >
+                    {station.title}
+                  </p>
+                  <p
+                    className="comment"
+                    style={{
+                      color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
+                    }}
+                  >
+                    {station.comment}
+                  </p>
+                </div>
+              </div>
+            ))}
+            <div className="station-container">
+              <div id="here-station-container">
+                <i
+                  className="fas fa-long-arrow-alt-right"
+                  style={{
+                    animationPlayState: this.shouldIShow("here-station")
+                      ? "paused"
+                      : "",
+                  }}
+                ></i>
+                <span
+                  className="station"
+                  id="here-station"
+                  onMouseEnter={() => this.hoverEffectOn("here-station")}
+                  onMouseLeave={() => this.hoverEffectOff()}
+                ></span>
+              </div>
               <div className="names-container">
                 <p
+                  id="here-station-name"
                   style={{
-                    fontWeight: this.shouldIShow(station.id) ? 600 : "",
+                    fontWeight: this.shouldIShow("here-station") ? 600 : "",
+                    animationPlayState: this.shouldIShow("here-station")
+                      ? "paused"
+                      : "",
                   }}
-                >
-                  {station.title}
-                </p>
+                  dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                    i18next.t("progress.map.here.title")
+                  )}
+                ></p>
                 <p
                   className="comment"
                   style={{
-                    color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
+                    color: this.shouldIShow("here-station") ? "#e9e9e9" : "",
                   }}
-                >
-                  {station.comment}
-                </p>
+                  dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                    i18next.t("progress.map.here.comment")
+                  )}
+                ></p>
               </div>
             </div>
-          ))}
+            {this.state.postHereStations.map((station) => (
+              <div key={station.id} className="station-container">
+                <span
+                  className="station"
+                  onMouseEnter={() => this.hoverEffectOn(station.id)}
+                  onMouseLeave={() => this.hoverEffectOff()}
+                ></span>
+                <div className="names-container">
+                  <p
+                    style={{
+                      fontWeight: this.shouldIShow(station.id) ? 600 : "",
+                    }}
+                  >
+                    {station.title}
+                  </p>
+                  <p
+                    className="comment"
+                    style={{
+                      color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
+                    }}
+                  >
+                    {station.comment}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 

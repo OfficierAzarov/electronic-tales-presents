@@ -42,7 +42,7 @@ class App extends React.Component {
     return (
       <Suspense fallback="loading">
         <div>
-          <MediaQuery maxDeviceWidth={768}>
+          <MediaQuery maxDeviceWidth={425}>
             <Router>
               <div id="mobile-page">
                 <Nav mobile="y" />
@@ -53,17 +53,16 @@ class App extends React.Component {
                   <Presentation mobile="y" />
                   <Why mobile="y" />
                   <Concept mobile="y" />
-                  {/*<Concept />
-                  <Tracks />
-                  <Progress />
-                  <Signup />
-                  <Team /> */}
+                  <Tracks mobile="y" />
+                  <Progress mobile="y" />
+                  <Signup mobile="y" />
+                  {/* <Team mobile="y" /> */}
                 </div>
                 <Footer mobile="y" />
               </div>
             </Router>
           </MediaQuery>
-          <MediaQuery minDeviceWidth={769}>
+          <MediaQuery minDeviceWidth={425}>
             <Router>
               <Nav
                 currentPath={this.state.currentPath}

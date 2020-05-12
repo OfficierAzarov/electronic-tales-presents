@@ -10,6 +10,12 @@ import partenko from "../../resources/img/team/partenko.png";
 import azarov from "../../resources/img/team/azarov.png";
 
 class Team extends React.Component {
+  componentDidMount() {
+    if (this.props.mobile !== "y") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
+
   render() {
     const { t } = this.props;
 

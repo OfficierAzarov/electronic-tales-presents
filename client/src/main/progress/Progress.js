@@ -23,28 +23,50 @@ class Progress extends React.Component {
   render() {
     const { t } = this.props;
 
-    return (
-      <div id="progress">
-        <InteractiveHeader
-          bigText={Utils.convertToCleanHtml(t("progress.header.bigText"))}
-          middleText={Utils.convertToCleanHtml(t("progress.header.middleText"))}
-          littleText={Utils.convertToCleanHtml(t("progress.header.littleText"))}
-          isShown={this.props.isShown}
-          isClickable={!this.props.isShown}
-          scrollDown={this.scrollDown}
-        />
-        <div ref={this.ref} className="ref-wrapper-padded">
-          <Map
-            isShown={this.props.isShown}
-            isTranslated={this.props.isTranslated}
-            language={this.props.language}
+    if (this.props.mobile === "y") {
+      return (
+        <div id="progress">
+          <InteractiveHeader
+            bigText={Utils.convertToCleanHtml(t("progress.header.bigText"))}
+            middleText={Utils.convertToCleanHtml(
+              t("progress.header.middleText")
+            )}
+            littleText={Utils.convertToCleanHtml(
+              t("progress.header.littleText")
+            )}
+            mobile={this.props.mobile}
           />
+          <Map language={this.props.language} mobile={this.props.mobile} />
         </div>
-        <div id="corrective-button-wrapper">
-          <Button text={t("progress.button")} goto="/signup" />
+      );
+    } else {
+      return (
+        <div id="progress">
+          <InteractiveHeader
+            bigText={Utils.convertToCleanHtml(t("progress.header.bigText"))}
+            middleText={Utils.convertToCleanHtml(
+              t("progress.header.middleText")
+            )}
+            littleText={Utils.convertToCleanHtml(
+              t("progress.header.littleText")
+            )}
+            isShown={this.props.isShown}
+            isClickable={!this.props.isShown}
+            scrollDown={this.scrollDown}
+          />
+          <div ref={this.ref} className="ref-wrapper-padded">
+            <Map
+              isShown={this.props.isShown}
+              isTranslated={this.props.isTranslated}
+              language={this.props.language}
+            />
+          </div>
+          <div id="corrective-button-wrapper">
+            <Button text={t("progress.button")} goto="/signup" />
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 

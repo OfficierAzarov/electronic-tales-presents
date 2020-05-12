@@ -43,47 +43,90 @@ class Signup extends React.Component {
   };
 
   render() {
-    return (
-      <div id="signup" className="animated">
-        <div className="h-container">
-          <h2>{i18next.t("signup.header.bigText")}</h2>
+    if (this.props.mobile === "y") {
+      return (
+        <div id="signup" className="animated">
+          <div className="h-container">
+            <h2>{i18next.t("signup.header.bigText")}</h2>
+          </div>
+          <div>
+            <p>{i18next.t("signup.form.action")}</p>
+            {this.state.isEmailSubmitted && this.state.status !== "200" ? (
+              <div className="notification failure">
+                <p>{this.state.message}</p>
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {this.state.isEmailSubmitted && this.state.status === "200" ? (
+              <div className="notification success">
+                <p>{this.state.message}</p>
+              </div>
+            ) : (
+              <div id="input-container">
+                <Subscribe
+                  configureNotification={this.configureNotification}
+                  handleError={this.handleError}
+                  language={this.props.language}
+                  mobile={this.props.mobile}
+                />
+                {/* <p onClick={this.scrollDown}>
+                  {i18next.t("signup.form.waitAMinute")}
+                </p> */}
+              </div>
+            )}
+          </div>
+          <div ref={this.ref} className="ref-wrapper-padded">
+            <SignupSteps
+              mobile={this.props.mobile}
+              language={this.props.language}
+            />
+          </div>
         </div>
-        <div>
-          <p>{i18next.t("signup.form.action")}</p>
-          {this.state.isEmailSubmitted && this.state.status !== "200" ? (
-            <div className="notification failure">
-              <p>{this.state.message}</p>
-            </div>
-          ) : (
-            <div></div>
-          )}
-          {this.state.isEmailSubmitted && this.state.status === "200" ? (
-            <div className="notification success">
-              <p>{this.state.message}</p>
-            </div>
-          ) : (
-            <div id="input-container">
-              <Subscribe
-                configureNotification={this.configureNotification}
-                handleError={this.handleError}
-                language={this.props.language}
-              />
-              <p onClick={this.scrollDown}>
-                {i18next.t("signup.form.waitAMinute")}
-              </p>
-            </div>
-          )}
+      );
+    } else {
+      return (
+        <div id="signup" className="animated">
+          <div className="h-container">
+            <h2>{i18next.t("signup.header.bigText")}</h2>
+          </div>
+          <div>
+            <p>{i18next.t("signup.form.action")}</p>
+            {this.state.isEmailSubmitted && this.state.status !== "200" ? (
+              <div className="notification failure">
+                <p>{this.state.message}</p>
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {this.state.isEmailSubmitted && this.state.status === "200" ? (
+              <div className="notification success">
+                <p>{this.state.message}</p>
+              </div>
+            ) : (
+              <div id="input-container">
+                <Subscribe
+                  configureNotification={this.configureNotification}
+                  handleError={this.handleError}
+                  language={this.props.language}
+                />
+                <p onClick={this.scrollDown}>
+                  {i18next.t("signup.form.waitAMinute")}
+                </p>
+              </div>
+            )}
+          </div>
+          <div ref={this.ref} className="ref-wrapper-padded">
+            <SignupSteps
+              isShown={this.props.isShown}
+              isTranslated={this.props.isTranslated}
+              scrollUp={this.scrollUp}
+              language={this.props.language}
+            />
+          </div>
         </div>
-        <div ref={this.ref} className="ref-wrapper-padded">
-          <SignupSteps
-            isShown={this.props.isShown}
-            isTranslated={this.props.isTranslated}
-            scrollUp={this.scrollUp}
-            language={this.props.language}
-          />
-        </div>
-      </div>
-    );
+      );
+    }
   }
 }
 
