@@ -22,3 +22,8 @@
     transform: translateY(0);
   }
 }
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 768px) {
+}

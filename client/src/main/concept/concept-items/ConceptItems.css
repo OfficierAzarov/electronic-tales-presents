@@ -1,76 +1,88 @@
 #how-items-container {
-    display: grid;
-    width: 70%;
-    grid-template-columns: 1.3fr 0.7fr;
-    margin: 6% auto 0;
-    transition: opacity 1s ease-in-out,
-                transform 1s;
-    transition-delay: 0.2s;
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1.3fr 0.7fr;
+  margin: 6% auto 0;
+  transition: opacity 1s ease-in-out, transform 1s;
+  transition-delay: 0.2s;
 }
 
 #how-items-container li {
-    list-style: none;
+  list-style: none;
 }
 
 #principles {
-    border-right: solid 1px #303237;
+  border-right: solid 1px #303237;
 }
 
 #principles ul {
-    padding: 0;
-    margin-right: 2%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    height: 100%;
-    row-gap: 2%;
+  padding: 0;
+  margin-right: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  height: 100%;
+  row-gap: 2%;
 }
 
 #principles li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3% 0;
-    transition: border-radius 0.8s ease-out;
-    border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0;
+  transition: border-radius 0.8s ease-out;
+  border-radius: 0.5em;
 }
 
 #principles li:hover {
-    background-color: #303237;
-    border-radius: 2em;
+  background-color: #303237;
+  border-radius: 2em;
 }
 
 #principles img {
-    margin-bottom: 5%;
-    width: 3em;
+  margin-bottom: 5%;
+  width: 3em;
 }
 
 #principles p {
-    width: 60%;
-    text-align: center;
+  width: 60%;
+  text-align: center;
 }
 
 #implementations li {
-    display: flex;
-    margin-top: 5%;
-    align-items: center;
+  display: flex;
+  margin-top: 5%;
+  align-items: center;
 }
 
 #implementations p {
-    text-align: left;
-    font-size: 0.8em;
+  text-align: left;
+  font-size: 0.8em;
 }
 
 #implementations img {
-    width: 2em;
-    height: 2em;
-    margin: 0 10% 6% 0;
+  width: 2em;
+  height: 2em;
+  margin: 0 10% 6% 0;
 }
 
 #how-items-container li.off img {
-    filter: grayscale(100%) brightness(50%);
+  filter: grayscale(100%) brightness(50%);
 }
 
 #how-items-container li.off p {
-    color: #595b63;
+  color: #595b63;
+}
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 768px) {
+  #how-items-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #principles {
+    border-right: 0;
+  }
 }

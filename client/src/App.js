@@ -46,9 +46,13 @@ class App extends React.Component {
             <Router>
               <div id="mobile-page">
                 <Nav mobile="y" />
+                <div id="eltaskyline">
+                  <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+                </div>
                 <div id="mobile-main">
                   <Presentation mobile="y" />
                   <Why mobile="y" />
+                  <Concept mobile="y" />
                   {/*<Concept />
                   <Tracks />
                   <Progress />

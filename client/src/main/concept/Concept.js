@@ -23,26 +23,53 @@ class Concept extends React.Component {
   render() {
     const { t } = this.props;
 
-    return (
-      <div id="concept">
-        <InteractiveHeader
-          bigText={Utils.convertToCleanHtml(t("concept.header.bigText"))}
-          middleText={Utils.convertToCleanHtml(t("concept.header.middleText"))}
-          littleText={Utils.convertToCleanHtml(t("concept.header.littleText"))}
-          isShown={this.props.isShown}
-          isClickable={!this.props.isShown}
-          scrollDown={this.scrollDown}
-        />
-        <div ref={this.ref} className="ref-wrapper">
+    if (this.props.mobile === "y") {
+      return (
+        <div id="concept">
+          <InteractiveHeader
+            bigText={Utils.convertToCleanHtml(t("concept.header.bigText"))}
+            middleText={Utils.convertToCleanHtml(
+              t("concept.header.middleText")
+            )}
+            littleText={Utils.convertToCleanHtml(
+              t("concept.header.littleText")
+            )}
+            mobile={this.props.mobile}
+          />
           <ConceptItems
             isShown={this.props.isShown}
             isTranslated={this.props.isTranslated}
             language={this.props.language}
+            mobile={this.props.mobile}
           />
         </div>
-        <Button text={t("concept.button")} goto="/tracks" />
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div id="concept">
+          <InteractiveHeader
+            bigText={Utils.convertToCleanHtml(t("concept.header.bigText"))}
+            middleText={Utils.convertToCleanHtml(
+              t("concept.header.middleText")
+            )}
+            littleText={Utils.convertToCleanHtml(
+              t("concept.header.littleText")
+            )}
+            isShown={this.props.isShown}
+            isClickable={!this.props.isShown}
+            scrollDown={this.scrollDown}
+          />
+          <div ref={this.ref} className="ref-wrapper">
+            <ConceptItems
+              isShown={this.props.isShown}
+              isTranslated={this.props.isTranslated}
+              language={this.props.language}
+            />
+          </div>
+          <Button text={t("concept.button")} goto="/tracks" />
+        </div>
+      );
+    }
   }
 }
 

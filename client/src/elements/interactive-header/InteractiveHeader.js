@@ -18,23 +18,33 @@ class InteractiveHeader extends React.Component {
   }
 
   render() {
-    return (
-      <div className="h-container animated">
-        <h2 dangerouslySetInnerHTML={this.props.bigText}></h2>
-        <h3 dangerouslySetInnerHTML={this.props.middleText}></h3>
-        <h4 dangerouslySetInnerHTML={this.props.littleText}></h4>
-        <div id="icon-container">
-          <i
-            className="fas fa-chevron-down"
-            style={{
-              opacity: this.state.isShown || window.innerHeight > 800 ? 0 : 1,
-              pointerEvents: this.state.isClickable ? "" : "none",
-            }}
-            onClick={this.props.scrollDown}
-          ></i>
+    if (this.props.mobile === "y") {
+      return (
+        <div className="h-container">
+          <h2 dangerouslySetInnerHTML={this.props.bigText}></h2>
+          <h3 dangerouslySetInnerHTML={this.props.middleText}></h3>
+          <h4 dangerouslySetInnerHTML={this.props.littleText}></h4>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div className="h-container animated">
+          <h2 dangerouslySetInnerHTML={this.props.bigText}></h2>
+          <h3 dangerouslySetInnerHTML={this.props.middleText}></h3>
+          <h4 dangerouslySetInnerHTML={this.props.littleText}></h4>
+          <div id="icon-container">
+            <i
+              className="fas fa-chevron-down"
+              style={{
+                opacity: this.state.isShown || window.innerHeight > 800 ? 0 : 1,
+                pointerEvents: this.state.isClickable ? "" : "none",
+              }}
+              onClick={this.props.scrollDown}
+            ></i>
+          </div>
+        </div>
+      );
+    }
   }
 }
 
