@@ -1,6 +1,6 @@
 import React from "react";
 
-import { emitCurrentPath } from "../../../utils/Utils";
+import { emitCurrentPath } from "../../utils/Utils";
 
 const withDisplay = (WrappedComponent) => {
   class WithDisplay extends React.Component {

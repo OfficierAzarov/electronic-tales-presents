@@ -2,7 +2,7 @@ import React from "react";
 import { compose } from "recompose";
 import i18next from "i18next";
 
-import withDisplay from "../../elements/HOC/with-display/withDisplay";
+import withDisplay from "../../elements/HOC/withDisplay";
 import withAPITranslation from "../../elements/HOC/withAPITranslation";
 import * as Utils from "../../utils/Utils";
 

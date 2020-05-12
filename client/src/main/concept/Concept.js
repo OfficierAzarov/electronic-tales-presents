@@ -2,7 +2,7 @@ import React from "react";
 import { compose } from "recompose";
 import { withTranslation } from "react-i18next";
 
-import withDisplay from "../../elements/HOC/with-display/withDisplay";
+import withDisplay from "../../elements/HOC/withDisplay";
 import InteractiveHeader from "../../elements/interactive-header/InteractiveHeader";
 import ConceptItems from "./concept-items/ConceptItems";
 import Button from "../../elements/buttons/Button";
