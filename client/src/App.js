@@ -42,7 +42,7 @@ class App extends React.Component {
     return (
       <Suspense fallback="loading">
         <div>
-          <MediaQuery maxDeviceWidth={425}>
+          <MediaQuery maxDeviceWidth={768}>
             <Router>
               <div id="mobile-page">
                 <Nav mobile="y" />
@@ -62,7 +62,7 @@ class App extends React.Component {
               </div>
             </Router>
           </MediaQuery>
-          <MediaQuery minDeviceWidth={425}>
+          <MediaQuery minDeviceWidth={769}>
             <Router>
               <Nav
                 currentPath={this.state.currentPath}

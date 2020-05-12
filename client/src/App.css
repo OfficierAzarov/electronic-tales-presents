@@ -33,7 +33,7 @@
 
 /* ==== Mobile Version ==== */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   #mobile-page {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -46,7 +46,7 @@
     align-items: center;
   }
 
-  #eltaskyline {
+  #eltaskyline img {
     margin-bottom: -1px;
   }
 }

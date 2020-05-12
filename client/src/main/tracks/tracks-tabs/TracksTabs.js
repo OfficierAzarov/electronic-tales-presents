@@ -85,6 +85,7 @@ class TracksTabs extends React.Component {
                 ))}
               </div>
             </div>
+
             {this.state.worlds.map((world) => (
               <div key={world.id}>
                 <div className="content-container" id={world.id}>
@@ -110,7 +111,17 @@ class TracksTabs extends React.Component {
             <div>
               <div id="tabs">
                 {this.state.worlds.map((world) => (
-                  <div id={world.id} key={world.id} className="tab-title">
+                  <div
+                    id={world.id}
+                    key={world.id}
+                    className="tab-title"
+                    onClick={() => this.show(world.id)}
+                    style={{
+                      textShadow: this.shouldIShow(world.id)
+                        ? "0 0 0.4em rgb(0, 225, 255), 0 0 0.8em rgb(0, 225, 255), 0 0 1.6em rgb(0, 255, 255)"
+                        : "none",
+                    }}
+                  >
                     {world.title}
                   </div>
                 ))}
@@ -119,7 +130,13 @@ class TracksTabs extends React.Component {
 
             {this.state.worlds.map((world) => (
               <div key={world.id}>
-                <div className="content-container" id={world.id}>
+                <div
+                  className="content-container"
+                  id={world.id}
+                  style={{
+                    display: this.shouldIShow(world.id) ? "" : "none",
+                  }}
+                >
                   <img src={world.imgSrc} alt={world.alt} />
                   <div className="text-container">
                     <p

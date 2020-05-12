@@ -2,29 +2,29 @@
   "translations": {
     "nav": {
       "links": {
-        "1": "Pourquoi ?",
-        "2": "Comment ?",
+        "1": "Pourquoi\u00A0?",
+        "2": "Comment\u00A0?",
         "3": "Nos tracks",
-        "4": "On en est où ?",
+        "4": "On en est où\u00A0?",
         "5": "Nous rejoindre"
       },
-      "button": "Je participe !"
+      "button": "Je participe\u00A0!"
     },
     "presentation": {
       "title": "Développeur·euse junior, il t'est déjà arrivé d'avoir des difficultés pour...",
-      "question1": "Te sentir légitime dans le monde de la tech ?",
-      "question2": "Évaluer ton niveau réel ?",
-      "question3": "Exprimer tes insécurités au travail ?",
-      "question4": "Te motiver pour continuer à monter en compétences ?",
-      "button": "Grumpf, oui !"
+      "question1": "Te sentir légitime dans le monde de la tech\u00A0?",
+      "question2": "Évaluer ton niveau réel\u00A0?",
+      "question3": "Exprimer tes insécurités au travail\u00A0?",
+      "question4": "Te motiver pour continuer à monter en compétences\u00A0?",
+      "button": "Grumpf, oui\u00A0!"
     },
     "why": {
-      "bigText": "Dégommons le syndrome de l'imposteur ensemble !",
+      "bigText": "Dégommons le syndrome de l'imposteur ensemble\u00A0!",
       "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
       "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
       "bullet3": "Plateforme open-source et 100 % gratuite",
       "bullet4": "Sortie prévue pour la rentrée 2020",
-      "button": "Youpi, dites-m'en plus !"
+      "button": "Youpi, dites-m'en plus\u00A0!"
     },
     "concept": {
       "header": {
@@ -62,13 +62,13 @@
           }
         }
       },
-      "button": "Super ! Et concrètement ?"
+      "button": "Super\u00A0! Et concrètementU00A0?"
     },
     "tracks": {
       "header": {
         "bigText": "Notre (future) plateforme",
         "middleText": "Pour donner vie à ces idées, notre team est en train de concocter une plateforme de learning social.",
-        "littleText": "Celle-ci servira de fondation au projet Electronic Tales et sera construite autour de trois tracks d'apprentissage."
+        "littleText": "Celle-ci servira de fondation au projet Electronic\u00A0Tales et sera construite autour de trois tracks d'apprentissage."
       },
       "tracksTabs": {
         "worlds": {
@@ -86,7 +86,7 @@
           }
         }
       },
-      "button": "Et ça avance bien, cette histoire ?"
+      "button": "Et ça avance bien, cette histoire\u00A0?"
     },
     "progress": {
       "header": {
@@ -98,16 +98,16 @@
         "preHereStations": {
           "id1": {
             "title": "Idée 🤔",
-            "comment": "Tu crois vraiment que c'est une bonne idée ?"
+            "comment": "Tu crois vraiment que c'est une bonne idée"
           },
           "id2": {
             "title": "Brainstorrrrm",
-            "comment": "Il reste des Kinder Country ?"
+            "comment": "Il reste des Kinder Country\u00A0?"
           }
         },
         "here": {
           "title": "On parle de notre projet",
-          "comment": "Tu es ici !"
+          "comment": "Tu es ici\u00A0!"
         },
         "postHereStations": {
           "id1": {
@@ -115,7 +115,7 @@
             "comment": "On mouline, on analyse, on cogito ergo sum."
           },
           "id2": {
-            "title": "Release de la plateforme Electronic Tales 🎉",
+            "title": "Release de la plateforme Electronic\u00A0Tales 🎉",
             "comment": "On dégomme le syndrome de l'imposteur ensemble."
           },
           "id3": {
@@ -128,17 +128,17 @@
           }
         }
       },
-      "button": "Okay, comment puis-je vous aider ?"
+      "button": "Okay, comment puis-je vous aider\u00A0?"
     },
     "signup": {
       "header": {
-        "bigText": "Comment nous aider ?"
+        "bigText": "Comment nous aider\u00A0?"
       },
       "form": {
         "action": "Écris ton email là.",
         "error500": "Oops... Quelque chose s'est mal passé côté serveur. Réessaie ou contacte-nous.",
-        "subscribeButton": "Je participe !",
-        "waitAMinute": "Minute, papillon ! Qu'est-ce qui m'arrive si je vous file mon mail ?"
+        "subscribeButton": "Je participe\u00A0!",
+        "waitAMinute": "Minute, papillon\u00A0! Qu'est-ce qui m'arrive si je vous file mon mail\u00A0?"
       },
       "signupSteps": {
         "steps": {
@@ -153,11 +153,11 @@
           },
           "id4": {
             "desc": "Tu as notre reconnaissance &eacute;ternelle.",
-            "question": "Alors, prêt·e pour l'aventure ?",
+            "question": "Alors, prêt·e pour l'aventure\u00A0?",
             "callToAction": {
               "beforeLink": "Si oui, ",
               "link": "retourne à l'étape 1",
-              "afterLink": "et laisse-nous ton email !"
+              "afterLink": "et laisse-nous ton email\u00A0!"
             }
           }
         }
@@ -183,7 +183,7 @@
       },
       "id5": {
         "name": "Officier Azarov",
-        "desc": "Architecte technique et spirituel d'Electronic Tales"
+        "desc": "Architecte technique et spirituel d'Electronic\u00A0Tales"
       }
     }
   }

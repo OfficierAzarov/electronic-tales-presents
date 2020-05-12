@@ -67,7 +67,7 @@
       "header": {
         "bigText": "Our platform (to-be)",
         "middleText": "To bring those ideas to life, our team is whipping up a social learning platform.",
-        "littleText": "It will be the base of the Electronic Tales project and will be built on three learning tracks."
+        "littleText": "It will be the base of the Electronic\u00A0Tales project and will be built on three learning tracks."
       },
       "tracksTabs": {
         "worlds": {
@@ -114,7 +114,7 @@
             "comment": "We mull, we analyse, we meditate."
           },
           "id2": {
-            "title": "Release of the Electronic Tales platform 🎉",
+            "title": "Release of the Electronic\u00A0Tales platform 🎉",
             "comment": "We smash the impostor syndrome together."
           },
           "id3": {
@@ -142,7 +142,7 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "You become a member of the Electronic Tales co-creators’ pool... of the Team&nbsp;! It means that you can, if you wish so, add Electronic Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
+            "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... of the Team&nbsp;! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
           },
           "id2": {
             "desc": "Fear not&nbsp;!<br/><br/>Actually, we are not going to ask you to write a series of astoundingly deep articles about z-index in CSS or to code a dark-theme for <a href='https://www.irs.gov/' target='_blank' rel='noopener noreferrer'>irs.gov</a>. <br /><br />You will see, it is very simple&nbsp;!"
@@ -177,7 +177,7 @@
       },
       "id5": {
         "name": "Officier Azarov",
-        "desc": "Technical and spiritual architect of Electronic Tales"
+        "desc": "Technical and spiritual architect of Electronic\u00A0Tales"
       }
     }
   }
