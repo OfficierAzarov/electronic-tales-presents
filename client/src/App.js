@@ -16,7 +16,7 @@ import Team from "./main/team/Team.js";
 import "./App.css";
 
 import elta from "../src/resources/img/eltaskyline.svg";
-import logo from "../src/resources/img/logo-transparent-smol-group.png";
+import logo from "../src/resources/img/logo-transparent.png";
 
 class App extends React.Component {
   constructor(props) {

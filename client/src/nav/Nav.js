@@ -4,7 +4,7 @@ import { withTranslation } from "react-i18next";
 
 import "./Nav.css";
 
-import logo from "../resources/img/logo-transparent-smol-group.png";
+import logo from "../resources/img/logo-transparent.png";
 
 class Nav extends React.Component {
   constructor(props) {
