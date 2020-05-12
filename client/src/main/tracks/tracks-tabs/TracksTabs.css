@@ -44,3 +44,56 @@
 .baseline {
   font-size: 1em;
 }
+
+@media only screen and (max-width: 768px) {
+  #world {
+    background-color: #121212;
+    width: 100%;
+  }
+  
+  .world-container {
+    background-color: #1a1919;
+    border-radius: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  #tabs {
+    padding-top: 5%;
+    display: block;
+    border-bottom: none;
+  }
+
+  .tab-title {
+    padding: 1em 0;
+    cursor: pointer;
+    text-shadow: rgb(0, 225, 255) 0px 0px 0.4em, rgb(0, 225, 255) 0px 0px 0.8em, rgb(0, 255, 255) 0px 0px 1.6em;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #world img {
+    width: 100%;
+    margin: 0% auto 5%;
+  }
+
+  #world p {
+    text-align: center;
+    margin: 1em auto;
+  }
+  .baseline {
+    padding-top: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    align-items: center;
+    padding: 5%;
+  }
+}

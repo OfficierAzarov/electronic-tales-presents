@@ -76,18 +76,13 @@ class TracksTabs extends React.Component {
       return (
         <div id="worlds-container">
           <div id="world">
-            <div>
-              <div id="tabs">
-                {this.state.worlds.map((world) => (
-                  <div id={world.id} key={world.id} className="tab-title">
+            {this.state.worlds.map((world) => (
+              <div key={world.id} id={world.id + "-container"} className="world-container">
+                <div id="tabs">
+                  <div className="tab-title">
                     {world.title}
                   </div>
-                ))}
-              </div>
-            </div>
-
-            {this.state.worlds.map((world) => (
-              <div key={world.id}>
+                </div>
                 <div className="content-container" id={world.id}>
                   <img src={world.imgSrc} alt={world.alt} />
                   <div className="text-container">
