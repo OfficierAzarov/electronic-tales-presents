@@ -62,7 +62,7 @@
           }
         }
       },
-      "button": "Super\u00A0! Et concrètementU00A0?"
+      "button": "Super\u00A0! Et concrètement\u00A0?"
     },
     "tracks": {
       "header": {
@@ -156,7 +156,7 @@
             "question": "Alors, prêt·e pour l'aventure\u00A0?",
             "callToAction": {
               "beforeLink": "Si oui, ",
-              "link": "retourne à l'étape 1",
+              "link": "retourne au formulaire",
               "afterLink": "et laisse-nous ton email\u00A0!"
             }
           }

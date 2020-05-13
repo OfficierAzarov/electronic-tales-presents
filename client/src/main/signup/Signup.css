@@ -13,3 +13,16 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.notification {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.failure {
+  color: #b4b2b2;
+}
+
+.success {
+  color: #ff4093;
+}

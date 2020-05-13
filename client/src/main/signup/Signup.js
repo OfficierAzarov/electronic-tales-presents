@@ -4,7 +4,6 @@ import i18next from "i18next";
 
 import withDisplay from "../../elements/HOC/withDisplay";
 import withAPITranslation from "../../elements/HOC/withAPITranslation";
-import * as Utils from "../../utils/Utils";
 
 import Subscribe from "../../elements/form/subscribe/Subscribe.js";
 import SignupSteps from "./signup-steps/SignupSteps";
@@ -19,18 +18,23 @@ class Signup extends React.Component {
 
   state = {
     status: "",
-    message: "",
+    messageFromBackFr: "",
+    messageFromBackEn: "",
+    messageFromFront: "",
     isEmailSubmitted: false,
-    subscriptionError: "",
   };
 
-  configureNotification = ({ status, msg }) => {
-    this.setState({ status: status, message: msg });
+  configureNotification = ({ status, msgFr, msgEn }) => {
+    this.setState({
+      status: status,
+      messageFromBackFr: msgFr,
+      messageFromBackEn: msgEn,
+    });
     this.setState({ isEmailSubmitted: true });
   };
 
   handleError = ({ status, msg }) => {
-    this.setState({ status: status, message: msg });
+    this.setState({ status: status, messageFromFront: msg });
     this.setState({ isEmailSubmitted: true });
   };
 
@@ -51,16 +55,31 @@ class Signup extends React.Component {
           </div>
           <div>
             <p>{i18next.t("signup.form.action")}</p>
-            {this.state.isEmailSubmitted && this.state.status !== "200" ? (
+            {this.state.status === 500 ? (
               <div className="notification failure">
-                <p>{this.state.message}</p>
+                <p>{this.state.messageFromFront}</p>
               </div>
             ) : (
               <div></div>
             )}
-            {this.state.isEmailSubmitted && this.state.status === "200" ? (
+            {this.state.isEmailSubmitted && this.state.status !== 200 ? (
+              <div className="notification failure">
+                {this.props.language === "fr" ? (
+                  <p>{this.state.messageFromBackFr}</p>
+                ) : (
+                  <p>{this.state.messageFromBackEn}</p>
+                )}
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {this.state.isEmailSubmitted && this.state.status === 200 ? (
               <div className="notification success">
-                <p>{this.state.message}</p>
+                {this.props.language === "fr" ? (
+                  <p>{this.state.messageFromBackFr}</p>
+                ) : (
+                  <p>{this.state.messageFromBackEn}</p>
+                )}
               </div>
             ) : (
               <div id="input-container">
@@ -76,12 +95,10 @@ class Signup extends React.Component {
               </div>
             )}
           </div>
-          <div ref={this.ref} className="ref-wrapper-padded">
-            <SignupSteps
-              mobile={this.props.mobile}
-              language={this.props.language}
-            />
-          </div>
+          <SignupSteps
+            mobile={this.props.mobile}
+            language={this.props.language}
+          />
         </div>
       );
     } else {
@@ -92,16 +109,31 @@ class Signup extends React.Component {
           </div>
           <div>
             <p>{i18next.t("signup.form.action")}</p>
-            {this.state.isEmailSubmitted && this.state.status !== "200" ? (
+            {this.state.status === 500 ? (
               <div className="notification failure">
-                <p>{this.state.message}</p>
+                <p>{this.state.messageFromFront}</p>
               </div>
             ) : (
               <div></div>
             )}
-            {this.state.isEmailSubmitted && this.state.status === "200" ? (
+            {this.state.isEmailSubmitted && this.state.status !== 200 ? (
+              <div className="notification failure">
+                {this.props.language === "fr" ? (
+                  <p>{this.state.messageFromBackFr}</p>
+                ) : (
+                  <p>{this.state.messageFromBackEn}</p>
+                )}
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {this.state.isEmailSubmitted && this.state.status === 200 ? (
               <div className="notification success">
-                <p>{this.state.message}</p>
+                {this.props.language === "fr" ? (
+                  <p>{this.state.messageFromBackFr}</p>
+                ) : (
+                  <p>{this.state.messageFromBackEn}</p>
+                )}
               </div>
             ) : (
               <div id="input-container">
