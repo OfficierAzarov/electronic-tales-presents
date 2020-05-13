@@ -56,7 +56,7 @@ class App extends React.Component {
                   <Tracks mobile="y" />
                   <Progress mobile="y" />
                   <Signup mobile="y" />
-                  {/* <Team mobile="y" /> */}
+                  <Team mobile="y" />
                 </div>
                 <Footer mobile="y" />
               </div>

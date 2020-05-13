@@ -79,7 +79,7 @@ class TracksTabs extends React.Component {
             {this.state.worlds.map((world) => (
               <div key={world.id} id={world.id + "-container"} className="world-container">
                 <div id="tabs">
-                  <div className="tab-title">
+                  <div className="tab-title neon-flicker">
                     {world.title}
                   </div>
                 </div>

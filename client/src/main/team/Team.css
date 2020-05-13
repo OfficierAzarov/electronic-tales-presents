@@ -30,8 +30,6 @@
   border: 0.1em solid rgb(109, 109, 109);
   border-radius: 50%;
   align-content: center;
-  background-color: #fff;
-  /* box-shadow: 0 0 1.2em #000000, 0 0 1.2em #000000 inset; */
   box-shadow: 0 0 0.3em rgb(208, 247, 252), 0 0 0.6em rgb(190, 243, 250),
   0 0 1.2em rgb(165, 250, 250); 
   overflow: hidden;
@@ -118,4 +116,54 @@
   100% {
     text-shadow: none;
   }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #team-page {
+    width: 95%;
+    margin: 30% auto;
+  }
+
+  #team-box {
+    /* background-color: #303237; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 2em;
+    width: 100%;
+  }
+
+  .member-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2em auto;
+  }
+
+  .image-box {
+    height: 6em;
+    width: 6em;
+    border: 0.1em solid rgb(109, 109, 109);
+    border-radius: 50%;
+    align-content: center;
+    box-shadow: 0 0 0.3em rgb(208, 247, 252), 0 0 0.6em rgb(190, 243, 250),
+    0 0 1.2em rgb(165, 250, 250); 
+    overflow: hidden;
+  }
+
+  .member-text {
+    max-width: 40%;
+  }
+
+  .member-id {
+    margin-bottom: 0.5em;
+    animation-name: pinkGlow;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+  }
+
 }

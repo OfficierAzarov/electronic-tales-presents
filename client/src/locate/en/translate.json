@@ -159,6 +159,8 @@
       }
     },
     "team": {
+      "title": "Team",
+      
       "id1": {
         "name": "You",
         "desc": "Yes, you."

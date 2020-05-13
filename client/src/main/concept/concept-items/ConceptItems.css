@@ -106,13 +106,13 @@
     width: 5em;
     height: 5em;
     margin: 0 10% 6% 0;
-}
+  }
 
-#implementations {
-  margin-top: 2em;
-}
+  #implementations {
+    margin-top: 2em;
+  }
 
-#implementations ul {
-  padding-left: 0;
-}
+  #implementations ul {
+    padding-left: 0;
+  }
 }

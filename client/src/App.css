@@ -157,4 +157,18 @@ a:hover {
   #eltaskyline img {
     margin-bottom: -1px;
   }
+
+  .neon-flicker {
+    text-transform: uppercase;
+    animation: flicker 3s infinite;
+  }
+
+  @keyframes flicker {    
+    0%, 31%, 38%, 56%, 100% {
+      text-shadow: rgb(0, 225, 255) 0px 0px 0.4em, rgb(0, 225, 255) 0px 0px 0.8em, rgb(0, 255, 255) 0px 0px 1.6em;
+    }
+      30%, 37%, 55% {        
+        text-shadow: none;
+    }    
+  }
 }

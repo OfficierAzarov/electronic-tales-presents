@@ -10,10 +10,8 @@ import weight from "../../../resources/img/icons/weight.svg";
 import geek from "../../../resources/img/icons/geek.svg";
 import stairs from "../../../resources/img/icons/stairs.svg";
 
-import communityMobile from "../../../resources/img/icons/community-mobile.svg";
-import weightMobile from "../../../resources/img/icons/weight-mobile.svg";
+import communityMobile from "../../../resources/img/icons/community-mobile.svg"
 import geekMobile from "../../../resources/img/icons/geek-mobile.svg";
-import stairsMobile from "../../../resources/img/icons/stairs-mobile.svg";
 
 import tea from "../../../resources/img/icons/tea.png";
 import chat from "../../../resources/img/icons/chatcolor.png";
@@ -55,7 +53,7 @@ class ConceptItems extends React.Component {
         {
           id: "muscle",
           img: weight,
-          imgMobile: weightMobile,
+          imgMobile: weight,
           text: i18next.t("concept.conceptItems.principles.id2.text"),
           turnsOn: ["nightschool", "microlearning"],
         },
@@ -69,7 +67,7 @@ class ConceptItems extends React.Component {
         {
           id: "level-up",
           img: stairs,
-          imgMobile: stairsMobile,
+          imgMobile: stairs,
           text: i18next.t("concept.conceptItems.principles.id4.text"),
           turnsOn: ["nightschool", "social", "microlearning", "coolcontent"],
         },
@@ -118,6 +116,7 @@ class ConceptItems extends React.Component {
       return (
         <div id="how-items-container">
           <div id="principles">
+            <h4 className="neon-flicker">Nos principes</h4>
             <ul>
               {this.state.principles.map((item) => (
                 <li
@@ -132,7 +131,9 @@ class ConceptItems extends React.Component {
               ))}
             </ul>
           </div>
+
           <div id="implementations">
+          <h4 className="neon-flicker">Notre toolbox</h4>
             <ul>
               {this.state.implementations.map((item) => (
                 <li id={item.id} key={item.id}>

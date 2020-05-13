@@ -102,11 +102,11 @@ class SignupSteps extends Component {
                     {i18next.t(
                       "signup.signupSteps.steps.id4.callToAction.beforeLink"
                     )}
-                    {/* <span onClick={this.props.scrollUp}> */}{" "}
-                    {i18next.t(
-                      "signup.signupSteps.steps.id4.callToAction.link"
-                    )}
-                    {/* </span> */}
+                    <span onClick={this.props.scrollUp}>
+                      {i18next.t(
+                        "signup.signupSteps.steps.id4.callToAction.link"
+                      )}
+                    </span>
                     {i18next.t(
                       "signup.signupSteps.steps.id4.callToAction.afterLink"
                     )}
