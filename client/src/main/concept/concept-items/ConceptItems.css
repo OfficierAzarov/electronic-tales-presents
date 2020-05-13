@@ -80,9 +80,39 @@
   #how-items-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   #principles {
     border-right: 0;
+    width: 100%;
   }
+
+  #principles ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #principles p {
+    width: 90%;
+  }
+
+  #principles img {
+    margin-bottom: 5%;
+    width: 6em;
+  }
+
+  #implementations img {
+    width: 5em;
+    height: 5em;
+    margin: 0 10% 6% 0;
+}
+
+#implementations {
+  margin-top: 2em;
+}
+
+#implementations ul {
+  padding-left: 0;
+}
 }

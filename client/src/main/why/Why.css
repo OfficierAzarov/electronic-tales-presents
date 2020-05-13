@@ -56,6 +56,8 @@
 
 @media only screen and (max-width: 768px) {
   #why {
+    width: 90%;
+    margin: 30% auto;
     display: flex;
     flex-direction: column;
   }
@@ -69,4 +71,6 @@
     flex-direction: column;
     margin-top: 2em;
   }
+
+
 }

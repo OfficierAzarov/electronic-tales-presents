@@ -31,9 +31,117 @@
   height: 100vh;
 }
 
+button:focus {
+  outline: none;
+}
+
+.button-design {
+  border-radius: 3em;
+  background-color: #ff4093;
+  border: none;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 1em;
+  padding: 0.5em 2em;
+  font-weight: 500;
+}
+
+.button-design a {
+  color: #fff;
+}
+
+.button-design:hover {
+  background-color: #ea1e76cb;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+  width: 60%;
+  margin: 3% auto;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 60%;
+  margin: 3% auto;
+}
+
+h4 {
+  font-weight: 350;
+  font-size: 1.1em;
+  width: 40%;
+  margin: 3% auto;
+}
+
+.h-container {
+  margin-top: 8%;
+}
+
+p {
+  font-weight: 500;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: #dbdadadc;
+  font-size: 0.9em;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.animated {
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+}
+
+.ref-wrapper-padded {
+  padding-top: 8%;
+}
+
 /* ==== Mobile Version ==== */
 
 @media only screen and (max-width: 768px) {
+  .h-container {
+    margin-bottom: 3em;
+  }
+  .h-container h2, h3, h4 {
+    width: 90%;
+    margin-bottom: 1.5em;
+  }
+  .h-container h2 {
+    font-size: 1.7em;    
+  }
+
+  .h-container h3 {
+    font-size: 1.4em;
+  }
+
+  .h-container h4 {
+    font-size: 1.1em;
+  }
+
   #mobile-page {
     display: grid;
     grid-template-rows: auto 1fr auto;

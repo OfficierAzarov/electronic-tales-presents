@@ -26,3 +26,24 @@
 .success {
   color: #ff4093;
 }
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 768px) {
+  #signup {
+    width: 90%;
+    margin: 30% auto;
+  }
+
+  #input-container input {
+    width: 70%;
+    margin-bottom: 0.7em;
+  }
+
+  .regular-steps {
+    width: 100%;
+    border-radius: 2em;
+    padding: 0.1em 0 1.2em;
+    margin-bottom: 1em;
+  }
+}
