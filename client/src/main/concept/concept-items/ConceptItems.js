@@ -10,6 +10,11 @@ import weight from "../../../resources/img/icons/weight.svg";
 import geek from "../../../resources/img/icons/geek.svg";
 import stairs from "../../../resources/img/icons/stairs.svg";
 
+import communityMobile from "../../../resources/img/icons/community-mobile.svg";
+import weightMobile from "../../../resources/img/icons/weight-mobile.svg";
+import geekMobile from "../../../resources/img/icons/geek-mobile.svg";
+import stairsMobile from "../../../resources/img/icons/stairs-mobile.svg";
+
 import tea from "../../../resources/img/icons/tea.png";
 import chat from "../../../resources/img/icons/chatcolor.png";
 import learning from "../../../resources/img/icons/learning.png";
@@ -43,24 +48,28 @@ class ConceptItems extends React.Component {
         {
           id: "safe-space",
           img: community,
+          imgMobile: communityMobile,
           text: i18next.t("concept.conceptItems.principles.id1.text"),
           turnsOn: ["social"],
         },
         {
           id: "muscle",
           img: weight,
+          imgMobile: weightMobile,
           text: i18next.t("concept.conceptItems.principles.id2.text"),
           turnsOn: ["nightschool", "microlearning"],
         },
         {
           id: "culture",
           img: geek,
+          imgMobile: geekMobile,
           text: i18next.t("concept.conceptItems.principles.id3.text"),
           turnsOn: ["coolcontent"],
         },
         {
           id: "level-up",
           img: stairs,
+          imgMobile: stairsMobile,
           text: i18next.t("concept.conceptItems.principles.id4.text"),
           turnsOn: ["nightschool", "social", "microlearning", "coolcontent"],
         },
@@ -117,7 +126,7 @@ class ConceptItems extends React.Component {
                   onMouseEnter={() => this.hoverEffectOn(item)}
                   onMouseLeave={() => this.hoverEffectOff()}
                 >
-                  <img src={item.img} />
+                  <img src={item.imgMobile} />
                   <p>{item.text}</p>
                 </li>
               ))}
