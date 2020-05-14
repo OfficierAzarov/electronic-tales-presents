@@ -40,9 +40,6 @@ class Why extends React.Component {
                     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
-                  {/* <video loop autoPlay controls>
-                    <source src={trailer} type="video/mp4" />
-                  </video> */}
                 </div>
               </Slide>
               <ul>
@@ -61,7 +58,7 @@ class Why extends React.Component {
                   <li>
                     <Emoji
                       symbol="🌈"
-                      label="rainbow"                      
+                      label="rainbow"
                       size="3em"
                       marginBottom="1%"
                     />
@@ -141,9 +138,6 @@ class Why extends React.Component {
               </ul>
             </div>
             <div id="video-container">
-              {/* <video loop autoPlay controls>
-                <source src={trailer} type="video/mp4" />
-              </video> */}
               <iframe
                 width="560"
                 height="315"

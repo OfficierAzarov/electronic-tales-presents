@@ -45,20 +45,20 @@ class App extends React.Component {
           <MediaQuery maxDeviceWidth={768}>
             <Router>
               <div id="mobile-page">
-                <Nav mobile="y" />
+                <Nav mobile="y" onLanguageHandle={this.onLanguageHandle} />
                 <div id="eltaskyline">
                   <img src={elta} alt="Electronic&nbsp;Tales skyline" />
                 </div>
                 <div id="mobile-main">
-                  <Presentation mobile="y" />
-                  <Why mobile="y" />
-                  <Concept mobile="y" />
-                  <Tracks mobile="y" />
-                  <Progress mobile="y" />
-                  <Signup mobile="y" />
-                  <Team mobile="y" />
+                  <Presentation mobile="y" language={this.state.language} />
+                  <Why mobile="y" language={this.state.language} />
+                  <Concept mobile="y" language={this.state.language} />
+                  <Tracks mobile="y" language={this.state.language} />
+                  <Progress mobile="y" language={this.state.language} />
+                  <Signup mobile="y" language={this.state.language} />
+                  <Team mobile="y" language={this.state.language} />
                 </div>
-                <Footer mobile="y" />
+                <Footer mobile="y" language={this.state.language} />
               </div>
             </Router>
           </MediaQuery>
