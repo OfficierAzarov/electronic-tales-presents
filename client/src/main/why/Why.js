@@ -32,14 +32,25 @@ class Why extends React.Component {
               <Slide bottom duration={2000}>
                 <h3>{t("why.bigText")}</h3>
                 <div id="video-container">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+                  {this.props.language === "fr" ? (
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  ) : (
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube-nocookie.com/embed/VKng_oWILQI"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  )}
                 </div>
               </Slide>
               <ul>
@@ -138,14 +149,25 @@ class Why extends React.Component {
               </ul>
             </div>
             <div id="video-container">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              {this.props.language === "fr" ? (
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              ) : (
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/VKng_oWILQI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              )}
             </div>
           </div>
           <Button text={t("why.button")} goto="/concept" />
