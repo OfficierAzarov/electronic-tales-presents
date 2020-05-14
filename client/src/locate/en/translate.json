@@ -19,7 +19,7 @@
       "button": "Grumpf, yes\u00A0!"
     },
     "why": {
-      "bigText": "Let’s smash the impostor syndrome together!",
+      "bigText": "Let’s smash the impostor syndrome together\u00A0!",
       "bullet1": "For the junior developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
       "bullet2": "Made with love by feminist, queer, inclusive devs and other fucking friendly people",
       "bullet3": "Open source and 100% free platform",
@@ -137,7 +137,7 @@
       "form": {
         "action": "Write your email here.",
         "error500": "Oops... Something went wrong on the server side. Try again or contact us.",
-        "subscribeButton": "I'm in!",
+        "subscribeButton": "I'm in\u00A0!",
         "waitAMinute": "Wait a sec... What will happen to me if I give you my email\u00A0?"
       },
       "signupSteps": {
@@ -165,7 +165,7 @@
     },
     "team": {
       "title": "Team",
-      
+
       "id1": {
         "name": "You",
         "desc": "Yes, you."

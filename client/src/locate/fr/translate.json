@@ -157,7 +157,7 @@
             "callToAction": {
               "beforeLink": "Si oui, ",
               "link": "retourne au formulaire",
-              "afterLink": "et laisse-nous ton email\u00A0!"
+              "afterLink": " et laisse-nous ton email\u00A0!"
             }
           }
         }
