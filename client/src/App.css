@@ -128,6 +128,11 @@ a:hover {
     width: 100%;
     padding: 4em 0;
   }
+
+  #section-presentation {
+    padding-top: 0;
+  }
+
   .dark-background {
     background-color: #121212;
   }
