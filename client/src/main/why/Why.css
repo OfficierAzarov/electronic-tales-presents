@@ -34,12 +34,15 @@
 }
 
 #why video {
-  width: 85%;
-  border-radius: 3em;
+  /* border-radius: 3em;
+  border: 1px solid #5a5959;
   margin: 0 auto;
   display: block;
   outline: none;
-  box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, 0.41);
+  box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, 0.41); */
+}
+
+#why #video-container {
 }
 
 #why-button-wrap {
@@ -72,5 +75,10 @@
     margin-top: 2em;
   }
 
-
+  #video-container iframe,
+  #video-container object,
+  #video-container embed {
+    width: 100%;
+    height: 100%;
+  }
 }
