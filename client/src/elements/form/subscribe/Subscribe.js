@@ -12,6 +12,7 @@ class Subscribe extends React.Component {
   };
 
   componentDidMount() {
+    // passes the immplementation of generate method to i18next HOC
     this.props.implementGenerate(this.generate);
   }
 

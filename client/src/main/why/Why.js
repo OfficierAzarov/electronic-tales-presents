@@ -1,5 +1,6 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
+import Fade from "react-reveal/Fade";
 
 import Button from "../../elements/buttons/Button";
 import Emoji from "../../elements/Emoji";
@@ -26,54 +27,56 @@ class Why extends React.Component {
     if (this.props.mobile === "y") {
       return (
         <div id="why">
-          <div id="content-container">
-            <div id="text-container">
-              <h3>{t("why.bigText")}</h3>
-              <div id="video-container">
-                <video loop autoPlay controls>
-                  <source src={trailer} type="video/mp4" />
-                </video>
+          <Fade bottom cascade>
+            <div id="content-container">
+              <div id="text-container">
+                <h3>{t("why.bigText")}</h3>
+                <div id="video-container">
+                  <video loop autoPlay controls>
+                    <source src={trailer} type="video/mp4" />
+                  </video>
+                </div>
+                <ul>
+                  <li>
+                    <Emoji
+                      symbol="☁️"
+                      label="cloud"
+                      size="1.5em"
+                      marginBottom="1%"
+                    />
+                    {t("why.bullet1")}
+                  </li>
+                  <li>
+                    <Emoji
+                      symbol="🌈"
+                      label="rainbow"
+                      size="1.4em"
+                      marginBottom="1%"
+                    />
+                    {t("why.bullet2")}
+                  </li>
+                  <li>
+                    <Emoji
+                      symbol="🍰"
+                      label="shortcake"
+                      size="1.2em"
+                      marginBottom="1%"
+                    />
+                    {t("why.bullet3")}
+                  </li>
+                  <li>
+                    <Emoji
+                      symbol="📆"
+                      label="tear-off calendar"
+                      size="1.2em"
+                      marginBottom="1%"
+                    />
+                    {t("why.bullet4")}
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  <Emoji
-                    symbol="☁️"
-                    label="cloud"
-                    size="1.5em"
-                    marginBottom="1%"
-                  />
-                  {t("why.bullet1")}
-                </li>
-                <li>
-                  <Emoji
-                    symbol="🌈"
-                    label="rainbow"
-                    size="1.4em"
-                    marginBottom="1%"
-                  />
-                  {t("why.bullet2")}
-                </li>
-                <li>
-                  <Emoji
-                    symbol="🍰"
-                    label="shortcake"
-                    size="1.2em"
-                    marginBottom="1%"
-                  />
-                  {t("why.bullet3")}
-                </li>
-                <li>
-                  <Emoji
-                    symbol="📆"
-                    label="tear-off calendar"
-                    size="1.2em"
-                    marginBottom="1%"
-                  />
-                  {t("why.bullet4")}
-                </li>
-              </ul>
             </div>
-          </div>
+          </Fade>
         </div>
       );
     } else {

@@ -25,8 +25,15 @@ class Presentation extends React.Component {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
+    // passes the immplementation of generate method to i18next HOC
     this.props.implementGenerate(this.generate);
+
+    // TO DO
+    // this.adaptDisplay();
   }
+
+  // TO DO
+  adaptDisplay = () => {};
 
   generate = () => {
     this.setState({

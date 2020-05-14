@@ -20,6 +20,7 @@ class TracksTabs extends React.Component {
   };
 
   componentDidMount() {
+    // passes the immplementation of generate method to i18next HOC
     this.props.implementGenerate(this.generate);
   }
 
@@ -77,11 +78,13 @@ class TracksTabs extends React.Component {
         <div id="worlds-container">
           <div id="world">
             {this.state.worlds.map((world) => (
-              <div key={world.id} id={world.id + "-container"} className="world-container">
+              <div
+                key={world.id}
+                id={world.id + "-container"}
+                className="world-container"
+              >
                 <div id="tabs">
-                  <div className="tab-title neon-flicker">
-                    {world.title}
-                  </div>
+                  <div className="tab-title neon-flicker">{world.title}</div>
                 </div>
                 <div className="content-container" id={world.id}>
                   <img src={world.imgSrc} alt={world.alt} />

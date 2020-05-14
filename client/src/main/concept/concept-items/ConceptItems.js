@@ -10,7 +10,7 @@ import weight from "../../../resources/img/icons/weight.svg";
 import geek from "../../../resources/img/icons/geek.svg";
 import stairs from "../../../resources/img/icons/stairs.svg";
 
-import communityMobile from "../../../resources/img/icons/community-mobile.svg"
+import communityMobile from "../../../resources/img/icons/community-mobile.svg";
 import geekMobile from "../../../resources/img/icons/geek-mobile.svg";
 
 import tea from "../../../resources/img/icons/tea.png";
@@ -28,6 +28,7 @@ class ConceptItems extends React.Component {
   };
 
   componentDidMount() {
+    // passes the immplementation of generate method to i18next HOC
     this.props.implementGenerate(this.generate);
   }
 
@@ -133,7 +134,7 @@ class ConceptItems extends React.Component {
           </div>
 
           <div id="implementations">
-          <h4 className="neon-flicker">Notre toolbox</h4>
+            <h4 className="neon-flicker">Notre toolbox</h4>
             <ul>
               {this.state.implementations.map((item) => (
                 <li id={item.id} key={item.id}>
