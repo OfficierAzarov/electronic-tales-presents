@@ -45,20 +45,20 @@ class App extends React.Component {
           <MediaQuery maxDeviceWidth={768}>
             <Router>
               <div id="mobile-page">
-                <Nav mobile="y" />
+                <Nav mobile="y" onLanguageHandle={this.onLanguageHandle} />
                 <div id="eltaskyline">
                   <img src={elta} alt="Electronic&nbsp;Tales skyline" />
                 </div>
                 <div id="mobile-main">
-                  <div className="section"><Presentation mobile="y" /></div>
-                  <div className="section light-background"><Why mobile="y" /></div>
-                  <div className="section dark-background"><Concept mobile="y" /></div>
-                  <div className="section light-background"><Tracks mobile="y" /></div>
-                  <div className="section dark-background"><Progress mobile="y" /></div>
-                  <div className="section light-background"><Signup mobile="y" /></div>
-                  <div className="section dark-background"><Team mobile="y" /></div>
+                  <div className="section"><Presentation mobile="y" language={this.state.language} /></div>
+                  <div className="section light-background"><Why mobile="y" language={this.state.language} /></div>
+                  <div className="section dark-background"><Concept mobile="y" language={this.state.language} /></div>
+                  <div className="section light-background"><Tracks mobile="y" language={this.state.language} /></div>
+                  <div className="section dark-background"><Progress mobile="y" language={this.state.language} /></div>
+                  <div className="section light-background"><Signup mobile="y" language={this.state.language} /></div>
+                  <div className="section dark-background"><Team mobile="y" language={this.state.language} /></div>                
                 </div>
-                <Footer mobile="y" />
+                <Footer mobile="y" language={this.state.language} />
               </div>
             </Router>
           </MediaQuery>

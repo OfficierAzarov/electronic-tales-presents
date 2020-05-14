@@ -32,9 +32,14 @@ class Why extends React.Component {
               <Slide bottom duration={2000}>
                 <h3>{t("why.bigText")}</h3>
                 <div id="video-container">
-                  <video loop autoPlay controls>
-                    <source src={trailer} type="video/mp4" />
-                  </video>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/i4N0fzPftos"
+                    frameborder="0"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </Slide>
               <ul>
@@ -53,7 +58,7 @@ class Why extends React.Component {
                   <li>
                     <Emoji
                       symbol="🌈"
-                      label="rainbow"                      
+                      label="rainbow"
                       size="3em"
                       marginBottom="1%"
                     />
@@ -133,9 +138,14 @@ class Why extends React.Component {
               </ul>
             </div>
             <div id="video-container">
-              <video loop autoPlay controls>
-                <source src={trailer} type="video/mp4" />
-              </video>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/i4N0fzPftos"
+                frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
           <Button text={t("why.button")} goto="/concept" />

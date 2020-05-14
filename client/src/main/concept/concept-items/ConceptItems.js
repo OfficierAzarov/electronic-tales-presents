@@ -3,7 +3,6 @@ import i18next from "i18next";
 import Slide from "react-reveal/Slide";
 import Bounce from "react-reveal/Bounce";
 
-
 import withAPITranslation from "../../../elements/HOC/withAPITranslation";
 
 import "./ConceptItems.css";
@@ -120,7 +119,11 @@ class ConceptItems extends React.Component {
       return (
         <div id="how-items-container">
           <div id="principles">
-            <h4 className="neon-flicker"><Slide bottom cascade>Nos principes</Slide></h4>
+            <h4 className="neon-flicker">
+              <Slide bottom cascade>
+                {i18next.t("concept.conceptItems.principles.title")}
+              </Slide>
+            </h4>
             <ul>
               {this.state.principles.map((item) => (
                 <li
@@ -129,7 +132,9 @@ class ConceptItems extends React.Component {
                   onMouseEnter={() => this.hoverEffectOn(item)}
                   onMouseLeave={() => this.hoverEffectOff()}
                 >
-                  <Bounce bottom><img src={item.imgMobile} /></Bounce>
+                  <Bounce bottom>
+                    <img src={item.imgMobile} />
+                  </Bounce>
                   <p>{item.text}</p>
                 </li>
               ))}
@@ -137,12 +142,20 @@ class ConceptItems extends React.Component {
           </div>
 
           <div id="implementations">
-            <h4 className="neon-flicker"><Slide bottom cascade>Notre toolbox</Slide></h4>
+            <h4 className="neon-flicker">
+              <Slide bottom cascade>
+                {i18next.t("concept.conceptItems.implementations.title")}
+              </Slide>
+            </h4>
             <ul>
               {this.state.implementations.map((item) => (
                 <li id={item.id} key={item.id}>
-                  <Slide bottom duration={1000}><img src={item.img} /></Slide>
-                  <Slide bottom duration={2000}><p>{item.text}</p></Slide>
+                  <Slide bottom duration={1000}>
+                    <img src={item.img} />
+                  </Slide>
+                  <Slide bottom duration={2000}>
+                    <p>{item.text}</p>
+                  </Slide>
                 </li>
               ))}
             </ul>

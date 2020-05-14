@@ -33,13 +33,18 @@
   width: 100%;
 }
 
-#why video {
-  width: 85%;
+#video-container {
   border-radius: 3em;
-  margin: 0 auto;
-  display: block;
-  outline: none;
+  border: 1px solid #5a5959;
   box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, 0.41);
+  max-height: 317px;
+}
+
+#video-container iframe,
+#video-container object,
+#video-container embed {
+  width: 100%;
+  border-radius: 3em;
 }
 
 #why-button-wrap {
@@ -55,6 +60,7 @@
 /* ==== Mobile Version ==== */
 
 @media only screen and (max-width: 768px) {
+
   #why {
     margin: 30% auto;
     width: 90%;
@@ -72,5 +78,15 @@
     margin-top: 2em;
   }
 
+  #video-container {
+    border-radius: 2em;
+    overflow: hidden;    
+    max-height: 317px;
+  }
 
+  #video-container iframe,
+  #video-container object,
+  #video-container embed {
+    border-radius: 2em;
+  }
 }

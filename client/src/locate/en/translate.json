@@ -34,6 +34,7 @@
       },
       "conceptItems": {
         "principles": {
+          "title": "Our concepts",
           "id1": {
             "text": "Building a safe space for peer support between junior devs"
           },
@@ -48,6 +49,7 @@
           }
         },
         "implementations": {
+          "title": "Our toolbox",
           "id1": {
             "text": "Evening classes and workshops, online and in real"
           },

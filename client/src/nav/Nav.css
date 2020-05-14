@@ -53,11 +53,19 @@ nav {
 
 @media only screen and (max-width: 768px) {
   nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   nav img {
     width: 10em;
     margin: 0 auto;
+    grid-column: 2;
+  }
+
+  nav #language-switch {
+    grid-column: 3;
+    text-align: right;
+    margin-right: 10%;
   }
 }

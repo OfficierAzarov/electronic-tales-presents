@@ -34,6 +34,7 @@
       },
       "conceptItems": {
         "principles": {
+          "title": "Nos principes",
           "id1": {
             "text": "Fabriquer un safe-space d'entraide et de bienveillance entre devs juniors"
           },
@@ -48,6 +49,7 @@
           }
         },
         "implementations": {
+          "title": "Notre toolbox",
           "id1": {
             "text": "Cours du soir et workshops, en ligne et en vrai"
           },
