@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import i18next from "i18next";
+import Slide from "react-reveal/Slide";
 
 import withAPITranslation from "../../../elements/HOC/withAPITranslation";
 import * as Utils from "../../../utils/Utils";
@@ -57,7 +58,7 @@ class SignupSteps extends Component {
       return (
         <div id="steps-container">
           {this.state.steps.map((step) => (
-            <div key={step.id} className="regular-steps">
+            <Slide bottom><div key={step.id} className="regular-steps">
               <h4 className="shine-bright">{step.id}</h4>
               <p
                 dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
@@ -82,7 +83,7 @@ class SignupSteps extends Component {
                   </p>
                 </div>
               ) : null}
-            </div>
+            </div></Slide>
           ))}
         </div>
       );

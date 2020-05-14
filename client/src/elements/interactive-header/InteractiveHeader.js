@@ -1,4 +1,5 @@
 import React from "react";
+import Slide from "react-reveal/Slide";
 
 import "./InteractiveHeader.css";
 
@@ -21,9 +22,9 @@ class InteractiveHeader extends React.Component {
     if (this.props.mobile === "y") {
       return (
         <div className="h-container">
-          <h2 dangerouslySetInnerHTML={this.props.bigText}></h2>
-          <h3 dangerouslySetInnerHTML={this.props.middleText}></h3>
-          <h4 dangerouslySetInnerHTML={this.props.littleText}></h4>
+          <Slide bottom><h2 dangerouslySetInnerHTML={this.props.bigText}></h2></Slide>
+          <Slide bottom><h3 dangerouslySetInnerHTML={this.props.middleText}></h3></Slide>
+          <Slide bottom><h4 dangerouslySetInnerHTML={this.props.littleText}></h4></Slide>
         </div>
       );
     } else {

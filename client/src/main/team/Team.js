@@ -1,5 +1,6 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
+import Slide from "react-reveal/Slide";
 
 import "./Team.css";
 
@@ -22,9 +23,10 @@ class Team extends React.Component {
     if (this.props.mobile === "y") {
       return (
         <div id="team-page">
-          <h2>{t("team.title")}</h2>
+          <Slide bottom><h2>{t("team.title")}</h2></Slide>
           <div id="team-box">
           <div className="member-box">
+          <Slide left>
               <div className="image-box">
                 <img className="team-pic" src={azarov} alt="Officier Azarov" />
               </div>
@@ -32,9 +34,11 @@ class Team extends React.Component {
                 <h4 className="member-id">{t("team.id5.name")}</h4>
                 <p>{t("team.id5.desc")}</p>
               </div>
+            </Slide>
             </div>
 
             <div className="member-box">
+            <Slide right>
               <div className="member-text">
                 <h4 className="member-id">{t("team.id2.name")}</h4>
                 <p>{t("team.id2.desc")}</p>
@@ -42,9 +46,11 @@ class Team extends React.Component {
               <div className="image-box">
                 <img className="team-pic" src={monday} alt="Monday Hazard" />
               </div>
+            </Slide>
             </div>
 
             <div className="member-box">
+            <Slide left>
               <div className="image-box">
                 <img className="team-pic" src={crampon} alt="Le Crampon" />
               </div>
@@ -52,9 +58,11 @@ class Team extends React.Component {
                 <h4 className="member-id">{t("team.id3.name")}</h4>
                 <p>{t("team.id3.desc")}</p>
               </div>
+            </Slide>
             </div>
 
             <div className="member-box">
+            <Slide right>
               <div className="member-text">
                 <h4 className="member-id">{t("team.id4.name")}</h4>
                 <p>{t("team.id4.desc")}</p>
@@ -62,9 +70,11 @@ class Team extends React.Component {
               <div className="image-box">
                 <img className="team-pic" src={partenko} alt="Partenko" />
               </div>
+            </Slide>
             </div>
             
             <div className="member-box">
+            <Slide left>
               <div className="image-box">
                 <img className="team-pic" src={handpoint} alt="Oui, toi." />
               </div>
@@ -72,7 +82,8 @@ class Team extends React.Component {
                 <h4 className="member-id">{t("team.id1.name")}</h4>
                 <p>{t("team.id1.desc")}</p>
               </div>
-            </div>  
+            </Slide>
+            </div>
            </div>
         </div>
       );
