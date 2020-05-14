@@ -27,16 +27,18 @@ class Why extends React.Component {
     if (this.props.mobile === "y") {
       return (
         <div id="why">
-          <Fade bottom cascade>
-            <div id="content-container">
-              <div id="text-container">
+          <div id="content-container">
+            <div id="text-container">
+              <Fade bottom duration={2000} delay={1000}>
                 <h3>{t("why.bigText")}</h3>
                 <div id="video-container">
                   <video loop autoPlay controls>
                     <source src={trailer} type="video/mp4" />
                   </video>
                 </div>
-                <ul>
+              </Fade>
+              <ul>
+                <Fade bottom duration={2000} delay={900}>
                   <li>
                     <Emoji
                       symbol="☁️"
@@ -46,6 +48,8 @@ class Why extends React.Component {
                     />
                     {t("why.bullet1")}
                   </li>
+                </Fade>
+                <Fade bottom duration={2000}>
                   <li>
                     <Emoji
                       symbol="🌈"
@@ -55,6 +59,8 @@ class Why extends React.Component {
                     />
                     {t("why.bullet2")}
                   </li>
+                </Fade>
+                <Fade bottom duration={2000}>
                   <li>
                     <Emoji
                       symbol="🍰"
@@ -64,6 +70,8 @@ class Why extends React.Component {
                     />
                     {t("why.bullet3")}
                   </li>
+                </Fade>
+                <Fade bottom duration={2000}>
                   <li>
                     <Emoji
                       symbol="📆"
@@ -73,10 +81,10 @@ class Why extends React.Component {
                     />
                     {t("why.bullet4")}
                   </li>
-                </ul>
-              </div>
+                </Fade>
+              </ul>
             </div>
-          </Fade>
+          </div>
         </div>
       );
     } else {
