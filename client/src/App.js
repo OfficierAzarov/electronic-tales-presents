@@ -21,7 +21,9 @@ import logo from "../src/resources/img/logo-transparent.png";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.ref = React.createRef();
   }
+
   state = {
     currentPath: null,
     language: "fr",
@@ -38,6 +40,10 @@ class App extends React.Component {
     this.props.i18n.changeLanguage(newLang);
   };
 
+  scrollToNextSection = () => {
+    this.ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   render() {
     return (
       <Suspense fallback="loading">
@@ -50,13 +56,33 @@ class App extends React.Component {
                   <img src={elta} alt="Electronic&nbsp;Tales skyline" />
                 </div>
                 <div id="mobile-main">
-                  <div className="section"><Presentation mobile="y" language={this.state.language} /></div>
-                  <div className="section light-background"><Why mobile="y" language={this.state.language} /></div>
-                  <div className="section dark-background"><Concept mobile="y" language={this.state.language} /></div>
-                  <div className="section light-background"><Tracks mobile="y" language={this.state.language} /></div>
-                  <div className="section dark-background"><Progress mobile="y" language={this.state.language} /></div>
-                  <div className="section light-background"><Signup mobile="y" language={this.state.language} /></div>
-                  <div className="section dark-background"><Team mobile="y" language={this.state.language} /></div>                
+                  <div className="section">
+                    <Presentation
+                      mobile="y"
+                      language={this.state.language}
+                      scrollToNextSection={this.scrollToNextSection}
+                    />
+                  </div>
+                  <div className="section light-background">
+                    <div ref={this.ref} className="ref-wrapper">
+                      <Why mobile="y" language={this.state.language} />
+                    </div>
+                  </div>
+                  <div className="section dark-background">
+                    <Concept mobile="y" language={this.state.language} />
+                  </div>
+                  <div className="section light-background">
+                    <Tracks mobile="y" language={this.state.language} />
+                  </div>
+                  <div className="section dark-background">
+                    <Progress mobile="y" language={this.state.language} />
+                  </div>
+                  <div className="section light-background">
+                    <Signup mobile="y" language={this.state.language} />
+                  </div>
+                  <div className="section dark-background">
+                    <Team mobile="y" language={this.state.language} />
+                  </div>
                 </div>
                 <Footer mobile="y" language={this.state.language} />
               </div>

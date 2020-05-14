@@ -35,9 +35,9 @@ class Why extends React.Component {
                   <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/i4N0fzPftos"
+                    src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
                     frameborder="0"
-                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -141,9 +141,9 @@ class Why extends React.Component {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/i4N0fzPftos"
+                src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
                 frameborder="0"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
             </div>

@@ -33,7 +33,7 @@ class Presentation extends React.Component {
   }
 
   // TO DO
-  adaptDisplay = () => {};
+  // adaptDisplay = () => {};
 
   generate = () => {
     this.setState({
@@ -61,7 +61,10 @@ class Presentation extends React.Component {
             ))}
           </ul>
           <div id="animation-wrapper">
-            <button className="button-design">
+            <button
+              className="button-design"
+              onClick={this.props.scrollToNextSection}
+            >
               {i18next.t("presentation.button")}
             </button>
           </div>
