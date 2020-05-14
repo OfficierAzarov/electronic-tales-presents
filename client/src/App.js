@@ -56,7 +56,7 @@ class App extends React.Component {
                   <img src={elta} alt="Electronic&nbsp;Tales skyline" />
                 </div>
                 <div id="mobile-main">
-                  <div className="section">
+                  <div className="section" id="section-presentation">
                     <Presentation
                       mobile="y"
                       language={this.state.language}
