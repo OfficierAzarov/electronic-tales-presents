@@ -123,6 +123,19 @@ a:hover {
 /* ==== Mobile Version ==== */
 
 @media only screen and (max-width: 768px) {
+
+  .section {
+    width: 100%;
+    padding: 4em 0;
+  }
+  .dark-background {
+    background-color: #121212;
+  }
+
+  .light-background {
+    background-color: #171717;
+  }
+
   .h-container {
     margin-bottom: 3em;
   }

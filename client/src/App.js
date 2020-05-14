@@ -50,13 +50,13 @@ class App extends React.Component {
                   <img src={elta} alt="Electronic&nbsp;Tales skyline" />
                 </div>
                 <div id="mobile-main">
-                  <Presentation mobile="y" />
-                  <Why mobile="y" />
-                  <Concept mobile="y" />
-                  <Tracks mobile="y" />
-                  <Progress mobile="y" />
-                  <Signup mobile="y" />
-                  <Team mobile="y" />
+                  <div className="section"><Presentation mobile="y" /></div>
+                  <div className="section light-background"><Why mobile="y" /></div>
+                  <div className="section dark-background"><Concept mobile="y" /></div>
+                  <div className="section light-background"><Tracks mobile="y" /></div>
+                  <div className="section dark-background"><Progress mobile="y" /></div>
+                  <div className="section light-background"><Signup mobile="y" /></div>
+                  <div className="section dark-background"><Team mobile="y" /></div>
                 </div>
                 <Footer mobile="y" />
               </div>

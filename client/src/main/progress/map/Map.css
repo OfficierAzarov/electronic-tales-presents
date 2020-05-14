@@ -117,3 +117,12 @@
     text-shadow: none;
   }
 }
+
+/* ==== Mobile Version ==== */
+
+@media only screen and (max-width: 320px){
+
+  #progress-bar {
+    height: 85%;
+  }
+}

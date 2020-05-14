@@ -14,4 +14,12 @@
   #worlds-container {
       padding: 0%;
     }
+  
+  #world {
+    background-color: #171717;
+  }
+
+  .world-container {
+    background-color: #121212;
+  }
 }
