@@ -103,8 +103,8 @@
   }
 
   #implementations img {
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
     margin: 0 10% 6% 0;
   }
 
@@ -113,6 +113,6 @@
   }
 
   #implementations ul {
-    padding-left: 0;
+    padding-left: 0.5em;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
 import Button from "../../elements/buttons/Button";
 import Emoji from "../../elements/Emoji";
@@ -29,7 +29,7 @@ class Why extends React.Component {
         <div id="why">
           <div id="content-container">
             <div id="text-container">
-              <Fade bottom duration={2000} delay={1000}>
+              <Slide bottom duration={2000}>
                 <h3>{t("why.bigText")}</h3>
                 <div id="video-container">
                   <iframe
@@ -44,52 +44,52 @@ class Why extends React.Component {
                     <source src={trailer} type="video/mp4" />
                   </video> */}
                 </div>
-              </Fade>
+              </Slide>
               <ul>
-                <Fade bottom duration={2000} delay={900}>
+                <Slide bottom>
                   <li>
                     <Emoji
                       symbol="☁️"
                       label="cloud"
-                      size="1.5em"
+                      size="3em"
                       marginBottom="1%"
                     />
                     {t("why.bullet1")}
                   </li>
-                </Fade>
-                <Fade bottom duration={2000}>
+                </Slide>
+                <Slide bottom>
                   <li>
                     <Emoji
                       symbol="🌈"
-                      label="rainbow"
-                      size="1.4em"
+                      label="rainbow"                      
+                      size="3em"
                       marginBottom="1%"
                     />
                     {t("why.bullet2")}
                   </li>
-                </Fade>
-                <Fade bottom duration={2000}>
+                </Slide>
+                <Slide bottom>
                   <li>
                     <Emoji
                       symbol="🍰"
                       label="shortcake"
-                      size="1.2em"
+                      size="3em"
                       marginBottom="1%"
                     />
                     {t("why.bullet3")}
                   </li>
-                </Fade>
-                <Fade bottom duration={2000}>
+                </Slide>
+                <Slide bottom>
                   <li>
                     <Emoji
                       symbol="📆"
                       label="tear-off calendar"
-                      size="1.2em"
+                      size="2.8em"
                       marginBottom="1%"
                     />
                     {t("why.bullet4")}
                   </li>
-                </Fade>
+                </Slide>
               </ul>
             </div>
           </div>

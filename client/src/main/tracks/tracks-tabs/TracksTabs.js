@@ -1,5 +1,7 @@
 import React from "react";
 import i18next from "i18next";
+import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 import withAPITranslation from "../../../elements/HOC/withAPITranslation";
 
@@ -84,7 +86,7 @@ class TracksTabs extends React.Component {
                 className="world-container"
               >
                 <div id="tabs">
-                  <div className="tab-title neon-flicker">{world.title}</div>
+                  <div className="tab-title neon-flicker"><Fade cascade duration={2000}>{world.title}</Fade></div>
                 </div>
                 <div className="content-container" id={world.id}>
                   <img src={world.imgSrc} alt={world.alt} />
@@ -94,7 +96,7 @@ class TracksTabs extends React.Component {
                         world.desc
                       )}
                     ></p>
-                    <p className="baseline">{world.baseline}</p>
+                    <Fade duration={2000}><p className="baseline">{world.baseline}</p></Fade>
                   </div>
                 </div>
               </div>

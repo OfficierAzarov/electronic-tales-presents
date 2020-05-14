@@ -1,5 +1,6 @@
 import React from "react";
 import i18next from "i18next";
+import Fade from "react-reveal/Fade";
 
 import withAPITranslation from "../../../elements/HOC/withAPITranslation";
 import * as Utils from "../../../utils/Utils";
@@ -86,7 +87,7 @@ class Map extends React.Component {
   render() {
     if (this.props.mobile === "y") {
       return (
-        <div id="map">
+        <Fade><div id="map">
           <div id="progress-container">
             <span id="progress-bar"></span>
             {this.state.preHereStations.map((station) => (
@@ -128,7 +129,7 @@ class Map extends React.Component {
               </div>
             ))}
           </div>
-        </div>
+        </div></Fade>
       );
     } else {
       return (

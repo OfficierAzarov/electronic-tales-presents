@@ -1,6 +1,7 @@
 import React from "react";
 import { compose } from "recompose";
 import i18next from "i18next";
+import Slide from "react-reveal/Slide";
 
 import withDisplay from "../../elements/HOC/withDisplay";
 import withAPITranslation from "../../elements/HOC/withAPITranslation";
@@ -51,7 +52,7 @@ class Signup extends React.Component {
       return (
         <div id="signup" className="animated">
           <div className="h-container">
-            <h2>{i18next.t("signup.header.bigText")}</h2>
+            <Slide bottom><h2>{i18next.t("signup.header.bigText")}</h2></Slide>
           </div>
           <div>
             <p>{i18next.t("signup.form.action")}</p>
