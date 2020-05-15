@@ -11,7 +11,7 @@ const Footer = (props) => {
           <a href="mailto:contact@electronictales.io">
             <i class="fas fa-envelope"></i>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/Electronic-Tales-100499265012350">
             <i className="fab fa-instagram"></i>
           </a>
           <a href="#">
