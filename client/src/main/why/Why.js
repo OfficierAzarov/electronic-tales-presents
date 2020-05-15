@@ -101,6 +101,12 @@ class Why extends React.Component {
               </ul>
             </div>
           </div>
+          <button
+            className="button-design"
+            onClick={() => this.props.scrollToASpecificDiv("signupRef")}
+          >
+            {t("common.callToAction")}
+          </button>
         </div>
       );
     } else {

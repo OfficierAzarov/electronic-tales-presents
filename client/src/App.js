@@ -21,7 +21,8 @@ import logo from "../src/resources/img/logo-transparent.png";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.ref = React.createRef();
+    this.whyRef = React.createRef();
+    this.signupRef = React.createRef();
   }
 
   state = {
@@ -40,8 +41,21 @@ class App extends React.Component {
     this.props.i18n.changeLanguage(newLang);
   };
 
-  scrollToNextSection = () => {
-    this.ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  scrollToASpecificDiv = (divReference) => {
+    switch (divReference) {
+      case "whyRef":
+        this.whyRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        break;
+      case "signupRef":
+        this.signupRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        break;
+    }
   };
 
   render() {
@@ -60,12 +74,16 @@ class App extends React.Component {
                     <Presentation
                       mobile="y"
                       language={this.state.language}
-                      scrollToNextSection={this.scrollToNextSection}
+                      scrollToASpecificDiv={this.scrollToASpecificDiv}
                     />
                   </div>
                   <div className="section light-background">
-                    <div ref={this.ref} className="ref-wrapper">
-                      <Why mobile="y" language={this.state.language} />
+                    <div ref={this.whyRef} className="ref-wrapper">
+                      <Why
+                        mobile="y"
+                        language={this.state.language}
+                        scrollToASpecificDiv={this.scrollToASpecificDiv}
+                      />
                     </div>
                   </div>
                   <div className="section dark-background">
@@ -78,10 +96,16 @@ class App extends React.Component {
                     <Progress mobile="y" language={this.state.language} />
                   </div>
                   <div className="section light-background">
-                    <Signup mobile="y" language={this.state.language} />
+                    <div ref={this.signupRef} className="ref-wrapper">
+                      <Signup mobile="y" language={this.state.language} />
+                    </div>
                   </div>
                   <div className="section dark-background">
-                    <Team mobile="y" language={this.state.language} />
+                    <Team
+                      mobile="y"
+                      language={this.state.language}
+                      scrollToASpecificDiv={this.scrollToASpecificDiv}
+                    />
                   </div>
                 </div>
                 <Footer mobile="y" language={this.state.language} />

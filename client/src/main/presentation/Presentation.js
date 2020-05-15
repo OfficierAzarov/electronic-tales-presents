@@ -63,7 +63,7 @@ class Presentation extends React.Component {
           <div id="animation-wrapper">
             <button
               className="button-design"
-              onClick={this.props.scrollToNextSection}
+              onClick={() => this.props.scrollToASpecificDiv("whyRef")}
             >
               {i18next.t("presentation.button")}
             </button>

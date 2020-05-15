@@ -42,6 +42,7 @@ class TracksTabs extends React.Component {
           id: "modern-world",
           title: "Modern World",
           desc: i18next.t("tracks.tracksTabs.worlds.id1.text"),
+          descMobile: i18next.t("tracks.tracksTabs.worlds.id1.textMobile"),
           baseline: i18next.t("tracks.tracksTabs.worlds.id1.baseline"),
           imgSrc: modernWorld,
           imgAlt: "modern world gif",
@@ -50,6 +51,7 @@ class TracksTabs extends React.Component {
           id: "ancient-world",
           title: "Ancient World",
           desc: i18next.t("tracks.tracksTabs.worlds.id2.text"),
+          descMobile: i18next.t("tracks.tracksTabs.worlds.id2.textMobile"),
           baseline: i18next.t("tracks.tracksTabs.worlds.id2.baseline"),
           imgSrc: ancientWorld,
           imgAlt: "ancient world gif",
@@ -58,6 +60,7 @@ class TracksTabs extends React.Component {
           id: "imaginarium",
           title: "Imaginarium",
           desc: i18next.t("tracks.tracksTabs.worlds.id3.text"),
+          descMobile: i18next.t("tracks.tracksTabs.worlds.id3.textMobile"),
           baseline: i18next.t("tracks.tracksTabs.worlds.id3.baseline"),
           imgSrc: imaginarium,
           imgAlt: "imaginarium gif",
@@ -86,17 +89,23 @@ class TracksTabs extends React.Component {
                 className="world-container"
               >
                 <div id="tabs">
-                  <div className="tab-title neon-flicker"><Fade cascade duration={2000}>{world.title}</Fade></div>
+                  <div className="tab-title neon-flicker">
+                    <Fade cascade duration={2000}>
+                      {world.title}
+                    </Fade>
+                  </div>
                 </div>
                 <div className="content-container" id={world.id}>
                   <img src={world.imgSrc} alt={world.alt} />
                   <div className="text-container">
                     <p
                       dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                        world.desc
+                        world.descMobile
                       )}
                     ></p>
-                    <Fade duration={2000}><p className="baseline">{world.baseline}</p></Fade>
+                    <Fade duration={2000}>
+                      <p className="baseline">{world.baseline}</p>
+                    </Fade>
                   </div>
                 </div>
               </div>

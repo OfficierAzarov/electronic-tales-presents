@@ -123,7 +123,6 @@ a:hover {
 /* ==== Mobile Version ==== */
 
 @media only screen and (max-width: 768px) {
-
   .section {
     width: 100%;
     padding: 4em 0;
@@ -144,12 +143,14 @@ a:hover {
   .h-container {
     margin-bottom: 3em;
   }
-  .h-container h2, h3, h4 {
+  .h-container h2,
+  h3,
+  h4 {
     width: 90%;
     margin-bottom: 1.5em;
   }
   .h-container h2 {
-    font-size: 1.7em;    
+    font-size: 1.7em;
   }
 
   .h-container h3 {
@@ -158,6 +159,10 @@ a:hover {
 
   .h-container h4 {
     font-size: 1.1em;
+  }
+
+  .button-design {
+    margin: 0.5em auto 0;
   }
 
   #mobile-page {
@@ -181,12 +186,19 @@ a:hover {
     animation: flicker 3s infinite;
   }
 
-  @keyframes flicker {    
-    0%, 31%, 38%, 56%, 100% {
-      text-shadow: rgb(0, 225, 255) 0px 0px 0.4em, rgb(0, 225, 255) 0px 0px 0.8em, rgb(0, 255, 255) 0px 0px 1.6em;
+  @keyframes flicker {
+    0%,
+    31%,
+    38%,
+    56%,
+    100% {
+      text-shadow: rgb(0, 225, 255) 0px 0px 0.4em,
+        rgb(0, 225, 255) 0px 0px 0.8em, rgb(0, 255, 255) 0px 0px 1.6em;
     }
-      30%, 37%, 55% {        
-        text-shadow: none;
-    }    
+    30%,
+    37%,
+    55% {
+      text-shadow: none;
+    }
   }
 }

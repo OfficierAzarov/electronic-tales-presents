@@ -1,5 +1,8 @@
 {
   "translations": {
+    "common": {
+      "callToAction": "I'm in\u00A0!"
+    },
     "nav": {
       "links": {
         "1": "Why\u00A0?",
@@ -75,15 +78,18 @@
       "tracksTabs": {
         "worlds": {
           "id1": {
-            "text": "🐞&nbsp;Debug.<br/>🔬&nbsp;Learn how to read other people’s code.<br/>⛱️&nbsp;Automate.<br/>👔&nbsp;Survive job interviews.<br/>⌨️&nbsp;Write clean code.<br/>✊&nbsp;Munch crisps without dropping crumbs in your keyboard.",
+            "text": "🐞&nbsp;Debug.<br/>🔬&nbsp;Learn how to read other people’s code.<br/>⛱️&nbsp;Automate.<br/>👔&nbsp;Survive job interviews.<br/>⌨️&nbsp;Write clean code.<br/>✊&nbsp;Munch crisps without dropping crumbs on your keyboard.",
+            "textMobile": "Debug🐞&nbsp;Automate&nbsp;⛱️ <br/>Learn how to read other people’s code&nbsp;🔬<br/>Survive job interviews&nbsp;👔<br/>⌨️&nbsp;Write clean code<br/>Munch crisps without dropping crumbs on your keyboard&nbsp;✊",
             "baseline": "Learn to program between the lines."
           },
           "id2": {
-            "text": "💡&nbsp;Discover how a computer works.<br/>🔨&nbsp;Build your engine.<br/>🎇&nbsp;Learn to speak fluent hardware and to solder without getting your fingers burned.",
-            "baseline": "Dive into the sunken world of the computer science."
+            "text": "💡&nbsp;Discover how a computer works.<br/>🔨&nbsp;Build your own machine.<br/>🎇&nbsp;Learn to speak fluent hardware and to solder without getting your fingers burned.",
+            "textMobile": "Discover how a computer works&nbsp;💡<br/>Build your own machine&nbsp;🔨<br/>Learn to speak fluent hardware and to solder without getting your fingers burned&nbsp;🎇",
+            "baseline": "Dive into the sunken world of computer science."
           },
           "id3": {
             "text": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats&nbsp;?",
+            "textMobile": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats&nbsp;?",
             "baseline": "Absorb the myths and legends of the bits generation."
           }
         }
@@ -159,7 +165,7 @@
             "callToAction": {
               "beforeLink": "If so, ",
               "link": "go back to form",
-              "afterLink": "and drop us your email\u00A0!"
+              "afterLink": " and drop us your email\u00A0!"
             }
           }
         }
