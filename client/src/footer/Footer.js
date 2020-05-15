@@ -12,10 +12,10 @@ const Footer = (props) => {
             <i class="fas fa-envelope"></i>
           </a>
           <a href="https://www.instagram.com/electronictales.io/">
-            <i className="fab fa-facebook"></i>
+            <i className="fab fa-instagram"></i>
           </a>
           <a href="https://www.facebook.com/Electronic-Tales-100499265012350">
-            <i className="fab fa-instagram"></i>
+            <i className="fab fa-facebook"></i>
           </a>
           <a href="https://www.linkedin.com/company/34911130">
             <i className="fab fa-linkedin"></i>
@@ -40,10 +40,10 @@ const Footer = (props) => {
             <i class="fas fa-envelope"></i>
           </a>
           <a href="https://www.instagram.com/electronictales.io/">
-            <i className="fab fa-facebook"></i>
+            <i className="fab fa-instagram"></i>
           </a>
           <a href="https://www.facebook.com/Electronic-Tales-100499265012350">
-            <i className="fab fa-instagram"></i>
+            <i className="fab fa-facebook"></i>
           </a>
           <a href="https://www.linkedin.com/company/34911130">
             <i className="fab fa-linkedin"></i>
