@@ -92,6 +92,7 @@
 }
 #member2 {
   transform: rotate(45deg) translate(20rem) rotate(-45deg);
+  margin: 7em auto 0;
 }
 #member3 {
   transform: rotate(155deg) translate(23.5rem) rotate(-155deg);
