@@ -9,7 +9,7 @@ const Footer = (props) => {
       <footer>
         <div>
           <a href="mailto:contact@electronictales.io">
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
           </a>
           <a href="https://www.instagram.com/electronictales.io/">
             <i className="fab fa-instagram"></i>
@@ -37,7 +37,7 @@ const Footer = (props) => {
         <p>Made with &#10084; by Electronic&nbsp;Tales Team</p>
         <div>
           <a href="mailto:contact@electronictales.io">
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
           </a>
           <a href="https://www.instagram.com/electronictales.io/">
             <i className="fab fa-instagram"></i>

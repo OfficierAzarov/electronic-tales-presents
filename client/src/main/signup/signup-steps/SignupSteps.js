@@ -54,12 +54,13 @@ class SignupSteps extends Component {
   };
 
   render() {
+    // ---- MOBILE VERSION ----
     if (this.props.mobile === "y") {
       return (
         <div id="steps-container">
           {this.state.steps.map((step) => (
-            <Slide bottom>
-              <div key={step.id} className="regular-steps">
+            <Slide key={step.id} bottom>
+              <div className="regular-steps">
                 <h4 className="shine-bright">{step.id}</h4>
                 <p
                   dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
@@ -72,8 +73,11 @@ class SignupSteps extends Component {
                       {i18next.t(
                         "signup.signupSteps.steps.id4.callToAction.beforeLink"
                       )}
-                      <span onClick={this.props.scrollUp}>
-                        {" "}
+                      <span
+                        onClick={() => {
+                          this.props.scrollToASpecificDiv("signupRef");
+                        }}
+                      >
                         {i18next.t(
                           "signup.signupSteps.steps.id4.callToAction.link"
                         )}
@@ -91,6 +95,8 @@ class SignupSteps extends Component {
       );
     } else {
       return (
+        // ---- DESKTOP VERSION ----
+
         <div id="steps-container">
           {this.state.steps.map((step) => (
             <div key={step.id} className="regular-steps">

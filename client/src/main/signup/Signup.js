@@ -52,7 +52,9 @@ class Signup extends React.Component {
       return (
         <div id="signup" className="animated">
           <div className="h-container">
-            <Slide bottom><h2>{i18next.t("signup.header.bigText")}</h2></Slide>
+            <Slide bottom>
+              <h2>{i18next.t("signup.header.bigText")}</h2>
+            </Slide>
           </div>
           <div>
             <p>{i18next.t("signup.form.action")}</p>
@@ -90,15 +92,13 @@ class Signup extends React.Component {
                   language={this.props.language}
                   mobile={this.props.mobile}
                 />
-                {/* <p onClick={this.scrollDown}>
-                  {i18next.t("signup.form.waitAMinute")}
-                </p> */}
               </div>
             )}
           </div>
           <SignupSteps
             mobile={this.props.mobile}
             language={this.props.language}
+            scrollToASpecificDiv={this.props.scrollToASpecificDiv}
           />
         </div>
       );

@@ -97,7 +97,11 @@ class App extends React.Component {
                   </div>
                   <div className="section light-background">
                     <div ref={this.signupRef} className="ref-wrapper">
-                      <Signup mobile="y" language={this.state.language} />
+                      <Signup
+                        mobile="y"
+                        language={this.state.language}
+                        scrollToASpecificDiv={this.scrollToASpecificDiv}
+                      />
                     </div>
                   </div>
                   <div className="section dark-background">
