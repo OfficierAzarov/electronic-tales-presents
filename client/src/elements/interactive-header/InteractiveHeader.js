@@ -19,12 +19,18 @@ class InteractiveHeader extends React.Component {
   }
 
   render() {
-    if (this.props.mobile === "y") {
+    if (this.props.mobile) {
       return (
         <div className="h-container">
-          <Slide bottom><h2 dangerouslySetInnerHTML={this.props.bigText}></h2></Slide>
-          <Slide bottom><h3 dangerouslySetInnerHTML={this.props.middleText}></h3></Slide>
-          <Slide bottom><h4 dangerouslySetInnerHTML={this.props.littleText}></h4></Slide>
+          <Slide bottom>
+            <h2 dangerouslySetInnerHTML={this.props.bigText}></h2>
+          </Slide>
+          <Slide bottom>
+            <h3 dangerouslySetInnerHTML={this.props.middleText}></h3>
+          </Slide>
+          <Slide bottom>
+            <h4 dangerouslySetInnerHTML={this.props.littleText}></h4>
+          </Slide>
         </div>
       );
     } else {

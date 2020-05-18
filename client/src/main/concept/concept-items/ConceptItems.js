@@ -115,7 +115,7 @@ class ConceptItems extends React.Component {
   };
 
   render() {
-    if (this.props.mobile === "y") {
+    if (this.props.mobile) {
       return (
         <div id="how-items-container">
           <div id="principles">

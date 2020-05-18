@@ -20,7 +20,7 @@ class Nav extends React.Component {
 
   render() {
     const { t } = this.props;
-    if (this.props.mobile === "y") {
+    if (this.props.mobile) {
       return (
         <nav>
           <img src={logo} alt="Electronic&nbsp;Tales logo" />

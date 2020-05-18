@@ -78,7 +78,7 @@ class TracksTabs extends React.Component {
   };
 
   render() {
-    if (this.props.mobile === "y") {
+    if (this.props.mobile) {
       return (
         <div id="worlds-container">
           <div id="world">

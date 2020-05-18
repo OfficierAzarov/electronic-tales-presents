@@ -55,7 +55,7 @@ class SignupSteps extends Component {
 
   render() {
     // ---- MOBILE VERSION ----
-    if (this.props.mobile === "y") {
+    if (this.props.mobile) {
       return (
         <div id="steps-container">
           {this.state.steps.map((step) => (

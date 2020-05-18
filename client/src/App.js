@@ -65,14 +65,14 @@ class App extends React.Component {
           <MediaQuery maxDeviceWidth={768}>
             <Router>
               <div id="mobile-page">
-                <Nav mobile="y" onLanguageHandle={this.onLanguageHandle} />
+                <Nav mobile={true} onLanguageHandle={this.onLanguageHandle} />
                 <div id="eltaskyline">
                   <img src={elta} alt="Electronic&nbsp;Tales skyline" />
                 </div>
                 <div id="mobile-main">
                   <div className="section" id="section-presentation">
                     <Presentation
-                      mobile="y"
+                      mobile={true}
                       language={this.state.language}
                       scrollToASpecificDiv={this.scrollToASpecificDiv}
                     />
@@ -80,25 +80,25 @@ class App extends React.Component {
                   <div className="section light-background">
                     <div ref={this.whyRef} className="ref-wrapper">
                       <Why
-                        mobile="y"
+                        mobile={true}
                         language={this.state.language}
                         scrollToASpecificDiv={this.scrollToASpecificDiv}
                       />
                     </div>
                   </div>
                   <div className="section dark-background">
-                    <Concept mobile="y" language={this.state.language} />
+                    <Concept mobile={true} language={this.state.language} />
                   </div>
                   <div className="section light-background">
-                    <Tracks mobile="y" language={this.state.language} />
+                    <Tracks mobile={true} language={this.state.language} />
                   </div>
                   <div className="section dark-background">
-                    <Progress mobile="y" language={this.state.language} />
+                    <Progress mobile={true} language={this.state.language} />
                   </div>
                   <div className="section light-background">
                     <div ref={this.signupRef} className="ref-wrapper">
                       <Signup
-                        mobile="y"
+                        mobile={true}
                         language={this.state.language}
                         scrollToASpecificDiv={this.scrollToASpecificDiv}
                       />
@@ -106,13 +106,13 @@ class App extends React.Component {
                   </div>
                   <div className="section dark-background">
                     <Team
-                      mobile="y"
+                      mobile={true}
                       language={this.state.language}
                       scrollToASpecificDiv={this.scrollToASpecificDiv}
                     />
                   </div>
                 </div>
-                <Footer mobile="y" language={this.state.language} />
+                <Footer mobile={true} language={this.state.language} />
               </div>
             </Router>
           </MediaQuery>
