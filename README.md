@@ -1,6 +1,6 @@
 # Bienvenue chez Electronic&nbsp;Tales !
 
-https://electronic-tales-presents.herokuapp.com
+[electronictales.io](https://wwww.electronictales.io)
 
 Grâce à la popularisation des bootcamps, les profils qui ne sont pas « nés pour être dev » sont de plus en plus nombreux à intégrer le monde de la programmation. Et c'est tant mieux 👏
 
