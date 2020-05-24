@@ -97,7 +97,13 @@ class SignupSteps extends Component {
       return (
         // ---- DESKTOP VERSION ----
 
-        <div id="steps-container">
+        <div
+          id="steps-container"
+          style={{
+            opacity: this.state.isShown ? 1 : 0,
+            transform: this.state.isTranslated ? "translateY(-8%)" : "",
+          }}
+        >
           {this.state.steps.map((step) => (
             <div key={step.id} className="regular-steps">
               <h4 className="shine-bright">{step.id}</h4>

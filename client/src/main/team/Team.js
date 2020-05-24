@@ -12,7 +12,7 @@ import azarov from "../../resources/img/team/azarov.png";
 
 class Team extends React.Component {
   componentDidMount() {
-    if (this.props.mobile !== "y") {
+    if (!this.props.mobile) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }

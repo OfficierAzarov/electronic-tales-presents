@@ -14,6 +14,9 @@ const Footer = (props) => {
           <a href="https://www.instagram.com/electronictales.io/">
             <i className="fab fa-instagram"></i>
           </a>
+          <a href="https://twitter.com/ElectronicTales">
+            <i className="fab fa-twitter"></i>
+          </a>
           <a href="https://www.facebook.com/Electronic-Tales-100499265012350">
             <i className="fab fa-facebook"></i>
           </a>
@@ -41,6 +44,9 @@ const Footer = (props) => {
           </a>
           <a href="https://www.instagram.com/electronictales.io/">
             <i className="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/ElectronicTales">
+            <i className="fab fa-twitter"></i>
           </a>
           <a href="https://www.facebook.com/Electronic-Tales-100499265012350">
             <i className="fab fa-facebook"></i>

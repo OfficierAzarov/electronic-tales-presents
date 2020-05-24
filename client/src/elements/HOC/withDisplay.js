@@ -16,7 +16,7 @@ const withDisplay = (WrappedComponent) => {
     };
 
     componentDidMount() {
-      if (this.props.mobile !== "y") {
+      if (!this.props.mobile) {
         // passes the location fo the app (current path) to the parent (App.js)
         if (this.props.passCurrentPath) emitCurrentPath(this.props);
 
