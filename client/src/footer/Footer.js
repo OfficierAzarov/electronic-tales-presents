@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = (props) => {
-  if (props.mobile === "y") {
+  if (props.mobile) {
     return (
       <footer>
+        <p>Made with &#10084; by Electronic&nbsp;Tales Team</p>
         <div>
           <a href="mailto:contact@electronictales.io">
             <i className="fas fa-envelope"></i>
@@ -27,7 +28,6 @@ const Footer = (props) => {
             <i className="fab fa-github"></i>
           </a>
         </div>
-        <p>Made with &#10084; by Electronic&nbsp;Tales Team</p>
       </footer>
     );
   } else {
