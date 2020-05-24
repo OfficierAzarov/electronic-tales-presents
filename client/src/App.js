@@ -43,7 +43,9 @@ class App extends React.Component {
   };
 
   onLanguageHandle = (newLang) => {
-    i18next.changeLanguage(newLang, this.setState({ language: newLang }));
+    if (newLang != i18next.language) {
+      i18next.changeLanguage(newLang, this.setState({ language: newLang }));
+    }
   };
 
   scrollToASpecificDiv = (divReference) => {
