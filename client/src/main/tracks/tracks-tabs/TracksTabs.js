@@ -1,6 +1,5 @@
 import React from "react";
 import i18next from "i18next";
-import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
 import withAPITranslation from "../../../elements/HOC/withAPITranslation";

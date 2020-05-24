@@ -47,8 +47,6 @@ class Presentation extends React.Component {
   };
 
   render() {
-    const { t } = this.props;
-
     if (this.props.mobile) {
       return (
         <div id="presentation">

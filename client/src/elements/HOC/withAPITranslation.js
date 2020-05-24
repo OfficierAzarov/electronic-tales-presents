@@ -1,5 +1,5 @@
 import React from "react";
-import i18next from "i18next";
+// import i18next from "i18next";
 
 const withAPITranslation = (WrappedComponent) => {
   class withAPITranslation extends React.Component {
@@ -9,10 +9,7 @@ const withAPITranslation = (WrappedComponent) => {
 
     componentDidUpdate(prevProps) {
       if (this.props.language !== prevProps.language) {
-        i18next.changeLanguage(this.props.language, (err) => {
-          if (err) return console.log("something went wrong loading", err);
-          this.generate();
-        });
+        this.generate();
       }
     }
 

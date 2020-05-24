@@ -34,19 +34,19 @@ class SignupSteps extends Component {
     this.setState({
       steps: [
         {
-          id: "1",
+          id: 1,
           desc: i18next.t("signup.signupSteps.steps.id1.desc"),
         },
         {
-          id: "2",
+          id: 2,
           desc: i18next.t("signup.signupSteps.steps.id2.desc"),
         },
         {
-          id: "3",
+          id: 3,
           desc: i18next.t("signup.signupSteps.steps.id3.desc"),
         },
         {
-          id: "4",
+          id: 4,
           desc: i18next.t("signup.signupSteps.steps.id4.desc"),
         },
       ],
@@ -65,7 +65,7 @@ class SignupSteps extends Component {
                 <p
                   dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
                 ></p>
-                {step.id == this.state.steps.length ? (
+                {step.id === this.state.steps.length ? (
                   <div>
                     <img src={grateful} />
                     <p>{i18next.t("signup.signupSteps.steps.id4.question")}</p>
@@ -110,7 +110,7 @@ class SignupSteps extends Component {
               <p
                 dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
               ></p>
-              {step.id == this.state.steps.length ? (
+              {step.id === this.state.steps.length ? (
                 <div>
                   <img src={grateful} />
                   <p>{i18next.t("signup.signupSteps.steps.id4.question")}</p>

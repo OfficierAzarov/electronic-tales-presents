@@ -9,8 +9,6 @@ import { emitCurrentPath } from "../../utils/Utils";
 
 import "./Why.css";
 
-import trailer from "../../resources/video/trailer-wip.mp4";
-
 class Why extends React.Component {
   componentDidMount() {
     if (!this.props.mobile) {
@@ -32,8 +30,9 @@ class Why extends React.Component {
               <Slide bottom duration={2000}>
                 <h3>{t("why.bigText")}</h3>
                 <div id="video-container">
-                  {this.props.language === "fr" ? (
+                  {this.props.language.includes("fr") ? (
                     <iframe
+                      title="teaser"
                       width="560"
                       height="315"
                       src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
@@ -43,6 +42,7 @@ class Why extends React.Component {
                     ></iframe>
                   ) : (
                     <iframe
+                      title="teaser"
                       width="560"
                       height="315"
                       src="https://www.youtube-nocookie.com/embed/VKng_oWILQI"
@@ -155,8 +155,9 @@ class Why extends React.Component {
               </ul>
             </div>
             <div id="video-container">
-              {this.props.language === "fr" ? (
+              {this.props.language.includes("fr") ? (
                 <iframe
+                  title="teaser"
                   width="560"
                   height="315"
                   src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
@@ -166,6 +167,7 @@ class Why extends React.Component {
                 ></iframe>
               ) : (
                 <iframe
+                  title="teaser"
                   width="560"
                   height="315"
                   src="https://www.youtube-nocookie.com/embed/VKng_oWILQI"

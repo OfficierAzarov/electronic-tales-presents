@@ -1,6 +1,7 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { withTranslation, Trans } from "react-i18next";
+import { withTranslation } from "react-i18next";
+import i18next from "i18next";
 import MediaQuery from "react-responsive";
 
 import Nav from "./nav/Nav.js";
@@ -16,7 +17,6 @@ import Team from "./main/team/Team.js";
 import "./App.css";
 
 import elta from "../src/resources/img/eltaskyline.svg";
-import logo from "../src/resources/img/logo-transparent.png";
 
 class App extends React.Component {
   constructor(props) {
@@ -27,18 +27,23 @@ class App extends React.Component {
 
   state = {
     currentPath: null,
-    language: "fr",
+    language: "",
   };
+
+  componentDidMount() {
+    if (i18next.language.includes("en") || i18next.language.includes("fr")) {
+      this.setState({ language: i18next.language });
+    } else {
+      this.setState({ language: "en" });
+    }
+  }
 
   getCurrentPath = (currentPathFromChild) => {
     this.setState({ currentPath: currentPathFromChild });
   };
 
-  onLanguageHandle = (language) => {
-    console.log(language);
-    let newLang = language;
-    this.setState({ language: newLang });
-    this.props.i18n.changeLanguage(newLang);
+  onLanguageHandle = (newLang) => {
+    i18next.changeLanguage(newLang, this.setState({ language: newLang }));
   };
 
   scrollToASpecificDiv = (divReference) => {
@@ -55,178 +60,172 @@ class App extends React.Component {
           block: "start",
         });
         break;
+      default:
+        console.log(
+          "Don't know where to scroll to... So let's scroll to singup!"
+        );
+        this.signupRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
     }
   };
 
   render() {
     return (
-      <Suspense fallback="loading">
-        <div>
-          <MediaQuery maxDeviceWidth={768}>
-            <Router>
-              <div id="mobile-page">
-                <Nav mobile={true} onLanguageHandle={this.onLanguageHandle} />
-                <div id="eltaskyline">
-                  <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+      <div>
+        <MediaQuery maxDeviceWidth={768}>
+          <Router>
+            <div id="mobile-page">
+              <Nav mobile={true} onLanguageHandle={this.onLanguageHandle} />
+              <div id="eltaskyline">
+                <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+              </div>
+              <div id="mobile-main">
+                <div className="section" id="section-presentation">
+                  <Presentation
+                    mobile={true}
+                    language={this.state.language}
+                    scrollToASpecificDiv={this.scrollToASpecificDiv}
+                  />
                 </div>
-                <div id="mobile-main">
-                  <div className="section" id="section-presentation">
-                    <Presentation
+                <div className="section light-background">
+                  <div ref={this.whyRef} className="ref-wrapper">
+                    <Why
                       mobile={true}
                       language={this.state.language}
                       scrollToASpecificDiv={this.scrollToASpecificDiv}
                     />
                   </div>
-                  <div className="section light-background">
-                    <div ref={this.whyRef} className="ref-wrapper">
+                </div>
+                <div className="section dark-background">
+                  <Concept mobile={true} language={this.state.language} />
+                </div>
+                <div className="section light-background">
+                  <Tracks mobile={true} language={this.state.language} />
+                </div>
+                <div className="section dark-background">
+                  <Progress mobile={true} language={this.state.language} />
+                </div>
+                <div className="section light-background">
+                  <div ref={this.signupRef} className="ref-wrapper">
+                    <Signup
+                      mobile={true}
+                      language={this.state.language}
+                      scrollToASpecificDiv={this.scrollToASpecificDiv}
+                    />
+                  </div>
+                </div>
+                <div className="section dark-background">
+                  <Team
+                    mobile={true}
+                    language={this.state.language}
+                    scrollToASpecificDiv={this.scrollToASpecificDiv}
+                  />
+                </div>
+              </div>
+              <Footer mobile={true} language={this.state.language} />
+            </div>
+          </Router>
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={769}>
+          <Router>
+            <Nav
+              currentPath={this.state.currentPath}
+              onLanguageHandle={this.onLanguageHandle}
+            />
+            <div id="page-container">
+              <div id="eltaskyline">
+                <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+              </div>
+              <div id="main">
+                <Switch>
+                  <Route
+                    exact
+                    path="/"
+                    render={(props) => (
+                      <Presentation
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/why"
+                    render={(props) => (
                       <Why
-                        mobile={true}
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
-                        scrollToASpecificDiv={this.scrollToASpecificDiv}
                       />
-                    </div>
-                  </div>
-                  <div className="section dark-background">
-                    <Concept mobile={true} language={this.state.language} />
-                  </div>
-                  <div className="section light-background">
-                    <Tracks mobile={true} language={this.state.language} />
-                  </div>
-                  <div className="section dark-background">
-                    <Progress mobile={true} language={this.state.language} />
-                  </div>
-                  <div className="section light-background">
-                    <div ref={this.signupRef} className="ref-wrapper">
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/concept"
+                    render={(props) => (
+                      <Concept
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/tracks"
+                    render={(props) => (
+                      <Tracks
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/progress"
+                    render={(props) => (
+                      <Progress
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/signup"
+                    render={(props) => (
                       <Signup
-                        mobile={true}
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
-                        scrollToASpecificDiv={this.scrollToASpecificDiv}
                       />
-                    </div>
-                  </div>
-                  <div className="section dark-background">
-                    <Team
-                      mobile={true}
-                      language={this.state.language}
-                      scrollToASpecificDiv={this.scrollToASpecificDiv}
-                    />
-                  </div>
-                </div>
-                <Footer mobile={true} language={this.state.language} />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/team"
+                    render={(props) => (
+                      <Team
+                        {...props}
+                        passCurrentPath={this.getCurrentPath}
+                        language={this.state.language}
+                      />
+                    )}
+                  />
+                </Switch>
               </div>
-            </Router>
-          </MediaQuery>
-          <MediaQuery minDeviceWidth={769}>
-            <Router>
-              <Nav
-                currentPath={this.state.currentPath}
-                onLanguageHandle={this.onLanguageHandle}
-              />
-              <div id="page-container">
-                <div id="eltaskyline">
-                  <img src={elta} alt="Electronic&nbsp;Tales skyline" />
-                </div>
-                <div id="main">
-                  <Switch>
-                    <Route
-                      exact
-                      path="/"
-                      render={(props) => (
-                        <Presentation
-                          {...props}
-                          passCurrentPath={this.getCurrentPath}
-                          language={this.state.language}
-                        />
-                      )}
-                    />
-                    <Route
-                      exact
-                      path="/why"
-                      render={(props) => (
-                        <Why
-                          {...props}
-                          passCurrentPath={this.getCurrentPath}
-                          language={this.state.language}
-                        />
-                      )}
-                    />
-                    <Route
-                      exact
-                      path="/concept"
-                      render={(props) => (
-                        <Concept
-                          {...props}
-                          passCurrentPath={this.getCurrentPath}
-                          language={this.state.language}
-                        />
-                      )}
-                    />
-                    <Route
-                      exact
-                      path="/tracks"
-                      render={(props) => (
-                        <Tracks
-                          {...props}
-                          passCurrentPath={this.getCurrentPath}
-                          language={this.state.language}
-                        />
-                      )}
-                    />
-                    <Route
-                      exact
-                      path="/progress"
-                      render={(props) => (
-                        <Progress
-                          {...props}
-                          passCurrentPath={this.getCurrentPath}
-                          language={this.state.language}
-                        />
-                      )}
-                    />
-                    <Route
-                      exact
-                      path="/signup"
-                      render={(props) => (
-                        <Signup
-                          {...props}
-                          passCurrentPath={this.getCurrentPath}
-                          language={this.state.language}
-                        />
-                      )}
-                    />
-                    <Route
-                      exact
-                      path="/team"
-                      render={(props) => (
-                        <Team
-                          {...props}
-                          passCurrentPath={this.getCurrentPath}
-                          language={this.state.language}
-                        />
-                      )}
-                    />
-                  </Switch>
-                </div>
-                <Footer />
-              </div>
-            </Router>
-          </MediaQuery>
-        </div>
-      </Suspense>
+              <Footer />
+            </div>
+          </Router>
+        </MediaQuery>
+      </div>
     );
   }
 }
 
 export default withTranslation()(App);
-
-{
-  /* <div id="little-screens">
-<img src={logo} alt="Electronic&nbsp;Tales logo" />
-<p>
-  Notre équipe de lutins du dev travaille actuellement
-  d'arrache-clavier à la version mobile de ce site. <br />
-  <br />
-  Translate-toi jusqu'à un desktop ou reviens un peu plus tard.
-</p>
-</div> */
-}

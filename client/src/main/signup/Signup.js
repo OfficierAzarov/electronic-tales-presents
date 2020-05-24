@@ -67,7 +67,7 @@ class Signup extends React.Component {
             )}
             {this.state.isEmailSubmitted && this.state.status !== 200 ? (
               <div className="notification failure">
-                {this.props.language === "fr" ? (
+                {this.props.language.includes("fr") ? (
                   <p>{this.state.messageFromBackFr}</p>
                 ) : (
                   <p>{this.state.messageFromBackEn}</p>
@@ -78,7 +78,7 @@ class Signup extends React.Component {
             )}
             {this.state.isEmailSubmitted && this.state.status === 200 ? (
               <div className="notification success">
-                {this.props.language === "fr" ? (
+                {this.props.language.includes("fr") ? (
                   <p>{this.state.messageFromBackFr}</p>
                 ) : (
                   <p>{this.state.messageFromBackEn}</p>
@@ -119,7 +119,7 @@ class Signup extends React.Component {
             )}
             {this.state.isEmailSubmitted && this.state.status !== 200 ? (
               <div className="notification failure">
-                {this.props.language === "fr" ? (
+                {this.props.language.includes("fr") ? (
                   <p>{this.state.messageFromBackFr}</p>
                 ) : (
                   <p>{this.state.messageFromBackEn}</p>
@@ -130,7 +130,7 @@ class Signup extends React.Component {
             )}
             {this.state.isEmailSubmitted && this.state.status === 200 ? (
               <div className="notification success">
-                {this.props.language === "fr" ? (
+                {this.props.language.includes("fr") ? (
                   <p>{this.state.messageFromBackFr}</p>
                 ) : (
                   <p>{this.state.messageFromBackEn}</p>
