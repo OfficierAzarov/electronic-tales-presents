@@ -34,9 +34,9 @@ class Nav extends React.Component {
       return (
         <nav>
           <div id="nav-links" className="desktop-visible">
-            <Link to="/why" className={this.isActive("/why")}>
+            {/* <Link to="/why" className={this.isActive("/why")}>
               {t("nav.links.1")}
-            </Link>
+            </Link> */}
             <Link to="/concept" className={this.isActive("/concept")}>
               {t("nav.links.2")}
             </Link>
