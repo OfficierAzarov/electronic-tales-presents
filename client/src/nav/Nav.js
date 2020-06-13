@@ -33,10 +33,15 @@ class Nav extends React.Component {
     } else {
       return (
         <nav>
+          <div id="logo">
+            <Link to="/">
+              <img src={logo} alt="Electronic&nbsp;Tales logo" />
+            </Link>
+          </div>
           <div id="nav-links" className="desktop-visible">
-            {/* <Link to="/why" className={this.isActive("/why")}>
+            <Link to="/why" className={this.isActive("/why")}>
               {t("nav.links.1")}
-            </Link> */}
+            </Link>
             <Link to="/concept" className={this.isActive("/concept")}>
               {t("nav.links.2")}
             </Link>
