@@ -6,7 +6,7 @@ Grâce à la popularisation des bootcamps, les profils qui ne sont pas « nés p
 
 Mais une fois en entreprise, ces personnes se confrontent souvent à un « mur de verre » de la part de leurs collègues issu·e·s de formations plus traditionnelles, bâti sur des références culturelles ou techniques qu'ils n'ont pas. Les conséquences ? Mal-être au travail, abandon de carrière... et syndrome de l'imposteur, problème répandu dans le milieu de la tech.
 
-Dégommons le syndrome de l'imposteur ensemble !!
+Dégommons le syndrome de l'imposteur ensemble !
 
 Electronic&nbsp;Tales entend être un safe-space d'apprentissage pour et par les dévs juniors, axé sur la bienveillance et l'inclusion. Il vise à réduire le gap entre les bootcampeurs·euses/autodidactes et les ingénieur·e·s en parlant de tout ce que les formations courtes n'enseignent pas 💾 🔋 🕹️
 
