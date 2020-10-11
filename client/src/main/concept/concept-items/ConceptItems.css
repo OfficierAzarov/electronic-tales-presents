@@ -29,7 +29,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3% 0;
+  justify-content: center;
+  padding: 0.5em 0;
   transition: border-radius 0.8s ease-out;
   border-radius: 0.5em;
 }
@@ -40,13 +41,20 @@
 }
 
 #principles img {
-  margin-bottom: 5%;
+  margin-bottom: 1em;
   width: 3em;
+  height: 3em;
 }
 
 #principles p {
   width: 60%;
   text-align: center;
+  margin-bottom: 0;
+}
+
+#implementations ul {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
 }
 
 #implementations li {
@@ -91,6 +99,7 @@
   #principles ul{
     display: flex;
     flex-direction: column;
+    margin-right: 0;
   }
 
   #principles p {
