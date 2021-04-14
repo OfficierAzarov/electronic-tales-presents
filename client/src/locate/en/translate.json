@@ -1,33 +1,33 @@
 {
   "translations": {
     "common": {
-      "callToAction": "I'm in\u00A0!"
+      "callToAction": "I'm in!"
     },
     "nav": {
       "links": {
-        "1": "Why\u00A0?",
-        "2": "How\u00A0?",
+        "1": "Why?",
+        "2": "How?",
         "3": "Our tracks",
         "4": "Roadmap",
         "5": "Join us"
       },
-      "button": "I'm in\u00A0!"
+      "button": "I'm in!"
     },
     "presentation": {
       "title": "As a junior developer, have you ever found it difficult to...",
-      "question1": "Feel legitimate in the tech world\u00A0?",
-      "question2": "Assess your real level\u00A0?",
-      "question3": "Express your insecurities at work\u00A0?",
-      "question4": "Get motivated to keep developing your skills\u00A0?",
-      "button": "Grumpf, yes\u00A0!"
+      "question1": "Feel legitimate in the tech world?",
+      "question2": "Assess your real level?",
+      "question3": "Express your insecurities at work?",
+      "question4": "Get motivated to keep developing your skills?",
+      "button": "Grumpf, yes!"
     },
     "why": {
-      "bigText": "Let’s smash the impostor syndrome together\u00A0!",
+      "bigText": "Let’s smash the impostor syndrome together!",
       "bullet1": "For the junior developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
       "bullet2": "Made with love by feminist, queer, inclusive devs and other fucking friendly people",
       "bullet3": "Open source and 100% free platform",
-      "bullet4": "Expected release in autumn 2020",
-      "button": "Yay! Tell me more\u00A0!"
+      "bullet4": "Expected release in winter 2021",
+      "button": "Yay! Tell me more!"
     },
     "concept": {
       "header": {
@@ -67,7 +67,7 @@
           }
         }
       },
-      "button": "Great\u00A0! And in practice\u00A0?"
+      "button": "Great! And in practice?"
     },
     "tracks": {
       "header": {
@@ -88,34 +88,34 @@
             "baseline": "Dive into the sunken world of computer science."
           },
           "id3": {
-            "text": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats&nbsp;?",
-            "textMobile": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats&nbsp;?",
+            "text": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats?",
+            "textMobile": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats?",
             "baseline": "Absorb the myths and legends of the bits generation."
           }
         }
       },
-      "button": "So, how is it going\u00A0?"
+      "button": "So, how is it going?"
     },
     "progress": {
       "header": {
         "bigText": "Roadmap",
         "middleText": "Well, where we are at.",
-        "littleText": "But “roadmap” sounds better, right&nbsp;?"
+        "littleText": "But “roadmap” sounds better, right?"
       },
       "map": {
         "preHereStations": {
           "id1": {
             "title": "Idea  🤔",
-            "comment": "Do you really think it is a good idea\u00A0?"
+            "comment": "Do you really think it is a good idea?"
           },
           "id2": {
             "title": "Brainstorrrrm",
-            "comment": "Have we got more Skittles\u00A0?"
+            "comment": "Have we got more Skittles?"
           }
         },
         "here": {
           "title": "We speak about our project",
-          "comment": "You are here\u00A0!"
+          "comment": "You are here!"
         },
         "postHereStations": {
           "id1": {
@@ -127,7 +127,7 @@
             "comment": "We smash the impostor syndrome together."
           },
           "id3": {
-            "title": "Community life : workshops, evening classes...",
+            "title": "Community life: workshops, evening classes...",
             "comment": "We keep smashing."
           },
           "id4": {
@@ -136,36 +136,36 @@
           }
         }
       },
-      "button": "Ok, how can I help\u00A0?"
+      "button": "Ok, how can I help?"
     },
     "signup": {
       "header": {
-        "bigText": "How can you help us\u00A0?"
+        "bigText": "How can you help us?"
       },
       "form": {
         "action": "Write your email here.",
         "error500": "Oops... Something went wrong on the server side. Try again or contact us.",
-        "subscribeButton": "I'm in\u00A0!",
-        "waitAMinute": "Wait a sec... What will happen to me if I give you my email\u00A0?"
+        "subscribeButton": "I'm in!",
+        "waitAMinute": "Wait a sec... What will happen to me if I give you my email?"
       },
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team&nbsp;! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
+            "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
           },
           "id2": {
-            "desc": "Fear not&nbsp;!<br/><br/>Actually, we are not going to ask you to write a series of astoundingly deep articles about z-index in CSS or to code a dark-theme for <a href='https://www.irs.gov/' target='_blank' rel='noopener noreferrer'>irs.gov</a>. <br /><br />You will see, it is very simple&nbsp;!"
+            "desc": "Fear not!<br/><br/>Actually, we are not going to ask you to write a series of astoundingly deep articles about z-index in CSS or to code a dark-theme for <a href='https://www.irs.gov/' target='_blank' rel='noopener noreferrer'>irs.gov</a>. <br /><br />You will see, it is very simple!"
           },
           "id3": {
             "desc": "On a regular basis, but not too often, we will write you to ask you some questions of the utmost importance (e.g. which one of these designs do you prefer, which topics would interest you, etc.). Answering it will never take you more than five minutes. And if you feel a lack of inspiration, you can write us to tell us our questions are stupid (or you can just not answer at all)."
           },
           "id4": {
             "desc": "We will owe you eternal gratitude.",
-            "question": "So, ready to go\u00A0?",
+            "question": "So, ready to go?",
             "callToAction": {
               "beforeLink": "If so, ",
               "link": "go back to form",
-              "afterLink": " and drop us your email\u00A0!"
+              "afterLink": " and drop us your email!"
             }
           }
         }
