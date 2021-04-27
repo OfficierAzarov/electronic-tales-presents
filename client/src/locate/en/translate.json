@@ -26,7 +26,7 @@
       "bullet1": "For the junior developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
       "bullet2": "Made with love by feminist, queer, inclusive devs and other fucking friendly people",
       "bullet3": "Open source and 100% free platform",
-      "bullet4": "Expected release in winter 2021",
+      "bullet4": "The beta version has been released, subscribe to access it",
       "button": "Yay! Tell me more!"
     },
     "concept": {
@@ -111,26 +111,26 @@
           "id2": {
             "title": "Brainstorrrrm",
             "comment": "Have we got more Skittles?"
+          },
+          "id3": {
+            "title": "We speak about our project",
+            "comment": "You are here!"
+          },
+          "id4": {
+            "title": "We collect your ideas.",
+            "comment": "We mull, we analyse, we meditate."
           }
         },
         "here": {
-          "title": "We speak about our project",
-          "comment": "You are here!"
+          "title": "Release of the Electronic\u00A0Tales platform 🎉",
+          "comment": "We smash the impostor syndrome together."
         },
         "postHereStations": {
           "id1": {
-            "title": "We collect your ideas.",
-            "comment": "We mull, we analyse, we meditate."
-          },
-          "id2": {
-            "title": "Release of the Electronic\u00A0Tales platform 🎉",
-            "comment": "We smash the impostor syndrome together."
-          },
-          "id3": {
             "title": "Community life: workshops, evening classes...",
             "comment": "We keep smashing."
           },
-          "id4": {
+          "id2": {
             "title": "Peace on Earth 🌼",
             "comment": "Or just a more inclusive, friendlier tech environment, to begin with."
           }

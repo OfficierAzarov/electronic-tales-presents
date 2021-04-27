@@ -26,7 +26,7 @@
       "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
       "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
       "bullet3": "Plateforme open-source et 100\u00A0% gratuite",
-      "bullet4": "Sortie prévue pour l'hiver 2021",
+      "bullet4": "La version bêta est sortie, inscris-toi pour y accéder",
       "button": "Youpi, dites-m'en plus\u00A0!"
     },
     "concept": {
@@ -111,26 +111,26 @@
           "id2": {
             "title": "Brainstorrrrm",
             "comment": "Il reste des Kinder Country\u00A0?"
+          },
+          "id3": {
+            "title": "On parle de notre projet",
+            "comment": "Tu es ici\u00A0!"
+          },
+          "id4": {
+            "title": "Recueil de vos idées",
+            "comment": "On mouline, on analyse, on cogito ergo sum."
           }
         },
         "here": {
-          "title": "On parle de notre projet",
-          "comment": "Tu es ici\u00A0!"
+          "title": "Release de la plateforme Electronic\u00A0Tales 🎉",
+          "comment": "On dégomme le syndrome de l'imposteur ensemble."
         },
         "postHereStations": {
           "id1": {
-            "title": "Recueil de vos idées",
-            "comment": "On mouline, on analyse, on cogito ergo sum."
-          },
-          "id2": {
-            "title": "Release de la plateforme Electronic\u00A0Tales 🎉",
-            "comment": "On dégomme le syndrome de l'imposteur ensemble."
-          },
-          "id3": {
             "title": "Community life : workshops, cours du soir...",
             "comment": "On continue à dégommer."
           },
-          "id4": {
+          "id2": {
             "title": "Paix sur la Terre 🌈",
             "comment": "Ou juste un milieu tech plus gentil et plus inclusif, pour commencer."
           }

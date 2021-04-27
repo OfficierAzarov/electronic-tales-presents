@@ -1,11 +1,11 @@
-import React from "react";
-import i18next from "i18next";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import i18next from 'i18next';
+import Fade from 'react-reveal/Fade';
 
-import withAPITranslation from "../../../elements/HOC/withAPITranslation";
-import * as Utils from "../../../utils/Utils";
+import withAPITranslation from '../../../elements/HOC/withAPITranslation';
+import * as Utils from '../../../utils/Utils';
 
-import "./Map.css";
+import './Map.css';
 
 class Map extends React.Component {
   state = {
@@ -34,14 +34,24 @@ class Map extends React.Component {
     this.setState({
       preHereStations: [
         {
-          id: "station-1",
-          title: i18next.t("progress.map.preHereStations.id1.title"),
-          comment: i18next.t("progress.map.preHereStations.id1.comment"),
+          id: 'station-1',
+          title: i18next.t('progress.map.preHereStations.id1.title'),
+          comment: i18next.t('progress.map.preHereStations.id1.comment'),
         },
         {
-          id: "station-2",
-          title: i18next.t("progress.map.preHereStations.id2.title"),
-          comment: i18next.t("progress.map.preHereStations.id2.comment"),
+          id: 'station-2',
+          title: i18next.t('progress.map.preHereStations.id2.title'),
+          comment: i18next.t('progress.map.preHereStations.id2.comment'),
+        },
+        {
+          id: 'station-3',
+          title: i18next.t('progress.map.preHereStations.id3.title'),
+          comment: i18next.t('progress.map.preHereStations.id3.comment'),
+        },
+        {
+          id: 'station-4',
+          title: i18next.t('progress.map.preHereStations.id4.title'),
+          comment: i18next.t('progress.map.preHereStations.id4.comment'),
         },
       ],
     });
@@ -49,24 +59,14 @@ class Map extends React.Component {
     this.setState({
       postHereStations: [
         {
-          id: "station-4",
-          title: i18next.t("progress.map.postHereStations.id1.title"),
-          comment: i18next.t("progress.map.postHereStations.id1.comment"),
+          id: 'station-6',
+          title: i18next.t('progress.map.postHereStations.id1.title'),
+          comment: i18next.t('progress.map.postHereStations.id1.comment'),
         },
         {
-          id: "station-5",
-          title: i18next.t("progress.map.postHereStations.id2.title"),
-          comment: i18next.t("progress.map.postHereStations.id2.comment"),
-        },
-        {
-          id: "station-6",
-          title: i18next.t("progress.map.postHereStations.id3.title"),
-          comment: i18next.t("progress.map.postHereStations.id3.comment"),
-        },
-        {
-          id: "station-7",
-          title: i18next.t("progress.map.postHereStations.id4.title"),
-          comment: i18next.t("progress.map.postHereStations.id4.comment"),
+          id: 'station-7',
+          title: i18next.t('progress.map.postHereStations.id2.title'),
+          comment: i18next.t('progress.map.postHereStations.id2.comment'),
         },
       ],
     });
@@ -109,13 +109,13 @@ class Map extends React.Component {
                   <p
                     id="here-station-name"
                     dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                      i18next.t("progress.map.here.title")
+                      i18next.t('progress.map.here.title')
                     )}
                   ></p>
                   <p
                     className="comment"
                     dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                      i18next.t("progress.map.here.comment")
+                      i18next.t('progress.map.here.comment')
                     )}
                   ></p>
                 </div>
@@ -139,7 +139,7 @@ class Map extends React.Component {
           id="map"
           style={{
             opacity: this.state.isShown ? 1 : 0,
-            transform: this.state.isTranslated ? "translateY(-8%)" : "",
+            transform: this.state.isTranslated ? 'translateY(-8%)' : '',
           }}
         >
           <div id="progress-container">
@@ -154,7 +154,7 @@ class Map extends React.Component {
                 <div className="names-container">
                   <p
                     style={{
-                      fontWeight: this.shouldIShow(station.id) ? 600 : "",
+                      fontWeight: this.shouldIShow(station.id) ? 600 : '',
                     }}
                   >
                     {station.title}
@@ -162,7 +162,7 @@ class Map extends React.Component {
                   <p
                     className="comment"
                     style={{
-                      color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
+                      color: this.shouldIShow(station.id) ? '#e9e9e9' : '',
                     }}
                   >
                     {station.comment}
@@ -175,15 +175,13 @@ class Map extends React.Component {
                 <i
                   className="fas fa-long-arrow-alt-right"
                   style={{
-                    animationPlayState: this.shouldIShow("here-station")
-                      ? "paused"
-                      : "",
+                    animationPlayState: this.shouldIShow('here-station') ? 'paused' : '',
                   }}
                 ></i>
                 <span
                   className="station"
                   id="here-station"
-                  onMouseEnter={() => this.hoverEffectOn("here-station")}
+                  onMouseEnter={() => this.hoverEffectOn('here-station')}
                   onMouseLeave={() => this.hoverEffectOff()}
                 ></span>
               </div>
@@ -191,22 +189,20 @@ class Map extends React.Component {
                 <p
                   id="here-station-name"
                   style={{
-                    fontWeight: this.shouldIShow("here-station") ? 600 : "",
-                    animationPlayState: this.shouldIShow("here-station")
-                      ? "paused"
-                      : "",
+                    fontWeight: this.shouldIShow('here-station') ? 600 : '',
+                    animationPlayState: this.shouldIShow('here-station') ? 'paused' : '',
                   }}
                   dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                    i18next.t("progress.map.here.title")
+                    i18next.t('progress.map.here.title')
                   )}
                 ></p>
                 <p
                   className="comment"
                   style={{
-                    color: this.shouldIShow("here-station") ? "#e9e9e9" : "",
+                    color: this.shouldIShow('here-station') ? '#e9e9e9' : '',
                   }}
                   dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                    i18next.t("progress.map.here.comment")
+                    i18next.t('progress.map.here.comment')
                   )}
                 ></p>
               </div>
@@ -221,7 +217,7 @@ class Map extends React.Component {
                 <div className="names-container">
                   <p
                     style={{
-                      fontWeight: this.shouldIShow(station.id) ? 600 : "",
+                      fontWeight: this.shouldIShow(station.id) ? 600 : '',
                     }}
                   >
                     {station.title}
@@ -229,7 +225,7 @@ class Map extends React.Component {
                   <p
                     className="comment"
                     style={{
-                      color: this.shouldIShow(station.id) ? "#e9e9e9" : "",
+                      color: this.shouldIShow(station.id) ? '#e9e9e9' : '',
                     }}
                   >
                     {station.comment}
