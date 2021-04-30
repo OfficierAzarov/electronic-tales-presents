@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import i18next from "i18next";
-import Slide from "react-reveal/Slide";
+import React, { Component } from 'react';
+import i18next from 'i18next';
+import Slide from 'react-reveal/Slide';
 
-import withAPITranslation from "../../../elements/HOC/withAPITranslation";
-import * as Utils from "../../../utils/Utils";
+import withAPITranslation from '../../../elements/HOC/withAPITranslation';
+import * as Utils from '../../../utils/Utils';
 
-import "./SignupSteps.css";
+import './SignupSteps.css';
 
-import grateful from "../../../resources/img/grateful.gif";
+import grateful from '../../../resources/img/grateful.gif';
 
 class SignupSteps extends Component {
   state = {
@@ -35,19 +35,23 @@ class SignupSteps extends Component {
       steps: [
         {
           id: 1,
-          desc: i18next.t("signup.signupSteps.steps.id1.desc"),
+          desc: i18next.t('signup.signupSteps.steps.id1.desc'),
         },
         {
           id: 2,
-          desc: i18next.t("signup.signupSteps.steps.id2.desc"),
+          desc: i18next.t('signup.signupSteps.steps.id2.desc'),
         },
         {
           id: 3,
-          desc: i18next.t("signup.signupSteps.steps.id3.desc"),
+          desc: i18next.t('signup.signupSteps.steps.id3.desc'),
         },
         {
           id: 4,
-          desc: i18next.t("signup.signupSteps.steps.id4.desc"),
+          desc: i18next.t('signup.signupSteps.steps.id4.desc'),
+        },
+        {
+          id: 5,
+          desc: i18next.t('signup.signupSteps.steps.id5.desc'),
         },
       ],
     });
@@ -62,29 +66,21 @@ class SignupSteps extends Component {
             <Slide key={step.id} bottom>
               <div className="regular-steps">
                 <h4 className="shine-bright">{step.id}</h4>
-                <p
-                  dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
-                ></p>
+                <p dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}></p>
                 {step.id === this.state.steps.length ? (
                   <div>
                     <img src={grateful} />
-                    <p>{i18next.t("signup.signupSteps.steps.id4.question")}</p>
+                    <p>{i18next.t('signup.signupSteps.steps.id4.question')}</p>
                     <p>
-                      {i18next.t(
-                        "signup.signupSteps.steps.id4.callToAction.beforeLink"
-                      )}
+                      {i18next.t('signup.signupSteps.steps.id4.callToAction.beforeLink')}
                       <span
                         onClick={() => {
-                          this.props.scrollToASpecificDiv("signupRef");
+                          this.props.scrollToASpecificDiv('signupRef');
                         }}
                       >
-                        {i18next.t(
-                          "signup.signupSteps.steps.id4.callToAction.link"
-                        )}
+                        {i18next.t('signup.signupSteps.steps.id4.callToAction.link')}
                       </span>
-                      {i18next.t(
-                        "signup.signupSteps.steps.id4.callToAction.afterLink"
-                      )}
+                      {i18next.t('signup.signupSteps.steps.id4.callToAction.afterLink')}
                     </p>
                   </div>
                 ) : null}
@@ -101,31 +97,23 @@ class SignupSteps extends Component {
           id="steps-container"
           style={{
             opacity: this.state.isShown ? 1 : 0,
-            transform: this.state.isTranslated ? "translateY(-8%)" : "",
+            transform: this.state.isTranslated ? 'translateY(-8%)' : '',
           }}
         >
           {this.state.steps.map((step) => (
             <div key={step.id} className="regular-steps">
               <h4 className="shine-bright">{step.id}</h4>
-              <p
-                dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}
-              ></p>
+              <p dangerouslySetInnerHTML={Utils.convertToCleanHtml(step.desc)}></p>
               {step.id === this.state.steps.length ? (
                 <div>
                   <img src={grateful} />
-                  <p>{i18next.t("signup.signupSteps.steps.id4.question")}</p>
+                  <p>{i18next.t('signup.signupSteps.steps.id4.question')}</p>
                   <p>
-                    {i18next.t(
-                      "signup.signupSteps.steps.id4.callToAction.beforeLink"
-                    )}
+                    {i18next.t('signup.signupSteps.steps.id4.callToAction.beforeLink')}
                     <span onClick={this.props.scrollUp}>
-                      {i18next.t(
-                        "signup.signupSteps.steps.id4.callToAction.link"
-                      )}
+                      {i18next.t('signup.signupSteps.steps.id4.callToAction.link')}
                     </span>
-                    {i18next.t(
-                      "signup.signupSteps.steps.id4.callToAction.afterLink"
-                    )}
+                    {i18next.t('signup.signupSteps.steps.id4.callToAction.afterLink')}
                   </p>
                 </div>
               ) : null}
