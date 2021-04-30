@@ -70,17 +70,17 @@ class SignupSteps extends Component {
                 {step.id === this.state.steps.length ? (
                   <div>
                     <img src={grateful} />
-                    <p>{i18next.t('signup.signupSteps.steps.id4.question')}</p>
+                    <p>{i18next.t('signup.signupSteps.steps.id5.question')}</p>
                     <p>
-                      {i18next.t('signup.signupSteps.steps.id4.callToAction.beforeLink')}
+                      {i18next.t('signup.signupSteps.steps.id5.callToAction.beforeLink')}
                       <span
                         onClick={() => {
                           this.props.scrollToASpecificDiv('signupRef');
                         }}
                       >
-                        {i18next.t('signup.signupSteps.steps.id4.callToAction.link')}
+                        {i18next.t('signup.signupSteps.steps.id5.callToAction.link')}
                       </span>
-                      {i18next.t('signup.signupSteps.steps.id4.callToAction.afterLink')}
+                      {i18next.t('signup.signupSteps.steps.id5.callToAction.afterLink')}
                     </p>
                   </div>
                 ) : null}
@@ -107,13 +107,13 @@ class SignupSteps extends Component {
               {step.id === this.state.steps.length ? (
                 <div>
                   <img src={grateful} />
-                  <p>{i18next.t('signup.signupSteps.steps.id4.question')}</p>
+                  <p>{i18next.t('signup.signupSteps.steps.id5.question')}</p>
                   <p>
-                    {i18next.t('signup.signupSteps.steps.id4.callToAction.beforeLink')}
+                    {i18next.t('signup.signupSteps.steps.id5.callToAction.beforeLink')}
                     <span onClick={this.props.scrollUp}>
-                      {i18next.t('signup.signupSteps.steps.id4.callToAction.link')}
+                      {i18next.t('signup.signupSteps.steps.id5.callToAction.link')}
                     </span>
-                    {i18next.t('signup.signupSteps.steps.id4.callToAction.afterLink')}
+                    {i18next.t('signup.signupSteps.steps.id5.callToAction.afterLink')}
                   </p>
                 </div>
               ) : null}
