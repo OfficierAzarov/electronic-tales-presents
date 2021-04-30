@@ -151,15 +151,18 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i> et compagnie."
+            "desc": "Tu reçois un email te donnant accès au MVP de notre plateforme de learning, ainsi qu'un lien vers notre Slack, <i>the</i> safe space où les devs échangent en toute bienveillance."
           },
           "id2": {
-            "desc": "N'aie pas peur&nbsp;!<br/><br/>En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeur sur le z-index en css ou de recoder <a href='https://www.impots.gouv.fr/portail/' target='_blank' rel='noopener noreferrer'>impots.gouv</a> en dark theme. <br /><br />Tu vas voir, c'est tout simple&nbsp;!"
+            "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i> et compagnie."
           },
           "id3": {
-            "desc": "&Agrave; intervalles r&eacute;guliers (mais pas trop rapproch&eacute;s), nous t'&eacute;crirons pour te poser des questions de la plus haute importance (ex&nbsp;: quel design tu pr&eacute;f&egrave;res, quels sujets t'int&eacute;ressent...). Y r&eacute;pondre ne te prendra jamais plus de 5&nbsp;minutes. Et si tu n'es pas inspir&eacute;&middot;e, tu as le droit de nous &eacute;crire pour dire que nos questions sont nulles (ou juste de ne pas r&eacute;pondre)."
+            "desc": "N'aie pas peur&nbsp;!<br/><br/>En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeur sur le z-index en css ou de recoder <a href='https://www.impots.gouv.fr/portail/' target='_blank' rel='noopener noreferrer'>impots.gouv</a> en dark theme. <br /><br />Tu vas voir, c'est tout simple&nbsp;!"
           },
           "id4": {
+            "desc": "&Agrave; intervalles r&eacute;guliers (mais pas trop rapproch&eacute;s), nous t'&eacute;crirons pour te poser des questions de la plus haute importance (ex&nbsp;: quel design tu pr&eacute;f&egrave;res, quels sujets t'int&eacute;ressent...). Y r&eacute;pondre ne te prendra jamais plus de 5&nbsp;minutes. Et si tu n'es pas inspir&eacute;&middot;e, tu as le droit de nous &eacute;crire pour dire que nos questions sont nulles (ou juste de ne pas r&eacute;pondre)."
+          },
+          "id5": {
             "desc": "Tu as notre reconnaissance &eacute;ternelle.",
             "question": "Alors, prêt·e pour l'aventure\u00A0?",
             "callToAction": {

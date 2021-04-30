@@ -151,15 +151,18 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
+            "desc": "You receive an email giving you access to the MVP of our learning platform as well as a link to our Slack, the safe space where devs communicate in a kindly way."
           },
           "id2": {
-            "desc": "Fear not!<br/><br/>Actually, we are not going to ask you to write a series of astoundingly deep articles about z-index in CSS or to code a dark-theme for <a href='https://www.irs.gov/' target='_blank' rel='noopener noreferrer'>irs.gov</a>. <br /><br />You will see, it is very simple!"
+            "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
           },
           "id3": {
-            "desc": "On a regular basis, but not too often, we will write you to ask you some questions of the utmost importance (e.g. which one of these designs do you prefer, which topics would interest you, etc.). Answering it will never take you more than five minutes. And if you feel a lack of inspiration, you can write us to tell us our questions are stupid (or you can just not answer at all)."
+            "desc": "Fear not!<br/><br/>Actually, we are not going to ask you to write a series of astoundingly deep articles about z-index in CSS or to code a dark-theme for <a href='https://www.irs.gov/' target='_blank' rel='noopener noreferrer'>irs.gov</a>. <br /><br />You will see, it is very simple!"
           },
           "id4": {
+            "desc": "On a regular basis, but not too often, we will write you to ask you some questions of the utmost importance (e.g. which one of these designs do you prefer, which topics would interest you, etc.). Answering it will never take you more than five minutes. And if you feel a lack of inspiration, you can write us to tell us our questions are stupid (or you can just not answer at all)."
+          },
+          "id5": {
             "desc": "We will owe you eternal gratitude.",
             "question": "So, ready to go?",
             "callToAction": {
