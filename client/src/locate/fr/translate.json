@@ -57,7 +57,7 @@
             "text": "Cours du soir et workshops, en ligne et en vrai"
           },
           "id2": {
-            "text": "Wall social/Discord/autre moyen de communiquer entre juniors de façon anonyme (you name it)"
+            "text": "Un Slack avec plusieurs centaines de membres bienveillants"
           },
           "id3": {
             "text": "Micro-learning, storytelling, sandbox - pour apprendre partout sans ZzzZ"
@@ -71,9 +71,9 @@
     },
     "tracks": {
       "header": {
-        "bigText": "Notre (future) plateforme",
-        "middleText": "Pour donner vie à ces idées, notre team est en train de concocter une plateforme de learning social.",
-        "littleText": "Celle-ci servira de fondation au projet Electronic\u00A0Tales et sera construite autour de trois tracks d'apprentissage."
+        "bigText": "Notre plateforme",
+        "middleText": "Pour donner vie à ces idées, notre team a concocté une plateforme de learning social.",
+        "littleText": "Celle-ci sert de fondation au projet Electronic\u00A0Tales et se construit autour de trois tracks d'apprentissage."
       },
       "tracksTabs": {
         "worlds": {
