@@ -25,8 +25,8 @@
       "bigText": "Let’s smash the impostor syndrome together!",
       "bullet1": "For the junior developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
       "bullet2": "Made with love by feminist, queer, inclusive devs and other fucking friendly people",
-      "bullet3": "Open source and 100% free platform",
-      "bullet4": "The beta version has been released, subscribe to access it",
+      "bullet3": "An open source and 100% free platform",
+      "bullet4": "A dashing newsletter, already praised by the Tech world for its accessible and decomplexing contents",
       "button": "Yay! Tell me more!"
     },
     "concept": {
@@ -151,7 +151,7 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "You receive an email giving you access to the MVP of our learning platform as well as a link to our Slack, the safe space where devs communicate in a kindly way."
+            "desc": "You receive an email giving you access to the MVP of our learning platform as well as a link to our Slack, the safe space where devs communicate in a kindly way. Finally, you are subscribed to our newsletter, a dashing missive already praised by the Tech world for its contents."
           },
           "id2": {
             "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."

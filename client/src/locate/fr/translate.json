@@ -25,8 +25,8 @@
       "bigText": "Dégommons le syndrome de l'imposteur ensemble\u00A0!",
       "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
       "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
-      "bullet3": "Plateforme open-source et 100\u00A0% gratuite",
-      "bullet4": "La version bêta est sortie, inscris-toi pour y accéder",
+      "bullet3": "Une plateforme open-source et 100\u00A0% gratuite",
+      "bullet4": "Une newsletter, pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus accessibles et décomplexants",
       "button": "Youpi, dites-m'en plus\u00A0!"
     },
     "concept": {
@@ -151,7 +151,7 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "Tu reçois un email te donnant accès au MVP de notre plateforme de learning, ainsi qu'un lien vers notre Slack, <i>the</i> safe space où les devs échangent en toute bienveillance."
+            "desc": "Tu reçois un email te donnant accès au MVP de notre plateforme de learning, ainsi qu'un lien vers notre Slack, <i>the</i> safe space où les devs échangent en toute bienveillance. Enfin, tu es inscrit·e à notre newsletter, une pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus."
           },
           "id2": {
             "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i> et compagnie."
