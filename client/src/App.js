@@ -8,15 +8,14 @@ import Nav from "./nav/Nav.js";
 import Footer from "./footer/Footer.js";
 import Presentation from "./main/presentation/Presentation.js";
 import Why from "./main/why/Why.js";
-import Concept from "./main/concept/Concept.js";
-import Tracks from "./main/tracks/Tracks.js";
-import Progress from "./main/progress/Progress";
-import Signup from "./main/signup/Signup.js";
-import Team from "./main/team/Team.js";
+import Concept from './main/concept/Concept.js';
+import Programme from './main/programme/Programme.js';
+import Signup from './main/signup/Signup.js';
+import Team from './main/team/Team.js';
 
-import "./App.css";
+import './App.css';
 
-import elta from "../src/resources/img/eltaskyline.svg";
+import elta from '../src/resources/img/eltaskyline.svg';
 
 class App extends React.Component {
   constructor(props) {
@@ -27,39 +26,39 @@ class App extends React.Component {
 
   state = {
     currentPath: null,
-    language: "",
+    language: '',
   };
 
   componentDidMount() {
-    if (i18next.language.includes("en") || i18next.language.includes("fr")) {
+    if (i18next.language.includes('en') || i18next.language.includes('fr')) {
       this.setState({ language: i18next.language });
     } else {
-      this.setState({ language: "en" });
+      this.setState({ language: 'en' });
     }
   }
 
-  getCurrentPath = (currentPathFromChild) => {
+  getCurrentPath = currentPathFromChild => {
     this.setState({ currentPath: currentPathFromChild });
   };
 
-  onLanguageHandle = (newLang) => {
+  onLanguageHandle = newLang => {
     if (newLang != i18next.language) {
       i18next.changeLanguage(newLang, this.setState({ language: newLang }));
     }
   };
 
-  scrollToASpecificDiv = (divReference) => {
+  scrollToASpecificDiv = divReference => {
     switch (divReference) {
-      case "whyRef":
+      case 'whyRef':
         this.whyRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
+          behavior: 'smooth',
+          block: 'start',
         });
         break;
-      case "signupRef":
+      case 'signupRef':
         this.signupRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
+          behavior: 'smooth',
+          block: 'start',
         });
         break;
       default:
@@ -67,8 +66,8 @@ class App extends React.Component {
           "Don't know where to scroll to... So let's scroll to singup!"
         );
         this.signupRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
+          behavior: 'smooth',
+          block: 'start',
         });
     }
   };
@@ -104,10 +103,7 @@ class App extends React.Component {
                   <Concept mobile={true} language={this.state.language} />
                 </div>
                 <div className="section light-background">
-                  <Tracks mobile={true} language={this.state.language} />
-                </div>
-                <div className="section dark-background">
-                  <Progress mobile={true} language={this.state.language} />
+                  <Programme mobile={true} language={this.state.language} />
                 </div>
                 <div className="section light-background">
                   <div ref={this.signupRef} className="ref-wrapper">
@@ -145,7 +141,7 @@ class App extends React.Component {
                   <Route
                     exact
                     path="/"
-                    render={(props) => (
+                    render={props => (
                       <Presentation
                         {...props}
                         passCurrentPath={this.getCurrentPath}
@@ -156,7 +152,7 @@ class App extends React.Component {
                   <Route
                     exact
                     path="/why"
-                    render={(props) => (
+                    render={props => (
                       <Why
                         {...props}
                         passCurrentPath={this.getCurrentPath}
@@ -167,7 +163,7 @@ class App extends React.Component {
                   <Route
                     exact
                     path="/concept"
-                    render={(props) => (
+                    render={props => (
                       <Concept
                         {...props}
                         passCurrentPath={this.getCurrentPath}
@@ -177,20 +173,9 @@ class App extends React.Component {
                   />
                   <Route
                     exact
-                    path="/tracks"
-                    render={(props) => (
-                      <Tracks
-                        {...props}
-                        passCurrentPath={this.getCurrentPath}
-                        language={this.state.language}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/progress"
-                    render={(props) => (
-                      <Progress
+                    path="/programme"
+                    render={props => (
+                      <Programme
                         {...props}
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
@@ -200,7 +185,7 @@ class App extends React.Component {
                   <Route
                     exact
                     path="/signup"
-                    render={(props) => (
+                    render={props => (
                       <Signup
                         {...props}
                         passCurrentPath={this.getCurrentPath}
@@ -211,7 +196,7 @@ class App extends React.Component {
                   <Route
                     exact
                     path="/team"
-                    render={(props) => (
+                    render={props => (
                       <Team
                         {...props}
                         passCurrentPath={this.getCurrentPath}
