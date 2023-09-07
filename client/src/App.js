@@ -9,7 +9,6 @@ import Footer from "./footer/Footer.js";
 import Presentation from "./main/presentation/Presentation.js";
 import Why from "./main/why/Why.js";
 import Concept from "./main/concept/Concept.js";
-import Tracks from "./main/tracks/Tracks.js";
 import Progress from "./main/progress/Progress";
 import Signup from "./main/signup/Signup.js";
 import Team from "./main/team/Team.js";
@@ -104,7 +103,8 @@ class App extends React.Component {
                   <Concept mobile={true} language={this.state.language} />
                 </div>
                 <div className="section light-background">
-                  <Tracks mobile={true} language={this.state.language} />
+                  {/* <Tracks mobile={true} language={this.state.language} /> */}
+                  Programme
                 </div>
                 <div className="section dark-background">
                   <Progress mobile={true} language={this.state.language} />
@@ -175,7 +175,7 @@ class App extends React.Component {
                       />
                     )}
                   />
-                  <Route
+                  {/* <Route
                     exact
                     path="/tracks"
                     render={(props) => (
@@ -185,7 +185,7 @@ class App extends React.Component {
                         language={this.state.language}
                       />
                     )}
-                  />
+                  /> */}
                   <Route
                     exact
                     path="/progress"
