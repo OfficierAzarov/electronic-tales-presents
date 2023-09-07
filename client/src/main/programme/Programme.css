@@ -1,26 +1,58 @@
 #programme #text-container {
-  padding-bottom: 5%;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#programme h4 {
-    font-weight: bold;
+#programme .event {
+    margin-bottom: 3%;
+    width: 70%;
+    background-color: #272626;
+    padding: 3%;
+    border-radius: 2%;
 }
 
-#programme #text-container p {
-    width: 50%;
+#programme .event h4 {
+    font-weight: bold;
+    width: 70%;
+    margin: 3% 0;;
+}
+
+#programme .event h4,
+#programme .event p {
     text-align: justify;
 }
 
-#programme .infos {
+#programme .event .infos {
     font-weight: italic;
     font-weight: bold;
-    font-size: 1.1em;
 }
 
-#programme .subtitle {
+#programme .event .subtitle {
     font-style: italic;
-    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 768px) {
+    #programme .event {
+        width: 70%;
+    }
+
+    #programme .event h4 {
+        font-weight: bold;
+        width: 70%;
+    }
+    #programme .event #text-container p {
+        width: 70%;
+        text-align: justify;
+    }
+
+    #programme .event .infos {
+        font-weight: italic;
+        font-weight: bold;
+    }
+
+    #programme .event .subtitle {
+        font-style: italic;
+    }
 }
