@@ -27,13 +27,7 @@ class Presentation extends React.Component {
 
     // passes the immplementation of generate method to i18next HOC
     this.props.implementGenerate(this.generate);
-
-    // TO DO
-    // this.adaptDisplay();
   }
-
-  // TO DO
-  // adaptDisplay = () => {};
 
   generate = () => {
     this.setState({

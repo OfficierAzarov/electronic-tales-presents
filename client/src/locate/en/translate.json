@@ -7,14 +7,14 @@
       "links": {
         "1": "Why?",
         "2": "How?",
-        "3": "Our tracks",
+        "3": "Programme",
         "4": "Roadmap",
         "5": "Join us"
       },
       "button": "I'm in!"
     },
     "presentation": {
-      "title": "As a junior developer, have you ever found it difficult to...",
+      "title": "As a developer, have you ever found it difficult to...",
       "question1": "Feel legitimate in the tech world?",
       "question2": "Assess your real level?",
       "question3": "Express your insecurities at work?",
@@ -23,7 +23,7 @@
     },
     "why": {
       "bigText": "Let’s smash the impostor syndrome together!",
-      "bullet1": "For the junior developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
+      "bullet1": "For the developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
       "bullet2": "Made with love by feminist, queer, inclusive devs and other fucking friendly people",
       "bullet3": "An open source and 100% free platform",
       "bullet4": "A dashing newsletter, already praised by the Tech world for its accessible and decomplexing contents",
@@ -39,16 +39,16 @@
         "principles": {
           "title": "Our concepts",
           "id1": {
-            "text": "Building a safe space for peer support between junior devs"
+            "text": "Building a safe space for peer support between devs"
           },
           "id2": {
-            "text": "Helping junior devs to strengthen their software and hardware skills"
+            "text": "Helping devs to strengthen their software and hardware skills"
           },
           "id3": {
             "text": "Analysing and deciphering the geek culture codes"
           },
           "id4": {
-            "text": "Motivating junior devs to keep learning alongside their job"
+            "text": "Motivating devs to keep learning alongside their job"
           }
         },
         "implementations": {
@@ -69,78 +69,30 @@
       },
       "button": "Great! And in practice?"
     },
-    "tracks": {
-      "header": {
-        "bigText": "Our platform (to-be)",
-        "middleText": "To bring those ideas to life, our team has cooked up a social learning platform.",
-        "littleText": "It is be the base of the Electronic\u00A0Tales project and is built on three learning tracks."
+    "programme": {
+      "event1": {
+        "title": "21/09/2023 -- <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Atelier Rentre dans ton ordi\u00A0!</a>",
+        "infos": "📍 18 h 30 - 21 h -- Ada Tech School, 116 rue du Faubourg St-Martin Paris</a>",
+        "subtitle": "Pars à la découverte des composants du meilleur ami des développeur·se·s, l'ordinateur, dans une ambiance chaleureuse et bienveillante 🤝💡",
+        "description": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB… <br><br>Ces termes t’angoissent plus que l’idée d’une panne d’eau courante un 15 août ? Ton syndrome de l’imposteur atteint des sommets himalayens dès que tes collègues en parlent à la machine à café ?<br><br>Alors notre atelier “Archéologie des ordinateurs” organisé par Electronic Tales et Ada Tech School est fait pour toi !<br><br>Animé par Eli et Partenko, cet événement te réserve une exploration joyeuse et rythmée de l’intérieur d’un ordinateur 🦾<br><br> L'atelier est ouvert à tous·tes, mais les places sont limitées : <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>inscris-toi</a> pour être sûr.e d’avoir une place !"
       },
-      "tracksTabs": {
-        "worlds": {
-          "id1": {
-            "text": "🐞&nbsp;Debug.<br/>🔬&nbsp;Learn how to read other people’s code.<br/>⛱️&nbsp;Automate.<br/>👔&nbsp;Survive job interviews.<br/>⌨️&nbsp;Write clean code.<br/>✊&nbsp;Munch crisps without dropping crumbs on your keyboard.",
-            "textMobile": "Debug🐞&nbsp;Automate&nbsp;⛱️ <br/>Learn how to read other people’s code&nbsp;🔬<br/>Survive job interviews&nbsp;👔<br/>⌨️&nbsp;Write clean code<br/>Munch crisps without dropping crumbs on your keyboard&nbsp;✊",
-            "baseline": "Learn to program between the lines."
-          },
-          "id2": {
-            "text": "💡&nbsp;Discover how a computer works.<br/>🔨&nbsp;Build your own machine.<br/>🎇&nbsp;Learn to speak fluent hardware and to solder without getting your fingers burned.",
-            "textMobile": "Discover how a computer works&nbsp;💡<br/>Build your own machine&nbsp;🔨<br/>Learn to speak fluent hardware and to solder without getting your fingers burned&nbsp;🎇",
-            "baseline": "Dive into the sunken world of computer science."
-          },
-          "id3": {
-            "text": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats?",
-            "textMobile": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;bored of feeling lost among coffee break Chit Chats?",
-            "baseline": "Absorb the myths and legends of the bits generation."
-          }
-        }
+      "event2": {
+        "title": "Automne 2022 - Été 2023 -- Electronic Tales fait une sieste",
+        "infos": "📍Entretemps",
+        "subtitle": "Rholala, ces assos qui sortent des newsletters tous les 18 mois...",
+        "description": "- Zzzz Zzz Zzzz...<br>- Jean-Pierre, tu ronfles\u00A0!<br>- Zzzzzzz..."
       },
-      "button": "So, how is it going?"
-    },
-    "progress": {
-      "header": {
-        "bigText": "Roadmap",
-        "middleText": "Well, where we are at.",
-        "littleText": "But “roadmap” sounds better, right?"
+      "event3": {
+        "title": "Automne 2022 -- <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>Newsletter #0</a>",
+        "infos": "📍Les interwebs mondiaux",
+        "subtitle": "Electronic Tales se lance dans le game des newsletters",
+        "description": "Ce mois-ci, on parle Hacktoberfest, réseau social en Unix et création d'un mini-jeu vidéo en Javascript vanille 🧋<br><br>Et c'est dispo <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>ici</a>."
       },
-      "map": {
-        "preHereStations": {
-          "id1": {
-            "title": "Idea  🤔",
-            "comment": "Do you really think it is a good idea?"
-          },
-          "id2": {
-            "title": "Brainstorrrrm",
-            "comment": "Have we got more Skittles?"
-          },
-          "id3": {
-            "title": "We speak about our project",
-            "comment": "You are here!"
-          },
-          "id4": {
-            "title": "We collect your ideas.",
-            "comment": "We mull, we analyse, we meditate."
-          }
-        },
-        "here": {
-          "title": "Release of the Electronic\u00A0Tales platform 🎉",
-          "comment": "We smash the impostor syndrome together."
-        },
-        "postHereStations": {
-          "id1": {
-            "title": "Community life: workshops, evening classes...",
-            "comment": "We keep smashing."
-          },
-          "id2": {
-            "title": "Peace on Earth 🌼",
-            "comment": "Or just a more inclusive, friendlier tech environment, to begin with."
-          }
-        }
-      },
-      "button": "Ok, how can I help?"
+      "button": "Okay, I'm in!"
     },
     "signup": {
       "header": {
-        "bigText": "How can you help us?"
+        "bigText": "Hyped?"
       },
       "form": {
         "action": "Write your email here.",
@@ -151,7 +103,7 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "You receive an email giving you access to the MVP of our learning platform as well as a link to our Slack, the safe space where devs communicate in a kindly way. Finally, you are subscribed to our newsletter, a dashing missive already praised by the Tech world for its contents."
+            "desc": "You receive an email giving you a link to our Slack, the safe space where devs communicate in a kindly way. Also, you are subscribed to our newsletter, a dashing missive already praised by the Tech world for its contents."
           },
           "id2": {
             "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."

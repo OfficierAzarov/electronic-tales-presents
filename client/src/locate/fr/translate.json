@@ -7,14 +7,14 @@
       "links": {
         "1": "Pourquoi\u00A0?",
         "2": "Comment\u00A0?",
-        "3": "Nos tracks",
+        "3": "Programme",
         "4": "On en est où\u00A0?",
         "5": "Nous rejoindre"
       },
       "button": "Je participe\u00A0!"
     },
     "presentation": {
-      "title": "Développeur·euse junior, il t'est déjà arrivé d'avoir des difficultés pour...",
+      "title": "Développeur·euse, il t'est déjà arrivé d'avoir des difficultés pour...",
       "question1": "Te sentir légitime dans le monde de la tech\u00A0?",
       "question2": "Évaluer ton niveau réel\u00A0?",
       "question3": "Exprimer tes insécurités au travail\u00A0?",
@@ -23,7 +23,7 @@
     },
     "why": {
       "bigText": "Dégommons le syndrome de l'imposteur ensemble\u00A0!",
-      "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
+      "bullet1": "Pour les développeurs·euses qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
       "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
       "bullet3": "Une plateforme open-source et 100\u00A0% gratuite",
       "bullet4": "Une newsletter, pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus accessibles et décomplexants",
@@ -39,16 +39,16 @@
         "principles": {
           "title": "Nos principes",
           "id1": {
-            "text": "Fabriquer un safe-space d'entraide et de bienveillance entre devs juniors"
+            "text": "Fabriquer un safe-space d'entraide et de bienveillance entre devs"
           },
           "id2": {
-            "text": "Aider les devs juniors à muscler leurs savoirs en software et hardware"
+            "text": "Aider les devs à muscler leurs savoirs en software et hardware"
           },
           "id3": {
             "text": "Analyser et décrypter les codes de la culture geek"
           },
           "id4": {
-            "text": "Motiver les devs juniors à continuer à apprendre en parallèle de leur job"
+            "text": "Motiver les devs à continuer à apprendre en parallèle de leur job"
           }
         },
         "implementations": {
@@ -69,78 +69,30 @@
       },
       "button": "Super\u00A0! Et concrètement\u00A0?"
     },
-    "tracks": {
-      "header": {
-        "bigText": "Notre plateforme",
-        "middleText": "Pour donner vie à ces idées, notre team a concocté une plateforme de learning social.",
-        "littleText": "Celle-ci sert de fondation au projet Electronic\u00A0Tales et se construit autour de trois tracks d'apprentissage."
+    "programme": {
+      "event1": {
+        "title": "21/09/2023 -- <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Atelier Rentre dans ton ordi\u00A0!</a>",
+        "infos": "📍 18 h 30 - 21 h -- Ada Tech School, 116 rue du Faubourg St-Martin Paris</a>",
+        "subtitle": "Pars à la découverte des composants du meilleur ami des développeur·se·s, l'ordinateur, dans une ambiance chaleureuse et bienveillante 🤝💡",
+        "description": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB… <br><br>Ces termes t’angoissent plus que l’idée d’une panne d’eau courante un 15 août ? Ton syndrome de l’imposteur atteint des sommets himalayens dès que tes collègues en parlent à la machine à café ?<br><br>Alors notre atelier “Archéologie des ordinateurs” organisé par Electronic Tales et Ada Tech School est fait pour toi !<br><br>Animé par Eli et Partenko, cet événement te réserve une exploration joyeuse et rythmée de l’intérieur d’un ordinateur 🦾<br><br> L'atelier est ouvert à tous·tes, mais les places sont limitées : <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>inscris-toi</a> pour être sûr·e d’avoir une place\u00A0!"
       },
-      "tracksTabs": {
-        "worlds": {
-          "id1": {
-            "text": "🐞&nbsp;Débugue.<br/>🔬&nbsp;Apprends à lire le code des autres.<br/>⛱️&nbsp;Automatise.<br/>👔&nbsp;Survis aux entretiens.<br/>⌨️&nbsp;Écris du code propre.<br/>✊&nbsp;Croque des chips sans mettre de miettes sur ton clavier.",
-            "textMobile": "Débugue&nbsp;🐞Automatise&nbsp;⛱️<br/>Apprends à lire le code des autres&nbsp;🔬<br/>Survis aux entretiens&nbsp;👔<br/>⌨️&nbsp;Écris du code propre<br/>Croque des chips sans mettre de miettes sur ton clavier&nbsp;✊",
-            "baseline": "Apprends à programmer entre les lignes."
-          },
-          "id2": {
-            "text": "💡&nbsp;Découvre comment fonctionne un ordinateur.<br/>🔨&nbsp;Construis ta machine.<br/>🎇&nbsp;Apprends à parler le hardware et à souder sans <br/>te brûler les doigts (ou en faisant trempette dans la Biafine).",
-            "textMobile": "Découvre comment fonctionne un ordinateur&nbsp;💡<br/>Construis ta machine&nbsp;🔨<br/>Apprends à parler le hardware et à souder sans te brûler les doigts (ou en faisant trempette dans la Biafine)&nbsp;🎇",
-            "baseline": "Plonge dans le monde englouti de la computer science."
-          },
-          "id3": {
-            "text": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;Marre de ne pas avoir la réf à la machine à café&nbsp;?",
-            "textMobile": "42&nbsp;🔮 Ada Lovelace&nbsp;👩‍🔧<br/> St-Isidore&nbsp;😇 Klingon&nbsp;🚀<br/> Easter eggs&nbsp;🐰 Backdoors&nbsp🚪🚶<br/> Star\u00A0+\u00A0gate/trek/wars&nbsp;🔭❓127.0.0.1🏡<br/> ...&nbsp;Marre de ne pas avoir la réf à la machine à café&nbsp;?",
-            "baseline": "Imprègne-toi des mythes et légendes de la bits generation."
-          }
-        }
+      "event2": {
+        "title": "Automne 2022 - Été 2023 -- Electronic Tales fait une sieste",
+        "infos": "📍Entretemps",
+        "subtitle": "Rholala, ces assos qui sortent des newsletters tous les 18 mois...",
+        "description": "- Zzzz Zzz Zzzz...<br>- Jean-Pierre, tu ronfles\u00A0!<br>- Zzzzzzz..."
       },
-      "button": "Et ça avance bien, cette histoire\u00A0?"
-    },
-    "progress": {
-      "header": {
-        "bigText": "Roadmap",
-        "middleText": "Enfin, où on en est, quoi.",
-        "littleText": "Mais ça sonne mieux, «&nbsp;roadmap&nbsp;», non&nbsp;?"
+      "event3": {
+        "title": "Automne 2022 -- <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>Newsletter #0</a>",
+        "infos": "📍Les interwebs mondiaux",
+        "subtitle": "Electronic Tales se lance dans le game des newsletters",
+        "description": "Ce mois-ci, on parle Hacktoberfest, réseau social en Unix et création d'un mini-jeu vidéo en Javascript vanille 🧋<br><br>Et c'est dispo <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>ici</a>."
       },
-      "map": {
-        "preHereStations": {
-          "id1": {
-            "title": "Idée 🤔",
-            "comment": "Tu crois vraiment que c'est une bonne idée\u00A0?"
-          },
-          "id2": {
-            "title": "Brainstorrrrm",
-            "comment": "Il reste des Kinder Country\u00A0?"
-          },
-          "id3": {
-            "title": "On parle de notre projet",
-            "comment": "Tu es ici\u00A0!"
-          },
-          "id4": {
-            "title": "Recueil de vos idées",
-            "comment": "On mouline, on analyse, on cogito ergo sum."
-          }
-        },
-        "here": {
-          "title": "Release de la plateforme Electronic\u00A0Tales 🎉",
-          "comment": "On dégomme le syndrome de l'imposteur ensemble."
-        },
-        "postHereStations": {
-          "id1": {
-            "title": "Community life : workshops, cours du soir...",
-            "comment": "On continue à dégommer."
-          },
-          "id2": {
-            "title": "Paix sur la Terre 🌈",
-            "comment": "Ou juste un milieu tech plus gentil et plus inclusif, pour commencer."
-          }
-        }
-      },
-      "button": "Okay, comment puis-je vous aider\u00A0?"
+      "button": "Okay, je veux en être\u00A0!"
     },
     "signup": {
       "header": {
-        "bigText": "Comment nous aider\u00A0?"
+        "bigText": "Hypée\u00A0?"
       },
       "form": {
         "action": "Écris ton email là.",
@@ -151,10 +103,10 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "Tu reçois un email te donnant accès au MVP de notre plateforme de learning, ainsi qu'un lien vers notre Slack, <i>the</i> safe space où les devs échangent en toute bienveillance. Enfin, tu es inscrit·e à notre newsletter, une pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus."
+            "desc": "Tu reçois un email te donnant accès à notre Slack, <i>the</i> safe space où les devs échangent en toute bienveillance. De plus, tu es inscrit·e à notre newsletter, une pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus."
           },
           "id2": {
-            "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i> et compagnie."
+            "desc": "Electronic Tales est une communauté faite pour et par les devs. Tu deviens donc un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i> et compagnie."
           },
           "id3": {
             "desc": "N'aie pas peur&nbsp;!<br/><br/>En vrai, nous n'allons pas te demander de r&eacute;diger une s&eacute;rie d'articles bouleversants de profondeur sur le z-index en css ou de recoder <a href='https://www.impots.gouv.fr/portail/' target='_blank' rel='noopener noreferrer'>impots.gouv</a> en dark theme. <br /><br />Tu vas voir, c'est tout simple&nbsp;!"

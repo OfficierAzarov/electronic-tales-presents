@@ -28,9 +28,9 @@ class Why extends React.Component {
           <div id="content-container">
             <div id="text-container">
               <Slide bottom duration={2000}>
-                <h3>{t("why.bigText")}</h3>
+                <h3>{t('why.bigText')}</h3>
                 <div id="video-container">
-                  {this.props.language.includes("fr") ? (
+                  {this.props.language.includes('fr') ? (
                     <iframe
                       title="teaser"
                       width="560"
@@ -62,7 +62,7 @@ class Why extends React.Component {
                       size="3em"
                       marginBottom="1%"
                     />
-                    {t("why.bullet1")}
+                    {t('why.bullet1')}
                   </li>
                 </Slide>
                 <Slide bottom>
@@ -73,29 +73,7 @@ class Why extends React.Component {
                       size="3em"
                       marginBottom="1%"
                     />
-                    {t("why.bullet2")}
-                  </li>
-                </Slide>
-                <Slide bottom>
-                  <li>
-                    <Emoji
-                      symbol="🍰"
-                      label="shortcake"
-                      size="3em"
-                      marginBottom="1%"
-                    />
-                    {t("why.bullet3")}
-                  </li>
-                </Slide>
-                <Slide bottom>
-                  <li>
-                    <Emoji
-                      symbol="📆"
-                      label="tear-off calendar"
-                      size="2.8em"
-                      marginBottom="1%"
-                    />
-                    {t("why.bullet4")}
+                    {t('why.bullet2')}
                   </li>
                 </Slide>
               </ul>
@@ -103,9 +81,9 @@ class Why extends React.Component {
           </div>
           <button
             className="button-design"
-            onClick={() => this.props.scrollToASpecificDiv("signupRef")}
+            onClick={() => this.props.scrollToASpecificDiv('signupRef')}
           >
-            {t("common.callToAction")}
+            {t('common.callToAction')}
           </button>
         </div>
       );
@@ -133,24 +111,6 @@ class Why extends React.Component {
                     marginRight="1%"
                   />
                   {t("why.bullet2")}
-                </li>
-                <li>
-                  <Emoji
-                    symbol="🍰"
-                    label="shortcake"
-                    size="1.2em"
-                    marginRight="1%"
-                  />
-                  {t("why.bullet3")}
-                </li>
-                <li>
-                  <Emoji
-                    symbol="📆"
-                    label="tear-off calendar"
-                    size="1.2em"
-                    marginRight="1%"
-                  />
-                  {t("why.bullet4")}
                 </li>
               </ul>
             </div>
