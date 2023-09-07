@@ -15,14 +15,16 @@
     },
     "ecmaVersion": 2018,
     "sourceType": "module"
-  }
+  },
   // "plugins": ["react", "jam3"],
-  // "rules": {
-  //     "jam3/no-sanitizer-with-danger": [
-  //     2,
-  //     {
-  //       "wrapperName": ["your-own-sanitizer-function-name"]
-  //     }
-  //   ]
-  // }
+  "rules": {
+    "react/prop-types": "off",
+    "no-unused-vars": "off"
+    // "jam3/no-sanitizer-with-danger": [
+    // 2,
+    // {
+    //   "wrapperName": ["your-own-sanitizer-function-name"]
+    // }
+    // ]
+  }
 }
