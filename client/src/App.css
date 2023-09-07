@@ -97,13 +97,23 @@ a:visited {
   text-decoration: none;
 }
 
-a {
+nav a {
   color: #dbdadadc;
   font-size: 0.9em;
 }
 
-a:hover {
+nav a:hover {
   color: #ffffff;
+}
+
+a {
+    color: #ff4093;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .strike {

@@ -1,0 +1,26 @@
+#programme #text-container {
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#programme h4 {
+    font-weight: bold;
+}
+
+#programme #text-container p {
+    width: 50%;
+    text-align: justify;
+}
+
+#programme .infos {
+    font-weight: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#programme .subtitle {
+    font-style: italic;
+    font-size: 1.1em;
+}

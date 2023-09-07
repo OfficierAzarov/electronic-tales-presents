@@ -46,12 +46,12 @@ class Concept extends React.Component {
       return (
         <div id="concept">
           <InteractiveHeader
-            bigText={Utils.convertToCleanHtml(t("concept.header.bigText"))}
+            bigText={Utils.convertToCleanHtml(t('concept.header.bigText'))}
             middleText={Utils.convertToCleanHtml(
-              t("concept.header.middleText")
+              t('concept.header.middleText')
             )}
             littleText={Utils.convertToCleanHtml(
-              t("concept.header.littleText")
+              t('concept.header.littleText')
             )}
             isShown={this.props.isShown}
             isClickable={!this.props.isShown}
@@ -64,7 +64,7 @@ class Concept extends React.Component {
               language={this.props.language}
             />
           </div>
-          <Button text={t("concept.button")} goto="/tracks" />
+          <Button text={t('concept.button')} goto="/programme" />
         </div>
       );
     }
