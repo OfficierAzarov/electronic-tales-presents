@@ -139,7 +139,6 @@ class App extends React.Component {
               <div id="main">
                 <Routes>
                   <Route
-                    exact
                     path="/"
                     render={props => (
                       <Presentation
@@ -150,7 +149,6 @@ class App extends React.Component {
                     )}
                   />
                   <Route
-                    exact
                     path="/why"
                     render={props => (
                       <Why
@@ -161,7 +159,6 @@ class App extends React.Component {
                     )}
                   />
                   <Route
-                    exact
                     path="/concept"
                     render={props => (
                       <Concept
@@ -172,7 +169,6 @@ class App extends React.Component {
                     )}
                   />
                   <Route
-                    exact
                     path="/programme"
                     render={props => (
                       <Programme
@@ -183,7 +179,6 @@ class App extends React.Component {
                     )}
                   />
                   <Route
-                    exact
                     path="/signup"
                     render={props => (
                       <Signup
@@ -194,7 +189,6 @@ class App extends React.Component {
                     )}
                   />
                   <Route
-                    exact
                     path="/team"
                     render={props => (
                       <Team
