@@ -70,6 +70,24 @@
       "button": "Great! And in practice?"
     },
     "programme": {
+      "event1": {
+        "title": "21/09/2023 -- <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Atelier Rentre dans ton ordi\u00A0!</a>",
+        "infos": "📍 18 h 30 - 21 h -- Ada Tech School, 116 rue du Faubourg St-Martin Paris</a>",
+        "subtitle": "Pars à la découverte des composants du meilleur ami des développeur·se·s, l'ordinateur, dans une ambiance chaleureuse et bienveillante 🤝💡",
+        "description": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB… <br><br>Ces termes t’angoissent plus que l’idée d’une panne d’eau courante un 15 août ? Ton syndrome de l’imposteur atteint des sommets himalayens dès que tes collègues en parlent à la machine à café ?<br><br>Alors notre atelier “Archéologie des ordinateurs” organisé par Electronic Tales et Ada Tech School est fait pour toi !<br><br>Animé par Eli et Partenko, cet événement te réserve une exploration joyeuse et rythmée de l’intérieur d’un ordinateur 🦾<br><br> L'atelier est ouvert à tous·tes, mais les places sont limitées : <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>inscris-toi</a> pour être sûr.e d’avoir une place !"
+      },
+      "event2": {
+        "title": "Automne 2022 - Été 2023 -- Electronic Tales fait une sieste",
+        "infos": "📍Entretemps",
+        "subtitle": "Rholala, ces assos qui sortent des newsletters tous les 18 mois...",
+        "description": "- Zzzz Zzz Zzzz...<br>- Jean-Pierre, tu ronfles\u00A0!<br>- Zzzzzzz..."
+      },
+      "event3": {
+        "title": "Automne 2022 -- <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>Newsletter #0</a>",
+        "infos": "📍Les interwebs mondiaux",
+        "subtitle": "Electronic Tales se lance dans le game des newsletters",
+        "description": "Ce mois-ci, on parle Hacktoberfest, réseau social en Unix et création d'un mini-jeu vidéo en Javascript vanille 🧋<br><br>Et c'est dispo <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>ici</a>."
+      },
       "button": "Okay, I'm in!"
     },
     "signup": {
