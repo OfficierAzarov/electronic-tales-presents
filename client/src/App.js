@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { withTranslation } from "react-i18next";
-import i18next from "i18next";
-import MediaQuery from "react-responsive";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import MediaQuery from 'react-responsive';
 
-import Nav from "./nav/Nav.js";
-import Footer from "./footer/Footer.js";
-import Presentation from "./main/presentation/Presentation.js";
-import Why from "./main/why/Why.js";
+import Nav from './nav/Nav.js';
+import Footer from './footer/Footer.js';
+import Presentation from './main/presentation/Presentation.js';
+import Why from './main/why/Why.js';
 import Concept from './main/concept/Concept.js';
 import Programme from './main/programme/Programme.js';
 import Signup from './main/signup/Signup.js';
@@ -137,7 +137,7 @@ class App extends React.Component {
                 <img src={elta} alt="Electronic&nbsp;Tales skyline" />
               </div>
               <div id="main">
-                <Switch>
+                <Routes>
                   <Route
                     exact
                     path="/"
@@ -204,7 +204,7 @@ class App extends React.Component {
                       />
                     )}
                   />
-                </Switch>
+                </Routes>
               </div>
               <Footer />
             </div>
