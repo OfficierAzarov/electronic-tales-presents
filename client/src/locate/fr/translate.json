@@ -14,7 +14,7 @@
       "button": "Je participe\u00A0!"
     },
     "presentation": {
-      "title": "Développeur·euse junior, il t'est déjà arrivé d'avoir des difficultés pour...",
+      "title": "Développeur·euse, il t'est déjà arrivé d'avoir des difficultés pour...",
       "question1": "Te sentir légitime dans le monde de la tech\u00A0?",
       "question2": "Évaluer ton niveau réel\u00A0?",
       "question3": "Exprimer tes insécurités au travail\u00A0?",
@@ -23,7 +23,7 @@
     },
     "why": {
       "bigText": "Dégommons le syndrome de l'imposteur ensemble\u00A0!",
-      "bullet1": "Pour les développeurs·euses juniors qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
+      "bullet1": "Pour les développeurs·euses qui n'ont pas suivi un cursus d'ingénieur, ne démontent pas des ordinateurs tous les week-ends et n'ont pas commencé à coder à 5 ans",
       "bullet2": "Fabriquée avec amour par des devs féministes, queers, inclusifs·ves et autres personnes fucking bienveillant·e·s",
       "bullet3": "Une plateforme open-source et 100\u00A0% gratuite",
       "bullet4": "Une newsletter, pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus accessibles et décomplexants",
@@ -39,16 +39,16 @@
         "principles": {
           "title": "Nos principes",
           "id1": {
-            "text": "Fabriquer un safe-space d'entraide et de bienveillance entre devs juniors"
+            "text": "Fabriquer un safe-space d'entraide et de bienveillance entre devs"
           },
           "id2": {
-            "text": "Aider les devs juniors à muscler leurs savoirs en software et hardware"
+            "text": "Aider les devs à muscler leurs savoirs en software et hardware"
           },
           "id3": {
             "text": "Analyser et décrypter les codes de la culture geek"
           },
           "id4": {
-            "text": "Motiver les devs juniors à continuer à apprendre en parallèle de leur job"
+            "text": "Motiver les devs à continuer à apprendre en parallèle de leur job"
           }
         },
         "implementations": {

@@ -12,7 +12,7 @@ But once in the company, these people often face a "glass wall" from their colle
 
 Let's get rid of the impostor syndrome together!
 
-Electronic&nbsp;Tales intends to be a safe learning space for and by junior devs, focused on kindness and inclusion. It aims to close the gap between bootcampers/self-starters and engineers by talking about everything short courses don't teach 💾 🔋 🕹️
+Electronic&nbsp;Tales intends to be a safe learning space for and by devs, focused on kindness and inclusion. It aims to close the gap between bootcampers/self-starters and engineers by talking about everything short courses don't teach 💾 🔋 🕹️
 
 _The repo you are on is the **presentation** site of the project : Electronic&nbsp;Tales Presents_.
 
@@ -74,7 +74,7 @@ Mais une fois en entreprise, ces personnes se confrontent souvent à un « mur d
 
 Dégommons le syndrome de l'imposteur ensemble !
 
-Electronic&nbsp;Tales entend être un safe-space d'apprentissage pour et par les dévs juniors, axé sur la bienveillance et l'inclusion. Il vise à réduire le gap entre les bootcampeurs·euses/autodidactes et les ingénieur·e·s en parlant de tout ce que les formations courtes n'enseignent pas 💾 🔋 🕹️
+Electronic&nbsp;Tales entend être un safe-space d'apprentissage pour et par les dévs, axé sur la bienveillance et l'inclusion. Il vise à réduire le gap entre les bootcampeurs·euses/autodidactes et les ingénieur·e·s en parlant de tout ce que les formations courtes n'enseignent pas 💾 🔋 🕹️
 
 _Le repo sur lequel vous êtes est le site de **présentation** du projet : Electronic&nbsp;Tales Presents_.
 

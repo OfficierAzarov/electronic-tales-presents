@@ -14,7 +14,7 @@
       "button": "I'm in!"
     },
     "presentation": {
-      "title": "As a junior developer, have you ever found it difficult to...",
+      "title": "As a developer, have you ever found it difficult to...",
       "question1": "Feel legitimate in the tech world?",
       "question2": "Assess your real level?",
       "question3": "Express your insecurities at work?",
@@ -23,7 +23,7 @@
     },
     "why": {
       "bigText": "Let’s smash the impostor syndrome together!",
-      "bullet1": "For the junior developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
+      "bullet1": "For the developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
       "bullet2": "Made with love by feminist, queer, inclusive devs and other fucking friendly people",
       "bullet3": "An open source and 100% free platform",
       "bullet4": "A dashing newsletter, already praised by the Tech world for its accessible and decomplexing contents",
@@ -39,16 +39,16 @@
         "principles": {
           "title": "Our concepts",
           "id1": {
-            "text": "Building a safe space for peer support between junior devs"
+            "text": "Building a safe space for peer support between devs"
           },
           "id2": {
-            "text": "Helping junior devs to strengthen their software and hardware skills"
+            "text": "Helping devs to strengthen their software and hardware skills"
           },
           "id3": {
             "text": "Analysing and deciphering the geek culture codes"
           },
           "id4": {
-            "text": "Motivating junior devs to keep learning alongside their job"
+            "text": "Motivating devs to keep learning alongside their job"
           }
         },
         "implementations": {
