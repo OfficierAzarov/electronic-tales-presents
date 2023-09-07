@@ -30,20 +30,20 @@ class Programme extends React.Component {
       <div id="programme">
         <h3>Programme</h3>
         <div id="text-container">
-          <div className"event">
+          <div className="event">
             <h4
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event1.title')
               )}
             ></h4>
             <p
-              className"infos"
+              className="infos"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event1.infos')
               )}
             ></p>
             <p
-              className"subtitle"
+              className="subtitle"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event1.subtitle')
               )}
@@ -55,20 +55,20 @@ class Programme extends React.Component {
             ></p>
           </div>
 
-          <div className"event">
+          <div className="event">
             <h4
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event2.title')
               )}
             ></h4>
             <p
-              className"infos"
+              className="infos"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event2.infos')
               )}
             ></p>
             <p
-              className"subtitle"
+              className="subtitle"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event2.subtitle')
               )}
@@ -79,20 +79,20 @@ class Programme extends React.Component {
               )}
             ></p>
           </div>
-          <div className"event">
+          <div className="event">
             <h4
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event3.title')
               )}
             ></h4>
             <p
-              className"infos"
+              className="infos"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event3.infos')
               )}
             ></p>
             <p
-              className"subtitle"
+              className="subtitle"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event3.subtitle')
               )}
