@@ -30,7 +30,7 @@ class Programme extends React.Component {
 
     return (
       <div id="tracks">
-        <Button text={t('programme.button')} goto="/progress" />
+        <Button text={t('programme.button')} goto="/signup" />
       </div>
     );
   }

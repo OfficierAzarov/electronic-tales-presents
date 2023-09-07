@@ -72,48 +72,6 @@
     "programme": {
       "button": "Keep me informed!"
     },
-    "progress": {
-      "header": {
-        "bigText": "Roadmap",
-        "middleText": "Well, where we are at.",
-        "littleText": "But “roadmap” sounds better, right?"
-      },
-      "map": {
-        "preHereStations": {
-          "id1": {
-            "title": "Idea  🤔",
-            "comment": "Do you really think it is a good idea?"
-          },
-          "id2": {
-            "title": "Brainstorrrrm",
-            "comment": "Have we got more Skittles?"
-          },
-          "id3": {
-            "title": "We speak about our project",
-            "comment": "You are here!"
-          },
-          "id4": {
-            "title": "We collect your ideas.",
-            "comment": "We mull, we analyse, we meditate."
-          }
-        },
-        "here": {
-          "title": "Release of the Electronic\u00A0Tales platform 🎉",
-          "comment": "We smash the impostor syndrome together."
-        },
-        "postHereStations": {
-          "id1": {
-            "title": "Community life: workshops, evening classes...",
-            "comment": "We keep smashing."
-          },
-          "id2": {
-            "title": "Peace on Earth 🌼",
-            "comment": "Or just a more inclusive, friendlier tech environment, to begin with."
-          }
-        }
-      },
-      "button": "Ok, how can I help?"
-    },
     "signup": {
       "header": {
         "bigText": "How can you help us?"
@@ -127,7 +85,7 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "You receive an email giving you access to the MVP of our learning platform as well as a link to our Slack, the safe space where devs communicate in a kindly way. Finally, you are subscribed to our newsletter, a dashing missive already praised by the Tech world for its contents."
+            "desc": "You receive an email giving you a link to our Slack, the safe space where devs communicate in a kindly way. Also, you are subscribed to our newsletter, a dashing missive already praised by the Tech world for its contents."
           },
           "id2": {
             "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."

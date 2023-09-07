@@ -72,48 +72,6 @@
     "programme": {
       "button": "Tenez-moi au courant\u00A0!"
     },
-    "progress": {
-      "header": {
-        "bigText": "Roadmap",
-        "middleText": "Enfin, où on en est, quoi.",
-        "littleText": "Mais ça sonne mieux, «&nbsp;roadmap&nbsp;», non&nbsp;?"
-      },
-      "map": {
-        "preHereStations": {
-          "id1": {
-            "title": "Idée 🤔",
-            "comment": "Tu crois vraiment que c'est une bonne idée\u00A0?"
-          },
-          "id2": {
-            "title": "Brainstorrrrm",
-            "comment": "Il reste des Kinder Country\u00A0?"
-          },
-          "id3": {
-            "title": "On parle de notre projet",
-            "comment": "Tu es ici\u00A0!"
-          },
-          "id4": {
-            "title": "Recueil de vos idées",
-            "comment": "On mouline, on analyse, on cogito ergo sum."
-          }
-        },
-        "here": {
-          "title": "Release de la plateforme Electronic\u00A0Tales 🎉",
-          "comment": "On dégomme le syndrome de l'imposteur ensemble."
-        },
-        "postHereStations": {
-          "id1": {
-            "title": "Community life : workshops, cours du soir...",
-            "comment": "On continue à dégommer."
-          },
-          "id2": {
-            "title": "Paix sur la Terre 🌈",
-            "comment": "Ou juste un milieu tech plus gentil et plus inclusif, pour commencer."
-          }
-        }
-      },
-      "button": "Okay, comment puis-je vous aider\u00A0?"
-    },
     "signup": {
       "header": {
         "bigText": "Comment nous aider\u00A0?"
@@ -127,7 +85,7 @@
       "signupSteps": {
         "steps": {
           "id1": {
-            "desc": "Tu reçois un email te donnant accès au MVP de notre plateforme de learning, ainsi qu'un lien vers notre Slack, <i>the</i> safe space où les devs échangent en toute bienveillance. Enfin, tu es inscrit·e à notre newsletter, une pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus."
+            "desc": "Tu reçois un email te donnant accès à notre Slack, <i>the</i> safe space où les devs échangent en toute bienveillance. De plus, tu es inscrit·e à notre newsletter, une pimpante infolettre déjà saluée par le monde de la Tech pour ses contenus."
           },
           "id2": {
             "desc": "Tu deviens un&middot;e membre à part enti&egrave;re du pool de co-cr&eacute;ateurs&middot;trices d'Electronic&nbsp;Tales... de l'&eacute;quipe, quoi&nbsp;! Ce qui signifie que tu peux, si tu le souhaites, t'identitifer en tant que membre de la team sur <i class='fab fa-linkedin'></i> et compagnie."
