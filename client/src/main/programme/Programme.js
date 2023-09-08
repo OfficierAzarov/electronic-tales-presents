@@ -104,7 +104,11 @@ class Programme extends React.Component {
             ></p>
           </div>
         </div>
-        <Button text={t('programme.button')} goto="/signup" />
+        {this.props.mobile ? (
+          ''
+        ) : (
+          <Button text={t('programme.button')} goto="/signup" />
+        )}
       </div>
     );
   }
