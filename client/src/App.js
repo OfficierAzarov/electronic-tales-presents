@@ -140,63 +140,63 @@ class App extends React.Component {
                 <Routes>
                   <Route
                     path="/"
-                    render={props => (
+                    element={
                       <Presentation
-                        {...props}
+                        path="/"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
                     path="/why"
-                    render={props => (
+                    element={
                       <Why
-                        {...props}
+                        path="/"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
                     path="/concept"
-                    render={props => (
+                    element={
                       <Concept
-                        {...props}
+                        path="/concept"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
                     path="/programme"
-                    render={props => (
+                    element={
                       <Programme
-                        {...props}
+                        path="/programme"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
                     path="/signup"
-                    render={props => (
+                    element={
                       <Signup
-                        {...props}
+                        path="/signup"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
                     path="/team"
-                    render={props => (
+                    element={
                       <Team
-                        {...props}
+                        path="/team"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                 </Routes>
               </div>
