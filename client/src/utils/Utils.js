@@ -1,7 +1,7 @@
 import DOMPurify from "dompurify";
 
 export const emitCurrentPath = (properties) => {
-  properties.passCurrentPath(properties.location.pathname);
+  properties.passCurrentPath(properties.path);
 };
 
 export const convertToCleanHtml = (property) => {

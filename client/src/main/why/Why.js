@@ -36,7 +36,7 @@ class Why extends React.Component {
                       width="560"
                       height="315"
                       src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
                     ></iframe>
@@ -46,7 +46,7 @@ class Why extends React.Component {
                       width="560"
                       height="315"
                       src="https://www.youtube-nocookie.com/embed/VKng_oWILQI"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
                     ></iframe>
@@ -121,7 +121,7 @@ class Why extends React.Component {
                   width="560"
                   height="315"
                   src="https://www.youtube-nocookie.com/embed/i4N0fzPftos"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
@@ -131,7 +131,7 @@ class Why extends React.Component {
                   width="560"
                   height="315"
                   src="https://www.youtube-nocookie.com/embed/VKng_oWILQI"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>

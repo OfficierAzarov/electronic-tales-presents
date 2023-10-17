@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { withTranslation } from "react-i18next";
-import i18next from "i18next";
-import MediaQuery from "react-responsive";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import MediaQuery from 'react-responsive';
 
-import Nav from "./nav/Nav.js";
-import Footer from "./footer/Footer.js";
-import Presentation from "./main/presentation/Presentation.js";
-import Why from "./main/why/Why.js";
+import Nav from './nav/Nav.js';
+import Footer from './footer/Footer.js';
+import Presentation from './main/presentation/Presentation.js';
+import Why from './main/why/Why.js';
 import Concept from './main/concept/Concept.js';
 import Programme from './main/programme/Programme.js';
 import Signup from './main/signup/Signup.js';
@@ -137,74 +137,68 @@ class App extends React.Component {
                 <img src={elta} alt="Electronic&nbsp;Tales skyline" />
               </div>
               <div id="main">
-                <Switch>
+                <Routes>
                   <Route
-                    exact
                     path="/"
-                    render={props => (
+                    element={
                       <Presentation
-                        {...props}
+                        path="/"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
-                    exact
                     path="/why"
-                    render={props => (
+                    element={
                       <Why
-                        {...props}
+                        path="/"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
-                    exact
                     path="/concept"
-                    render={props => (
+                    element={
                       <Concept
-                        {...props}
+                        path="/concept"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
-                    exact
                     path="/programme"
-                    render={props => (
+                    element={
                       <Programme
-                        {...props}
+                        path="/programme"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
-                    exact
                     path="/signup"
-                    render={props => (
+                    element={
                       <Signup
-                        {...props}
+                        path="/signup"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
                   <Route
-                    exact
                     path="/team"
-                    render={props => (
+                    element={
                       <Team
-                        {...props}
+                        path="/team"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
-                    )}
+                    }
                   />
-                </Switch>
+                </Routes>
               </div>
               <Footer />
             </div>

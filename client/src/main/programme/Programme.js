@@ -30,20 +30,20 @@ class Programme extends React.Component {
       <div id="programme">
         <h3>Programme</h3>
         <div id="text-container">
-          <div class="event">
+          <div className="event">
             <h4
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event1.title')
               )}
             ></h4>
             <p
-              class="infos"
+              className="infos"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event1.infos')
               )}
             ></p>
             <p
-              class="subtitle"
+              className="subtitle"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event1.subtitle')
               )}
@@ -55,20 +55,20 @@ class Programme extends React.Component {
             ></p>
           </div>
 
-          <div class="event">
+          <div className="event">
             <h4
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event2.title')
               )}
             ></h4>
             <p
-              class="infos"
+              className="infos"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event2.infos')
               )}
             ></p>
             <p
-              class="subtitle"
+              className="subtitle"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event2.subtitle')
               )}
@@ -79,20 +79,20 @@ class Programme extends React.Component {
               )}
             ></p>
           </div>
-          <div class="event">
+          <div className="event">
             <h4
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event3.title')
               )}
             ></h4>
             <p
-              class="infos"
+              className="infos"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event3.infos')
               )}
             ></p>
             <p
-              class="subtitle"
+              className="subtitle"
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event3.subtitle')
               )}
@@ -104,7 +104,11 @@ class Programme extends React.Component {
             ></p>
           </div>
         </div>
-        <Button text={t('programme.button')} goto="/signup" />
+        {this.props.mobile ? (
+          ''
+        ) : (
+          <Button text={t('programme.button')} goto="/signup" />
+        )}
       </div>
     );
   }
