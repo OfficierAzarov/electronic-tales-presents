@@ -17,6 +17,20 @@ import './App.css';
 
 import elta from '../src/resources/img/eltaskyline.svg';
 
+// class Anne extends React.Component {
+
+//   // Javascript classique
+//   console.log("Coucou");
+
+//   // Pseudo HTML (= JSX)
+//   render() {
+//     return (
+      
+//     )
+//   }
+
+// }
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -80,7 +94,7 @@ class App extends React.Component {
             <div id="mobile-page">
               <Nav mobile={true} onLanguageHandle={this.onLanguageHandle} />
               <div id="eltaskyline">
-                <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+                <img src={elta} alt="Electronic Tales skyline" />
               </div>
               <div id="mobile-main">
                 <div className="section" id="section-presentation">
@@ -134,7 +148,7 @@ class App extends React.Component {
             />
             <div id="page-container">
               <div id="eltaskyline">
-                <img src={elta} alt="Electronic&nbsp;Tales skyline" />
+                <img src={elta} alt="Electronic Tales skyline" />
               </div>
               <div id="main">
                 <Routes>
@@ -142,7 +156,7 @@ class App extends React.Component {
                     path="/"
                     element={
                       <Presentation
-                        path="/"
+                        currentPath="/"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
@@ -152,7 +166,7 @@ class App extends React.Component {
                     path="/why"
                     element={
                       <Why
-                        path="/"
+                        currentPath="/why"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
@@ -162,7 +176,7 @@ class App extends React.Component {
                     path="/concept"
                     element={
                       <Concept
-                        path="/concept"
+                        currentPath="/concept"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
@@ -172,7 +186,7 @@ class App extends React.Component {
                     path="/programme"
                     element={
                       <Programme
-                        path="/programme"
+                        currentPath="/programme"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
@@ -182,7 +196,7 @@ class App extends React.Component {
                     path="/signup"
                     element={
                       <Signup
-                        path="/signup"
+                        currentPath="/signup"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />
@@ -192,7 +206,7 @@ class App extends React.Component {
                     path="/team"
                     element={
                       <Team
-                        path="/team"
+                        currentPath="/team"
                         passCurrentPath={this.getCurrentPath}
                         language={this.state.language}
                       />

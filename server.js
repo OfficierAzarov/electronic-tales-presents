@@ -26,26 +26,27 @@ const failureTextFr =
                     Es-tu sûr·e de ton adresse mail ?";
 
 const failureTextEn =
-  "Oops... Looks like something went wrong\u00A0! \
-Could you double-check your email address\u00A0?";
+  'Oops... Looks like something went wrong\u00A0! \
+Could you double-check your email address\u00A0?';
 
-const updateTextFr = "Ton adresse mail a bien été mise à jour !";
-const updateTextEn = "Your email address has been updated!";
+const updateTextFr = 'Ton adresse mail a bien été mise à jour !';
+const updateTextEn = 'Your email address has been updated!';
 
-app.get("/api/memberAdd", (req, res) => {
+// Controller
+app.get('/api/memberAdd', (req, res) => {
   const data = mailChimpDataBuilder(req);
   addMember(data, res);
 });
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
 
-  app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
   });
 }
 
-app.listen(PORT, console.log("Server started"));
+app.listen(PORT, console.log('Server started here: ' + PORT));
 
 // ----- Function definitions ------
 
