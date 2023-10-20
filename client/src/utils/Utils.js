@@ -5,6 +5,6 @@ export const emitCurrentPath = (properties) => {
 };
 
 export const convertToCleanHtml = (property) => {
-  const clean = DOMPurify.sanitize(property);
+  const clean = DOMPurify.sanitize(property, { ADD_ATTR: ['target'] });
   return { __html: clean };
 };

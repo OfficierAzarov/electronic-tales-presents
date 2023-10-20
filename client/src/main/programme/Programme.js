@@ -33,6 +33,30 @@ class Programme extends React.Component {
           <div className="event">
             <h4
               dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                t('programme.event0.title')
+              )}
+            ></h4>
+            <p
+              className="infos"
+              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                t('programme.event0.infos')
+              )}
+            ></p>
+            <p
+              className="subtitle"
+              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                t('programme.event0.subtitle')
+              )}
+            ></p>
+            <p
+              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
+                t('programme.event0.description')
+              )}
+            ></p>
+          </div>
+          <div className="event">
+            <h4
+              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
                 t('programme.event1.title')
               )}
             ></h4>
