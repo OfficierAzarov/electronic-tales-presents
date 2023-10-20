@@ -94,7 +94,7 @@ class App extends React.Component {
             <div id="mobile-page">
               <Nav mobile={true} onLanguageHandle={this.onLanguageHandle} />
               <div id="eltaskyline">
-                <img src={elta} alt="Electronic Tales skyline" />
+                <img src={elta} alt="Banane" />
               </div>
               <div id="mobile-main">
                 <div className="section" id="section-presentation">
@@ -148,7 +148,7 @@ class App extends React.Component {
             />
             <div id="page-container">
               <div id="eltaskyline">
-                <img src={elta} alt="Electronic Tales skyline" />
+                <img src={elta} alt="Patate" />
               </div>
               <div id="main">
                 <Routes>
