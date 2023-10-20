@@ -25,7 +25,7 @@ import elta from '../src/resources/img/eltaskyline.svg';
 //   // Pseudo HTML (= JSX)
 //   render() {
 //     return (
-      
+
 //     )
 //   }
 
@@ -148,7 +148,7 @@ class App extends React.Component {
             />
             <div id="page-container">
               <div id="eltaskyline">
-                <img src={elta} alt="" />
+                <img src={elta} aria-hidden="true" />
               </div>
               <div id="main">
                 <Routes>
