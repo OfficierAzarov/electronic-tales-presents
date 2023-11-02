@@ -32,8 +32,10 @@ nav {
   font-weight: bold;
 }
 
-#language-switch {
-  padding-right: 1%;
+#language-switch  {
+  background-color: rgb(206, 155, 180);
+  margin-right: 20px;
+ 
 }
 
 #language-switch span {

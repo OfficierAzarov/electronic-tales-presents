@@ -25,7 +25,7 @@ import elta from '../src/resources/img/eltaskyline.svg';
 //   // Pseudo HTML (= JSX)
 //   render() {
 //     return (
-      
+
 //     )
 //   }
 
@@ -94,7 +94,7 @@ class App extends React.Component {
             <div id="mobile-page">
               <Nav mobile={true} onLanguageHandle={this.onLanguageHandle} />
               <div id="eltaskyline">
-                <img src={elta} alt="Electronic Tales skyline" />
+                <img src={elta} alt="" />
               </div>
               <div id="mobile-main">
                 <div className="section" id="section-presentation">
@@ -148,7 +148,7 @@ class App extends React.Component {
             />
             <div id="page-container">
               <div id="eltaskyline">
-                <img src={elta} alt="Electronic Tales skyline" />
+                <img src={elta} aria-hidden="true" />
               </div>
               <div id="main">
                 <Routes>
