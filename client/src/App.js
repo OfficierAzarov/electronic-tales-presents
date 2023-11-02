@@ -17,20 +17,6 @@ import './App.css';
 
 import elta from '../src/resources/img/eltaskyline.svg';
 
-// class Anne extends React.Component {
-
-//   // Javascript classique
-//   console.log("Coucou");
-
-//   // Pseudo HTML (= JSX)
-//   render() {
-//     return (
-
-//     )
-//   }
-
-// }
-
 class App extends React.Component {
   constructor(props) {
     super(props);
