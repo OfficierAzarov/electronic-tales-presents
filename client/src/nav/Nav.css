@@ -21,8 +21,6 @@ nav {
 
 #nav-links {
   display: flex;
-  /* width: 80%;
-  margin: 0 auto; */
   justify-content: center;
 }
 
@@ -33,9 +31,15 @@ nav {
 }
 
 #language-switch  {
-  background-color: rgb(206, 155, 180);
-  margin-right: 20px;
- 
+  border: none;
+  margin: 0;
+  padding: 0 1% 0 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
 }
 
 #language-switch span {

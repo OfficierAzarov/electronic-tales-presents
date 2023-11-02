@@ -52,8 +52,13 @@ class Nav extends React.Component {
               {t('nav.links.5')}
             </Link>
           </div>
-          <button id="language-switch" aria-label="cliquer pour choisir français ou anglais" role="button">
-            <span onClick={() => this.props.onLanguageHandle('fr')}>fr</span> |
+          <button
+            id="language-switch"
+            aria-label="Voir le site en français ou en anglais"
+            role="button"
+          >
+            <span onClick={() => this.props.onLanguageHandle('fr')}>fr</span>
+            &nbsp;|&nbsp;
             <span onClick={() => this.props.onLanguageHandle('en')}>en</span>
           </button>
 
