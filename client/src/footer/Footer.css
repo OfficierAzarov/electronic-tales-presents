@@ -9,7 +9,7 @@ footer {
 }
 
 footer ul {
-  list-style: none;
+  list-style: none ;
   display: flex;
   justify-content: space-evenly;
   padding-inline-start: 0;

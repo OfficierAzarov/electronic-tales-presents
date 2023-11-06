@@ -69,26 +69,31 @@
       },
       "button": "Great! And in practice?"
     },
+
     "programme": {
+      "event0": {
+        "title": "01/21/2024 -- <a href='https://www.eventbrite.com/e/computer-archaeology-tickets-742150360707' target='_blank' rel='noopener noreferrer'>Computer Archaeology Workshop\u00A0!</a>",
+        "infos": "📍 1 PM - 4 PM -- La Mutinerie, 176-178 Rue Saint-Martin, 75003 Paris",
+        "subtitle": "Following the success of the 1st edition, we're doing it again! Explore the components of a developer's best friend, the computer, in a warm and activist atmosphere 🤗✊",
+        "description": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB… <br><br>Do these terms scare you more than the idea of a water outage on August 15th? Does your impostor syndrome reach Himalayan heights as soon as your colleagues discuss them at the coffee machine? <br><br>Then our 'Computer Archaeology' workshop is perfect for you! Hosted by Eli and Partenko, this event promises a joyful and activist exploration of the inside of a computer 🦾 <br><br>For this session, we are lucky to be hosted at La Mutinerie, the most wonderful queer feminist bar in Paris ❤️🏳️‍🌈 <br><br>The workshop is open to everyone, but spaces are limited. 🇫🇷 Please note that this workshop is primarily intended for a French-speaking audience, but the facilitators are fluent in English and can adapt if there are English-speaking participants 🇫🇷/🇬🇧 \u00A0"
+      },
       "event1": {
-        "title": "21/09/2023 -- <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Atelier Rentre dans ton ordi\u00A0!</a>",
-        "infos": "📍 18 h 30 - 21 h -- Ada Tech School, 116 rue du Faubourg St-Martin Paris</a>",
-        "subtitle": "Pars à la découverte des composants du meilleur ami des développeur·se·s, l'ordinateur, dans une ambiance chaleureuse et bienveillante 🤝💡",
-        "description": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB… <br><br>Ces termes t’angoissent plus que l’idée d’une panne d’eau courante un 15 août ? Ton syndrome de l’imposteur atteint des sommets himalayens dès que tes collègues en parlent à la machine à café ?<br><br>Alors notre atelier “Archéologie des ordinateurs” organisé par Electronic Tales et Ada Tech School est fait pour toi !<br><br>Animé par Eli et Partenko, cet événement te réserve une exploration joyeuse et rythmée de l’intérieur d’un ordinateur 🦾<br><br> L'atelier est ouvert à tous·tes, mais les places sont limitées : <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>inscris-toi</a> pour être sûr.e d’avoir une place !"
+        "title": "09/21/2023 -- <a href='https://www.eventbrite.com/e/get-inside-workshop-tickets-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Get Inside Your Computer Workshop\u00A0!</a>",
+        "infos": "📍 6:30 PM - 9 PM -- Ada Tech School, 116 rue du Faubourg St-Martin, Paris",
+        "subtitle": "Do these terms scare you more than the idea of a water outage on August 15th? Does your impostor syndrome reach Himalayan heights as soon as your colleagues discuss them at the coffee machine? <br><br>Then our 'Computer Archaeology' workshop, organized by Electronic Tales and Ada Tech School, is perfect for you! <br><br>Put on your best Indiana Jones hat and your finest Doctor lab coat, and come dive with us into the inside of a computer 🦾 <br><br>The workshop is open to everyone, but spaces are limited: <a href='https://www.eventbrite.com/e/get-inside-workshop-tickets-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>sign up</a> to secure your spot."
       },
       "event2": {
-        "title": "Automne 2022 - Été 2023 -- Electronic Tales fait une sieste",
-        "infos": "📍Entretemps",
-        "subtitle": "Rholala, ces assos qui sortent des newsletters tous les 18 mois...",
-        "description": "- Zzzz Zzz Zzzz...<br>- Jean-Pierre, tu ronfles\u00A0!<br>- Zzzzzzz..."
+        "title": "Autumn 2022 - Summer 2023 -- Electronic Tales Takes a Nap",
+        "infos": "📍 In the meantime",
+        "subtitle": "Oh my, these associations that send newsletters every 18 months..."
       },
       "event3": {
-        "title": "Automne 2022 -- <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>Newsletter #0</a>",
-        "infos": "📍Les interwebs mondiaux",
-        "subtitle": "Electronic Tales se lance dans le game des newsletters",
-        "description": "Ce mois-ci, on parle Hacktoberfest, réseau social en Unix et création d'un mini-jeu vidéo en Javascript vanille 🧋<br><br>Et c'est dispo <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>ici</a>."
+        "title": "Autumn 2022 -- <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>Newsletter #0</a>",
+        "infos": "📍 Worldwide Internets",
+        "subtitle": "Electronic Tales is entering the newsletter game",
+        "description": "This month, we're talking Hacktoberfest, a social network in Unix, and creating a mini-video game in plain JavaScript 🧋 <br><br>And it's available <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>here</a>."
       },
-      "button": "Okay, I'm in!"
+      "button": "Okay, I want to be a part of it\u00A0!"
     },
     "signup": {
       "header": {

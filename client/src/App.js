@@ -17,20 +17,6 @@ import './App.css';
 
 import elta from '../src/resources/img/eltaskyline.svg';
 
-// class Anne extends React.Component {
-
-//   // Javascript classique
-//   console.log("Coucou");
-
-//   // Pseudo HTML (= JSX)
-//   render() {
-//     return (
-
-//     )
-//   }
-
-// }
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -77,7 +63,7 @@ class App extends React.Component {
         break;
       default:
         console.log(
-          "Don't know where to scroll to... So let's scroll to singup!"
+          "Don't know where to scroll to... So let's scroll to signup!"
         );
         this.signupRef.current.scrollIntoView({
           behavior: 'smooth',
@@ -106,9 +92,7 @@ class App extends React.Component {
                 </div>
                 <div className="section light-background">
                   <div ref={this.whyRef} className="ref-wrapper">
-                    <Why
-                      mobile={true}
-                      language={this.state.language}
+                    <Why mobile={true} language={this.state.language}
                       scrollToASpecificDiv={this.scrollToASpecificDiv}
                     />
                   </div>
@@ -121,17 +105,13 @@ class App extends React.Component {
                 </div>
                 <div className="section light-background">
                   <div ref={this.signupRef} className="ref-wrapper">
-                    <Signup
-                      mobile={true}
-                      language={this.state.language}
+                    <Signup mobile={true} language={this.state.language}
                       scrollToASpecificDiv={this.scrollToASpecificDiv}
                     />
                   </div>
                 </div>
                 <div className="section dark-background">
-                  <Team
-                    mobile={true}
-                    language={this.state.language}
+                  <Team mobile={true} language={this.state.language}
                     scrollToASpecificDiv={this.scrollToASpecificDiv}
                   />
                 </div>
