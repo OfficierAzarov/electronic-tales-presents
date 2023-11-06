@@ -23,8 +23,8 @@ class Nav extends React.Component {
     if (this.props.mobile) {
       return (
         <nav>
-          <img src={logo} alt="Electronic&nbsp;Tales logo" />
-          <div id="language-switch">
+          <img src={logo} alt="Electronic&nbsp;Tales accueil" />
+          <button id="language-switch" aria-label="cliquer pour choisir français ou anglais" role="button">
             <span onClick={() => this.props.onLanguageHandle("fr")}>fr </span>|
             <span onClick={() => this.props.onLanguageHandle("en")}> en</span>
           </div>
@@ -35,7 +35,7 @@ class Nav extends React.Component {
         <nav>
           <div id="logo">
             <Link to="/">
-              <img src={logo} alt="Electronic&nbsp;Tales logo" />
+              <img src={logo} alt="Electronic&nbsp;Tales accueil" />
             </Link>
           </div>
           <div id="nav-links" className="desktop-visible">
