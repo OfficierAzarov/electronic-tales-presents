@@ -24,10 +24,14 @@ class Nav extends React.Component {
       return (
         <nav>
           <img src={logo} alt="Electronic&nbsp;Tales accueil" />
-          <div id="language-switch">
-            <span onClick={() => this.props.onLanguageHandle("fr")}>fr </span>|
-            <span onClick={() => this.props.onLanguageHandle("en")}> en</span>
-          </div>
+          <button
+            id="language-switch"
+            aria-label="cliquer pour choisir français ou anglais"
+            role="button"
+          >
+            <span onClick={() => this.props.onLanguageHandle('fr')}>fr </span>|
+            <span onClick={() => this.props.onLanguageHandle('en')}> en</span>
+          </button>
         </nav>
       );
     } else {
