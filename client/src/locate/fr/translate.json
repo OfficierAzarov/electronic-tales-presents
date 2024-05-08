@@ -70,25 +70,55 @@
       "button": "Super\u00A0! Et concrètement\u00A0?"
     },
     "programme": {
-      "event0": {
-        "title": "21/01/2024 -- <a href='https://www.eventbrite.com/e/billets-archeologie-des-ordinateurs-742150360707' target='_blank' rel='noopener noreferrer'>Atelier Archéologie des ordinateurs\u00A0!</a>",
+      "event8": {
+        "title": "8 & 9 juin 2024 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Micro-bootcamp Algorithmia, 3e session</a>",
+        "infos": "📍 9 h - 18 h -- Shodo (Paris)</a>",
+        "subtitle": "Un week-end pour décoller en algo. <br> Bon, comme on aime beaucoup Paris, quand même, on y retourne pour un petit tour.",
+        "description": "★ 16 h de formation intensive sur le Big O, la récursion, les structures de données et quelques algorithmes célèbres 📷 <br>★ 318 slides 🖌️ <br>★ Des dizaines d'arrays en bois et de listes chaînées faits maison (passion petites ficelles 🪢)<br>★ Plein d'exercices pour expérimenter et pratiquer 🧪<br>★ Environ une analogie dramaqueenesque toutes les dix minutes (comment, la récursion ne vous fait pas systématiquement penser à une descente aux enfers, vous ?) 🎭<br>★ Tarif solidaire 🫂<br><br> Retrouve tout le programme et réserve ta place sur <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>notre page HelloAsso</a>."
+      },
+      "event7": {
+        "title": "18 & 19 avril 2024 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Micro-bootcamp Algorithmia, 2e session</a>",
+        "infos": "📍 9 h - 18 h -- l'Internet mondial</a>",
+        "subtitle": "Un week-end pour décoller en algo. <br> Et comme il n'y a pas que Paris dans la vie, on fait une session remote pour rendre la formation la plus logistiquement accessible possible (sans tomber dans le Zoom somnifère, promis).",
+        "description": "★ 16 h de formation intensive sur le Big O, la récursion, les structures de données et quelques algorithmes célèbres 📷 <br>★ 318 slides 🖌️ <br>★ Des dizaines d'arrays en bois et de listes chaînées faits maison (passion petites ficelles 🪢)<br>★ Plein d'exercices pour expérimenter et pratiquer 🧪<br>★ Environ une analogie dramaqueenesque toutes les dix minutes (comment, la récursion ne vous fait pas systématiquement penser à une descente aux enfers, vous ?) 🎭<br>★ Tarif solidaire 🫂<br><br> Retrouve tout le programme et réserve ta place sur <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>notre page HelloAsso</a>."
+      },
+      "event6": {
+        "title": "27 & 28 avril 2024 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Micro-bootcamp Algorithmia, 1re session</a>",
+        "infos": "📍 9 h - 18 h -- Shodo (Paris)</a>",
+        "subtitle": "Un week-end pour décoller en algo. On se lance à Paris, grâce à l'ESN Shodo qui nous prête ses superbes locaux\u00A0!",
+        "description": "★ 16 h de formation intensive sur le Big O, la récursion, les structures de données et quelques algorithmes célèbres 📷 <br>★ 318 slides 🖌️ <br>★ Des dizaines d'arrays en bois et de listes chaînées faits maison (passion petites ficelles 🪢)<br>★ Plein d'exercices pour expérimenter et pratiquer 🧪<br>★ Environ une analogie dramaqueenesque toutes les dix minutes (comment, la récursion ne vous fait pas systématiquement penser à une descente aux enfers, vous ?) 🎭<br>★ Tarif solidaire 🫂<br><br>Retrouve tout le programme et réserve ta place sur <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>notre page HelloAsso</a>."
+      },
+      "event5": {
+        "title": "3 mars 2024 -- <a href='https://www.eventbrite.com/e/billets-archeologie-des-ordinateurs-742150360707' target='_blank' rel='noopener noreferrer'>Atelier Archéologie des ordinateurs à la Villette\u00A0!</a>",
+        "infos": "📍 14 h 30 - 17 h 30 -- Villette Makerz</a>",
+        "subtitle": "Et c'est reparti pour (encore) un tour\u00A0! Pars à la découverte des composants du meilleur ami des développeur·se·s, l'ordinateur, dans une ambiance chaleureuse et militante 🤗✊",
+        "description": "Encore un plongeons à l’intérieur d’un ordinateur 🦾<br><br>Pour cette session, nous aurons la chance d'être accueilli·e·s à la Villette, dans le cadre du festival Villette Makerz ❤️"
+      },
+      "event4": {
+        "title": "21 janvier 2024 -- <a href='https://www.eventbrite.com/e/billets-archeologie-des-ordinateurs-742150360707' target='_blank' rel='noopener noreferrer'>Atelier Archéologie des ordinateurs à la Mut'!</a>",
         "infos": "📍 13 h - 16 h -- La Mutinerie, 176-178 Rue Saint-Martin, 75003 Paris</a>",
         "subtitle": "Suite au succès de la 1re édition, nous recommençons\u00A0! Pars à la découverte des composants du meilleur ami des développeur·se·s, l'ordinateur, dans une ambiance chaleureuse et militante 🤗✊",
         "description": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB… <br><br>Ces termes t’angoissent plus que l’idée d’une panne d’eau courante un 15 août ? Ton syndrome de l’imposteur atteint des sommets himalayens dès que tes collègues en parlent à la machine à café ?<br><br>Alors notre atelier “Archéologie des ordinateurs” est fait pour toi !<br><br>Sors ton plus beau chapeau d'Indiana Jones et ta meilleure blouse de Docteur·e Maboule et viens plonger avec nous à l’intérieur d’un ordinateur 🦾<br><br>Pour cette session, nous aurons la chance d'être accueilli·e·s à la Mutinerie, le plus merveilleux des bars queerféministes de Paris ❤️🏳️‍🌈<br><br>L'atelier est ouvert à tous·tes, mais les places sont limitées : <a href='https://www.eventbrite.com/e/billets-archeologie-des-ordinateurs-742150360707' target='_blank' rel='noopener noreferrer'>inscris-toi</a> pour être sûr.e d’avoir une place\u00A0!"
       },
-      "event1": {
-        "title": "21/09/2023 -- <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Atelier Rentre dans ton ordi\u00A0!</a>",
+      "event3": {
+        "title": "Décembre 2023 -- <a href='https://www.ulule.com/micro-bootcamps/' target='_blank' rel='noopener noreferrer'>Campagne de crowdfunding réussie\u00A0💸</a>",
+        "infos": "📍 Ulule</a>",
+        "subtitle": "Durant l'automne 2023, on a mené notre 1re grande campagne de collecte de fonds pour créer des micro-bootcamps au service des devs minorisé·e·s, et on a dépassé les 150 % de l'objectif.",
+        "description": "Grâce aux dons de 111 contributeurices, 3 micro-bootcamps verront le jour : un sur l'algorithmique, un sur le system design et un sur le craft. Plus d'infos sur <a href='https://www.ulule.com/micro-bootcamps/' target='_blank' rel='noopener noreferrer'>notre page Ulule</a>."
+      },
+      "event2": {
+        "title": "21 septembre 2023 -- <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Atelier Rentre dans ton ordi\u00A0!</a>",
         "infos": "📍 18 h 30 - 21 h -- Ada Tech School, 116 rue du Faubourg St-Martin Paris</a>",
         "subtitle": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB…",
         "description": "Ces termes t’angoissent plus que l’idée d’une panne d’eau courante un 15 août\u00A0? Ton syndrome de l’imposteur atteint des sommets himalayens dès que tes collègues en parlent à la machine à café ?<br><br>Alors notre atelier “Archéologie des ordinateurs” organisé par Electronic Tales et Ada Tech School est fait pour toi !<br><br>Sors ton plus beau chapeau d'Indiana Jones et ta meilleure blouse de Docteur·e Maboule et viens plonger avec nous à l’intérieur d’un ordinateur 🦾<br><br> L'atelier est ouvert à tous·tes, mais les places sont limitées : <a href='https://www.eventbrite.fr/e/billets-atelier-get-inside-rentre-dans-ton-ordi-ada-tech-school-2109-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>inscris-toi</a> pour être sûr·e d’avoir une place\u00A0!"
       },
-      "event2": {
+      "event1": {
         "title": "Automne 2022 - Été 2023 -- Electronic Tales fait une sieste",
         "infos": "📍Entretemps",
         "subtitle": "Rholala, ces assos qui sortent des newsletters tous les 18 mois...",
         "description": "- Zzzz Zzz Zzzz...<br>- Jean-Pierre, tu ronfles\u00A0!<br>- Zzzzzzz..."
       },
-      "event3": {
+      "event0": {
         "title": "Automne 2022 -- <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>Newsletter #0</a>",
         "infos": "📍Les interwebs mondiaux",
         "subtitle": "Electronic Tales se lance dans le game des newsletters",

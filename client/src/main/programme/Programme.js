@@ -4,8 +4,10 @@ import { withTranslation } from 'react-i18next';
 
 import withDisplay from '../../elements/HOC/withDisplay';
 import Button from '../../elements/buttons/Button';
+import Event from './event/Event';
 import Emoji from '../../elements/Emoji';
 import * as Utils from '../../utils/Utils';
+import text from '../../locate/fr/translate.json';
 
 import './Programme.css';
 
@@ -25,109 +27,30 @@ class Programme extends React.Component {
 
   render() {
     const { t } = this.props;
+    const programme = text.translations.programme;
+
+    const events = [];
+
+    for (const eventKey in programme) {
+      if (eventKey === 'button') {
+        continue;
+      }
+      const event = programme[eventKey];
+      events.push(
+        <Event
+          key={eventKey}
+          title={event.title}
+          infos={event.infos}
+          subtitle={event.subtitle}
+          description={event.description}
+        />
+      );
+    }
 
     return (
       <div id="programme">
         <h3>Programme</h3>
-        <div id="text-container">
-          <div className="event">
-            <h4
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event0.title')
-              )}
-            ></h4>
-            <p
-              className="infos"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event0.infos')
-              )}
-            ></p>
-            <p
-              className="subtitle"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event0.subtitle')
-              )}
-            ></p>
-            <p
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event0.description')
-              )}
-            ></p>
-          </div>
-          <div className="event">
-            <h4
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event1.title')
-              )}
-            ></h4>
-            <p
-              className="infos"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event1.infos')
-              )}
-            ></p>
-            <p
-              className="subtitle"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event1.subtitle')
-              )}
-            ></p>
-            <p
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event1.description')
-              )}
-            ></p>
-          </div>
-
-          <div className="event">
-            <h4
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event2.title')
-              )}
-            ></h4>
-            <p
-              className="infos"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event2.infos')
-              )}
-            ></p>
-            <p
-              className="subtitle"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event2.subtitle')
-              )}
-            ></p>
-            <p
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event2.description')
-              )}
-            ></p>
-          </div>
-          <div className="event">
-            <h4
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event3.title')
-              )}
-            ></h4>
-            <p
-              className="infos"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event3.infos')
-              )}
-            ></p>
-            <p
-              className="subtitle"
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event3.subtitle')
-              )}
-            ></p>
-            <p
-              dangerouslySetInnerHTML={Utils.convertToCleanHtml(
-                t('programme.event3.description')
-              )}
-            ></p>
-          </div>
-        </div>
+        <div id="text-container">{events}</div>
         {this.props.mobile ? (
           ''
         ) : (
@@ -137,5 +60,6 @@ class Programme extends React.Component {
     );
   }
 }
+
 
 export default compose(withDisplay, withTranslation())(Programme);
