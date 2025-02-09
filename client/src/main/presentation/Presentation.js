@@ -3,7 +3,7 @@ import i18next from "i18next";
 
 import withAPITranslation from "../../elements/HOC/withAPITranslation";
 import Button from "../../elements/buttons/Button";
-import { emitCurrentPath } from "../../utils/Utils";
+import {emitCurrentPath} from "../../utils/Utils";
 
 import "./Presentation.css";
 
@@ -15,14 +15,14 @@ class Presentation extends React.Component {
 
   componentDidMount() {
     if (!this.props.mobile) {
-      // passes the location fo the app (current path) to the parent (App.js)
+      // passes the location of the app (current path) to the parent (App.js)
       if (this.props.passCurrentPath) emitCurrentPath(this.props);
 
       if (window.innerHeight < 700) {
-        this.setState({ largeText: true });
+        this.setState({largeText: true});
       }
 
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({top: 0, behavior: "smooth"});
     }
 
     // passes the immplementation of generate method to i18next HOC
@@ -67,9 +67,9 @@ class Presentation extends React.Component {
         <div id="presentation">
           <div
             className="h-container"
-            style={{ marginTop: this.state.largeText ? "3%" : "" }}
+            style={{marginTop: this.state.largeText ? "3%" : ""}}
           >
-            <h2 style={{ width: this.state.largeText ? "90%" : "" }}>
+            <h2 style={{width: this.state.largeText ? "90%" : ""}}>
               {i18next.t("presentation.title")}
             </h2>
           </div>
