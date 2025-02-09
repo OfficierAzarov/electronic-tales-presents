@@ -1,15 +1,12 @@
-import React from 'react';
-import { compose } from 'recompose';
-import { withTranslation } from 'react-i18next';
+import React from "react";
+import {compose} from "recompose";
+import {withTranslation} from "react-i18next";
 
-import withDisplay from '../../elements/HOC/withDisplay';
-import Button from '../../elements/buttons/Button';
-import Event from './event/Event';
-import Emoji from '../../elements/Emoji';
-import * as Utils from '../../utils/Utils';
-import text from '../../locate/fr/translate.json';
+import withDisplay from "../../elements/HOC/withDisplay";
+import Button from "../../elements/buttons/Button";
+import Event from "./event/Event";
 
-import './Programme.css';
+import "./Programme.css";
 
 class Programme extends React.Component {
   constructor(props) {
@@ -18,21 +15,22 @@ class Programme extends React.Component {
   }
 
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({top: 0, behavior: "smooth"});
   }
 
   scrollDown = () => {
-    this.ref.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    this.ref.current.scrollIntoView({behavior: "smooth", block: "center"});
   };
 
   render() {
-    const { t } = this.props;
-    const programme = text.translations.programme;
+    const {t} = this.props;
 
     const events = [];
 
+    const programme = t("programme", {returnObjects: true});
+
     for (const eventKey in programme) {
-      if (eventKey === 'button') {
+      if (eventKey === "button") {
         continue;
       }
       const event = programme[eventKey];
@@ -52,14 +50,13 @@ class Programme extends React.Component {
         <h3>Programme</h3>
         <div id="text-container">{events}</div>
         {this.props.mobile ? (
-          ''
+          ""
         ) : (
-          <Button text={t('programme.button')} goto="/signup" />
+          <Button text={t("programme.button")} goto="/signup" />
         )}
       </div>
     );
   }
 }
-
 
 export default compose(withDisplay, withTranslation())(Programme);

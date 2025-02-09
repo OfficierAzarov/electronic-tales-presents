@@ -70,6 +70,19 @@
       "button": "Super\u00A0! Et concrètement\u00A0?"
     },
     "programme": {
+      "event10": {
+        "title": "31 mai & 1er juin 2025 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Micro-bootcamp Missing Semester</a>",
+        "infos": "📍 10 h - 18 h -- Paris</a>",
+        "subtitle": "Un week-end pour décoller en craft. <br> A Paris.",
+        "description": "★ 14 h de formation intensive <br>★ Design patterns 🧊 <br>★ TDD 🧪 <br>★ Clean code 🧹<br>★ Architecture hexagonale et autres joyeusetés 🧠 <br>★ Tarif solidaire de 75 euros 🫂<br><br> Retrouve tout le programme et réserve ta place sur <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>notre page HelloAsso</a>."
+      },
+
+      "event9": {
+        "title": "26 & 27 avril 2025 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Micro-bootcamp Algorithmia</a>",
+        "infos": "📍 10 h - 18 h -- Paris</a>",
+        "subtitle": "Un week-end pour décoller en algo. <br> A Paris.",
+        "description": "★ 14 h de formation intensive sur le Big O, la récursion, les structures de données et quelques algorithmes célèbres 📷 <br>★ 318 slides 🖌️ <br>★ Des dizaines d'arrays en bois et de listes chaînées faits maison (passion petites ficelles 🪢)<br>★ Plein d'exercices pour expérimenter et pratiquer 🧪<br>★ Environ une analogie dramaqueenesque toutes les dix minutes (comment, la récursion ne vous fait pas systématiquement penser à une descente aux enfers, vous ?) 🎭<br>★ Tarif solidaire de 75 euros🫂<br><br> Retrouve tout le programme et réserve ta place sur <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>notre page HelloAsso</a>."
+      },
       "event8": {
         "title": "8 & 9 juin 2024 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Micro-bootcamp Algorithmia, 3e session</a>",
         "infos": "📍 9 h - 18 h -- Shodo (Paris)</a>",

@@ -22,8 +22,8 @@
       "button": "Grumpf, yes!"
     },
     "why": {
-      "bigText": "Let’s smash the impostor syndrome together!",
-      "bullet1": "For the developers with no engineering degree, who don’t take computers to pieces every weekend and didn’t start coding when they were 5",
+      "bigText": "Let's smash the impostor syndrome together!",
+      "bullet1": "For the developers with no engineering degree, who don't take computers to pieces every weekend and didn't start coding when they were 5",
       "bullet2": "Made with love by feminist, queer, inclusive devs and other fucking friendly people",
       "bullet3": "An open source and 100% free platform",
       "bullet4": "A dashing newsletter, already praised by the Tech world for its accessible and decomplexing contents",
@@ -71,29 +71,71 @@
     },
 
     "programme": {
-      "event0": {
-        "title": "01/21/2024 -- <a href='https://www.eventbrite.com/e/computer-archaeology-tickets-742150360707' target='_blank' rel='noopener noreferrer'>Computer Archaeology Workshop\u00A0!</a>",
+      "button": "Okay, I want to be a part of it!",
+      "event10": {
+        "title": "May 31 & June 1, 2025 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Missing Semester Micro-bootcamp</a>",
+        "infos": "📍 10 AM - 6 PM -- Paris",
+        "subtitle": "A weekend to level up in software craftsmanship. <br> In Paris.",
+        "description": "★ 14 hours of intensive training <br>★ Design patterns 🧊 <br>★ TDD 🧪 <br>★ Clean code 🧹<br>★ Hexagonal architecture and other fun stuff 🧠 <br>★ Solidarity price of 75 euros 🫂<br><br> Find the full program and book your spot on <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>our HelloAsso page</a>."
+      },
+      "event9": {
+        "title": "April 26 & 27, 2025 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Algorithmia Micro-bootcamp</a>",
+        "infos": "📍 10 AM - 6 PM -- Paris",
+        "subtitle": "A weekend to level up in algorithms. <br> In Paris.",
+        "description": "★ 14 hours of intensive training on Big O, recursion, data structures and some famous algorithms 📷 <br>★ 318 slides 🖌️ <br>★ Dozens of handmade wooden arrays and linked lists (we love little strings 🪢)<br>★ Lots of exercises to experiment and practice 🧪<br>★ About one dramatic analogy every ten minutes (what, recursion doesn't make you think of a descent into hell?) 🎭<br>★ Solidarity price of 75 euros 🫂<br><br> Find the full program and book your spot on <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>our HelloAsso page</a>."
+      },
+      "event8": {
+        "title": "June 8 & 9, 2024 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Algorithmia Micro-bootcamp, 3rd session</a>",
+        "infos": "📍 9 AM - 6 PM -- Shodo (Paris)",
+        "subtitle": "A weekend to level up in algorithms. <br> Well, since we love Paris so much, we're going back for another round.",
+        "description": "★ 16 hours of intensive training on Big O, recursion, data structures and some famous algorithms 📷 <br>★ 318 slides 🖌️ <br>★ Dozens of handmade wooden arrays and linked lists (we love little strings 🪢)<br>★ Lots of exercises to experiment and practice 🧪<br>★ About one dramatic analogy every ten minutes (what, recursion doesn't make you think of a descent into hell?) 🎭<br>★ Solidarity price of 75 euros 🫂<br><br> Find the full program and book your spot on <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>our HelloAsso page</a>."
+      },
+      "event7": {
+        "title": "April 18 & 19, 2024 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Algorithmia Micro-bootcamp, 2nd session</a>",
+        "infos": "📍 9 AM - 6 PM -- Worldwide Internets",
+        "subtitle": "A weekend to level up in algorithms. <br> And since there's more to life than Paris, we're doing a remote session to make the training as logistically accessible as possible (without falling into sleepy Zoom territory, promise).",
+        "description": "★ 16 hours of intensive training on Big O, recursion, data structures and some famous algorithms 📷 <br>★ 318 slides 🖌️ <br>★ Dozens of handmade wooden arrays and linked lists (we love little strings 🪢)<br>★ Lots of exercises to experiment and practice 🧪<br>★ About one dramatic analogy every ten minutes (what, recursion doesn't make you think of a descent into hell?) 🎭<br>★ Solidarity price of 65 euros 🫂<br><br> Find the full program and book your spot on <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>our HelloAsso page</a>."
+      },
+      "event6": {
+        "title": "April 27 & 28, 2024 -- <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>Algorithmia Micro-bootcamp, 1st session</a>",
+        "infos": "📍 9 AM - 6 PM -- Shodo (Paris)",
+        "subtitle": "A weekend to level up in algorithms. We're starting in Paris, thanks to Shodo who's lending us their beautiful premises!",
+        "description": "★ 16 hours of intensive training on Big O, recursion, data structures and some famous algorithms 📷 <br>★ 318 slides 🖌️ <br>★ Dozens of handmade wooden arrays and linked lists (we love little strings 🪢)<br>★ Lots of exercises to experiment and practice 🧪<br>★ About one dramatic analogy every ten minutes (what, recursion doesn't make you think of a descent into hell?) 🎭<br>★ Solidarity price of 65 euros 🫂<br><br>Find the full program and book your spot on <a href='https://www.helloasso.com/associations/electronic-tales/boutiques/micro-bootcamps' target='_blank' rel='noopener noreferrer'>our HelloAsso page</a>."
+      },
+      "event5": {
+        "title": "March 3, 2024 -- <a href='https://www.eventbrite.com/e/billets-archeologie-des-ordinateurs-742150360707' target='_blank' rel='noopener noreferrer'>Computer Archaeology Workshop at La Villette</a>",
+        "infos": "📍 2:30 PM - 5:30 PM -- Villette Makerz",
+        "subtitle": "And here we go again! Explore the components of a developer's best friend, the computer, in a warm and activist atmosphere 🤗✊",
+        "description": "Another dive inside a computer 🦾<br><br>For this session, we'll have the chance to be hosted at La Villette, as part of the Villette Makerz festival ❤️"
+      },
+      "event4": {
+        "title": "January 21, 2024 -- <a href='https://www.eventbrite.com/e/computer-archaeology-tickets-742150360707' target='_blank' rel='noopener noreferrer'>Computer Archaeology Workshop!</a>",
         "infos": "📍 1 PM - 4 PM -- La Mutinerie, 176-178 Rue Saint-Martin, 75003 Paris",
         "subtitle": "Following the success of the 1st edition, we're doing it again! Explore the components of a developer's best friend, the computer, in a warm and activist atmosphere 🤗✊",
         "description": "128 DDR Radeon 9700 TX w/TV-Out… AMD A4 Micro-6400T APU… 2-Power SSD2043B 512GB… <br><br>Do these terms scare you more than the idea of a water outage on August 15th? Does your impostor syndrome reach Himalayan heights as soon as your colleagues discuss them at the coffee machine? <br><br>Then our 'Computer Archaeology' workshop is perfect for you! Hosted by Eli and Partenko, this event promises a joyful and activist exploration of the inside of a computer 🦾 <br><br>For this session, we are lucky to be hosted at La Mutinerie, the most wonderful queer feminist bar in Paris ❤️🏳️‍🌈 <br><br>The workshop is open to everyone, but spaces are limited. 🇫🇷 Please note that this workshop is primarily intended for a French-speaking audience, but the facilitators are fluent in English and can adapt if there are English-speaking participants 🇫🇷/🇬🇧 \u00A0"
       },
-      "event1": {
-        "title": "09/21/2023 -- <a href='https://www.eventbrite.com/e/get-inside-workshop-tickets-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Get Inside Your Computer Workshop\u00A0!</a>",
+      "event3": {
+        "title": "December 2023 -- <a href='https://www.ulule.com/micro-bootcamps/' target='_blank' rel='noopener noreferrer'>Successful crowdfunding campaign\u00A0💸</a>",
+        "infos": "📍 Ulule",
+        "subtitle": "During autumn 2023, we ran our first major fundraising campaign to create micro-bootcamps for marginalized devs, and we exceeded 150% of the initial goal.",
+        "description": "Thanks to donations from 111 contributors, 3 micro-bootcamps will be created: one on algorithms, one on system design, and one on software craftsmanship. More info on <a href='https://www.ulule.com/micro-bootcamps/' target='_blank' rel='noopener noreferrer'>our Ulule page</a>."
+      },
+      "event2": {
+        "title": "September 21, 2023 -- <a href='https://www.eventbrite.com/e/get-inside-workshop-tickets-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>Get Inside Your Computer Workshop\u00A0!</a>",
         "infos": "📍 6:30 PM - 9 PM -- Ada Tech School, 116 rue du Faubourg St-Martin, Paris",
         "subtitle": "Do these terms scare you more than the idea of a water outage on August 15th? Does your impostor syndrome reach Himalayan heights as soon as your colleagues discuss them at the coffee machine? <br><br>Then our 'Computer Archaeology' workshop, organized by Electronic Tales and Ada Tech School, is perfect for you! <br><br>Put on your best Indiana Jones hat and your finest Doctor lab coat, and come dive with us into the inside of a computer 🦾 <br><br>The workshop is open to everyone, but spaces are limited: <a href='https://www.eventbrite.com/e/get-inside-workshop-tickets-699593993467?aff=ElectronicTales' target='_blank' rel='noopener noreferrer'>sign up</a> to secure your spot."
       },
-      "event2": {
+      "event1": {
         "title": "Autumn 2022 - Summer 2023 -- Electronic Tales Takes a Nap",
         "infos": "📍 In the meantime",
         "subtitle": "Oh my, these associations that send newsletters every 18 months..."
       },
-      "event3": {
+      "event0": {
         "title": "Autumn 2022 -- <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>Newsletter #0</a>",
         "infos": "📍 Worldwide Internets",
         "subtitle": "Electronic Tales is entering the newsletter game",
         "description": "This month, we're talking Hacktoberfest, a social network in Unix, and creating a mini-video game in plain JavaScript 🧋 <br><br>And it's available <a href='https://electronictales.substack.com/p/newsletter-0?sd=pf.' target='_blank' rel='noopener noreferrer'>here</a>."
-      },
-      "button": "Okay, I want to be a part of it\u00A0!"
+      }
     },
     "signup": {
       "header": {
@@ -111,7 +153,7 @@
             "desc": "You receive an email giving you a link to our Slack, the safe space where devs communicate in a kindly way. Also, you are subscribed to our newsletter, a dashing missive already praised by the Tech world for its contents."
           },
           "id2": {
-            "desc": "You become a member of the Electronic\u00A0Tales co-creators’ pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
+            "desc": "You become a member of the Electronic\u00A0Tales co-creators' pool... in other words, a member of the Team! It means that you can, if you wish so, add Electronic\u00A0Tales as work experience on <i class='fab fa-linkedin'></i> &Co."
           },
           "id3": {
             "desc": "Fear not!<br/><br/>Actually, we are not going to ask you to write a series of astoundingly deep articles about z-index in CSS or to code a dark-theme for <a href='https://www.irs.gov/' target='_blank' rel='noopener noreferrer'>irs.gov</a>. <br /><br />You will see, it is very simple!"
